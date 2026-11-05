@@ -1,6 +1,6 @@
-"""中藥典籍辨證（單一檔案版）：規則式辨證選方（外感、脾胃）與六部典籍原文查詢。
+"""中藥典籍辨證（單一檔案版）：規則式辨證選方（外感、脾胃）與九部典籍原文查詢。
 
-部署：把這個檔案、requirements.txt 和 10 個資料檔（6 個 .md、4 個 .json）上傳到 GitHub repo，
+部署：把這個檔案、requirements.txt 和 13 個資料檔（9 個 .md、4 個 .json）上傳到 GitHub repo，
 放在根目錄或任何子資料夾都可以；再到 https://share.streamlit.io 部署，主檔填 streamlit_app.py。
 本檔由 build_single.py 從 tcm_streamlit/ 的原始碼自動產生，請勿手動修改。
 """
@@ -18,7 +18,7 @@ st.set_page_config(page_title="中藥典籍辨證", page_icon="🌿", layout="wi
 
 ROOT = Path(__file__).resolve().parent
 DATA_FILES = (["外感.json", "脾胃.json", "皮膚.json", "醫方集解_君臣.json"]
-              + [f"{b}.md" for b in ("本草備要", "神農本草經", "本草綱目", "傷寒論", "醫方集解", "溫病條辨")])
+              + [f"{b}.md" for b in ("本草備要", "神農本草經", "本草綱目", "傷寒論", "金匱要略", "醫方集解", "溫病條辨", "濟生方", "外科正宗")])
 
 
 @lru_cache(maxsize=None)
@@ -433,14 +433,14 @@ engine.MAIN, engine.MINOR = MAIN, MINOR
 
 
 # ══ 原文查詢（來自 tcm/lookup.py）══════════════════════════════════════════════
-BOOKS = ["本草備要", "神農本草經", "本草綱目", "傷寒論", "醫方集解", "溫病條辨"]
+BOOKS = ["本草備要", "神農本草經", "本草綱目", "傷寒論", "金匱要略", "醫方集解", "溫病條辨", "濟生方", "外科正宗"]
 RUBRICS = ("釋名", "集解", "正誤", "修治", "氣味", "主治", "發明", "附方", "附錄")
 DEFAULT_RUBRICS = ("氣味", "主治", "發明")
 
 # variant characters / alternate names seen in these editions
 VARIANTS = [("耆", "芪"), ("參", "蔘"), ("朮", "術"), ("濕", "溼"), ("黃", "黄"),
             ("鞕", "硬"), ("栝樓", "瓜蔞"), ("栝蔞", "瓜蔞"), ("薑", "姜"), ("麪", "麵"),
-            ("癢", "痒"), ("搔", "瘙")]
+            ("癢", "痒"), ("搔", "瘙"), ("唇", "脣")]
 ALIASES = {"山藥": ["署豫", "薯蕷"], "菊花": ["鞠華", "甘菊花"], "白朮": ["術"], "蒼朮": ["術"],
            "乾地黃": ["地黃"], "生地黃": ["地黃"], "熟地黃": ["地黃"], "玄參": ["元參"],
            "茺蔚子": ["充蔚子"], "旋覆花": ["旋復花"], "枸杞子": ["枸杞"], "地骨皮": ["枸杞"],
@@ -546,7 +546,7 @@ def yifang(text, qs):
         if any(s == q or (s.startswith(q) and s[len(q):len(q) + 1] in "（(") for q in qs):
             j = i + 1
             # entry runs until the next short line that looks like a formula title
-            while j < len(lines) and not (re.fullmatch(r"[^，。；：（）\s]{2,10}(湯|散|丸|飲|丹|膏|方|煎)(（[^）]*）)?", lines[j].strip())
+            while j < len(lines) and not (re.fullmatch(r"[^，。；：（）\s]{2,10}(湯|散|丸|飲|丹|膏|方|煎|飲子)(（[^）]*）)?", lines[j].strip())
                                            or lines[j].startswith("## ")):
                 j += 1
             hits.append(f"〔{section}〕\n" + "\n".join(lines[i:j]).strip())
@@ -570,9 +570,9 @@ def wenbing(text, qs):
 
 
 # ── 全文搜尋：症狀詞、詞句（癮疹、搔癢、下利清穀…）──────────────────────────────
-FULLTEXT_ORDER = ["醫方集解", "傷寒論", "溫病條辨", "本草備要", "神農本草經", "本草綱目"]
+FULLTEXT_ORDER = ["醫方集解", "傷寒論", "金匱要略", "溫病條辨", "濟生方", "外科正宗", "本草備要", "神農本草經", "本草綱目"]
 _NUM = "一二三四五六七八九十百"
-_FORMULA_TITLE = re.compile(r"[^，。；：（）\s]{2,10}(湯|散|丸|飲|丹|膏|方|煎)(（[^）]*）)?")
+_FORMULA_TITLE = re.compile(r"[^，。；：（）\s]{2,10}(湯|散|丸|飲|丹|膏|方|煎|飲子)(（[^）]*）)?")
 
 
 def segments(book, text):
@@ -602,7 +602,7 @@ def segments(book, text):
             stack[lv - 1:] = [name] + [""] * (4 - lv)
             entry = ""
             continue
-        if book == "傷寒論":
+        if book in ("傷寒論", "金匱要略"):
             if (n := re.match(r"^【第(\d+)條】", l)):
                 start = f"第{n.group(1)}條"
             elif l.startswith(":;"):
@@ -614,7 +614,7 @@ def segments(book, text):
                 start = f"第{n.group(1)}條"
             elif l.startswith("【") and l.rstrip().endswith("方】"):
                 start = l.strip()[1:-1]
-        elif book == "醫方集解" and _FORMULA_TITLE.fullmatch(l.strip()):
+        elif book in ("醫方集解", "濟生方") and _FORMULA_TITLE.fullmatch(l.strip()):
             start = l.strip()
         if start is not None:
             flush()
@@ -660,6 +660,25 @@ def fulltext(query, book=None, get_segments=None, context=60, per_entry=3):
     return qs, results
 
 
+def jingui(text, qs):
+    """金匱要略：提到方名的條文，加上方（:; 開頭、:: 續行，格式同傷寒論）。條文沒有編號，附篇名。"""
+    if not any(re.search(r"(湯|散|丸|飲|丹|膏|煎|方|飲子)$", q) for q in qs):
+        return []  # 只查方名；症狀詞請用全文搜尋（--full）
+    lines = text.split("\n")
+    hits, pian = [], ""
+    for i, l in enumerate(lines):
+        if l.startswith("## "):
+            pian = l[3:].strip()
+        if l.startswith(":;") and any(l[2:].startswith(q) for q in qs):
+            j = i + 1
+            while j < len(lines) and lines[j].startswith("::"):
+                j += 1
+            hits.append(f"〔{pian}〕【方】" + "\n".join(x.lstrip(":;") for x in lines[i:j]))
+        elif l.strip() and not l.startswith((":", "#")) and any(q in l for q in qs):
+            hits.append(f"〔{pian}〕{l.strip()}")
+    return hits
+
+
 ROLES_FILE = find_data("醫方集解_君臣.json")
 
 
@@ -695,8 +714,12 @@ def search(query, book=None, rubrics=DEFAULT_RUBRICS, read=None):
             hits = herb_book(text, qs)
         elif b == "傷寒論":
             hits = shanghan(text, qs, None)
-        elif b == "醫方集解":
-            hits = yifang(text, qs) if re.search(r"(湯|散|丸|飲|丹|膏|煎|方)$", query) else []
+        elif b == "金匱要略":
+            hits = jingui(text, qs)
+        elif b == "外科正宗":
+            hits = herb_book(text, qs)
+        elif b in ("醫方集解", "濟生方"):
+            hits = yifang(text, qs) if re.search(r"(湯|散|丸|飲|丹|膏|煎|方|飲子)$", query) else []
         else:
             hits = wenbing(text, qs)
         if hits:
@@ -704,7 +727,7 @@ def search(query, book=None, rubrics=DEFAULT_RUBRICS, read=None):
     return roles, results
 
 
-lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'segments', 'fulltext', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS', 'FULLTEXT_ORDER']})
+lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'segments', 'fulltext', 'jingui', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS', 'FULLTEXT_ORDER']})
 
 
 # ══ 頁面（來自 app_pages.py）═══════════════════════════════════════════════════
@@ -968,7 +991,7 @@ def render_fulltext(q, book):
     qs, results = lookup.fulltext(q, None if book == "全部" else book, get_segments=book_segments)
     if not results:
         hint = "「養」應為「癢」？" if "養" in q else "可以換同義詞、異體字，或縮短關鍵字。"
-        st.warning(f"六部書的全文都找不到「{q}」。{hint}")
+        st.warning(f"九部書的全文都找不到「{q}」。{hint}")
         return
     pat = re.compile("|".join(re.escape(html.escape(x)) for x in qs))
     total = sum(len(h) for _, h in results)
@@ -986,7 +1009,7 @@ def render_fulltext(q, book):
 
 def page_lookup():
     st.title("典籍原文查詢")
-    st.write("查《本草備要》《神農本草經》《本草綱目》《傷寒論》《醫方集解》《溫病條辨》原文。"
+    st.write("查《本草備要》《神農本草經》《本草綱目》《傷寒論》《金匱要略》《醫方集解》《溫病條辨》《濟生方》《外科正宗》原文。"
              "異體字與別名會自動對應（耆／芪、參／蔘、癢／痒、搔／瘙、山藥／署豫、金銀花→忍冬等）。")
     mode = st.radio("查詢方式", ["條目（藥名、方名、條號）", "全文（症狀、詞句）"], horizontal=True, key="lk_mode")
     full = mode.startswith("全文")
