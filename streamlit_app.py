@@ -1,6 +1,6 @@
 """中藥典籍辨證（單一檔案版）：規則式辨證選方（外感、脾胃）與六部典籍原文查詢。
 
-部署：把這個檔案、requirements.txt 和 9 個資料檔（6 個 .md、3 個 .json）上傳到 GitHub repo，
+部署：把這個檔案、requirements.txt 和 10 個資料檔（6 個 .md、4 個 .json）上傳到 GitHub repo，
 放在根目錄或任何子資料夾都可以；再到 https://share.streamlit.io 部署，主檔填 streamlit_app.py。
 本檔由 build_single.py 從 tcm_streamlit/ 的原始碼自動產生，請勿手動修改。
 """
@@ -17,7 +17,7 @@ import streamlit as st
 st.set_page_config(page_title="中藥典籍辨證", page_icon="🌿", layout="wide")
 
 ROOT = Path(__file__).resolve().parent
-DATA_FILES = (["外感.json", "脾胃.json", "醫方集解_君臣.json"]
+DATA_FILES = (["外感.json", "脾胃.json", "皮膚.json", "醫方集解_君臣.json"]
               + [f"{b}.md" for b in ("本草備要", "神農本草經", "本草綱目", "傷寒論", "醫方集解", "溫病條辨")])
 
 
@@ -610,7 +610,7 @@ DISCLAIMER = "以上僅供學習參考，實際用藥請由中醫師面診後處
 # ── data ──────────────────────────────────────────────────────────────────────
 @st.cache_data
 def kb_names():
-    order = {"外感": 0, "脾胃": 1}
+    order = {"外感": 0, "脾胃": 1, "皮膚": 2}
     return sorted([n for n in order if find_data(f"{n}.json")], key=lambda n: order.get(n, 9))
 
 

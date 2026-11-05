@@ -1,0 +1,2233 @@
+{
+ "title": "皮膚病辨證選方",
+ "version": "0.1",
+ "note": "皮膚病（慢性疹癢＋發斑）規則式辨證試做。",
+ "groups": [
+  {
+   "name": "皮疹形態",
+   "items": [
+    [
+     "fengtuan",
+     "風團、癮疹（成片隆起，時起時消）",
+     [
+      "蕁麻疹",
+      "癮疹",
+      "風疹塊",
+      "風團",
+      "隱疹",
+      "起疹塊"
+     ]
+    ],
+    [
+     "hongzhen",
+     "紅色丘疹、小紅點",
+     [
+      "紅疹",
+      "疹子",
+      "丘疹",
+      "長疹",
+      "起疹子",
+      "紅點"
+     ]
+    ],
+    [
+     "faban",
+     "發斑（成片紅斑，平於皮膚）",
+     [
+      "斑",
+      "紅斑",
+      "發斑",
+      "斑疹"
+     ]
+    ],
+    [
+     "ban_zi",
+     "斑色紫赤或紫黑",
+     [
+      "紫斑",
+      "斑紫",
+      "斑色紫黑"
+     ]
+    ],
+    [
+     "ban_dan",
+     "斑色淡紅、隱隱不顯",
+     [
+      "斑淡紅",
+      "斑色淡"
+     ]
+    ],
+    [
+     "chubuchang",
+     "疹斑欲出不出、透發不暢",
+     [
+      "出不透",
+      "發不出來",
+      "疹出不透"
+     ]
+    ],
+    [
+     "shuipao",
+     "水疱",
+     [
+      "水泡",
+      "小水泡"
+     ]
+    ],
+    [
+     "shenshui",
+     "滲水、流黃水（搔破出黃汁）",
+     [
+      "流湯",
+      "滲液",
+      "流黃水",
+      "出水",
+      "黃水",
+      "流水"
+     ]
+    ],
+    [
+     "tuoxie",
+     "皮膚乾燥、脫屑",
+     [
+      "脫皮",
+      "皮屑",
+      "乾燥",
+      "乾裂",
+      "皮膚乾"
+     ]
+    ],
+    [
+     "feihou",
+     "皮膚增厚粗糙",
+     [
+      "變厚",
+      "粗糙",
+      "苔蘚化"
+     ]
+    ],
+    [
+     "chuang",
+     "瘡（化膿或腫痛）",
+     [
+      "膿疱",
+      "瘡瘍",
+      "長瘡",
+      "化膿",
+      "疥瘡"
+     ]
+    ],
+    [
+     "hongzhong",
+     "局部紅腫灼熱",
+     [
+      "紅腫",
+      "丹毒",
+      "發紅發熱"
+     ]
+    ],
+    [
+     "wanma",
+     "皮膚麻木不仁",
+     [
+      "麻木",
+      "頑麻"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "癢與痛",
+   "items": [
+    [
+     "yang",
+     "搔癢",
+     [
+      "癢",
+      "瘙癢",
+      "搔癢",
+      "搔養",
+      "很癢",
+      "發癢",
+      "痒"
+     ]
+    ],
+    [
+     "yang_ye",
+     "夜間癢甚",
+     [
+      "晚上癢",
+      "夜裡癢",
+      "夜癢"
+     ]
+    ],
+    [
+     "yang_re",
+     "熱癢（遇熱或抓後更癢、灼熱）",
+     [
+      "遇熱癢",
+      "熱了癢",
+      "灼熱癢",
+      "熱癢"
+     ]
+    ],
+    [
+     "yang_feng",
+     "遇風易發、癢甚",
+     [
+      "吹風癢",
+      "遇風發作",
+      "受風"
+     ]
+    ],
+    [
+     "yang_han",
+     "遇冷易發",
+     [
+      "遇冷發作",
+      "冷了癢"
+     ]
+    ],
+    [
+     "tong",
+     "疹處疼痛",
+     [
+      "痛",
+      "刺痛",
+      "癢痛"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "部位",
+   "items": [
+    [
+     "bu_tou",
+     "頭面為主",
+     [
+      "臉",
+      "面部",
+      "頭面",
+      "頭皮"
+     ]
+    ],
+    [
+     "bu_xia",
+     "下肢、足膝為主",
+     [
+      "腳",
+      "小腿",
+      "腿",
+      "足膝"
+     ]
+    ],
+    [
+     "bu_yin",
+     "陰部（陰囊、外陰）",
+     [
+      "陰囊",
+      "外陰",
+      "陰部",
+      "下體"
+     ]
+    ],
+    [
+     "bu_quan",
+     "遍身",
+     [
+      "全身",
+      "到處",
+      "遍身"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "誘因與病程",
+   "items": [
+    [
+     "jiubing",
+     "反覆發作、日久不癒",
+     [
+      "終年",
+      "多年",
+      "慢性",
+      "反覆",
+      "長年",
+      "好幾年",
+      "一直"
+     ]
+    ],
+    [
+     "fawu",
+     "食魚蝦、辛辣等發物後發作或加重",
+     [
+      "吃海鮮",
+      "吃辣",
+      "發物",
+      "海鮮"
+     ]
+    ],
+    [
+     "shijiu",
+     "嗜酒或飲酒後加重",
+     [
+      "喝酒",
+      "飲酒",
+      "嗜酒"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "全身與寒熱",
+   "items": [
+    [
+     "wuhan_fare",
+     "惡寒發熱",
+     [
+      "發冷發熱",
+      "惡寒發熱",
+      "寒熱"
+     ]
+    ],
+    [
+     "fare",
+     "發熱或身熱",
+     [
+      "發燒",
+      "身熱",
+      "發熱"
+     ]
+    ],
+    [
+     "dare",
+     "大熱、壯熱、惡熱",
+     [
+      "高燒",
+      "壯熱",
+      "大熱"
+     ]
+    ],
+    [
+     "weihan",
+     "畏寒、手足冷",
+     [
+      "怕冷",
+      "手腳冰冷",
+      "手足冷",
+      "肢冷",
+      "四肢厥冷"
+     ]
+    ],
+    [
+     "wuhan_n",
+     "無汗或汗出不暢",
+     [
+      "不出汗",
+      "無汗",
+      "汗不出"
+     ]
+    ],
+    [
+     "zihan",
+     "自汗、汗多",
+     [
+      "多汗",
+      "自汗",
+      "汗多"
+     ]
+    ],
+    [
+     "mianchi",
+     "面赤",
+     [
+      "臉紅",
+      "面紅"
+     ]
+    ],
+    [
+     "toutong",
+     "頭痛、頭目昏痛",
+     [
+      "頭痛",
+      "頭昏",
+      "頭暈"
+     ]
+    ],
+    [
+     "xiangbei",
+     "項背拘急或疼痛",
+     [
+      "脖子緊",
+      "項強",
+      "背痛"
+     ]
+    ],
+    [
+     "shentong",
+     "身痛、肢節煩痛",
+     [
+      "身體痛",
+      "關節痛",
+      "全身痠痛"
+     ]
+    ],
+    [
+     "shenzhong",
+     "身重、肩背沉重",
+     [
+      "身重",
+      "沉重"
+     ]
+    ],
+    [
+     "bisai",
+     "鼻塞聲重、噴嚏",
+     [
+      "鼻塞",
+      "打噴嚏",
+      "噴嚏"
+     ]
+    ],
+    [
+     "fuzhong",
+     "浮腫（面目或身腫）",
+     [
+      "水腫",
+      "浮腫",
+      "腫"
+     ]
+    ],
+    [
+     "fali",
+     "疲倦乏力",
+     [
+      "疲倦",
+      "累",
+      "沒力氣",
+      "乏力"
+     ]
+    ],
+    [
+     "mianwuhua",
+     "面色無華、萎黃",
+     [
+      "臉色差",
+      "面黃",
+      "面色蒼白"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "口咽與情志",
+   "items": [
+    [
+     "kouke",
+     "口渴喜冷飲",
+     [
+      "口渴",
+      "想喝冰",
+      "喜冷飲"
+     ]
+    ],
+    [
+     "kouzao",
+     "口燥咽乾",
+     [
+      "口乾",
+      "咽乾"
+     ]
+    ],
+    [
+     "kouku",
+     "口苦",
+     [
+      "嘴苦",
+      "口苦"
+     ]
+    ],
+    [
+     "yantong",
+     "咽痛、咽腫",
+     [
+      "喉嚨痛",
+      "咽痛"
+     ]
+    ],
+    [
+     "kouchuang",
+     "口瘡、唇裂",
+     [
+      "嘴破",
+      "口破",
+      "口瘡"
+     ]
+    ],
+    [
+     "xinfan",
+     "心煩、煩躁",
+     [
+      "煩躁",
+      "心煩",
+      "焦躁"
+     ]
+    ],
+    [
+     "shimian",
+     "失眠",
+     [
+      "睡不著",
+      "失眠"
+     ]
+    ],
+    [
+     "xietong",
+     "脅痛",
+     [
+      "脅痛",
+      "兩脅痛"
+     ]
+    ],
+    [
+     "erming",
+     "耳鳴、耳聾",
+     [
+      "耳鳴",
+      "耳聾"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "飲食與二便",
+   "items": [
+    [
+     "nashao",
+     "食少",
+     [
+      "胃口差",
+      "吃不下",
+      "食慾差"
+     ]
+    ],
+    [
+     "tuxie",
+     "嘔吐或腹瀉",
+     [
+      "吐",
+      "拉肚子",
+      "腹瀉",
+      "嘔吐"
+     ]
+    ],
+    [
+     "futong",
+     "腹痛",
+     [
+      "肚子痛",
+      "腹痛"
+     ]
+    ],
+    [
+     "bianbi",
+     "大便秘結",
+     [
+      "便秘",
+      "大便乾",
+      "大便不通"
+     ]
+    ],
+    [
+     "xiaobian_chi",
+     "小便短赤或澀",
+     [
+      "尿黃",
+      "小便黃",
+      "小便澀",
+      "尿少"
+     ]
+    ],
+    [
+     "yin_shi",
+     "陰部潮濕、陰汗或臊臭",
+     [
+      "陰囊潮濕",
+      "下體潮濕",
+      "陰汗",
+      "臊臭"
+     ]
+    ],
+    [
+     "yin_zhong",
+     "陰部腫痛",
+     [
+      "陰腫",
+      "陰囊腫"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "出血",
+   "items": [
+    [
+     "chuxue",
+     "吐血、衄血或便血",
+     [
+      "流鼻血",
+      "吐血",
+      "便血",
+      "衄血"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "舌",
+   "items": [
+    [
+     "shehong",
+     "舌紅",
+     [
+      "舌頭紅",
+      "舌紅"
+     ]
+    ],
+    [
+     "shejiang",
+     "舌絳（深紅）",
+     [
+      "舌絳",
+      "舌深紅"
+     ]
+    ],
+    [
+     "shedan",
+     "舌淡",
+     [
+      "舌淡",
+      "舌白"
+     ]
+    ],
+    [
+     "taihuang",
+     "苔黃",
+     [
+      "黃苔",
+      "苔黃"
+     ]
+    ],
+    [
+     "tainai",
+     "苔膩",
+     [
+      "膩苔",
+      "苔膩",
+      "苔厚"
+     ]
+    ],
+    [
+     "shaotai",
+     "少苔或苔乾",
+     [
+      "少苔",
+      "無苔",
+      "苔乾"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "脈（知道才選）",
+   "items": [
+    [
+     "maifu",
+     "脈浮",
+     [
+      "浮脈"
+     ]
+    ],
+    [
+     "maishu",
+     "脈數",
+     [
+      "數脈",
+      "脈快"
+     ]
+    ],
+    [
+     "maihong",
+     "脈洪大",
+     [
+      "洪脈"
+     ]
+    ],
+    [
+     "maixu",
+     "脈虛弱無力",
+     [
+      "脈弱",
+      "脈無力",
+      "脈虛"
+     ]
+    ],
+    [
+     "maiwei",
+     "脈微（極弱、似有似無）",
+     [
+      "脈微"
+     ]
+    ],
+    [
+     "maixi",
+     "脈細",
+     [
+      "細脈"
+     ]
+    ],
+    [
+     "maihua",
+     "脈滑",
+     [
+      "滑脈"
+     ]
+    ],
+    [
+     "maishi",
+     "脈實有力",
+     [
+      "脈有力",
+      "脈實"
+     ]
+    ],
+    [
+     "maichen",
+     "脈沉",
+     [
+      "沉脈"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "病程前提",
+   "items": [
+    [
+     "xiahou",
+     "汗、吐、下之後，或過服涼藥後",
+     [
+      "吃了寒涼藥",
+      "瀉下後"
+     ]
+    ],
+    [
+     "xueshi",
+     "失血、產後或久病血虛",
+     [
+      "產後",
+      "失血",
+      "貧血"
+     ]
+    ],
+    [
+     "laonian",
+     "年老",
+     [
+      "老人",
+      "年紀大"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "警示",
+   "items": [
+    [
+     "shenhun",
+     "神昏、譫語、狂躁",
+     [
+      "神智不清",
+      "胡言亂語",
+      "譫語",
+      "昏迷",
+      "狂躁"
+     ]
+    ],
+    [
+     "gaore_ban",
+     "高燒合併大片斑疹",
+     [
+      "高燒起疹",
+      "高燒發斑"
+     ]
+    ],
+    [
+     "nianmo",
+     "口、眼或生殖器黏膜潰爛，或大片水疱脫皮",
+     [
+      "黏膜潰爛",
+      "嘴巴眼睛潰爛",
+      "大片脫皮"
+     ]
+    ],
+    [
+     "xinyao",
+     "新用藥物後才出疹",
+     [
+      "吃藥後起疹",
+      "藥物過敏",
+      "藥疹"
+     ]
+    ],
+    [
+     "huxi",
+     "疹發時喉頭緊、呼吸困難或嘴唇眼瞼腫",
+     [
+      "呼吸困難",
+      "喉嚨緊",
+      "嘴唇腫",
+      "眼皮腫"
+     ]
+    ]
+   ]
+  }
+ ],
+ "redflags": {
+  "shenhun": "神昏譫語或狂躁，表示熱入心包或病情危重，請立即就醫。",
+  "gaore_ban": "高燒合併大片斑疹，可能是嚴重感染、出血性疾病或藥物反應，請立即就醫。",
+  "nianmo": "黏膜潰爛或大片水疱脫皮，可能是嚴重藥物反應（如史蒂文斯－強森症候群），請立即就醫。",
+  "xinyao": "新用藥後才出疹，先考慮藥物過敏，請停用可疑藥物並就醫，不宜自行服中藥。",
+  "huxi": "喉頭緊、呼吸困難或嘴唇眼瞼腫，可能是嚴重過敏，請立即就醫。",
+  "chuxue": "吐血、衄血或便血合併斑疹，須先就醫排除血液疾病。"
+ },
+ "jing": [
+  {
+   "id": "feng",
+   "name": "風邪在表",
+   "w": {
+    "wuhan_fare": 3,
+    "maifu": 2,
+    "yang_feng": 2,
+    "bisai": 1.5,
+    "toutong": 1,
+    "xiangbei": 1.5,
+    "fengtuan": 1.5,
+    "wuhan_n": 1.5,
+    "bu_tou": 0.5
+   },
+   "against": {
+    "tuoxie": 1,
+    "jiubing": 1,
+    "maichen": 1.5
+   },
+   "source": "《醫方集解·祛風之劑·消風散》：「治風熱上攻，頭目昏痛，項背拘急，鼻嚏聲重」"
+  },
+  {
+   "id": "shire",
+   "name": "濕熱",
+   "w": {
+    "shenshui": 3,
+    "shuipao": 2,
+    "tainai": 2,
+    "taihuang": 1,
+    "xiaobian_chi": 1,
+    "yin_shi": 2.5,
+    "bu_xia": 1.5,
+    "bu_yin": 1.5,
+    "shenzhong": 2,
+    "shijiu": 1.5,
+    "fawu": 1,
+    "maihua": 1,
+    "kouku": 1,
+    "chuang": 1
+   },
+   "against": {
+    "tuoxie": 2,
+    "shaotai": 2,
+    "weihan": 1
+   },
+   "source": "《醫方集解·利溼之劑·當歸拈痛湯》：「溼熱勝而爲病，或成水瘡，或成赤腫丹毒」"
+  },
+  {
+   "id": "xuere",
+   "name": "血熱、熱毒",
+   "w": {
+    "faban": 2.5,
+    "ban_zi": 3,
+    "shejiang": 3,
+    "chuxue": 2.5,
+    "dare": 2,
+    "kouke": 1.5,
+    "xinfan": 1.5,
+    "shehong": 1.5,
+    "maishu": 1.5,
+    "maihong": 2,
+    "hongzhong": 1.5,
+    "kouzao": 1
+   },
+   "against": {
+    "ban_dan": 3,
+    "weihan": 2,
+    "maiwei": 2.5,
+    "shedan": 2
+   },
+   "source": "《醫方集解·瀉火之劑·消斑青黛飲》注：「血熱不散，蒸於皮膚則爲斑」"
+  },
+  {
+   "id": "li_shi",
+   "name": "裏實（熱結）",
+   "w": {
+    "bianbi": 3,
+    "xiaobian_chi": 1.5,
+    "maishi": 2,
+    "kouchuang": 1,
+    "dare": 1
+   },
+   "against": {
+    "tuxie": 1.5,
+    "maixu": 2,
+    "maiwei": 2
+   },
+   "source": "《醫方集解·防風通聖散》注：「便祕痔漏，熱結大腑也；小便赤澀，熱蓄膀胱也」"
+  },
+  {
+   "id": "xuexu",
+   "name": "血虛風燥",
+   "w": {
+    "tuoxie": 3,
+    "feihou": 2,
+    "yang_ye": 2,
+    "jiubing": 1.5,
+    "mianwuhua": 2,
+    "shedan": 1,
+    "maixi": 1.5,
+    "xueshi": 2.5,
+    "laonian": 1.5,
+    "fali": 1,
+    "shaotai": 1
+   },
+   "against": {
+    "shenshui": 1.5,
+    "tainai": 1.5,
+    "maishi": 1.5,
+    "wuhan_fare": 1
+   },
+   "source": "《醫方集解·搜風順氣丸》注：「燥則血澀，津液不行，故遍身虛癢」；按：血虛生風化燥之說，另見後世皮膚科通論（未經原文核對）"
+  },
+  {
+   "id": "xuhan",
+   "name": "虛寒（陰證發斑）",
+   "w": {
+    "ban_dan": 3,
+    "weihan": 2.5,
+    "maiwei": 3,
+    "maixu": 1,
+    "xiahou": 2.5,
+    "shedan": 1,
+    "fali": 1,
+    "tuxie": 1
+   },
+   "against": {
+    "ban_zi": 3,
+    "shejiang": 3,
+    "kouke": 2,
+    "dare": 2,
+    "maihong": 2,
+    "maishu": 1.5
+   },
+   "source": "《醫方集解·十四味建中湯》注：「陰證發斑者，或因汗吐下後中氣虛乏……或因過服涼藥，遂成陰證……其色淡紅，隱隱見於肌表」"
+  }
+ ],
+ "jingRules": [],
+ "patterns": [
+  {
+   "id": "xiaofeng_ju",
+   "name": "風熱上攻、癮疹搔癢",
+   "formula": "消風散（《局方》）",
+   "main": [
+    "fengtuan",
+    "yang"
+   ],
+   "minor": [
+    "toutong",
+    "xiangbei",
+    "bisai",
+    "wanma",
+    "yang_feng",
+    "bu_tou",
+    "maifu",
+    "hongzhen"
+   ],
+   "against": [
+    [
+     "shenshui",
+     1.5
+    ],
+    [
+     "tuoxie",
+     1
+    ],
+    [
+     "faban",
+     1.5
+    ],
+    [
+     "taihuang",
+     1
+    ]
+   ],
+   "source": "《醫方集解·祛風之劑·消風散》：「治風熱上攻，頭目昏痛，項背拘急，鼻嚏聲重；及皮膚頑麻，癮疹搔癢，婦人血風」",
+   "jing": [
+    "feng"
+   ],
+   "mods": [],
+   "key": [
+    "toutong",
+    "bisai",
+    "xiangbei",
+    "wanma",
+    "yang_feng",
+    "bu_tou"
+   ]
+  },
+  {
+   "id": "baidu",
+   "name": "風寒濕在表",
+   "formula": "人參敗毒散（荊防敗毒散）",
+   "main": [
+    "wuhan_fare",
+    "toutong"
+   ],
+   "minor": [
+    "xiangbei",
+    "bisai",
+    "shentong",
+    "wuhan_n",
+    "maifu",
+    "chuang"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "taihuang",
+     1
+    ],
+    [
+     "kouke",
+     1.5
+    ],
+    [
+     "tuoxie",
+     1
+    ]
+   ],
+   "source": "《醫方集解·發表之劑·人參敗毒散》：「治傷寒頭痛，憎寒壯熱，項強睛暗，鼻塞聲重……」；附方「連翹敗毒散：治瘡毒」",
+   "jing": [
+    "feng"
+   ],
+   "mods": [
+    {
+     "when": [
+      "chuang"
+     ],
+     "do": "加連翹（連翹敗毒散）",
+     "why": "《醫方集解·人參敗毒散附方》：「連翹敗毒散：治瘡毒」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "wuhan_fare",
+    "xiangbei",
+    "shentong",
+    "bisai"
+   ]
+  },
+  {
+   "id": "guimageban",
+   "name": "表鬱不得汗、身癢",
+   "formula": "桂枝麻黃各半湯",
+   "main": [
+    "yang",
+    "wuhan_n",
+    "mianchi"
+   ],
+   "minor": [
+    "fare",
+    "wuhan_fare",
+    "maifu"
+   ],
+   "against": [
+    [
+     "zihan",
+     2
+    ],
+    [
+     "shenshui",
+     1.5
+    ],
+    [
+     "tuoxie",
+     1
+    ]
+   ],
+   "source": "《傷寒論·辨脈法》：「脈浮而遲，面熱赤而戰惕者……遲為無陽，不能作汗，其身必痒也」（方名依《傷寒論》）",
+   "jing": [
+    "feng"
+   ],
+   "mods": [],
+   "key": [
+    "mianchi",
+    "wuhan_n"
+   ]
+  },
+  {
+   "id": "fangfengtongsheng",
+   "name": "表裏三焦俱實",
+   "formula": "防風通聖散",
+   "main": [
+    "wuhan_fare",
+    "bianbi",
+    "xiaobian_chi"
+   ],
+   "minor": [
+    "fengtuan",
+    "faban",
+    "chuang",
+    "toutong",
+    "kouku",
+    "erming",
+    "maishi",
+    "maishu",
+    "hongzhong"
+   ],
+   "against": [
+    [
+     "maixu",
+     2
+    ],
+    [
+     "tuxie",
+     1.5
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·表裏之劑·防風通聖散》：「治一切風寒暑溼……表裏三焦俱實，憎寒壯熱……瘡瘍腫毒……丹斑癮疹」",
+   "jing": [
+    "feng",
+    "li_shi"
+   ],
+   "mods": [],
+   "gate": {
+    "any": [
+     "wuhan_fare",
+     "fare",
+     "toutong",
+     "maifu"
+    ],
+    "any2": [
+     "bianbi",
+     "xiaobian_chi"
+    ]
+   }
+  },
+  {
+   "id": "dangguiniantong",
+   "name": "濕熱下注、瘡腫膿水",
+   "formula": "當歸拈痛湯",
+   "main": [
+    "shentong",
+    "shenzhong",
+    "chuang"
+   ],
+   "minor": [
+    "bu_xia",
+    "shenshui",
+    "hongzhong",
+    "fuzhong",
+    "maishu",
+    "maihua",
+    "maichen",
+    "tainai"
+   ],
+   "against": [
+    [
+     "tuoxie",
+     2
+    ],
+    [
+     "weihan",
+     1
+    ]
+   ],
+   "source": "《醫方集解·利溼之劑·當歸拈痛湯》：「治溼熱相搏，肢節煩痛，肩背沉重……或腳氣腫痛，腳膝生瘡，膿水不絕」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "bu_xia",
+    "shenshui",
+    "shenzhong"
+   ]
+  },
+  {
+   "id": "longdan",
+   "name": "肝經濕熱",
+   "formula": "龍膽瀉肝湯",
+   "main": [
+    "bu_yin",
+    "kouku",
+    "xietong"
+   ],
+   "minor": [
+    "erming",
+    "yin_shi",
+    "yin_zhong",
+    "xiaobian_chi",
+    "taihuang",
+    "maishu"
+   ],
+   "against": [
+    [
+     "weihan",
+     1.5
+    ],
+    [
+     "tuoxie",
+     1
+    ],
+    [
+     "maixu",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·龍膽瀉肝湯》：「治肝膽經實火溼熱，脅痛耳聾，膽溢口苦，筋痿陰汗，陰腫陰痛，白濁溲血」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "bu_yin",
+    "yin_shi",
+    "yin_zhong",
+    "xietong",
+    "erming"
+   ]
+  },
+  {
+   "id": "xiaofeng_wk",
+   "name": "風濕熱浸淫、瘡疥搔癢",
+   "formula": "消風散（《外科正宗》）",
+   "main": [
+    "yang",
+    "chuang"
+   ],
+   "minor": [
+    "shenshui",
+    "fengtuan",
+    "hongzhen",
+    "bu_quan",
+    "jiubing",
+    "faban",
+    "taihuang",
+    "kouke"
+   ],
+   "against": [
+    [
+     "tuoxie",
+     1
+    ],
+    [
+     "weihan",
+     1.5
+    ],
+    [
+     "shedan",
+     1
+    ]
+   ],
+   "source": "據《外科正宗》記載（未經原文核對）：治風濕浸淫血脈，致生瘡疥，搔癢不絕，及大人小兒風熱癮疹，遍身雲片斑點，乍有乍無",
+   "jing": [
+    "shire",
+    "feng"
+   ],
+   "mods": [],
+   "key": [
+    "shenshui",
+    "hongzhen",
+    "chuang"
+   ]
+  },
+  {
+   "id": "danggui_yinzi",
+   "name": "血虛風燥",
+   "formula": "當歸飲子",
+   "main": [
+    "yang",
+    "jiubing"
+   ],
+   "minor": [
+    "tuoxie",
+    "feihou",
+    "yang_ye",
+    "hongzhen",
+    "mianwuhua",
+    "shedan",
+    "maixi",
+    "xueshi",
+    "laonian",
+    "fali"
+   ],
+   "against": [
+    [
+     "shenshui",
+     1.5
+    ],
+    [
+     "taihuang",
+     1.5
+    ],
+    [
+     "maishi",
+     1.5
+    ],
+    [
+     "dare",
+     1.5
+    ]
+   ],
+   "source": "據《濟生方》記載（未經原文核對）：治瘡疥風癬，濕毒燥癢；按：後世多用於血虛風燥、皮膚乾燥脫屑、夜間癢甚的慢性疹癢",
+   "jing": [
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "tuoxie",
+    "feihou",
+    "yang_ye",
+    "mianwuhua",
+    "xueshi",
+    "laonian"
+   ]
+  },
+  {
+   "id": "soufeng",
+   "name": "風祕燥結、遍身虛癢",
+   "formula": "搜風順氣丸",
+   "main": [
+    "yang",
+    "bianbi"
+   ],
+   "minor": [
+    "bu_quan",
+    "maifu",
+    "maishu",
+    "tuoxie"
+   ],
+   "against": [
+    [
+     "tuxie",
+     2
+    ],
+    [
+     "shenshui",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·潤燥之劑·搜風順氣丸》：「治中風風祕、氣祕，便溺阻隔，遍身虛癢，脈來浮數」",
+   "jing": [
+    "xuexu",
+    "li_shi"
+   ],
+   "mods": [],
+   "gate": {
+    "any": [
+     "bianbi"
+    ]
+   }
+  },
+  {
+   "id": "shengmagegen",
+   "name": "陽明斑疹欲出不出",
+   "formula": "升麻葛根湯",
+   "main": [
+    "chubuchang",
+    "wuhan_fare"
+   ],
+   "minor": [
+    "toutong",
+    "shentong",
+    "wuhan_n",
+    "kouke",
+    "hongzhen",
+    "faban"
+   ],
+   "against": [
+    [
+     "zihan",
+     1.5
+    ],
+    [
+     "shejiang",
+     2
+    ]
+   ],
+   "source": "《醫方集解·發表之劑·升麻葛根湯》：「治陽明傷寒中風，頭疼身痛，發熱惡寒，無汗口渴……及陽明發斑，欲出不出」",
+   "jing": [
+    "feng"
+   ],
+   "mods": [],
+   "key": [
+    "chubuchang"
+   ]
+  },
+  {
+   "id": "huaban",
+   "name": "陽明熱盛發斑",
+   "formula": "白虎湯（化斑湯）",
+   "main": [
+    "dare",
+    "kouke",
+    "zihan"
+   ],
+   "minor": [
+    "faban",
+    "maihong",
+    "xinfan",
+    "toutong",
+    "shehong",
+    "taihuang"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "wuhan_fare",
+     1.5
+    ],
+    [
+     "ban_dan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·白虎湯》：「通治陽明病脈洪大而長，不惡寒，反惡熱，頭痛，自汗，口渴……心煩躁亂……或陽毒發斑，胃熱諸病」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "maihong",
+    "dare",
+    "kouke"
+   ]
+  },
+  {
+   "id": "xijiao",
+   "name": "血熱妄行、發斑出血",
+   "formula": "犀角地黃湯",
+   "main": [
+    "chuxue",
+    "faban"
+   ],
+   "minor": [
+    "ban_zi",
+    "shejiang",
+    "xinfan",
+    "shenhun",
+    "maishu"
+   ],
+   "against": [
+    [
+     "ban_dan",
+     2
+    ],
+    [
+     "weihan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·犀角地黃湯》：「治傷寒胃火熱盛，吐血衄血，嗽血便血，蓄血如狂，漱水不欲咽，及陽毒發斑」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "chuxue",
+    "ban_zi",
+    "shejiang"
+   ]
+  },
+  {
+   "id": "huanglianjiedu",
+   "name": "三焦火毒熾盛",
+   "formula": "黃連解毒湯",
+   "main": [
+    "xinfan",
+    "kouzao",
+    "dare"
+   ],
+   "minor": [
+    "faban",
+    "chuxue",
+    "shimian",
+    "shenhun",
+    "tuxie",
+    "taihuang",
+    "maishu",
+    "shehong"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "maixu",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·黃連解毒湯》：「治一切火熱，表裏俱盛，狂躁煩心，口燥咽乾，大熱乾嘔，錯語不眠，吐血衄血，熱甚發斑」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [
+    {
+     "when": [
+      "wuhan_n"
+     ],
+     "do": "加石膏、麻黃、淡豉（三黃石膏湯）",
+     "why": "《醫方集解·三黃石膏湯》：「治傷寒溫毒表裏俱熱……而不得汗……及陽毒發斑」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "xinfan",
+    "kouzao",
+    "shimian"
+   ]
+  },
+  {
+   "id": "liangge",
+   "name": "上中二焦火盛、燥實",
+   "formula": "涼膈散",
+   "main": [
+    "bianbi",
+    "xinfan",
+    "kouke"
+   ],
+   "minor": [
+    "kouchuang",
+    "chuxue",
+    "faban",
+    "toutong",
+    "xiaobian_chi",
+    "maishi",
+    "taihuang"
+   ],
+   "against": [
+    [
+     "tuxie",
+     2
+    ],
+    [
+     "maixu",
+     2
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·涼膈散》：「治心火上盛，中焦燥實，煩躁口渴，目赤頭眩，口瘡脣裂，吐血衄血，大小便祕……胃熱發斑發狂」",
+   "jing": [
+    "xuere",
+    "li_shi"
+   ],
+   "mods": [],
+   "key": [
+    "bianbi",
+    "kouchuang"
+   ],
+   "gate": {
+    "any": [
+     "bianbi"
+    ]
+   }
+  },
+  {
+   "id": "yuanshen",
+   "name": "發斑咽痛",
+   "formula": "元參升麻湯",
+   "main": [
+    "faban",
+    "yantong"
+   ],
+   "minor": [
+    "shehong",
+    "maishu",
+    "xinfan"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·元參升麻湯》：「治發斑咽痛（發斑者，陽明胃熱也：咽痛者，少陰相火也）」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "yantong"
+   ]
+  },
+  {
+   "id": "xiaoban",
+   "name": "熱邪傳裏、陽毒發斑",
+   "formula": "消斑青黛飲",
+   "main": [
+    "faban",
+    "fare"
+   ],
+   "minor": [
+    "ban_zi",
+    "xinfan",
+    "kouke",
+    "maishu",
+    "shehong"
+   ],
+   "against": [
+    [
+     "ban_dan",
+     2
+    ],
+    [
+     "weihan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·消斑青黛飲》：「治傷寒熱邪傳裏，裏實表虛，陽毒發斑（血熱不散，蒸於皮膚則爲斑，輕如疹子，重若錦紋……）」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "ban_zi"
+   ]
+  },
+  {
+   "id": "shisiwei",
+   "name": "陰證發斑",
+   "formula": "十四味建中湯",
+   "main": [
+    "ban_dan",
+    "weihan"
+   ],
+   "minor": [
+    "faban",
+    "maiwei",
+    "maixu",
+    "xiahou",
+    "fali",
+    "shedan"
+   ],
+   "against": [
+    [
+     "ban_zi",
+     3
+    ],
+    [
+     "kouke",
+     2
+    ],
+    [
+     "dare",
+     2
+    ]
+   ],
+   "source": "《醫方集解·祛寒之劑·十四味建中湯》：「治氣血不足……及陰證發斑，寒甚脈微（……其色淡紅，隱隱見於肌表，與陽證發斑色紫赤者不同）」",
+   "jing": [
+    "xuhan"
+   ],
+   "mods": [],
+   "key": [
+    "ban_dan",
+    "maiwei",
+    "xiahou",
+    "weihan"
+   ],
+   "gate": {
+    "any": [
+     "ban_dan",
+     "weihan",
+     "maiwei",
+     "xiahou"
+    ]
+   }
+  }
+ ],
+ "rules": [
+  {
+   "id": "r_ban_yinyang",
+   "kind": "branch",
+   "name": "發斑分陰陽",
+   "when": {
+    "all": [
+     "faban"
+    ]
+   },
+   "branch": [
+    {
+     "if": "ban_zi",
+     "boost": {
+      "xijiao": 2,
+      "xiaoban": 2
+     },
+     "text": "色紫赤屬陽斑（熱）"
+    },
+    {
+     "if": "ban_dan",
+     "boost": {
+      "shisiwei": 3
+     },
+     "text": "色淡紅、隱隱屬陰斑（虛寒）"
+    }
+   ],
+   "ask": [
+    "ban_zi",
+    "ban_dan"
+   ],
+   "source": "《醫方集解·十四味建中湯》注：「其色淡紅，隱隱見於肌表，與陽證發斑色紫赤者不同」",
+   "note": "見斑先看顏色：紫赤是熱，淡紅隱隱是虛寒，兩者治法相反。"
+  },
+  {
+   "id": "c_yinban",
+   "kind": "caution",
+   "name": "陰斑不可服寒藥",
+   "when": {
+    "any": [
+     "ban_dan",
+     "maiwei"
+    ],
+    "any2": [
+     "weihan",
+     "xiahou"
+    ]
+   },
+   "penalty": {
+    "huaban": 4,
+    "xijiao": 4,
+    "huanglianjiedu": 4,
+    "liangge": 4,
+    "xiaoban": 4,
+    "yuanshen": 3
+   },
+   "source": "《醫方集解·十四味建中湯》注：「此胃氣極虛，若服寒藥，立見危殆」",
+   "note": "斑色淡、脈微、畏寒，或汗吐下後、過服涼藥後發斑，寒涼清熱方要避免。"
+  },
+  {
+   "id": "c_shengti",
+   "kind": "caution",
+   "name": "斑疹熱盛忌升提",
+   "when": {
+    "any": [
+     "faban",
+     "hongzhen",
+     "fengtuan"
+    ],
+    "any2": [
+     "shejiang",
+     "shehong",
+     "dare",
+     "chuxue",
+     "ban_zi"
+    ]
+   },
+   "penalty": {
+    "shengmagegen": 3,
+    "baidu": 2,
+    "guimageban": 2
+   },
+   "source": "《溫病條辨·中焦篇》第二三條：「斑疹，用升提，則衄，或厥，或嗆咳，或昏痙……斑疹之邪在血絡，只喜輕宣涼解」",
+   "note": "疹斑兼見舌紅絳、大熱或出血時，升麻、柴胡、羌活等升散辛溫藥要慎用。"
+  },
+  {
+   "id": "c_banchu",
+   "kind": "caution",
+   "name": "斑疹已出勿再升發",
+   "when": {
+    "any": [
+     "faban",
+     "hongzhen"
+    ],
+    "none": [
+     "chubuchang"
+    ]
+   },
+   "penalty": {
+    "shengmagegen": 3
+   },
+   "source": "《醫方集解·升麻葛根湯》：「斑疹已出者勿服，恐重虛其表也」",
+   "note": "升麻葛根湯只用在斑疹欲出未出之際。"
+  },
+  {
+   "id": "r_biaoli",
+   "kind": "boost",
+   "name": "表裏俱實",
+   "when": {
+    "any": [
+     "wuhan_fare",
+     "fare",
+     "toutong"
+    ],
+    "any2": [
+     "bianbi",
+     "xiaobian_chi"
+    ],
+    "none": [
+     "maixu",
+     "maiwei"
+    ]
+   },
+   "boost": {
+    "fangfengtongsheng": 3
+   },
+   "source": "《醫方集解·防風通聖散》：「表裏三焦俱實」；注：「憎寒壯熱，邪在表也……便祕痔漏，熱結大腑也；小便赤澀，熱蓄膀胱也」",
+   "note": "疹癢兼見表證與二便不通，屬表裏俱實，宜表裏雙解。"
+  },
+  {
+   "id": "r_xuyang",
+   "kind": "boost",
+   "name": "燥結虛癢",
+   "when": {
+    "all": [
+     "yang",
+     "bianbi"
+    ],
+    "none": [
+     "wuhan_fare",
+     "shenshui"
+    ]
+   },
+   "boost": {
+    "soufeng": 2
+   },
+   "source": "《醫方集解·搜風順氣丸》注：「燥則血澀，津液不行，故遍身虛癢」",
+   "note": "癢而大便燥結、無表證、不滲水，責在燥。"
+  }
+ ],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "消風散主治",
+   "f": [
+    "fengtuan",
+    "yang",
+    "toutong",
+    "xiangbei",
+    "bisai"
+   ],
+   "expect": "xiaofeng_ju"
+  },
+  {
+   "id": "k2",
+   "label": "人參敗毒散主治",
+   "f": [
+    "wuhan_fare",
+    "toutong",
+    "xiangbei",
+    "bisai"
+   ],
+   "expect": "baidu"
+  },
+  {
+   "id": "k3",
+   "label": "辨脈法：不能作汗，其身必痒",
+   "f": [
+    "mianchi",
+    "wuhan_n",
+    "yang",
+    "maifu"
+   ],
+   "expect": "guimageban"
+  },
+  {
+   "id": "k4",
+   "label": "防風通聖散主治",
+   "f": [
+    "wuhan_fare",
+    "bianbi",
+    "xiaobian_chi",
+    "fengtuan",
+    "kouku"
+   ],
+   "expect": "fangfengtongsheng"
+  },
+  {
+   "id": "k5",
+   "label": "當歸拈痛湯主治",
+   "f": [
+    "shentong",
+    "shenzhong",
+    "chuang",
+    "bu_xia",
+    "shenshui"
+   ],
+   "expect": "dangguiniantong"
+  },
+  {
+   "id": "k6",
+   "label": "龍膽瀉肝湯主治",
+   "f": [
+    "xietong",
+    "erming",
+    "kouku",
+    "yin_shi",
+    "yin_zhong",
+    "bu_yin"
+   ],
+   "expect": "longdan"
+  },
+  {
+   "id": "k7",
+   "label": "《外科正宗》消風散主治（未核對）",
+   "f": [
+    "chuang",
+    "yang",
+    "jiubing",
+    "fengtuan",
+    "shenshui"
+   ],
+   "expect": "xiaofeng_wk"
+  },
+  {
+   "id": "k8",
+   "label": "當歸飲子（後世用法，未核對）",
+   "f": [
+    "yang",
+    "jiubing",
+    "tuoxie",
+    "yang_ye",
+    "mianwuhua"
+   ],
+   "expect": "danggui_yinzi"
+  },
+  {
+   "id": "k9",
+   "label": "搜風順氣丸主治",
+   "f": [
+    "bianbi",
+    "yang",
+    "bu_quan",
+    "maifu",
+    "maishu"
+   ],
+   "expect": "soufeng"
+  },
+  {
+   "id": "k10",
+   "label": "升麻葛根湯主治",
+   "f": [
+    "toutong",
+    "shentong",
+    "wuhan_fare",
+    "wuhan_n",
+    "kouke",
+    "chubuchang"
+   ],
+   "expect": "shengmagegen"
+  },
+  {
+   "id": "k11",
+   "label": "白虎湯主治",
+   "f": [
+    "maihong",
+    "dare",
+    "toutong",
+    "zihan",
+    "kouke",
+    "xinfan",
+    "faban"
+   ],
+   "expect": "huaban"
+  },
+  {
+   "id": "k12",
+   "label": "犀角地黃湯主治",
+   "f": [
+    "chuxue",
+    "faban",
+    "ban_zi"
+   ],
+   "expect": "xijiao"
+  },
+  {
+   "id": "k13",
+   "label": "黃連解毒湯主治",
+   "f": [
+    "xinfan",
+    "kouzao",
+    "dare",
+    "tuxie",
+    "shimian",
+    "chuxue",
+    "faban"
+   ],
+   "expect": "huanglianjiedu"
+  },
+  {
+   "id": "k14",
+   "label": "涼膈散主治",
+   "f": [
+    "xinfan",
+    "kouke",
+    "kouchuang",
+    "chuxue",
+    "bianbi",
+    "faban"
+   ],
+   "expect": "liangge"
+  },
+  {
+   "id": "k15",
+   "label": "元參升麻湯主治",
+   "f": [
+    "faban",
+    "yantong"
+   ],
+   "expect": "yuanshen"
+  },
+  {
+   "id": "k16",
+   "label": "消斑青黛飲主治",
+   "f": [
+    "faban",
+    "fare",
+    "ban_zi"
+   ],
+   "expect": "xiaoban"
+  },
+  {
+   "id": "k17",
+   "label": "十四味建中湯主治",
+   "f": [
+    "faban",
+    "ban_dan",
+    "weihan",
+    "maiwei"
+   ],
+   "expect": "shisiwei"
+  }
+ ],
+ "jingMult": 1.0,
+ "jingCap": 10,
+ "cases_v1": {
+  "title": "皮膚 v0.1 驗證題（建庫前登錄）",
+  "families": {
+   "baidu": "人參敗毒散族",
+   "dangguiniantong": "當歸拈痛湯",
+   "guimageban": "桂枝麻黃各半湯",
+   "huaban": "白虎湯、化斑湯族",
+   "huanglianjiedu": "黃連解毒湯族",
+   "liangge": "涼膈散、調胃承氣湯族",
+   "longdan": "龍膽瀉肝湯族",
+   "shisiwei": "十四味建中湯族（溫補治陰斑）",
+   "xiaofeng_ju": "消風散（《局方》）",
+   "xiaofeng_wk": "消風散（《外科正宗》，未經原文核對）",
+   "xijiao": "犀角地黃湯族",
+   "yuanshen": "元參升麻湯族"
+  },
+  "note": "判分：預期為母方所屬方族；主治症狀明顯屬另一族者，登錄時一併列為正確。原方不在庫中時（青黛醫案的八正散），以同病機的濕熱族判分。指標（登錄時約定）：主指標為首選命中；前三名命中同列為正式指標。收題：扣掉病機詞（風毒、胃熱、陽毒、陰毒、中燥等）後至少兩項能編碼的症狀。編碼對照（登錄時定）：溫病、陽明證→發熱或身熱；汗不出、不能得小汗出→無汗；面色有熱色→面赤；癮疹→風團；風水、皮水→浮腫；狂躁罵詈→神昏譫語狂躁（警示）；咽腫→咽痛咽腫；吐血→出血；臊臭→陰部潮濕臊臭；飲酒（原注）、嗜酒→嗜酒；魚蟹發風物→發物；出黃汁、出水→滲水；大小便澀→大便秘結＋小便短赤澀；食減→食少；四肢厥逆→畏寒手足冷；六脈全無→脈微；不瘥→日久不癒；腳及中癢→下肢＋搔癢；外出不快→透發不暢。不編碼：轉筋、腿痛、肢麻、起臥不安（無對應項）。",
+  "sha256": "08c5c68aad012cd98610c658e6dd9787bd28fe9528b18bf20be811c96ae41467",
+  "cases": [
+   {
+    "expect": [
+     "guimageban"
+    ],
+    "f": [
+     "wuhan_fare",
+     "mianchi",
+     "wuhan_n",
+     "yang"
+    ],
+    "id": "h23",
+    "label": "《傷寒論》第23條（桂枝麻黃各半湯）",
+    "text": "太陽病，得之八九日，如瘧狀，發熱惡寒，熱多寒少……面色反有熱色者，未欲解也，以其不能得小汗出，身必癢"
+   },
+   {
+    "expect": [
+     "huaban"
+    ],
+    "f": [
+     "fare",
+     "wuhan_n",
+     "faban"
+    ],
+    "id": "w1_16",
+    "label": "《溫病條辨·上焦篇》第十六條（化斑湯）",
+    "text": "太陰溫病，不可發汗，發汗而汗不出者，必發斑疹……發斑者，化斑湯主之"
+   },
+   {
+    "expect": [
+     "liangge"
+    ],
+    "f": [
+     "faban",
+     "chubuchang",
+     "fare"
+    ],
+    "id": "w2_24",
+    "label": "《溫病條辨·中焦篇》第二四條（調胃承氣湯）",
+    "text": "斑疹陽明證悉具，外出不快，內壅特甚者，調胃承氣湯微和之"
+   },
+   {
+    "expect": [
+     "shisiwei"
+    ],
+    "f": [
+     "tuxie",
+     "futong",
+     "weihan",
+     "xinfan",
+     "maiwei",
+     "faban"
+    ],
+    "id": "w_pili",
+    "label": "《溫病條辨·補秋燥勝氣論》霹靂散方主治",
+    "text": "中燥吐瀉腹痛，甚則四肢厥逆，轉筋，腿痛、肢麻，起臥不安，煩躁不寧，甚則六脈全無，陰毒發斑"
+   },
+   {
+    "expect": [
+     "baidu",
+     "xiaofeng_ju"
+    ],
+    "f": [
+     "fengtuan",
+     "fuzhong"
+    ],
+    "id": "f_xfbd",
+    "label": "《醫方集解·人參敗毒散附方》消風敗毒散",
+    "text": "治風毒癮疹，及風水、皮水在表，宜從汗解者"
+   },
+   {
+    "expect": [
+     "huaban"
+    ],
+    "f": [
+     "faban",
+     "maixu"
+    ],
+    "id": "f_huaban",
+    "label": "《醫方集解·白虎湯附方》化斑湯",
+    "text": "治胃熱發斑脈虛者"
+   },
+   {
+    "expect": [
+     "yuanshen",
+     "xijiao",
+     "huanglianjiedu"
+    ],
+    "f": [
+     "faban",
+     "toutong",
+     "xiangbei",
+     "shenhun",
+     "yantong",
+     "chuxue"
+    ],
+    "id": "f_ydsm",
+    "label": "《醫方集解·元參升麻湯附方》陽毒升麻湯",
+    "text": "治陽毒發斑，頭項背痛，狂躁罵詈，咽腫吐血"
+   },
+   {
+    "expect": [
+     "longdan"
+    ],
+    "f": [
+     "bu_yin",
+     "yang",
+     "yang_re",
+     "yin_shi",
+     "shijiu"
+    ],
+    "id": "f_ldxg_dy",
+    "label": "《醫方集解·龍膽瀉肝湯附方》東垣龍膽瀉肝湯",
+    "text": "治前陰熱癢臊臭（此因飲酒，風溼熱合於下焦爲邪）"
+   },
+   {
+    "expect": [
+     "longdan",
+     "dangguiniantong",
+     "xiaofeng_wk"
+    ],
+    "f": [
+     "bu_yin",
+     "shenshui",
+     "yang",
+     "yang_re",
+     "tong",
+     "xiaobian_chi",
+     "bianbi",
+     "nashao",
+     "fuzhong",
+     "shijiu",
+     "fawu"
+    ],
+    "id": "g_qingdai",
+    "label": "《本草綱目·青黛·發明》寇宗奭醫案（原用八正散）",
+    "text": "婦人患臍下腹上，下連二陰，遍生濕瘡……熱癢而痛，大小便澀，出黃汁，食亦減，身面微腫……問其人嗜酒食，喜魚蟹發風等物"
+   },
+   {
+    "expect": [
+     "dangguiniantong",
+     "xiaofeng_wk"
+    ],
+    "f": [
+     "chuang",
+     "bu_xia",
+     "yang",
+     "shenshui"
+    ],
+    "id": "g_dadou",
+    "label": "《本草綱目·大豆·附方》風疽瘡疥",
+    "text": "風疽瘡疥，凡腳及中癢，搔則黃汁出者，是也"
+   },
+   {
+    "expect": [
+     "longdan"
+    ],
+    "f": [
+     "bu_yin",
+     "shenshui",
+     "jiubing"
+    ],
+    "id": "g_wubeizi",
+    "label": "《本草綱目·五倍子·附方》陰囊濕瘡",
+    "text": "陰囊濕瘡出水不瘥"
+   }
+  ],
+  "pageTitle": "驗證題 v0.1（建庫前登錄）",
+  "result": "凍結後只算一次：首選命中 8／11，前三名命中 8／11（兩項皆為登錄時約定的正式指標）。濕熱、陰斑、表鬱身癢、癮疹各題都中；錯的三題全是溫病或胃熱的陽斑：上焦第十六條「汗不出、發斑」被「無汗」拉去桂枝麻黃各半湯，中焦第二四條「斑疹外出不快」被判為升麻葛根湯（正是吳瑭所禁的升提法），化斑湯「發斑、脈虛」判為犀角地黃湯。共通原因：白虎湯以大熱、口渴、自汗為主症，條文只寫「發斑」時碰不到；「無汗」「透發不暢」在溫病斑疹裡不代表可以辛溫升散，程式卻照字面加分。"
+ },
+ "page": {
+  "title": "皮膚病辨證選方",
+  "eyebrow": "中藥典籍原文庫．規則式辨證．皮膚 v0.1（兩層：先辨病性，再選方）",
+  "lede": "勾選疹的形態、癢痛特點、部位、誘因與全身症狀，程式先辨病性（風邪在表、濕熱、血熱熱毒、裏實、血虛風燥、虛寒陰斑），再依各證型的主症、次症與反證計分，套用原文規則（如發斑分陰陽、斑疹忌升提），列出最可能的三個證型、主方出處與加減。這是學習用的規則系統，不能取代面診。",
+  "checkIntro": "自檢題取自各方主治本文，只檢查程式是否照原文運作；預先登錄的驗證題取自建庫時沒有用到的《傷寒論》《溫病條辨》條文、《醫方集解》附方與《本草綱目》附方醫案，登錄時知識庫只有症狀清單。",
+  "limits": "<li>目前收 17 個證型、6 種病性、6 條原文規則，範圍是慢性疹癢與發斑；癰疽、溫病急性發疹、疥癬外治不在範圍內。</li><li>其中 2 首（《外科正宗》消風散、《濟生》當歸飲子）不在原文庫，出處標「未經原文核對」。原文庫裡專治慢性疹癢的方本來就少。</li><li><b>驗證：</b>預先登錄的 11 題，首選與前三名各中 8 題。濕熱、陰斑、癮疹各題都中；溫病或胃熱的陽斑三題全錯，發斑兼發熱的情況請特別看第二、三名。</li><li>皮膚病很依賴望診（疹的顏色、形態、分布）。文字勾選無法取代看皮膚，結果請當候選與追問清單。</li><li>新用藥後出疹、高燒合併大片斑疹、黏膜潰爛、呼吸困難，請先就醫。實際用藥請由中醫師面診後處方。</li>",
+  "intro": "從左側勾選症狀後，這裡會列出最可能的證型、主方與加減。",
+  "nomatch": "目前勾選的症狀，對不上知識庫中的任何皮膚證型。請補充疹的形態（風團、滲水、乾燥脫屑、發斑）、遇熱或遇冷加重、二便、舌苔等資料。",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷風、濕、熱、燥、虛寒。",
+  "sample": "k8",
+  "casesTitle": "建庫自檢（取自各方主治本文，不算證據）"
+ }
+}
