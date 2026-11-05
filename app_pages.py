@@ -6,7 +6,11 @@ from pathlib import Path
 
 import streamlit as st
 
-from tcm import engine, lookup
+try:
+    from tcm import engine, lookup
+except ModuleNotFoundError:  # engine.py、lookup.py 直接放在 repo 根目錄時
+    import engine
+    import lookup
 
 ROOT = Path(__file__).resolve().parent
 KB_DIR = ROOT / "data" / "bianzheng"

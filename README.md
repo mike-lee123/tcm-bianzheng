@@ -26,6 +26,16 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
+## 單一檔案版（建議用來部署）
+
+用 GitHub 網頁上傳時，資料夾結構容易遺失，導致 `ModuleNotFoundError`。執行：
+
+```bash
+python build_single.py
+```
+
+會在旁邊產生 `tcm_streamlit_upload/`：只有一個 `streamlit_app.py`（程式全部合併）、`requirements.txt` 和 9 個資料檔，全部平放。把這 11 個檔案一次拖進 GitHub 即可，資料檔放在任何位置都找得到。修改程式時請改本資料夾的原始碼，再重新執行 `build_single.py`。
+
 ## 部署到 Streamlit Community Cloud（免費）
 
 1. 在 GitHub 建一個新的 repository（建議 Public），把這個資料夾裡的**所有檔案**上傳到 repo 的根目錄，包括 `data/`、`tcm/`、`.streamlit/` 資料夾。
