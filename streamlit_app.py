@@ -96,12 +96,29 @@ def cond(w, has):
     return True
 
 
-def score_pattern(p, has):
+def specificity(kb):
+    """計分方式 v1：症狀列在越多證型的主症或次症裡，權重越低（1～2 個證型為 1，否則 √(2／證型數)，最低 0.4）。與 JS 版相同。"""
+    import math
+    if kb.get("specificity") is not True:  # 驗證無效，預設關閉（與 JS 版相同）
+        return lambda sid: 1
+    df = {}
+    for p in kb["patterns"]:
+        for sid in set(p["main"]) | set(p["minor"]):
+            df[sid] = df.get(sid, 0) + 1
+    return lambda sid: 1 if df.get(sid, 0) <= 2 else max(0.4, math.sqrt(2 / df[sid]))
+
+
+def score_pattern(p, has, spec=lambda sid: 1):
     main_hit = [x for x in p["main"] if has(x)]
     minor_hit = [x for x in p["minor"] if has(x)]
     against = [a for a in p["against"] if has(a[0])]
-    full = len(p["main"]) * MAIN + len(p["minor"]) * MINOR
-    score = len(main_hit) * MAIN + len(minor_hit) * MINOR - sum(a[1] for a in against)
+    def wsum(ids, w):
+        s = 0
+        for x in ids:  # 依序累加，與 JS 的 reduce 浮點結果一致
+            s += w * spec(x)
+        return s
+    full = wsum(p["main"], MAIN) + wsum(p["minor"], MINOR)
+    score = wsum(main_hit, MAIN) + wsum(minor_hit, MINOR) - sum(a[1] for a in against)
     mods = [m for m in p.get("mods", [])
             if (all(has(x) for x in m["whenAll"]) if m.get("whenAll") else any(has(x) for x in m["when"]))]
     return {"id": p["id"], "name": p["name"], "formula": p["formula"], "source": p["source"],
@@ -126,7 +143,8 @@ def diagnose(kb, selected, temp=None):
     sel = with_temp(selected, temp)
     sset = set(sel)
     has = sset.__contains__
-    allp = [score_pattern(p, has) for p in kb["patterns"]]
+    spec = specificity(kb)
+    allp = [score_pattern(p, has, spec) for p in kb["patterns"]]
     for r in allp:
         if r["p"].get("gate") and not cond(r["p"]["gate"], has):
             r["gated"] = True
@@ -429,7 +447,7 @@ def pending_probes(kb, d, answered=(), limit=5):
     return out[:limit]
 
 
-engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1', 'unclear', 'pending_probes']})
+engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'specificity', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1', 'unclear', 'pending_probes']})
 engine.MAIN, engine.MINOR = MAIN, MINOR
 
 

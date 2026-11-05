@@ -4984,5 +4984,199 @@
     ]
    ]
   }
- ]
+ ],
+ "cases_v13": {
+  "title": "計分方式 v1 驗證題（自動挖題＋人工審核）",
+  "note": "來源：scripts/mine_cases.py 從九部原文挖出 59 題候選（句型：主之、附方、醫案、宜服），人工審核保留 21 題。判分：原書用方所屬方族；柴胡桂枝湯列小柴胡或桂枝兩族，四物湯（濕火下流）列四物或龍膽兩族。補編症狀：自動編碼漏掉的明文症狀由人工補上（如「渴而口燥」→口渴＋口乾），陰戶腫突改編為陰部腫痛。指標：每個知識庫的首選命中與前三名命中，三庫合計。",
+  "sha256": "7d94debee0f0ee40533d52bb22172bba591f83edf3f1594fb1a2a73ec0d85a1e",
+  "cases": [
+   {
+    "expect": [
+     "xiaochaihu",
+     "guizhi"
+    ],
+    "f": [
+     "fare",
+     "wuhan",
+     "ou",
+     "shentong"
+    ],
+    "id": "m04",
+    "label": "《傷寒論》第146條（柴胡桂枝湯）",
+    "mined": "主之",
+    "text": "【第146條】傷寒六七日，發熱，微惡寒，支節煩疼，微嘔，心下支結，外證未去者"
+   },
+   {
+    "expect": [
+     "wuling"
+    ],
+    "f": [
+     "xinfan",
+     "xbbuli",
+     "kouke",
+     "kougan",
+     "wanpi"
+    ],
+    "id": "m05",
+    "label": "《傷寒論》第156條（五苓散）",
+    "mined": "主之",
+    "text": "【第156條】本以下之，故心下痞，與瀉心湯，痞不解，其人渴而口燥，煩，小便不利者"
+   },
+   {
+    "expect": [
+     "chengqi"
+    ],
+    "f": [
+     "fare",
+     "zhanyu"
+    ],
+    "id": "m06",
+    "label": "《傷寒論》第212條（大承氣湯）",
+    "mined": "主之",
+    "text": "微者，但發熱譫語者"
+   },
+   {
+    "expect": [
+     "chengqi"
+    ],
+    "f": [
+     "yi_yangming",
+     "fare",
+     "youhan"
+    ],
+    "id": "m08",
+    "label": "《傷寒論》第253條（大承氣湯）",
+    "mined": "宜服",
+    "text": "【第253條】陽明病，發熱，汗多者，急下之"
+   },
+   {
+    "expect": [
+     "xiaochaihu"
+    ],
+    "f": [
+     "ou",
+     "fare"
+    ],
+    "id": "m10",
+    "label": "《傷寒論》第379條（小柴胡湯）",
+    "mined": "主之",
+    "text": "【第379條】嘔而發熱者"
+   },
+   {
+    "expect": [
+     "gegen"
+    ],
+    "f": [
+     "yi_taiyang",
+     "wuhan_s",
+     "xbbuli"
+    ],
+    "id": "m11",
+    "label": "《金匱要略》痙濕暍病脈證並治第二（葛根湯）",
+    "mined": "主之",
+    "text": "太陽病，無汗而小便反少，氣上衝胸，口噤不得語，欲作剛痙"
+   },
+   {
+    "expect": [
+     "wennue"
+    ],
+    "f": [
+     "nue",
+     "ou",
+     "danre",
+     "shentong"
+    ],
+    "id": "m12",
+    "label": "《金匱要略》鱉甲煎丸方：（白虎加桂枝湯）",
+    "mined": "主之",
+    "text": "溫瘧者，其脈如平，身無寒但熱，骨節疼煩，時嘔"
+   },
+   {
+    "expect": [
+     "chengqi"
+    ],
+    "f": [
+     "bianbi",
+     "fare",
+     "zhanyu",
+     "xinfan",
+     "chaore",
+     "shaoshi"
+    ],
+    "id": "m14",
+    "label": "《金匱要略》婦人產後病脈證並治第二十一（宜大承氣湯）",
+    "mined": "主之",
+    "text": "不大便，煩躁發熱、切脈微實，再倍發熱，日晡時煩躁者，不食，食則譫語，至夜即愈"
+   },
+   {
+    "expect": [
+     "xiaoqinglong"
+    ],
+    "f": [
+     "kesou",
+     "ou",
+     "fare",
+     "chuan"
+    ],
+    "id": "m17",
+    "label": "《醫方集解》小青龍湯（小青龍湯）",
+    "mined": "主之",
+    "text": "仲景治傷寒太陽證，表未解，心下有水而咳，乾嘔發熱或喘或利"
+   },
+   {
+    "expect": [
+     "wuzhuyu"
+    ],
+    "f": [
+     "tuxian",
+     "chen",
+     "toutong",
+     "weihan"
+    ],
+    "id": "m20",
+    "label": "《醫方集解》半夏天麻白朮湯（吳茱萸湯）",
+    "mined": "主之",
+    "text": "厥陰頭頂痛，或吐涎沫，厥冷，脈沉緩"
+   },
+   {
+    "expect": [
+     "xiaoqinglong"
+    ],
+    "f": [
+     "wuhan_s",
+     "wuhan",
+     "chuan",
+     "kesou",
+     "tanxi",
+     "buke",
+     "fuzhang",
+     "xiongxie"
+    ],
+    "id": "m26",
+    "label": "《溫病條辨》第四十七條（小青龍湯）",
+    "mined": "主之",
+    "text": "四十七、秋濕內伏，冬寒外加，脈緊無汗，惡寒身病，喘咳稀痰，胸滿舌白滑，惡水不欲飲，甚則倚息不得臥，腹中微脹"
+   },
+   {
+    "expect": [
+     "wuling"
+    ],
+    "f": [
+     "toutong",
+     "fare",
+     "shentong",
+     "kouke",
+     "xinfan",
+     "shushi"
+    ],
+    "id": "m27",
+    "label": "《濟生方》諸寒門（五苓散）",
+    "mined": "宜服",
+    "text": "夏感風暑，頭痛發熱，身疼煩渴"
+   }
+  ],
+  "pageTitle": "驗證題：計分方式 v1（自動挖題）",
+  "result": "凍結後只算一次：首選 4／12、前三 9／12（登錄時現行計分 3／12、9／12）。三庫合計首選 10／21、前三 16／21，與改動前完全相同：症狀專一度加權沒有改善新題。"
+ },
+ "specificityNote": "計分方式 v1：症狀依專一度加權（engine specificity）"
 }
