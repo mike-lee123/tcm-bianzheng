@@ -293,8 +293,91 @@ def case_sets(kb):
     return sets
 
 
+FILLER = ("比較", "非常", "特別", "有點", "有些", "很", "更", "蠻", "挺", "超")
+NEG = ("沒有", "不會", "沒", "不", "無", "未")
+
+
+def phrase_table(kb):
+    """句中可辨識的詞 → 症狀代號：別名，加上症狀名稱以「、，（）或」切開後兩字以上的片段。
+    同一個片段出現在多項時取前面的群組（警示群組在最後，所以一般症狀優先）；別名優先於片段。"""
+    import re
+    tab = {}
+    for g in kb["groups"]:
+        for it in g["items"]:
+            for frag in re.split(r"[、，,（）()或]", it[1]):
+                frag = frag.strip()
+                if len(frag) >= 2:
+                    tab.setdefault(frag, it[0])
+    tab.update(aliases(kb))
+    return tab
+
+
+def parse_text(kb, text):
+    """口語輸入（可以是整句話）→ 症狀代號。規則與 bianzheng_engine.js 的 parseText 相同。
+
+    回傳 dict：ids（依出現順序）、temp（體溫）、unknown（整段都認不出的文字）、
+    negated（前面有「不、沒、無」而略過的症狀）、hints（病名提示，來自知識庫的 hints）。"""
+    import re
+    L, tab = labels(kb), phrase_table(kb)
+    hints_kb = kb.get("hints", {})
+    redflags = kb.get("redflags", {})
+    keys = sorted(tab, key=len, reverse=True)
+    maxlen = max((len(k) for k in keys), default=1)
+    ids, temp, unknown, negated, hints = [], None, [], [], []
+    for chunk in re.split(r"[\s,，、;；。！？!?]+", text.strip()):
+        if not chunk:
+            continue
+        for m in re.finditer(r"(\d{2}(?:\.\d)?)\s*(度|℃)", chunk):
+            temp = float(m.group(1))
+        chunk = re.sub(r"\d{2}(?:\.\d)?\s*(度|℃)", "", chunk).strip()
+        if not chunk:
+            continue
+        if re.fullmatch(r"\d{2}(?:\.\d)?", chunk):
+            temp = float(chunk); continue
+        if chunk in L:
+            ids.append(chunk); continue
+        for name, msg in hints_kb.items():
+            if name in chunk and msg not in hints:
+                hints.append(msg)
+        s = chunk
+        for w in FILLER:
+            s = s.replace(w, "")
+        found, i = False, 0
+        while i < len(s):
+            hit = next((s[i:i + n] for n in range(min(maxlen, len(s) - i), 0, -1) if s[i:i + n] in tab), None)
+            if not hit:
+                i += 1; continue
+            neg = any(s[max(0, i - len(w)):i] == w for w in NEG)
+            (negated if neg else ids).append(tab[hit])
+            found = True
+            i += len(hit)
+        if found or any(n in chunk for n in hints_kb):
+            continue
+        # 句中找不到時，退回舊規則：單一關鍵字對到症狀名稱（如「苔」「渴」）
+        a = chunk
+        outside = sorted([k for k in aliases(kb) if a in k], key=len)
+        if outside:
+            ids.append(tab[outside[0]]); continue
+        hit = [(i, l) for i, l in L.items() if a in l]
+        if not hit:
+            unknown.append(a); continue
+        plain = [h for h in hit if h[0] not in redflags]
+        hit = plain or hit
+        starts = [h for h in hit if h[1].startswith(a)]
+        ids.append(sorted(starts or hit, key=lambda h: len(h[1]))[0][0])
+    ids = list(dict.fromkeys(ids))
+    negated = [x for x in dict.fromkeys(negated) if x not in ids]
+    return {"ids": ids, "temp": temp, "unknown": unknown, "negated": negated, "hints": hints}
+
+
 def parse_free_text(kb, text):
-    """口語輸入 → 症狀代號；規則與 bianzheng.js 命令列相同。回傳 (ids, temp, unknown)。"""
+    """舊介面：回傳 (ids, temp, unknown)。"""
+    r = parse_text(kb, text)
+    return r["ids"], r["temp"], r["unknown"]
+
+
+def _parse_free_text_v1(kb, text):
+    """v1 規則（每段只取一個症狀），保留供比對。"""
     import re
     L, A = labels(kb), aliases(kb)
     redflags = kb.get("redflags", {})
@@ -323,7 +406,7 @@ def parse_free_text(kb, text):
     return list(dict.fromkeys(ids)), temp, unknown
 
 
-engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'parse_free_text']})
+engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1']})
 engine.MAIN, engine.MINOR = MAIN, MINOR
 
 
@@ -664,12 +747,16 @@ def clear_all(kbname, kb):
         st.session_state[group_key(kbname, i)] = []
     st.session_state[f"temp_{kbname}"] = None
     st.session_state[f"free_{kbname}"] = ""
+    st.session_state[f"parsed_{kbname}"] = None
+    st.session_state[f"unknown_{kbname}"] = []
 
 
 def add_free_text(kbname, kb):
-    ids, temp, unknown = engine.parse_free_text(kb, st.session_state.get(f"free_{kbname}", ""))
+    r = engine.parse_text(kb, st.session_state.get(f"free_{kbname}", ""))
+    ids, temp, unknown = r["ids"], r["temp"], r["unknown"]
     where = {it[0]: i for i, g in enumerate(kb["groups"]) for it in g["items"]}
     L = engine.labels(kb)
+    st.session_state[f"parsed_{kbname}"] = {"ok": [L[x] for x in ids], "neg": [L[x] for x in r["negated"]], "hints": r["hints"]}
     for sid in ids:
         k = group_key(kbname, where[sid])
         cur = list(st.session_state.get(k, []))
@@ -762,11 +849,20 @@ def page_bianzheng():
 
     left, right = st.columns([5, 6], gap="large")
     with left:
-        st.text_input("用口語輸入症狀（空白或逗號分隔，體溫可寫 38度）", key=f"free_{kbname}",
-                      placeholder="例：拉肚子 怕冷 胃脹 打嗝", on_change=add_free_text, args=(kbname, kb))
+        st.text_input("用口語描述症狀，可以直接打一整句（體溫可寫 38度），按 Enter 加入", key=f"free_{kbname}",
+                      placeholder=page.get("freeExample", "例：最近拉肚子，很怕冷，胃脹還會打嗝，不口渴"),
+                      on_change=add_free_text, args=(kbname, kb))
+        parsed = st.session_state.get(f"parsed_{kbname}")
+        if parsed:
+            if parsed["ok"]:
+                st.caption("已辨識並加入：" + "、".join(parsed["ok"]))
+            if parsed["neg"]:
+                st.caption("前面有「不、沒、無」，已略過：" + "、".join(parsed["neg"]))
+            for h in parsed["hints"]:
+                st.info(h, icon="ℹ️")
         unknown = st.session_state.get(f"unknown_{kbname}")
         if unknown:
-            st.caption("無法對應：" + "、".join(unknown) + "（請改從下方點選）")
+            st.caption("認不出：" + "、".join(unknown) + "（可換個說法，或從下方點選）")
         b1, b2 = st.columns(2)
         b1.button("清除全部", on_click=clear_all, args=(kbname, kb), width="stretch")
         sample = next((c for c in kb.get("cases", []) if c["id"] == page.get("sample")), None)
