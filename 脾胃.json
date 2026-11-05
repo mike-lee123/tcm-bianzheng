@@ -1,0 +1,3752 @@
+{
+ "title": "脾胃病辨證選方",
+ "version": "0.3",
+ "note": "雜病脾胃系：胃痛、痞滿、腹痛、泄瀉、痢疾、便秘、嘔吐、呃逆、吞酸。",
+ "groups": [
+  {
+   "name": "全身與寒熱",
+   "items": [
+    [
+     "weihan",
+     "畏寒、手足不溫",
+     [
+      "怕冷",
+      "手腳冰冷",
+      "手足冷",
+      "肢冷",
+      "肢厥"
+     ]
+    ],
+    [
+     "fare",
+     "發熱或身熱",
+     [
+      "發燒",
+      "身熱"
+     ]
+    ],
+    [
+     "biaozheng",
+     "表證未解（惡寒發熱、頭身痛）",
+     [
+      "感冒未好",
+      "表證"
+     ]
+    ],
+    [
+     "fali",
+     "神疲乏力",
+     [
+      "疲倦",
+      "沒力氣",
+      "累"
+     ]
+    ],
+    [
+     "shaoqi",
+     "少氣懶言",
+     [
+      "不想說話",
+      "氣短"
+     ]
+    ],
+    [
+     "mianhuang",
+     "面色萎黃",
+     [
+      "臉色黃"
+     ]
+    ],
+    [
+     "xiaoshou",
+     "形體消瘦",
+     [
+      "變瘦",
+      "形衰"
+     ]
+    ],
+    [
+     "zihan",
+     "自汗",
+     [
+      "容易流汗"
+     ]
+    ],
+    [
+     "shenzhong",
+     "身重困倦",
+     [
+      "身體沉重",
+      "睏倦"
+     ]
+    ],
+    [
+     "xiazhui",
+     "脘腹墜脹、中氣下陷",
+     [
+      "下墜感",
+      "胃下垂",
+      "氣虛下陷"
+     ]
+    ],
+    [
+     "yaosuan",
+     "腰膝痠冷",
+     [
+      "腰痠"
+     ]
+    ],
+    [
+     "xinfan",
+     "心煩",
+     [
+      "煩躁"
+     ]
+    ],
+    [
+     "toutong",
+     "頭痛（巔頂）",
+     [
+      "頭頂痛"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "胃脘與腹",
+   "items": [
+    [
+     "weitong",
+     "胃脘痛",
+     [
+      "胃痛",
+      "心窩痛"
+     ]
+    ],
+    [
+     "tong_yin",
+     "痛勢隱隱、綿綿不休",
+     [
+      "隱痛",
+      "悶痛"
+     ]
+    ],
+    [
+     "tong_xian",
+     "喜溫喜按",
+     [
+      "按了舒服",
+      "熱敷舒服"
+     ]
+    ],
+    [
+     "tong_ju",
+     "痛處拒按",
+     [
+      "按了更痛"
+     ]
+    ],
+    [
+     "tong_zhang",
+     "脹痛、走竄",
+     [
+      "脹痛"
+     ]
+    ],
+    [
+     "tong_zhuo",
+     "灼熱痛",
+     [
+      "灼熱",
+      "燒灼感"
+     ]
+    ],
+    [
+     "tong_ji",
+     "腹中拘急而痛",
+     [
+      "絞痛",
+      "抽痛",
+      "腹中急痛"
+     ]
+    ],
+    [
+     "pi",
+     "心下痞滿（按之軟）",
+     [
+      "胃脹",
+      "胸悶脹",
+      "痞滿",
+      "痞"
+     ]
+    ],
+    [
+     "pi_ying",
+     "心下痞硬",
+     [
+      "心下硬",
+      "痞硬"
+     ]
+    ],
+    [
+     "fuzhang",
+     "腹脹",
+     [
+      "肚子脹",
+      "腹滿"
+     ]
+    ],
+    [
+     "fuzhang_hou",
+     "食後脹甚",
+     [
+      "吃完更脹"
+     ]
+    ],
+    [
+     "futong",
+     "腹痛",
+     [
+      "肚子痛"
+     ]
+    ],
+    [
+     "leiming",
+     "腹中雷鳴",
+     [
+      "腸鳴",
+      "肚子咕嚕"
+     ]
+    ],
+    [
+     "xiongxie",
+     "胸脅脹滿或脅痛",
+     [
+      "脅痛",
+      "兩脅脹"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "嘔吐噯氣",
+   "items": [
+    [
+     "ou",
+     "噁心嘔吐",
+     [
+      "想吐",
+      "嘔吐",
+      "噁心",
+      "嘔惡"
+     ]
+    ],
+    [
+     "ganou",
+     "乾嘔",
+     []
+    ],
+    [
+     "tuxian",
+     "吐清水涎沫、多唾",
+     [
+      "口水多",
+      "吐口水",
+      "喜唾",
+      "吐清水"
+     ]
+    ],
+    [
+     "tunsuan",
+     "吞酸吐酸",
+     [
+      "胃酸",
+      "火燒心",
+      "溢酸",
+      "泛酸"
+     ]
+    ],
+    [
+     "aiqi",
+     "噯氣",
+     [
+      "打嗝",
+      "噫氣"
+     ]
+    ],
+    [
+     "aifu",
+     "噯腐食臭",
+     [
+      "打嗝有酸臭味",
+      "噫食臭"
+     ]
+    ],
+    [
+     "eni",
+     "呃逆",
+     [
+      "打呃",
+      "噦"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "大便",
+   "items": [
+    [
+     "xie",
+     "腹瀉、便溏",
+     [
+      "拉肚子",
+      "腹瀉",
+      "軟便",
+      "下利",
+      "自利"
+     ]
+    ],
+    [
+     "xie_duo",
+     "下利次數多",
+     [
+      "一天拉很多次",
+      "下利無度"
+     ]
+    ],
+    [
+     "xie_wan",
+     "完穀不化",
+     [
+      "吃什麼拉什麼",
+      "穀不化"
+     ]
+    ],
+    [
+     "wugeng",
+     "黎明前泄瀉（五更瀉）",
+     [
+      "清晨腹瀉",
+      "五更瀉"
+     ]
+    ],
+    [
+     "xie_tongjian",
+     "瀉後痛減",
+     [
+      "拉完就不痛"
+     ]
+    ],
+    [
+     "xie_tongbujian",
+     "瀉後仍痛（痛一陣瀉一陣）",
+     [
+      "拉完還在痛",
+      "痛瀉"
+     ]
+    ],
+    [
+     "xie_chou",
+     "瀉下臭穢",
+     [
+      "大便很臭"
+     ]
+    ],
+    [
+     "xie_buhuan",
+     "便下不爽",
+     [
+      "排不乾淨",
+      "便不爽"
+     ]
+    ],
+    [
+     "xie_buzhi",
+     "下利不止",
+     [
+      "利不止"
+     ]
+    ],
+    [
+     "xie_jiu",
+     "久瀉久痢",
+     [
+      "長期腹瀉",
+      "久痢",
+      "久瀉"
+     ]
+    ],
+    [
+     "huatuo",
+     "滑脫不禁",
+     [
+      "大便失禁",
+      "門戶不藏",
+      "滑下"
+     ]
+    ],
+    [
+     "tuogang",
+     "脫肛、肛門墜脹",
+     [
+      "肛門下墜",
+      "肛墜"
+     ]
+    ],
+    [
+     "li",
+     "下痢赤白膿血",
+     [
+      "痢疾",
+      "膿血便",
+      "黏液便",
+      "滯下"
+     ]
+    ],
+    [
+     "houzhong",
+     "裏急後重",
+     [
+      "一直想上又拉不出",
+      "下重"
+     ]
+    ],
+    [
+     "bianmi",
+     "大便秘結",
+     [
+      "便秘",
+      "大便難"
+     ]
+    ],
+    [
+     "bian_gan",
+     "大便乾硬",
+     [
+      "羊屎便",
+      "大便硬"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "小便",
+   "items": [
+    [
+     "xiaobian_duan",
+     "小便短少",
+     [
+      "尿少",
+      "小便不利",
+      "小溲不利"
+     ]
+    ],
+    [
+     "xiaobian_qing",
+     "小便清長",
+     [
+      "尿多色清"
+     ]
+    ],
+    [
+     "xiaobian_shu",
+     "小便頻數",
+     [
+      "頻尿"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "飲食與口",
+   "items": [
+    [
+     "nashao",
+     "食少納呆",
+     [
+      "吃不下",
+      "胃口差",
+      "不想吃",
+      "不飢",
+      "不喜食"
+     ]
+    ],
+    [
+     "eshi",
+     "惡食（厭聞食味）",
+     [
+      "厭食",
+      "看到食物就怕"
+     ]
+    ],
+    [
+     "jibuyu",
+     "飢不欲食",
+     [
+      "餓但吃不下"
+     ]
+    ],
+    [
+     "yiji",
+     "消穀易飢",
+     [
+      "容易餓"
+     ]
+    ],
+    [
+     "shangshi",
+     "暴飲暴食或傷食後起病",
+     [
+      "吃太多",
+      "吃壞",
+      "傷食"
+     ]
+    ],
+    [
+     "kouke",
+     "口渴欲飲",
+     [
+      "口渴",
+      "想喝水"
+     ]
+    ],
+    [
+     "kougan",
+     "口乾咽燥",
+     [
+      "口乾",
+      "咽乾"
+     ]
+    ],
+    [
+     "buke",
+     "口不渴",
+     [
+      "不渴"
+     ]
+    ],
+    [
+     "kouku",
+     "口苦",
+     []
+    ],
+    [
+     "kouchou",
+     "口臭",
+     []
+    ],
+    [
+     "kouchuang",
+     "口瘡、唇乾",
+     [
+      "嘴破",
+      "口腔潰瘍"
+     ]
+    ],
+    [
+     "yatong",
+     "牙痛、牙齦腫",
+     [
+      "牙痛",
+      "牙齦腫"
+     ]
+    ],
+    [
+     "yaxue",
+     "牙齦出血",
+     []
+    ]
+   ]
+  },
+  {
+   "name": "情志",
+   "items": [
+    [
+     "qingzhi",
+     "情緒、壓力誘發或加重",
+     [
+      "生氣就痛",
+      "壓力大",
+      "鬱怒"
+     ]
+    ],
+    [
+     "taixi",
+     "善太息",
+     [
+      "常嘆氣"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "舌",
+   "items": [
+    [
+     "shedan",
+     "舌淡",
+     []
+    ],
+    [
+     "shepang",
+     "舌胖有齒痕",
+     [
+      "齒痕"
+     ]
+    ],
+    [
+     "shehong",
+     "舌紅",
+     []
+    ],
+    [
+     "shaotai",
+     "少苔或剝苔",
+     [
+      "無苔",
+      "地圖舌"
+     ]
+    ],
+    [
+     "taibai",
+     "苔白",
+     []
+    ],
+    [
+     "tainai",
+     "苔白膩",
+     []
+    ],
+    [
+     "taihou",
+     "苔厚膩或腐",
+     [
+      "苔厚",
+      "苔腐"
+     ]
+    ],
+    [
+     "taihuang",
+     "苔黃",
+     []
+    ],
+    [
+     "taihuangnai",
+     "苔黃膩",
+     []
+    ]
+   ]
+  },
+  {
+   "name": "脈（知道才選）",
+   "items": [
+    [
+     "mairuo",
+     "脈細弱、濡小",
+     [
+      "脈弱",
+      "脈濡"
+     ]
+    ],
+    [
+     "maichen",
+     "脈沉遲",
+     [
+      "脈沉"
+     ]
+    ],
+    [
+     "maiwei",
+     "脈微細",
+     [
+      "脈微"
+     ]
+    ],
+    [
+     "maixian",
+     "脈弦",
+     []
+    ],
+    [
+     "maihua",
+     "脈滑",
+     []
+    ],
+    [
+     "maishu",
+     "脈數",
+     []
+    ],
+    [
+     "maixishu",
+     "脈細數",
+     []
+    ],
+    [
+     "maixu_da",
+     "脈洪大而虛",
+     []
+    ],
+    [
+     "maishi",
+     "脈實大有力",
+     []
+    ]
+   ]
+  },
+  {
+   "name": "病程",
+   "items": [
+    [
+     "jiubing",
+     "久病、反覆發作或大病後",
+     [
+      "很久了",
+      "反覆",
+      "病後"
+     ]
+    ],
+    [
+     "xinbing",
+     "新起、突然發作",
+     [
+      "突然",
+      "剛開始"
+     ]
+    ],
+    [
+     "xiahou",
+     "誤用瀉下藥之後",
+     [
+      "吃瀉藥後",
+      "下之後"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "病程前提",
+   "items": [
+    [
+     "binghou",
+     "大病或熱病之後（含溫病攻下後）",
+     [
+      "病後",
+      "熱病後",
+      "發燒退後"
+     ]
+    ],
+    [
+     "nueji",
+     "久瘧或寒熱往來日久",
+     [
+      "久瘧",
+      "寒熱久不止",
+      "忽冷忽熱很久"
+     ]
+    ],
+    [
+     "laonian",
+     "年老",
+     [
+      "老人",
+      "年長"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "警示",
+   "items": [
+    [
+     "bianxue",
+     "黑便或便血",
+     [
+      "黑便",
+      "便血"
+     ]
+    ],
+    [
+     "tuxue",
+     "嘔血",
+     [
+      "吐血"
+     ]
+    ],
+    [
+     "jutong",
+     "劇痛、腹硬拒按",
+     [
+      "腹痛劇烈",
+      "肚子硬"
+     ]
+    ],
+    [
+     "tuoshui",
+     "嘔瀉不止、尿少口乾頭暈",
+     [
+      "脫水"
+     ]
+    ],
+    [
+     "yanxia",
+     "吞嚥困難或不明原因消瘦",
+     [
+      "吞不下",
+      "體重下降"
+     ]
+    ]
+   ]
+  }
+ ],
+ "redflags": {
+  "bianxue": "黑便或便血可能是消化道出血，請盡快就醫。",
+  "tuxue": "嘔血請立即就醫。",
+  "jutong": "劇烈腹痛、腹部板硬拒按，可能是急腹症，請立即就醫，不宜自行服藥。",
+  "tuoshui": "嘔瀉不止合併尿少、口乾、頭暈，已有脫水徵象，請就醫補液。",
+  "yanxia": "吞嚥困難或不明原因消瘦，須先就醫檢查排除器質性疾病。"
+ },
+ "jing": [
+  {
+   "id": "qixu",
+   "name": "脾胃氣虛",
+   "w": {
+    "fali": 2,
+    "shaoqi": 2,
+    "nashao": 1,
+    "mianhuang": 1.5,
+    "mairuo": 2,
+    "shedan": 1,
+    "shepang": 1.5,
+    "zihan": 1,
+    "xiazhui": 2,
+    "jiubing": 1,
+    "nueji": 1.5,
+    "laonian": 1
+   },
+   "against": {
+    "maishi": 3,
+    "tong_ju": 2,
+    "taihuangnai": 1
+   },
+   "source": "《醫方集解·補養之劑·四君子湯》：「治一切陽虛氣弱，脾衰肺損，飲食少思，體瘦面黃……脈來細軟」"
+  },
+  {
+   "id": "yangxu",
+   "name": "脾胃虛寒",
+   "w": {
+    "weihan": 3,
+    "tong_xian": 2.5,
+    "buke": 1.5,
+    "xiaobian_qing": 2,
+    "maichen": 2,
+    "maiwei": 2.5,
+    "shedan": 1.5,
+    "taibai": 0.5,
+    "xie_wan": 1.5,
+    "tuxian": 1.5,
+    "wugeng": 2,
+    "yaosuan": 1,
+    "laonian": 0.5
+   },
+   "against": {
+    "kouke": 2.5,
+    "shehong": 2.5,
+    "taihuang": 2,
+    "taihuangnai": 2,
+    "maishu": 2
+   },
+   "source": "《醫方集解·祛寒之劑·理中湯》：「自利渴者爲熱，不渴者爲寒，喜嘔、腹痛、便溏，皆虛寒所致」"
+  },
+  {
+   "id": "yinxu",
+   "name": "胃陰不足",
+   "w": {
+    "shaotai": 3,
+    "kougan": 2,
+    "jibuyu": 2.5,
+    "maixishu": 2.5,
+    "shehong": 1,
+    "bian_gan": 1.5,
+    "tong_zhuo": 1,
+    "binghou": 2,
+    "xiahou": 1
+   },
+   "against": {
+    "tainai": 2,
+    "taihou": 2,
+    "buke": 1
+   },
+   "source": "《溫病條辨·中焦篇》第十二條方論：「此陰指胃陰而言」（按：胃陰不足諸症依後世通說）"
+  },
+  {
+   "id": "shi",
+   "name": "濕阻痰飲",
+   "w": {
+    "tainai": 3,
+    "taihou": 2,
+    "shenzhong": 2,
+    "pi": 1,
+    "fuzhang": 1,
+    "buke": 1,
+    "ou": 1,
+    "maihua": 1
+   },
+   "against": {
+    "shaotai": 3,
+    "kougan": 1.5
+   },
+   "source": "《醫方集解·消導之劑·平胃散》：「治脾有停溼痰飲，痞膈，宿食不消，滿悶嘔瀉」"
+  },
+  {
+   "id": "shiji",
+   "name": "飲食積滯",
+   "w": {
+    "shangshi": 3,
+    "aifu": 3,
+    "eshi": 2,
+    "xie_chou": 2,
+    "xie_tongjian": 2.5,
+    "taihou": 1.5,
+    "fuzhang_hou": 1,
+    "tong_ju": 1
+   },
+   "against": {
+    "jiubing": 1
+   },
+   "source": "《醫方集解·消導之劑·保和丸》：「治食積飲停，腹痛泄瀉，痞滿吐酸，積滯惡食」"
+  },
+  {
+   "id": "qizhi",
+   "name": "肝鬱氣滯（肝胃、肝脾不和）",
+   "w": {
+    "qingzhi": 3,
+    "xiongxie": 2.5,
+    "taixi": 2,
+    "tong_zhang": 2,
+    "maixian": 2,
+    "aiqi": 1.5,
+    "tunsuan": 1,
+    "xie_tongbujian": 2
+   },
+   "against": {},
+   "source": "《醫方集解·和解之劑·痛瀉要方》：「脾虛故瀉，肝實故痛」；《理氣之劑·越鞠丸》：「統治六鬱」"
+  },
+  {
+   "id": "shire",
+   "name": "胃腸濕熱、實熱",
+   "w": {
+    "taihuangnai": 3,
+    "taihuang": 2,
+    "shehong": 1.5,
+    "kouke": 1.5,
+    "kouku": 1.5,
+    "kouchou": 1.5,
+    "maishu": 2,
+    "xie_chou": 2,
+    "houzhong": 2,
+    "li": 2,
+    "tong_zhuo": 1.5,
+    "xiaobian_duan": 1,
+    "yatong": 1.5,
+    "fare": 1,
+    "maishi": 1
+   },
+   "against": {
+    "weihan": 2,
+    "buke": 1.5,
+    "shedan": 1.5,
+    "maiwei": 2
+   },
+   "source": "《醫方集解·理血之劑·芍藥湯》：「下痢皆屬溼熱」；《瀉火之劑·清胃散》：「治胃有積熱」"
+  }
+ ],
+ "jingRules": [],
+ "patterns": [
+  {
+   "id": "sijunzi",
+   "name": "脾胃氣虛",
+   "formula": "四君子湯",
+   "main": [
+    "nashao",
+    "fali",
+    "mianhuang"
+   ],
+   "minor": [
+    "xiaoshou",
+    "mairuo",
+    "shaoqi",
+    "shedan",
+    "xie",
+    "shepang"
+   ],
+   "against": [
+    [
+     "tong_ju",
+     2
+    ],
+    [
+     "taihuang",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "maishi",
+     2
+    ],
+    [
+     "xie_chou",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·四君子湯》：「治一切陽虛氣弱，脾衰肺損，飲食少思，體瘦面黃，皮聚毛落，脈來細軟」",
+   "jing": [
+    "qixu"
+   ],
+   "mods": [
+    {
+     "when": [
+      "pi",
+      "fuzhang"
+     ],
+     "do": "加陳皮（異功散）",
+     "why": "《醫方集解·四君子湯附方》：「本方加陳皮，名異功散（錢氏）：調理脾胃」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "fali",
+    "shaoqi",
+    "mairuo",
+    "shepang",
+    "mianhuang",
+    "xiaoshou",
+    "zihan"
+   ]
+  },
+  {
+   "id": "liujunzi",
+   "name": "脾虛痰濕",
+   "formula": "六君子湯",
+   "main": [
+    "fali",
+    "nashao",
+    "ou"
+   ],
+   "minor": [
+    "tainai",
+    "pi",
+    "xie",
+    "weitong",
+    "futong",
+    "mairuo",
+    "maihua",
+    "shepang",
+    "tuxian"
+   ],
+   "against": [
+    [
+     "shehong",
+     2
+    ],
+    [
+     "taihuang",
+     1.5
+    ],
+    [
+     "maishi",
+     2
+    ],
+    [
+     "shaotai",
+     2
+    ]
+   ],
+   "source": "《醫方集解·四君子湯附方》：「再加半夏，名六君子湯：治氣虛有痰，脾虛鼓（脹）……虛寒胃痛，或腹痛泄瀉」（原檔此句有脫字）",
+   "jing": [
+    "qixu",
+    "shi"
+   ],
+   "mods": [],
+   "gate": {
+    "any": [
+     "fali",
+     "shaoqi",
+     "mairuo",
+     "shepang",
+     "mianhuang",
+     "xiaoshou",
+     "zihan"
+    ],
+    "any2": [
+     "tainai",
+     "tuxian",
+     "maihua",
+     "taihou"
+    ]
+   }
+  },
+  {
+   "id": "shenling",
+   "name": "脾虛濕盛泄瀉",
+   "formula": "參苓白朮散",
+   "main": [
+    "xie",
+    "nashao",
+    "fali"
+   ],
+   "minor": [
+    "ou",
+    "mianhuang",
+    "xiaoshou",
+    "shepang",
+    "tainai",
+    "mairuo",
+    "xie_jiu",
+    "fuzhang_hou",
+    "laonian"
+   ],
+   "against": [
+    [
+     "xie_chou",
+     2
+    ],
+    [
+     "houzhong",
+     2
+    ],
+    [
+     "li",
+     1.5
+    ],
+    [
+     "taihuangnai",
+     2
+    ],
+    [
+     "maishi",
+     2
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·參苓白朮散》：「治脾胃虛弱，飲食不消，或吐或瀉」",
+   "jing": [
+    "qixu",
+    "shi"
+   ],
+   "mods": [],
+   "key": [
+    "fali",
+    "shaoqi",
+    "mairuo",
+    "shepang",
+    "mianhuang",
+    "xiaoshou",
+    "zihan",
+    "xie_jiu"
+   ]
+  },
+  {
+   "id": "buzhong",
+   "name": "中氣下陷",
+   "formula": "補中益氣湯",
+   "main": [
+    "xiazhui",
+    "shaoqi",
+    "fali"
+   ],
+   "minor": [
+    "zihan",
+    "maixu_da",
+    "xie_jiu",
+    "tuogang",
+    "nashao",
+    "fare",
+    "eshi",
+    "nueji",
+    "jiubing"
+   ],
+   "against": [
+    [
+     "maishi",
+     2
+    ],
+    [
+     "taihuangnai",
+     2
+    ],
+    [
+     "tong_ju",
+     2
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·補中益氣湯》：「治煩勞內傷，身熱心煩，頭痛惡寒，懶言惡食，脈洪大而虛……或瘧痢脾虛，久不能愈，一切清陽下陷」",
+   "jing": [
+    "qixu"
+   ],
+   "mods": [],
+   "key": [
+    "xiazhui",
+    "shaoqi",
+    "maixu_da",
+    "tuogang",
+    "zihan",
+    "nueji"
+   ]
+  },
+  {
+   "id": "lizhong",
+   "name": "脾胃虛寒",
+   "formula": "理中湯",
+   "main": [
+    "xie"
+   ],
+   "minor": [
+    "buke",
+    "weihan",
+    "ou",
+    "futong",
+    "fuzhang",
+    "maichen",
+    "mairuo",
+    "tong_xian",
+    "shedan",
+    "taibai",
+    "xie_wan",
+    "xiaobian_qing"
+   ],
+   "against": [
+    [
+     "kouke",
+     3
+    ],
+    [
+     "shehong",
+     2
+    ],
+    [
+     "taihuang",
+     2
+    ],
+    [
+     "xie_chou",
+     2
+    ],
+    [
+     "maishu",
+     2
+    ],
+    [
+     "houzhong",
+     2
+    ]
+   ],
+   "source": "《醫方集解·祛寒之劑·理中湯》：「治傷寒太陰病，自利不渴，寒多而嘔，腹痛糞溏，脈沉無力；或厥冷拘急……及感寒霍亂」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [
+    {
+     "when": [
+      "maiwei"
+     ],
+     "do": "加附子（附子理中湯）",
+     "why": "《醫方集解·理中湯附方》：「本方……加附子一枚，名附子理中湯」",
+     "s": "原"
+    },
+    {
+     "when": [
+      "yaosuan"
+     ],
+     "do": "加附子（附子理中湯）",
+     "why": "同上；腰膝痠冷屬腎陽亦虛（按）",
+     "s": "按"
+    },
+    {
+     "when": [
+      "biaozheng"
+     ],
+     "do": "表證未解而利下不止、心下痞硬者，加桂枝（桂枝人參湯）",
+     "why": "《傷寒論》第163條：「外證未除，而數下之，遂協熱而利，利下不止，心下痞鞕，表裏不解者，桂枝人參湯主之」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "buke",
+    "weihan",
+    "xiaobian_qing",
+    "maichen",
+    "maiwei",
+    "mairuo",
+    "tong_xian",
+    "shedan",
+    "taibai",
+    "xie_wan",
+    "tuxian"
+   ]
+  },
+  {
+   "id": "xiaojianzhong",
+   "name": "中虛裏急腹痛",
+   "formula": "小建中湯",
+   "main": [
+    "tong_ji",
+    "futong"
+   ],
+   "minor": [
+    "tong_xian",
+    "maixian",
+    "weitong",
+    "fali",
+    "mianhuang",
+    "fuzhang",
+    "xiahou"
+   ],
+   "against": [
+    [
+     "tong_ju",
+     2
+    ],
+    [
+     "maishi",
+     2
+    ],
+    [
+     "taihuangnai",
+     2
+    ]
+   ],
+   "source": "《醫方集解·祛寒之劑·小建中湯》：「治傷寒陽脈澀，陰脈弦，腹中急痛」",
+   "jing": [
+    "yangxu",
+    "qixu"
+   ],
+   "mods": [
+    {
+     "when": [
+      "fali",
+      "zihan"
+     ],
+     "do": "加黃耆（黃耆建中湯）",
+     "why": "《醫方集解·桂枝湯附方》：「再加黃（耆），名黃（耆）建中湯」",
+     "s": "原"
+    },
+    {
+     "when": [
+      "tong_ju"
+     ],
+     "do": "大實痛者，改桂枝加大黃湯",
+     "why": "《傷寒論》第279條：「大實痛者，桂枝加大黃湯主之」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "tong_ji",
+    "tong_xian",
+    "xiahou"
+   ]
+  },
+  {
+   "id": "pingwei",
+   "name": "濕阻中焦",
+   "formula": "平胃散",
+   "main": [
+    "pi",
+    "fuzhang",
+    "tainai"
+   ],
+   "minor": [
+    "ou",
+    "xie",
+    "nashao",
+    "shenzhong",
+    "buke",
+    "taihou",
+    "maihua"
+   ],
+   "against": [
+    [
+     "shehong",
+     2
+    ],
+    [
+     "shaotai",
+     3
+    ],
+    [
+     "mairuo",
+     1
+    ],
+    [
+     "fali",
+     1
+    ]
+   ],
+   "source": "《醫方集解·消導之劑·平胃散》：「治脾有停溼痰飲，痞膈，宿食不消，滿悶嘔瀉；及山嵐瘴霧，不服水土」（苔膩為按）",
+   "jing": [
+    "shi"
+   ],
+   "mods": [
+    {
+     "when": [
+      "ou"
+     ],
+     "do": "加藿香、半夏（不換金正氣散）",
+     "why": "《醫方集解·平胃散附方》：「本方加藿香、半夏，名藿香平胃散，又名不換金正氣散：治胃寒腹痛嘔吐」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "tainai",
+    "taihou",
+    "shenzhong"
+   ]
+  },
+  {
+   "id": "baohe",
+   "name": "飲食積滯",
+   "formula": "保和丸",
+   "main": [
+    "shangshi",
+    "aifu",
+    "eshi"
+   ],
+   "minor": [
+    "pi",
+    "fuzhang",
+    "futong",
+    "xie",
+    "tunsuan",
+    "taihou",
+    "xie_chou",
+    "maihua",
+    "xie_tongjian"
+   ],
+   "against": [
+    [
+     "fali",
+     1
+    ],
+    [
+     "mairuo",
+     1.5
+    ],
+    [
+     "jiubing",
+     1
+    ]
+   ],
+   "source": "《醫方集解·消導之劑·保和丸》：「治食積飲停，腹痛泄瀉，痞滿吐酸，積滯惡食，食瘧下痢」",
+   "jing": [
+    "shiji"
+   ],
+   "mods": [],
+   "key": [
+    "shangshi",
+    "aifu",
+    "eshi",
+    "xie_tongjian",
+    "xie_chou"
+   ]
+  },
+  {
+   "id": "jianpi",
+   "name": "脾虛食滯",
+   "formula": "健脾丸（枳朮丸類）",
+   "main": [
+    "nashao",
+    "fali",
+    "pi"
+   ],
+   "minor": [
+    "eshi",
+    "fuzhang_hou",
+    "aifu",
+    "mairuo",
+    "maixian",
+    "xie"
+   ],
+   "against": [
+    [
+     "maishi",
+     2
+    ],
+    [
+     "taihuangnai",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·消導之劑·健脾丸》：「治脾虛氣弱，飲食不消」；《枳實消痞丸》：「治心下虛痞，惡食懶倦，右關脈弦」",
+   "jing": [
+    "qixu",
+    "shiji"
+   ],
+   "mods": [
+    {
+     "when": [
+      "shangshi"
+     ],
+     "do": "傷食加麥芽、神麴（枳朮丸法）",
+     "why": "《醫方集解·枳術丸》：「痞悶加陳皮，氣滯加木香，傷食加麥芽、神曲」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "fuzhang_hou",
+    "eshi",
+    "shangshi",
+    "aifu"
+   ]
+  },
+  {
+   "id": "banxiaxiexin",
+   "name": "寒熱錯雜痞",
+   "formula": "半夏瀉心湯",
+   "main": [
+    "pi",
+    "ou"
+   ],
+   "minor": [
+    "pi_ying",
+    "xiahou",
+    "nashao",
+    "weihan",
+    "leiming",
+    "aifu",
+    "xie",
+    "ganou"
+   ],
+   "against": [
+    [
+     "tong_ju",
+     2.5
+    ],
+    [
+     "xiongxie",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·半夏瀉心湯》：「治傷寒下之早，胸滿而不痛者爲痞，身寒而嘔，飲食不下，非柴胡證」",
+   "jing": [
+    "shi",
+    "shire",
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "pi",
+    "pi_ying",
+    "leiming"
+   ]
+  },
+  {
+   "id": "zuojin",
+   "name": "肝火犯胃",
+   "formula": "左金丸",
+   "main": [
+    "tunsuan",
+    "xiongxie"
+   ],
+   "minor": [
+    "kouku",
+    "shehong",
+    "taihuang",
+    "maixian",
+    "maishu",
+    "tong_zhuo",
+    "qingzhi",
+    "ou"
+   ],
+   "against": [
+    [
+     "tong_xian",
+     1.5
+    ],
+    [
+     "shedan",
+     1.5
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·左金丸》：「治肝火燥盛，左脅作痛，吞酸吐酸，筋疝痞結」",
+   "jing": [
+    "qizhi",
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "tunsuan",
+    "xiongxie",
+    "kouku"
+   ]
+  },
+  {
+   "id": "tongxie",
+   "name": "肝脾不和痛瀉",
+   "formula": "痛瀉要方",
+   "main": [
+    "xie_tongbujian",
+    "futong",
+    "xie"
+   ],
+   "minor": [
+    "qingzhi",
+    "maixian",
+    "leiming",
+    "xiongxie",
+    "taixi"
+   ],
+   "against": [
+    [
+     "xie_tongjian",
+     3
+    ],
+    [
+     "xie_chou",
+     1.5
+    ],
+    [
+     "li",
+     2
+    ]
+   ],
+   "source": "《醫方集解·和解之劑·痛瀉要方》：「治痛瀉不止（脾虛故瀉，肝實故痛……）」",
+   "jing": [
+    "qizhi",
+    "qixu"
+   ],
+   "mods": [],
+   "key": [
+    "xie_tongbujian",
+    "qingzhi"
+   ]
+  },
+  {
+   "id": "sishen",
+   "name": "脾腎陽虛（腎瀉）",
+   "formula": "四神丸",
+   "main": [
+    "wugeng",
+    "xie"
+   ],
+   "minor": [
+    "yaosuan",
+    "weihan",
+    "xie_jiu",
+    "nashao",
+    "maichen",
+    "shedan",
+    "xie_wan",
+    "laonian"
+   ],
+   "against": [
+    [
+     "futong",
+     1.5
+    ],
+    [
+     "xie_chou",
+     2
+    ],
+    [
+     "kouke",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·祛寒之劑·四神丸》：「治腎瀉脾瀉（腎瀉者，五更時瀉也……不痛而瀉也。兩證皆由腎命火衰，不能上生脾土故也）」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "wugeng",
+    "yaosuan"
+   ]
+  },
+  {
+   "id": "shaoyao",
+   "name": "濕熱痢",
+   "formula": "芍藥湯",
+   "main": [
+    "li",
+    "houzhong",
+    "futong",
+    "xie_buhuan"
+   ],
+   "minor": [
+    "taihuangnai",
+    "xiaobian_duan",
+    "maihua",
+    "maishu"
+   ],
+   "against": [
+    [
+     "maiwei",
+     2
+    ],
+    [
+     "weihan",
+     1.5
+    ],
+    [
+     "huatuo",
+     2
+    ],
+    [
+     "xie_jiu",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·芍藥湯》：「治下痢膿血稠粘，腹痛後重（下痢皆屬溼熱）」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "gate": {
+    "any": [
+     "li",
+     "xie_buhuan"
+    ]
+   },
+   "key": [
+    "li",
+    "houzhong",
+    "xie_buhuan"
+   ]
+  },
+  {
+   "id": "baitouweng",
+   "name": "熱毒下利",
+   "formula": "白頭翁湯",
+   "main": [
+    "houzhong"
+   ],
+   "minor": [
+    "kouke",
+    "li",
+    "xie",
+    "futong",
+    "fare",
+    "shehong",
+    "taihuang",
+    "maishu"
+   ],
+   "against": [
+    [
+     "buke",
+     3
+    ],
+    [
+     "weihan",
+     2
+    ],
+    [
+     "huatuo",
+     2
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·白頭翁湯》：「治傷寒熱利下重，欲飲水者」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "houzhong"
+   ]
+  },
+  {
+   "id": "qingwei",
+   "name": "胃火上攻",
+   "formula": "清胃散",
+   "main": [
+    "yatong"
+   ],
+   "minor": [
+    "yaxue",
+    "kouchou",
+    "kouke",
+    "shehong",
+    "taihuang",
+    "maishu",
+    "kouchuang"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "shedan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·清胃散》：「治胃有積熱，上下牙痛，牽引頭腦，滿面發熱，其牙喜寒惡熱；或牙齦潰爛，或牙宣出血，或脣口頰腮腫痛」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "yatong",
+    "yaxue"
+   ]
+  },
+  {
+   "id": "xiehuang",
+   "name": "脾胃伏火",
+   "formula": "瀉黃散",
+   "main": [
+    "kouchuang",
+    "yiji"
+   ],
+   "minor": [
+    "kouchou",
+    "kouke",
+    "kougan",
+    "shehong"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "shedan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·瀉黃散》：「治脾胃伏火，口燥脣乾，口瘡口臭，煩渴易飢，熱在肌肉」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "kouchuang",
+    "yiji"
+   ]
+  },
+  {
+   "id": "maziren",
+   "name": "脾約便秘",
+   "formula": "麻仁丸",
+   "main": [
+    "bianmi",
+    "xiaobian_shu"
+   ],
+   "minor": [
+    "bian_gan",
+    "kougan"
+   ],
+   "against": [
+    [
+     "huatuo",
+     3
+    ],
+    [
+     "xie",
+     3
+    ]
+   ],
+   "source": "《醫方集解·攻裏之劑·小承氣湯附方》：「名麻仁丸（仲景）：治趺陽脈浮而澀，浮則胃氣強，澀則小便數，浮澀相搏，大便則難，其脾爲約」",
+   "jing": [
+    "yinxu",
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "xiaobian_shu",
+    "bian_gan"
+   ]
+  },
+  {
+   "id": "zengye",
+   "name": "陰虧便秘",
+   "formula": "增液湯",
+   "main": [
+    "bianmi",
+    "kougan"
+   ],
+   "minor": [
+    "bian_gan",
+    "shehong",
+    "shaotai",
+    "maixishu",
+    "binghou",
+    "xiahou"
+   ],
+   "against": [
+    [
+     "tainai",
+     2
+    ],
+    [
+     "xie",
+     3
+    ]
+   ],
+   "source": "《溫病條辨·中焦篇》第十一條：「陽明溫病，無上焦證，數日不大便，當下之，若其人陰素虛，不可行承氣者，增液湯主之」",
+   "jing": [
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "kougan",
+    "shaotai",
+    "maixishu",
+    "shehong",
+    "xiahou",
+    "binghou"
+   ]
+  },
+  {
+   "id": "yiwei",
+   "name": "胃陰不足",
+   "formula": "益胃湯",
+   "main": [
+    "shaotai",
+    "kougan",
+    "jibuyu"
+   ],
+   "minor": [
+    "shehong",
+    "maixishu",
+    "tong_zhuo",
+    "weitong",
+    "bian_gan",
+    "binghou",
+    "nashao",
+    "bianmi"
+   ],
+   "against": [
+    [
+     "tainai",
+     2.5
+    ],
+    [
+     "taihou",
+     2
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《溫病條辨·中焦篇》第十二條：「陽明溫病，下後汗出，當復其陰，益胃湯主之」；方論：「此陰指胃陰而言」（主症依後世通說，按）",
+   "jing": [
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "shaotai",
+    "jibuyu",
+    "kougan",
+    "binghou"
+   ]
+  },
+  {
+   "id": "jupizhuru",
+   "name": "胃虛有熱嘔逆",
+   "formula": "橘皮竹茹湯",
+   "main": [
+    "ou",
+    "jiubing"
+   ],
+   "minor": [
+    "eni",
+    "fali",
+    "xiaoshou",
+    "kougan",
+    "shehong",
+    "ganou"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "tuxian",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·和解之劑·橘皮竹茹湯》：「治久病虛羸，嘔逆不已」",
+   "jing": [
+    "qixu",
+    "shire"
+   ],
+   "mods": [
+    {
+     "when": [
+      "weihan"
+     ],
+     "do": "胃寒者去竹茹、麥冬，加丁香",
+     "why": "《醫方集解·橘皮竹茹湯》：「胃寒者去竹茹、麥冬，加丁香；實火去人參」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "jiubing",
+    "eni"
+   ]
+  },
+  {
+   "id": "dingxiang",
+   "name": "胃寒呃逆",
+   "formula": "丁香柿蒂湯",
+   "main": [
+    "eni",
+    "weihan"
+   ],
+   "minor": [
+    "jiubing",
+    "tuxian",
+    "shedan",
+    "taibai",
+    "buke",
+    "maichen",
+    "tong_xian"
+   ],
+   "against": [
+    [
+     "kouke",
+     2
+    ],
+    [
+     "shehong",
+     2
+    ],
+    [
+     "taihuang",
+     2
+    ]
+   ],
+   "source": "《醫方集解·理氣之劑·丁香柿蒂湯》：「治久病呃逆因於寒者」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "eni"
+   ]
+  },
+  {
+   "id": "yueju",
+   "name": "六鬱痞悶",
+   "formula": "越鞠丸",
+   "main": [
+    "pi",
+    "qingzhi"
+   ],
+   "minor": [
+    "tunsuan",
+    "ou",
+    "nashao",
+    "xiongxie",
+    "taixi",
+    "aiqi",
+    "maixian"
+   ],
+   "against": [
+    [
+     "fali",
+     1.5
+    ],
+    [
+     "mairuo",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理氣之劑·越鞠丸》：「統治六鬱，胸膈痞悶，吞酸嘔吐，飲食不消」",
+   "jing": [
+    "qizhi"
+   ],
+   "mods": [],
+   "key": [
+    "qingzhi",
+    "taixi",
+    "xiongxie"
+   ]
+  },
+  {
+   "id": "zhenren",
+   "name": "久瀉滑脫",
+   "formula": "真人養臟湯",
+   "main": [
+    "xie_jiu",
+    "huatuo"
+   ],
+   "minor": [
+    "tuogang",
+    "weihan",
+    "nashao",
+    "mairuo",
+    "shedan",
+    "tong_xian",
+    "maiwei",
+    "xie_duo",
+    "xie_buzhi"
+   ],
+   "against": [
+    [
+     "houzhong",
+     2
+    ],
+    [
+     "taihuangnai",
+     2
+    ],
+    [
+     "maishi",
+     2
+    ],
+    [
+     "xinbing",
+     2
+    ]
+   ],
+   "source": "《醫方集解·收澀之劑·真人養臟湯》：「治瀉痢日久，赤白已盡，虛寒脫肛」",
+   "jing": [
+    "yangxu",
+    "qixu"
+   ],
+   "mods": [
+    {
+     "when": [
+      "li",
+      "maiwei"
+     ],
+     "do": "下痢無度、脈微肢厥者，用桃花湯（赤石脂、乾薑、粳米）",
+     "why": "《溫病條辨·下焦篇》第六十七條：「下痢無度，脈微細，肢厥，不進食，桃花湯主之」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "huatuo",
+    "xie_jiu",
+    "xie_buzhi",
+    "tuogang"
+   ]
+  },
+  {
+   "id": "wuzhuyu",
+   "name": "肝胃虛寒、濁陰上逆",
+   "formula": "吳茱萸湯",
+   "main": [
+    "tuxian",
+    "toutong"
+   ],
+   "minor": [
+    "ou",
+    "ganou",
+    "weihan",
+    "xie",
+    "xinfan",
+    "buke",
+    "shedan",
+    "maichen"
+   ],
+   "against": [
+    [
+     "kouke",
+     2
+    ],
+    [
+     "shehong",
+     2
+    ]
+   ],
+   "source": "《醫方集解·祛寒之劑·吳茱萸湯》：「治陽明證食谷欲嘔……少陰證吐利，手足厥冷，煩躁欲死……厥陰證乾嘔吐涎頭痛」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "gate": {
+    "any": [
+     "toutong",
+     "ou",
+     "ganou"
+    ]
+   }
+  },
+  {
+   "id": "zhishidaozhi",
+   "name": "濕熱食積",
+   "formula": "枳實導滯丸",
+   "main": [
+    "shangshi",
+    "tong_ju",
+    "taihuangnai"
+   ],
+   "minor": [
+    "pi",
+    "xie",
+    "xie_chou",
+    "houzhong",
+    "xie_buhuan",
+    "bianmi",
+    "maishi",
+    "maihua"
+   ],
+   "against": [
+    [
+     "fali",
+     2
+    ],
+    [
+     "mairuo",
+     2
+    ],
+    [
+     "jiubing",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·消導之劑·枳實導滯丸》：「治傷溼熱之物，不得施化，痞悶不安，腹內硬痛，積滯泄瀉」",
+   "jing": [
+    "shiji",
+    "shire"
+   ],
+   "mods": [
+    {
+     "when": [
+      "houzhong"
+     ],
+     "do": "裏急後重、二便不通者，可用木香檳榔丸",
+     "why": "《醫方集解·攻裏之劑·木香檳榔丸》：「治胸腹積滯，痞滿結痛，二便不通；或瀉泄下利，裏急後重」",
+     "s": "原"
+    }
+   ],
+   "key": [
+    "shangshi",
+    "tong_ju",
+    "xie_chou"
+   ]
+  },
+  {
+   "id": "erchen",
+   "name": "痰飲停胃",
+   "formula": "二陳湯",
+   "main": [
+    "ou",
+    "tainai"
+   ],
+   "minor": [
+    "pi",
+    "fuzhang",
+    "maihua",
+    "shenzhong",
+    "buke"
+   ],
+   "against": [
+    [
+     "shehong",
+     2
+    ],
+    [
+     "shaotai",
+     2
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·二陳湯》：「治一切痰飲爲病，咳嗽脹滿，嘔吐噁心，頭眩心悸」",
+   "jing": [
+    "shi"
+   ],
+   "mods": [],
+   "key": [
+    "tainai",
+    "tuxian",
+    "maihua"
+   ]
+  },
+  {
+   "id": "houpowenzhong",
+   "name": "寒濕氣滯",
+   "formula": "厚朴溫中湯",
+   "main": [
+    "fuzhang",
+    "weitong"
+   ],
+   "minor": [
+    "weihan",
+    "tong_xian",
+    "tainai",
+    "buke",
+    "tong_zhang",
+    "xinbing"
+   ],
+   "against": [
+    [
+     "kouke",
+     2
+    ],
+    [
+     "shehong",
+     2
+    ],
+    [
+     "taihuang",
+     2
+    ]
+   ],
+   "source": "《醫方集解·消導之劑·平胃散附方》：「名厚朴溫中湯：治脾胃虛寒，心腹脹滿；及秋冬客寒犯胃，時作疼痛」",
+   "jing": [
+    "yangxu",
+    "shi"
+   ],
+   "mods": [],
+   "key": [
+    "weihan",
+    "tong_xian",
+    "tong_zhang"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "r_shangshi",
+   "kind": "branch",
+   "name": "傷食腹痛與痛瀉之辨",
+   "when": {
+    "all": [
+     "xie",
+     "futong"
+    ]
+   },
+   "branch": [
+    {
+     "if": "xie_tongjian",
+     "boost": {
+      "baohe": 4,
+      "zhishidaozhi": 2
+     },
+     "text": "瀉後痛減，屬傷食"
+    },
+    {
+     "if": "xie_tongbujian",
+     "boost": {
+      "tongxie": 5
+     },
+     "text": "瀉後痛仍在，屬肝實脾虛之痛瀉"
+    }
+   ],
+   "ask": [
+    "xie_tongjian",
+    "xie_tongbujian"
+   ],
+   "source": "《醫方集解·痛瀉要方》注引吳鶴皋：「此與傷食不同，傷食腹痛，得瀉便減」",
+   "note": "腹痛而瀉，先問瀉後痛減不減：減者是食積隨瀉而去，仍痛者是肝木乘脾。"
+  },
+  {
+   "id": "r_ke",
+   "kind": "branch",
+   "name": "自利以渴不渴分寒熱",
+   "when": {
+    "all": [
+     "xie"
+    ],
+    "none": [
+     "li"
+    ]
+   },
+   "branch": [
+    {
+     "if": "buke",
+     "boost": {
+      "lizhong": 3
+     },
+     "text": "不渴屬寒"
+    },
+    {
+     "if": "kouke",
+     "boost": {},
+     "text": "渴屬熱（原文未指定方，依其他症狀選方）"
+    }
+   ],
+   "ask": [
+    "buke",
+    "kouke"
+   ],
+   "source": "《醫方集解·理中湯》注：「自利渴者爲熱，不渴者爲寒」",
+   "note": "泄瀉先辨寒熱，口渴與否是第一個要問的。"
+  },
+  {
+   "id": "r_wugeng",
+   "kind": "boost",
+   "name": "五更泄屬腎",
+   "when": {
+    "all": [
+     "wugeng"
+    ]
+   },
+   "boost": {
+    "sishen": 5
+   },
+   "source": "《醫方集解·四神丸》：「腎瀉者，五更時瀉也……兩證皆由腎命火衰，不能上生脾土故也」",
+   "note": "黎明前泄瀉，責在命門火衰。"
+  },
+  {
+   "id": "r_yinshui",
+   "kind": "boost",
+   "name": "下重而欲飲水屬熱利",
+   "when": {
+    "all": [
+     "houzhong",
+     "kouke"
+    ]
+   },
+   "boost": {
+    "baitouweng": 4
+   },
+   "source": "《醫方集解·白頭翁湯》：「治傷寒熱利下重，欲飲水者（……欲水是陰分爲火所灼，欲得涼以解之也）」",
+   "note": "裏急後重又想喝冷水，是熱灼陰分。"
+  },
+  {
+   "id": "r_eni",
+   "kind": "branch",
+   "name": "呃逆分寒熱",
+   "when": {
+    "all": [
+     "eni"
+    ]
+   },
+   "branch": [
+    {
+     "if": "weihan",
+     "boost": {
+      "dingxiang": 4
+     },
+     "text": "畏寒屬寒呃"
+    },
+    {
+     "if": "buke",
+     "boost": {
+      "dingxiang": 3
+     },
+     "text": "不渴屬寒呃"
+    },
+    {
+     "if": "kouke",
+     "boost": {
+      "jupizhuru": 4
+     },
+     "text": "口渴屬熱"
+    },
+    {
+     "if": "shehong",
+     "boost": {
+      "jupizhuru": 4
+     },
+     "text": "舌紅屬熱"
+    }
+   ],
+   "ask": [
+    "weihan",
+    "kouke"
+   ],
+   "source": "《醫方集解·丁香柿蒂湯》按：「寒熱虛實，治法不一，古方以此湯治寒呃」；《橘皮竹茹湯》：「胃寒者去竹茹、麥冬，加丁香」",
+   "note": "呃逆先分寒熱：寒用丁香柿蒂，熱用橘皮竹茹。"
+  },
+  {
+   "id": "r_xiazao",
+   "kind": "boost",
+   "name": "誤下成痞",
+   "when": {
+    "all": [
+     "xiahou"
+    ],
+    "any": [
+     "pi",
+     "pi_ying"
+    ],
+    "none": [
+     "biaozheng",
+     "xie_buzhi"
+    ]
+   },
+   "boost": {
+    "banxiaxiexin": 4
+   },
+   "source": "《醫方集解·半夏瀉心湯》：「治傷寒下之早，胸滿而不痛者爲痞」",
+   "note": "下後心下痞滿而不痛，是寒熱錯雜之痞。"
+  },
+  {
+   "id": "c_shiji",
+   "kind": "caution",
+   "name": "非實積不可輕投攻下",
+   "when": {
+    "any": [
+     "fali",
+     "mairuo",
+     "maiwei",
+     "jiubing"
+    ]
+   },
+   "penalty": {
+    "zhishidaozhi": 4
+   },
+   "source": "《醫方集解·木香檳榔丸》：「然非實積，不可輕投」",
+   "note": "有虛象時，攻下消導的峻劑要慎用，宜消補兼施（健脾丸、枳朮丸）。"
+  },
+  {
+   "id": "r_zanghan",
+   "kind": "boost",
+   "name": "自利而見寒象，屬太陰臟寒",
+   "when": {
+    "all": [
+     "xie"
+    ],
+    "none": [
+     "kouke",
+     "houzhong",
+     "li",
+     "wugeng",
+     "xiahou",
+     "binghou"
+    ],
+    "atleast": [
+     2,
+     [
+      "buke",
+      "weihan",
+      "xiaobian_qing",
+      "maichen",
+      "maiwei",
+      "mairuo",
+      "tong_xian",
+      "shedan",
+      "taibai",
+      "xie_wan",
+      "tuxian"
+     ]
+    ]
+   },
+   "boost": {
+    "lizhong": 4
+   },
+   "source": "《醫方集解·理中湯》注：「自利渴者爲熱，不渴者爲寒，喜嘔、腹痛、便溏，皆虛寒所致」",
+   "note": "泄瀉而見不渴、畏寒、小便清長、脈沉弱、舌淡苔白等寒象兩項以上，屬脾胃虛寒，溫中為主。"
+  },
+  {
+   "id": "r163",
+   "kind": "boost",
+   "name": "表裏不解，協熱而利",
+   "when": {
+    "all": [
+     "biaozheng",
+     "xie"
+    ],
+    "any": [
+     "pi_ying",
+     "xie_buzhi"
+    ]
+   },
+   "boost": {
+    "lizhong": 4
+   },
+   "source": "《傷寒論》第163條：「太陽病，外證未除，而數下之，遂協熱而利，利下不止，心下痞鞕，表裏不解者，桂枝人參湯主之」",
+   "note": "表證未解又裏虛寒下利，溫中兼解表（桂枝人參湯＝理中湯加桂枝）。"
+  },
+  {
+   "id": "r159",
+   "kind": "boost",
+   "name": "利在下焦，宜固澀",
+   "when": {
+    "all": [
+     "xie_buzhi",
+     "xiahou"
+    ],
+    "none": [
+     "biaozheng"
+    ]
+   },
+   "boost": {
+    "zhenren": 4
+   },
+   "source": "《傷寒論》第159條：「醫以理中與之，利益甚。理中者，理中焦，此利在下焦，赤石脂禹餘糧湯主之」",
+   "note": "屢經攻下而利不止，滑脫在下焦，理中湯不及，宜固澀。"
+  },
+  {
+   "id": "r157",
+   "kind": "boost",
+   "name": "痞而噫氣食臭、腹中雷鳴，屬胃中不和",
+   "when": {
+    "any": [
+     "pi",
+     "pi_ying"
+    ],
+    "any2": [
+     "aifu",
+     "leiming"
+    ],
+    "none": [
+     "shangshi"
+    ]
+   },
+   "boost": {
+    "banxiaxiexin": 4
+   },
+   "source": "《傷寒論》第157條：「胃中不和，心下痞鞕，乾噫食臭，脅下有水氣，腹中雷鳴，下利者，生薑瀉心湯主之」",
+   "note": "噫氣有食臭，若無傷食病史而心下痞硬，是胃虛水熱互結，不是食積。"
+  },
+  {
+   "id": "r396",
+   "kind": "boost",
+   "name": "病後喜唾，胃上有寒",
+   "when": {
+    "all": [
+     "tuxian",
+     "jiubing"
+    ]
+   },
+   "boost": {
+    "lizhong": 4
+   },
+   "source": "《傷寒論》第396條：「大病差後，喜唾，久不了了，胸上有寒，當以丸藥溫之，宜理中丸」",
+   "note": "病後口水多、日久不止，用理中丸溫之。"
+  },
+  {
+   "id": "r279",
+   "kind": "boost",
+   "name": "下後腹滿時痛屬太陰",
+   "when": {
+    "all": [
+     "xiahou",
+     "futong"
+    ],
+    "any": [
+     "fuzhang"
+    ]
+   },
+   "boost": {
+    "xiaojianzhong": 4
+   },
+   "source": "《傷寒論》第279條：「本太陽病，醫反下之，因爾腹滿時痛者，屬太陰也，桂枝加芍藥湯主之」",
+   "note": "誤下後腹滿時痛，用桂枝加芍藥湯（與小建中湯同屬建中一系）。"
+  },
+  {
+   "id": "r_xianxia",
+   "kind": "boost",
+   "name": "下利而氣虛下陷",
+   "when": {
+    "all": [
+     "xiazhui"
+    ],
+    "any": [
+     "xie",
+     "huatuo",
+     "tuogang",
+     "xie_jiu"
+    ]
+   },
+   "boost": {
+    "buzhong": 4
+   },
+   "source": "《醫方集解·補中益氣湯》：「或瘧痢脾虛，久不能愈，一切清陽下陷」；《溫病條辨·中焦篇》第九十八條：「氣虛下陷，門戶不藏，加減補中益氣湯主之」",
+   "note": "久瀉久痢而有下墜感，升陽舉陷，不只固澀。"
+  },
+  {
+   "id": "r_taohua",
+   "kind": "boost",
+   "name": "下痢而脈微肢厥",
+   "when": {
+    "all": [
+     "li"
+    ],
+    "any": [
+     "maiwei",
+     "weihan"
+    ],
+    "none": [
+     "houzhong",
+     "kouke"
+    ]
+   },
+   "boost": {
+    "zhenren": 4
+   },
+   "source": "《溫病條辨·下焦篇》第六十七條：「下痢無度，脈微細，肢厥，不進食，桃花湯主之」",
+   "note": "痢下而陽氣衰（脈微、肢冷），不是濕熱，宜溫澀。"
+  },
+  {
+   "id": "r_jinkou",
+   "kind": "branch",
+   "name": "噤口痢分虛實",
+   "when": {
+    "all": [
+     "li"
+    ],
+    "any": [
+     "ou",
+     "ganou",
+     "nashao"
+    ]
+   },
+   "branch": [
+    {
+     "if": "houzhong",
+     "boost": {
+      "banxiaxiexin": 6,
+      "shaoyao": -4
+     },
+     "text": "裏急後重、積下不爽，屬實，苦辛通降"
+    },
+    {
+     "if": "buke",
+     "boost": {
+      "shenling": 4
+     },
+     "text": "舌白不渴、形衰，屬虛，補脾"
+    }
+   ],
+   "ask": [
+    "houzhong",
+    "buke"
+   ],
+   "source": "《溫病條辨·下焦篇》第七十五條：「噤口痢……乾嘔腹痛，裡急後重，積下不爽，加減瀉心湯主之」；第七十六條：「噤口痢，嘔惡不飢，積少痛緩，形衰脈弦，舌白不渴，加味參苓白朮散主之」",
+   "note": "痢而不能食、嘔惡，先分虛實：後重積多屬實，積少痛緩、舌白不渴屬虛。噤口而實者，胃氣上逆為急，用瀉心湯苦辛通降，不用芍藥湯。"
+  },
+  {
+   "id": "r_taiyin",
+   "kind": "boost",
+   "name": "腹滿而吐、自利腹痛，屬太陰",
+   "when": {
+    "all": [
+     "xie",
+     "fuzhang"
+    ],
+    "any": [
+     "ou",
+     "futong"
+    ],
+    "none": [
+     "kouke",
+     "houzhong",
+     "li",
+     "shangshi",
+     "xie_chou"
+    ]
+   },
+   "boost": {
+    "lizhong": 3
+   },
+   "source": "《傷寒論》第273條：「太陰之為病，腹滿而吐，食不下，自利益甚，時腹自痛」；第277條：「自利不渴者，屬太陰，以其臟有寒故也，當溫之」",
+   "note": "腹滿、嘔吐、自利、腹痛而無熱象、無傷食，屬太陰臟寒，溫中為主。"
+  },
+  {
+   "id": "r_xiahouyin",
+   "kind": "boost",
+   "name": "下後、病後便秘屬陰傷，不可再下",
+   "when": {
+    "all": [
+     "bianmi"
+    ],
+    "any": [
+     "xiahou",
+     "binghou"
+    ]
+   },
+   "boost": {
+    "zengye": 4,
+    "yiwei": 3
+   },
+   "source": "《溫病條辨·中焦篇》第十六條：「下後二、三日，下證復現，脈下甚沉，或沉而無力，止可與增液，不可與承氣」；第三十三條：「十數日不大便，可與益胃、增液輩，斷不可再與承氣也」",
+   "note": "攻下或大病之後又便秘，多是津液未復，用增液、益胃養陰，不要再瀉下；此時脈沉弱是陰傷，不作寒看。"
+  },
+  {
+   "id": "c_xiahou",
+   "kind": "caution",
+   "name": "下後陰傷，不可再攻下",
+   "when": {
+    "all": [
+     "bianmi"
+    ],
+    "any": [
+     "xiahou",
+     "binghou"
+    ]
+   },
+   "penalty": {
+    "zhishidaozhi": 4,
+    "maziren": 2
+   },
+   "source": "《溫病條辨·中焦篇》第三十三條：「斷不可再與承氣也」",
+   "note": "攻下或消導類方劑降分。"
+  },
+  {
+   "id": "r_hanrejiu",
+   "kind": "boost",
+   "name": "寒熱久不止，屬氣虛留邪",
+   "when": {
+    "any": [
+     "nueji"
+    ],
+    "unless": [],
+    "none": []
+   },
+   "boost": {
+    "buzhong": 4
+   },
+   "source": "《溫病條辨·中焦篇》第八十二條：「中焦瘧，寒熱久不止，氣虛留邪，補中益氣湯主之」；《醫方集解·補中益氣湯》：「或瘧痢脾虛，久不能愈」",
+   "note": "忽冷忽熱拖很久，不是單純寒證，是氣虛留邪，用補中益氣湯。"
+  },
+  {
+   "id": "r_hanrejiu2",
+   "kind": "boost",
+   "name": "發熱畏寒而病久，屬氣虛",
+   "when": {
+    "all": [
+     "fare",
+     "weihan",
+     "jiubing"
+    ],
+    "none": [
+     "biaozheng"
+    ]
+   },
+   "boost": {
+    "buzhong": 4
+   },
+   "source": "同上",
+   "note": "久病而寒熱並見，先考慮氣虛。"
+  }
+ ],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "四君子湯主治",
+   "f": [
+    "nashao",
+    "fali",
+    "mianhuang",
+    "xiaoshou",
+    "mairuo"
+   ],
+   "expect": "sijunzi"
+  },
+  {
+   "id": "k2",
+   "label": "理中湯主治",
+   "f": [
+    "xie",
+    "buke",
+    "ou",
+    "futong",
+    "maichen",
+    "weihan"
+   ],
+   "expect": "lizhong"
+  },
+  {
+   "id": "k3",
+   "label": "保和丸主治",
+   "f": [
+    "shangshi",
+    "futong",
+    "xie",
+    "pi",
+    "tunsuan",
+    "eshi"
+   ],
+   "expect": "baohe"
+  },
+  {
+   "id": "k4",
+   "label": "痛瀉要方主治",
+   "f": [
+    "xie",
+    "futong",
+    "xie_tongbujian",
+    "qingzhi"
+   ],
+   "expect": "tongxie"
+  },
+  {
+   "id": "k5",
+   "label": "四神丸主治",
+   "f": [
+    "wugeng",
+    "xie",
+    "weihan"
+   ],
+   "expect": "sishen"
+  },
+  {
+   "id": "k6",
+   "label": "芍藥湯主治",
+   "f": [
+    "li",
+    "futong",
+    "houzhong"
+   ],
+   "expect": "shaoyao"
+  },
+  {
+   "id": "k7",
+   "label": "白頭翁湯主治",
+   "f": [
+    "xie",
+    "houzhong",
+    "kouke"
+   ],
+   "expect": "baitouweng"
+  },
+  {
+   "id": "k8",
+   "label": "左金丸主治",
+   "f": [
+    "xiongxie",
+    "tunsuan"
+   ],
+   "expect": "zuojin"
+  },
+  {
+   "id": "k9",
+   "label": "丁香柿蒂湯主治",
+   "f": [
+    "eni",
+    "jiubing",
+    "weihan"
+   ],
+   "expect": "dingxiang"
+  },
+  {
+   "id": "k10",
+   "label": "清胃散主治",
+   "f": [
+    "yatong",
+    "yaxue",
+    "kouchuang"
+   ],
+   "expect": "qingwei"
+  },
+  {
+   "id": "k11",
+   "label": "補中益氣湯主治",
+   "f": [
+    "fare",
+    "shaoqi",
+    "eshi",
+    "maixu_da",
+    "zihan",
+    "xiazhui"
+   ],
+   "expect": "buzhong"
+  },
+  {
+   "id": "k12",
+   "label": "真人養臟湯主治",
+   "f": [
+    "xie_jiu",
+    "huatuo",
+    "tuogang",
+    "weihan"
+   ],
+   "expect": "zhenren"
+  },
+  {
+   "id": "k13",
+   "label": "平胃散主治",
+   "f": [
+    "pi",
+    "fuzhang",
+    "ou",
+    "xie",
+    "tainai"
+   ],
+   "expect": "pingwei"
+  },
+  {
+   "id": "k14",
+   "label": "小建中湯主治",
+   "f": [
+    "tong_ji",
+    "futong",
+    "maixian"
+   ],
+   "expect": "xiaojianzhong"
+  },
+  {
+   "id": "k15",
+   "label": "麻仁丸主治",
+   "f": [
+    "bianmi",
+    "xiaobian_shu"
+   ],
+   "expect": "maziren"
+  },
+  {
+   "id": "k16",
+   "label": "半夏瀉心湯主治",
+   "f": [
+    "xiahou",
+    "pi",
+    "weihan",
+    "ou",
+    "nashao"
+   ],
+   "expect": "banxiaxiexin"
+  },
+  {
+   "id": "k17",
+   "label": "枳實導滯丸主治",
+   "f": [
+    "shangshi",
+    "pi",
+    "tong_ju",
+    "xie"
+   ],
+   "expect": "zhishidaozhi"
+  },
+  {
+   "id": "k18",
+   "label": "使用者情境：壓力大胃脹打嗝、吞酸",
+   "f": [
+    "qingzhi",
+    "pi",
+    "aiqi",
+    "tunsuan"
+   ],
+   "expect": [
+    "yueju",
+    "zuojin"
+   ]
+  }
+ ],
+ "cases_v1": {
+  "title": "驗證題 v0.1（建庫前登錄）",
+  "families": {
+   "banxiaxiexin": "半夏瀉心湯族：半夏、生薑、甘草瀉心湯，人參瀉心湯，加減瀉心湯，半夏瀉心湯去參薑棗草加枳實生薑方",
+   "lizhong": "理中湯族：理中湯（丸）、附子理中湯及其去加方（加減附子理中湯、附子理中去甘草加廣皮厚朴湯）、桂枝人參湯",
+   "zhenren": "固澀族：真人養臟湯、桃花湯、赤石脂禹餘糧湯、人參石脂湯",
+   "xiaojianzhong": "建中族：小建中湯、黃耆建中湯、桂枝加芍藥湯",
+   "buzhong": "補中益氣湯族：補中益氣湯、加減補中益氣湯",
+   "baitouweng": "白頭翁湯族：白頭翁湯、加味白頭翁湯",
+   "shenling": "參苓白朮散族：參苓白朮散、加味參苓白朮散",
+   "sishen": "四神丸族：四神丸、三神丸",
+   "shaoyao": "芍藥湯族（黃芩湯一系）：芍藥湯、黃芩湯、四苓合芩芍湯、加減芩芍湯"
+  },
+  "sha256": "0b3bf48c3488f3bf57564c3faa2bb40c0b3d95d1300a1bc4a213fa3bef7016ae",
+  "cases": [
+   {
+    "id": "h157",
+    "label": "《傷寒論》第157條（生薑瀉心湯）",
+    "text": "傷寒汗出，解之後，胃中不和，心下痞鞕，乾噫食臭，脅下有水氣，腹中雷鳴，下利者",
+    "f": [
+     "pi_ying",
+     "aifu",
+     "leiming",
+     "xie"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "h158",
+    "label": "《傷寒論》第158條（甘草瀉心湯）",
+    "text": "醫反下之，其人下利，日數十行，穀不化，腹中雷鳴，心下痞鞕而滿，乾嘔，心煩不得安",
+    "f": [
+     "xiahou",
+     "xie",
+     "xie_duo",
+     "xie_wan",
+     "leiming",
+     "pi_ying",
+     "ganou",
+     "xinfan"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "h159",
+    "label": "《傷寒論》第159條（赤石脂禹餘糧湯）",
+    "text": "服湯藥，下利不止，心下痞鞕……復以他藥下之，利不止……此利在下焦",
+    "f": [
+     "xiahou",
+     "xie",
+     "xie_buzhi",
+     "pi_ying"
+    ],
+    "expect": [
+     "zhenren"
+    ]
+   },
+   {
+    "id": "h163",
+    "label": "《傷寒論》第163條（桂枝人參湯）",
+    "text": "太陽病，外證未除，而數下之，遂協熱而利，利下不止，心下痞鞕，表裏不解者",
+    "f": [
+     "biaozheng",
+     "fare",
+     "xiahou",
+     "xie",
+     "xie_buzhi",
+     "pi_ying"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "h279",
+    "label": "《傷寒論》第279條（桂枝加芍藥湯）",
+    "text": "本太陽病，醫反下之，因爾腹滿時痛者，屬太陰也",
+    "f": [
+     "xiahou",
+     "fuzhang",
+     "futong"
+    ],
+    "expect": [
+     "xiaojianzhong"
+    ]
+   },
+   {
+    "id": "h396",
+    "label": "《傷寒論》第396條（理中丸）",
+    "text": "大病差後，喜唾，久不了了，胸上有寒，當以丸藥溫之",
+    "f": [
+     "tuxian",
+     "jiubing"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "wz94",
+    "label": "《溫病條辨·中焦》第九十四條（加減附子理中湯）",
+    "text": "自利腹滿，小便清長，脈濡而小，病在太陰，法當溫臟，勿事通腑",
+    "f": [
+     "xie",
+     "fuzhang",
+     "xiaobian_qing",
+     "mairuo"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "wz49",
+    "label": "《溫病條辨·中焦》第四十九條（附子理中去甘草加廣皮厚朴湯）",
+    "text": "陽明寒濕，舌白腐，肛墜痛，便不爽，不喜食",
+    "f": [
+     "taibai",
+     "taihou",
+     "tuogang",
+     "xie_buhuan",
+     "nashao"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "wz98",
+    "label": "《溫病條辨·中焦》第九十八條（加減補中益氣湯）",
+    "text": "（痢久）氣虛下陷，門戶不藏",
+    "f": [
+     "xie",
+     "xiazhui",
+     "huatuo"
+    ],
+    "expect": [
+     "buzhong"
+    ]
+   },
+   {
+    "id": "wz99",
+    "label": "《溫病條辨·中焦》第九十九條（加味白頭翁湯）",
+    "text": "內虛下陷，熱利下重，腹痛，脈左小右大",
+    "f": [
+     "xie",
+     "houzhong",
+     "futong"
+    ],
+    "expect": [
+     "baitouweng"
+    ]
+   },
+   {
+    "id": "wz87",
+    "label": "《溫病條辨·中焦》第八十七條（四苓合芩芍湯）",
+    "text": "自利不爽，欲作滯下，腹中拘急，小便短者",
+    "f": [
+     "xie",
+     "xie_buhuan",
+     "tong_ji",
+     "xiaobian_duan"
+    ],
+    "expect": [
+     "shaoyao"
+    ]
+   },
+   {
+    "id": "wz89",
+    "label": "《溫病條辨·中焦》第八十九條（加減芩芍湯）",
+    "text": "滯下已成，腹脹痛",
+    "f": [
+     "li",
+     "fuzhang",
+     "futong"
+    ],
+    "expect": [
+     "shaoyao"
+    ]
+   },
+   {
+    "id": "wz64",
+    "label": "《溫病條辨·中焦》第六十四條後半（半夏瀉心湯去參薑棗草加枳實生薑方）",
+    "text": "陽明濕溫……嘔甚而痞者",
+    "f": [
+     "ou",
+     "pi"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "wx67",
+    "label": "《溫病條辨·下焦》第六十七條（桃花湯）",
+    "text": "下痢無度，脈微細，肢厥，不進食",
+    "f": [
+     "li",
+     "xie_duo",
+     "maiwei",
+     "weihan",
+     "nashao"
+    ],
+    "expect": [
+     "zhenren"
+    ]
+   },
+   {
+    "id": "wx69",
+    "label": "《溫病條辨·下焦》第六十九條（三神丸）",
+    "text": "久痢傷腎，下焦不固，腸膩滑下，納穀運遲",
+    "f": [
+     "li",
+     "xie_jiu",
+     "huatuo",
+     "nashao"
+    ],
+    "expect": [
+     "sishen"
+    ]
+   },
+   {
+    "id": "wx75",
+    "label": "《溫病條辨·下焦》第七十五條（加減瀉心湯）",
+    "text": "噤口痢，左脈細數，右手脈弦，乾嘔腹痛，裡急後重，積下不爽",
+    "f": [
+     "li",
+     "maixishu",
+     "maixian",
+     "ganou",
+     "futong",
+     "houzhong",
+     "xie_buhuan"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "wx76",
+    "label": "《溫病條辨·下焦》第七十六條（加味參苓白朮散）",
+    "text": "噤口痢，嘔惡不飢，積少痛緩，形衰脈弦，舌白不渴",
+    "f": [
+     "li",
+     "ou",
+     "nashao",
+     "xiaoshou",
+     "maixian",
+     "taibai",
+     "buke"
+    ],
+    "expect": [
+     "shenling"
+    ]
+   }
+  ],
+  "result": "v0.1 只算一次：4／17。命中的是第158條、中焦第六十四、八十七、八十九條。失誤主因：一、證型主症寫的是《醫方集解》主治裡的字，但《傷寒論》《溫病條辨》條文常省略這些字（理中湯要「不渴、畏寒」，中焦第四十九、九十四條只寫舌白腐、小便清長、脈濡小；白頭翁湯要「欲飲水」，中焦第九十九條沒寫）；二、「誤下成痞」規則過強，把第159條（利在下焦）與第163條（表裏不解）都拉去瀉心湯；三、「噫食臭」被當成食積，第157條判為保和丸；「多唾」被當成吳茱萸湯主症，第396條判錯；四、久痢的固澀、溫腎、溫中三族（下焦第六十七、六十九條）界線不清；噤口痢兩題（第七十五、七十六條）也分不開。 v0.2 修改後此批為 15／17，但 v0.2 的規則是看著這批寫的，不算證據。"
+ },
+ "page": {
+  "title": "脾胃病辨證選方",
+  "eyebrow": "中藥典籍原文庫．規則式辨證．脾胃 v0.3（兩層：先辨病性，再選方）",
+  "lede": "勾選胃痛、痞滿、腹瀉、痢疾、便秘、嘔吐、呃逆、吞酸等症狀與舌脈，程式先辨病性（氣虛、虛寒、陰虛、濕阻、食積、氣滯、濕熱），再依各證型的主症、次症與反證計分，套用《醫方集解》方解中的原文規則（如傷食與痛瀉之辨、自利以渴不渴分寒熱），列出最可能的三個證型、主方出處與加減。這是學習用的規則系統，不能取代面診。",
+  "checkIntro": "自檢題取自各方主治本文，只檢查程式是否照原文運作；預先登錄的驗證題取自建庫時沒有用到的《傷寒論》與《溫病條辨》條文，登錄時知識庫只有症狀清單。",
+  "limits": "<li>目前收 28 個證型、7 種病性、21 條原文規則；依據《醫方集解》主治與方解，以及看過驗證題後補入的《傷寒論》《溫病條辨》條文。</li><li><b>首選仍不可靠：</b>三批預先登錄的新題，首選各中 4／17、5／15、8／15，而且 v0.2、v0.3 的修改都沒有改變任何一題新題的首選。最近一批前三名命中 12／15，較適合當「候選與追問清單」。</li><li>症狀描述只有常見症狀（腹瀉、腹痛、食少、畏寒）時，結果最不穩定；請盡量補上舌苔、口渴與否、大便性狀、誘因。</li><li>黑便、嘔血、劇烈腹痛、吞嚥困難或不明原因消瘦，請先就醫。實際用藥請由中醫師面診後處方。</li>",
+  "intro": "從左側勾選症狀後，這裡會列出最可能的證型、主方與加減。",
+  "nomatch": "目前勾選的症狀，對不上知識庫中的任何脾胃證型。請補充寒熱、口渴與否、大便、舌苔等資料。",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷虛實寒熱。",
+  "sample": "k18",
+  "casesTitle": "建庫自檢（取自各方主治本文，不算證據）"
+ },
+ "cases_v2": {
+  "title": "驗證題 v0.2（修改前登錄）",
+  "families": {
+   "lizhong": "理中湯族：理中湯（丸）、附子理中湯及其去加方、桂枝人參湯；第277條「四逆輩」以理中湯族計",
+   "banxiaxiexin": "瀉心湯族：半夏、生薑、甘草瀉心湯，黃連湯，吳瑭瀉心湯、人參瀉心湯、加減人參瀉心湯，半夏瀉心湯去參薑棗草加枳實杏仁方",
+   "baitouweng": "白頭翁湯族：白頭翁湯、加味白頭翁湯",
+   "yin": "養陰族（益胃湯或增液湯皆算對）：益胃湯、增液湯、麥冬麻仁湯",
+   "buzhong": "補中益氣湯族",
+   "zhenren": "固澀族：真人養臟湯、桃花湯、赤石脂禹餘糧湯、人參石脂湯",
+   "pishen": "脾腎雙補（四神丸或參苓白朮散皆算對）：雙補湯"
+  },
+  "sha256": "7d5cebe77b9c9156c18e28aac9848973427dd017d80af352802d892fdda4423d",
+  "cases": [
+   {
+    "id": "s273",
+    "label": "《傷寒論》第273條（太陰提綱）",
+    "text": "太陰之為病，腹滿而吐，食不下，自利益甚，時腹自痛",
+    "f": [
+     "fuzhang",
+     "ou",
+     "nashao",
+     "xie",
+     "futong"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "s277",
+    "label": "《傷寒論》第277條（四逆輩）",
+    "text": "自利不渴者，屬太陰，以其臟有寒故也，當溫之",
+    "f": [
+     "xie",
+     "buke"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "s173",
+    "label": "《傷寒論》第173條（黃連湯）",
+    "text": "傷寒胸中有熱，胃中有邪氣，腹中痛，欲嘔吐者",
+    "f": [
+     "futong",
+     "ou"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "s371",
+    "label": "《傷寒論》第371條（白頭翁湯）",
+    "text": "熱利下重者",
+    "f": [
+     "xie",
+     "houzhong"
+    ],
+    "expect": [
+     "baitouweng"
+    ]
+   },
+   {
+    "id": "z51",
+    "label": "《溫病條辨·中焦》第五十一條（霍亂寒多，理中湯）",
+    "text": "既吐且利，寒熱，身痛……寒多，不欲飲水者",
+    "f": [
+     "ou",
+     "xie",
+     "biaozheng",
+     "buke"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "z39",
+    "label": "《溫病條辨·中焦》第三十九條（半夏瀉心湯去參薑棗草加枳實杏仁）",
+    "text": "陽明暑溫，脈滑數，不食不飢不便，濁痰凝聚，心下痞者",
+    "f": [
+     "maihua",
+     "maishu",
+     "nashao",
+     "bianmi",
+     "pi"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "z74",
+    "label": "《溫病條辨·中焦》第七十四條（瀉心湯）",
+    "text": "瘧邪痞結心下，舌白口渴。煩躁自利，初身痛，繼則心下亦痛",
+    "f": [
+     "pi",
+     "taibai",
+     "kouke",
+     "xinfan",
+     "xie",
+     "weitong"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "z77",
+    "label": "《溫病條辨·中焦》第七十七條（加減人參瀉心湯）",
+    "text": "瘧傷胃陽，氣逆不降，熱劫胃液，不飢，不飽，不食，不便，渴不欲飲，味變酸濁",
+    "f": [
+     "nashao",
+     "bianmi",
+     "kougan",
+     "tunsuan"
+    ],
+    "expect": [
+     "banxiaxiexin"
+    ]
+   },
+   {
+    "id": "z78",
+    "label": "《溫病條辨·中焦》第七十八條（麥冬麻仁湯）",
+    "text": "瘧傷胃陰，不飢不飽，不便，潮熱，得食則煩熱愈加，津液不復者",
+    "f": [
+     "nashao",
+     "bianmi",
+     "fare",
+     "xinfan"
+    ],
+    "expect": [
+     "yiwei",
+     "zengye"
+    ]
+   },
+   {
+    "id": "z82",
+    "label": "《溫病條辨·中焦》第八十二條（補中益氣湯）",
+    "text": "中焦瘧，寒熱久不止，氣虛留邪",
+    "f": [
+     "fare",
+     "weihan",
+     "jiubing"
+    ],
+    "expect": [
+     "buzhong"
+    ]
+   },
+   {
+    "id": "z93",
+    "label": "《溫病條辨·中焦》第九十三條（人參石脂湯）",
+    "text": "久痢陽明不闔",
+    "f": [
+     "li",
+     "xie_jiu",
+     "huatuo"
+    ],
+    "expect": [
+     "zhenren"
+    ]
+   },
+   {
+    "id": "z33",
+    "label": "《溫病條辨·中焦》第三十三條（益胃、增液輩）",
+    "text": "陽明溫病，下後脈靜，身不熱，舌上津回，十數日不大便，可與益胃、增液輩，斷不可再與承氣也",
+    "f": [
+     "bianmi",
+     "xiahou"
+    ],
+    "expect": [
+     "yiwei",
+     "zengye"
+    ]
+   },
+   {
+    "id": "z16",
+    "label": "《溫病條辨·中焦》第十六條（增液）",
+    "text": "陽明溫病，下後二、三日，下證復現，脈下甚沉，或沉而無力，止可與增液，不可與承氣",
+    "f": [
+     "bianmi",
+     "xiahou",
+     "maichen",
+     "mairuo"
+    ],
+    "expect": [
+     "yiwei",
+     "zengye"
+    ]
+   },
+   {
+    "id": "x64",
+    "label": "《溫病條辨·下焦》第六十四條（雙補湯）",
+    "text": "老年久痢，脾陽受傷，食滑便溏，腎陽亦衰",
+    "f": [
+     "xie",
+     "xie_jiu",
+     "jiubing"
+    ],
+    "expect": [
+     "sishen",
+     "shenling"
+    ]
+   },
+   {
+    "id": "x74",
+    "label": "《溫病條辨·下焦》第七十四條（白頭翁湯，噤口痢實證）",
+    "text": "噤口痢，熱氣上沖，腸中逆阻似閉，腹痛在下尤甚者",
+    "f": [
+     "li",
+     "nashao",
+     "futong"
+    ],
+    "expect": [
+     "baitouweng"
+    ]
+   }
+  ],
+  "result": "v0.1 基準 5／15；v0.2 凍結後只算一次，仍為 5／15，逐題對錯完全相同：v0.2 的修改沒有影響任何一題新題。原因：v0.2 的九條新規則都是照著已看過條文的症狀組合寫的，觸發條件太窄，新條文碰不到。新題的失誤集中在三處：一、六君子湯以「嘔、食少」這類常見症狀為主症，成了吸收各種痞嘔的預設答案（第273、173條，中焦第三十九條）；二、溫病「下後」「瘧後」的陰傷便秘與不飢（中焦第十六、三十三、七十七、七十八條）分不出來，中焦第十六條的「脈沉而無力」被當成寒象判為理中湯；三、「寒熱久不止」（中焦第八十二條）被當成寒證判為丁香柿蒂湯，中焦第七十四條的「舌白口渴、煩躁自利」判為白頭翁湯，下焦第七十四條噤口痢實證判為芍藥湯。 v0.3 修改後此批為 12／15，但已看過，不算證據。"
+ },
+ "cases_v3": {
+  "title": "驗證題 v0.3（附方與醫案，修改前登錄）",
+  "families": {
+   "buzhong": "補中益氣湯族",
+   "sijunzi": "四君子湯族",
+   "jianpi": "健脾丸、枳朮丸族",
+   "lizhong": "理中湯族",
+   "yueju": "越鞠丸",
+   "pingwei": "平胃散族",
+   "sishen": "四神丸族",
+   "baohe": "保和丸族",
+   "zhishidaozhi": "枳實導滯丸族",
+   "zuojin": "左金丸族",
+   "shaoyao": "芍藥湯、黃芩湯族",
+   "erchen": "二陳湯族",
+   "dingxiang": "丁香柿蒂湯"
+  },
+  "note": "判分：預期為母方所屬方族；主治症狀明顯屬另一族者，登錄時一併列為正確（多選名單寫死於下）。收題：扣掉病機詞（脾虛、胃寒、傷溼、痰火等）後，至少要有兩項能編碼的症狀；主治寫「治前證……」者不收（前證即母方主治，編入等於洩題）。編碼對照（登錄時定）：飲食不消→食後脹甚；勞倦→神疲乏力；短氣→少氣懶言；胸滿、痞悶、滿悶→心下痞滿；內傷飲食、傷冷食、傷肉食→傷食；老年→久病；悶亂→心煩；肛澀→便下不爽；或結或瀉→便秘＋腹瀉；手足厥、四肢冰冷→畏寒手足不溫；食不入口、飲食不進、不思食→食少。",
+  "sha256": "6eeaf7934e666921d399c92acce0c89669e81d55c7c290624ae11ba388b33239",
+  "cases": [
+   {
+    "id": "f_tiaozhong",
+    "label": "《醫方集解·補中益氣湯附方》調中益氣湯",
+    "text": "治脾胃不調，胸滿肢倦，食少短氣，口不知味",
+    "f": [
+     "pi",
+     "fali",
+     "nashao",
+     "shaoqi"
+    ],
+    "expect": [
+     "buzhong",
+     "sijunzi"
+    ]
+   },
+   {
+    "id": "f_shenzhu",
+    "label": "《醫方集解·補中益氣湯附方》參術益胃湯",
+    "text": "治內傷勞倦，燥熱短氣，口渴無味，大便溏黃",
+    "f": [
+     "fali",
+     "fare",
+     "shaoqi",
+     "kouke",
+     "xie"
+    ],
+    "expect": [
+     "buzhong"
+    ]
+   },
+   {
+    "id": "f_shengyang",
+    "label": "《醫方集解·補中益氣湯附方》升陽順氣湯",
+    "text": "治飲食勞倦所傷，滿悶短氣，不思食，不知味，時惡寒",
+    "f": [
+     "shangshi",
+     "fali",
+     "pi",
+     "shaoqi",
+     "nashao",
+     "weihan"
+    ],
+    "expect": [
+     "buzhong",
+     "jianpi"
+    ]
+   },
+   {
+    "id": "f_lianli",
+    "label": "《醫方集解·理中湯附方》連理湯",
+    "text": "治傷暑溼而作瀉（若外感盛暑，內傷生冷者，非此不可）",
+    "f": [
+     "xie",
+     "shangshi"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   },
+   {
+    "id": "f_wenwei",
+    "label": "《醫方集解·理中湯附方》溫胃湯",
+    "text": "治憂思鬱結，脾肺氣凝，脹滿上衝，飲食不下",
+    "f": [
+     "qingzhi",
+     "fuzhang",
+     "nashao"
+    ],
+    "expect": [
+     "lizhong",
+     "yueju"
+    ]
+   },
+   {
+    "id": "f_chushi",
+    "label": "《醫方集解·平胃散附方》除溼湯",
+    "text": "治傷溼腹痛，身重足軟，大便溏瀉",
+    "f": [
+     "futong",
+     "shenzhong",
+     "xie"
+    ],
+    "expect": [
+     "pingwei"
+    ]
+   },
+   {
+    "id": "f_duijin",
+    "label": "《醫方集解·平胃散附方》對金飲",
+    "text": "治脾胃受溼，腹脹身重，飲食不進，肢酸膚腫",
+    "f": [
+     "fuzhang",
+     "shenzhong",
+     "nashao"
+    ],
+    "expect": [
+     "pingwei"
+    ]
+   },
+   {
+    "id": "f_miaoying",
+    "label": "《醫方集解·健脾丸附方》妙應丸",
+    "text": "治胃虛不能食，臟腑或結或瀉",
+    "f": [
+     "nashao",
+     "bianmi",
+     "xie"
+    ],
+    "expect": [
+     "jianpi"
+    ]
+   },
+   {
+    "id": "f_jupizhizhu",
+    "label": "《醫方集解·枳術丸附方》橘皮枳術丸",
+    "text": "治飲食不消，氣滯痞悶",
+    "f": [
+     "fuzhang_hou",
+     "pi"
+    ],
+    "expect": [
+     "jianpi"
+    ]
+   },
+   {
+    "id": "f_quzhizhu",
+    "label": "《醫方集解·枳術丸附方》曲枳術丸",
+    "text": "治內傷飲食，或泄瀉",
+    "f": [
+     "shangshi",
+     "xie"
+    ],
+    "expect": [
+     "jianpi",
+     "baohe"
+    ]
+   },
+   {
+    "id": "f_sanhuang",
+    "label": "《醫方集解·枳術丸附方》三黃枳術丸",
+    "text": "治傷肉食、溼麵、辛熱味厚之物，填塞悶亂不快",
+    "f": [
+     "shangshi",
+     "pi",
+     "xinfan"
+    ],
+    "expect": [
+     "jianpi",
+     "zhishidaozhi"
+    ]
+   },
+   {
+    "id": "f_wuji",
+    "label": "《醫方集解·左金丸附方》戊己丸",
+    "text": "治熱痢熱瀉（熱瀉者，糞黃肛澀也）",
+    "f": [
+     "li",
+     "xie",
+     "xie_buhuan"
+    ],
+    "expect": [
+     "zuojin",
+     "shaoyao"
+    ]
+   },
+   {
+    "id": "f_jupitang",
+    "label": "《醫方集解·二陳湯附方》橘皮湯",
+    "text": "治乾嘔噦，及手足厥者",
+    "f": [
+     "ganou",
+     "eni",
+     "weihan"
+    ],
+    "expect": [
+     "erchen",
+     "dingxiang"
+    ]
+   },
+   {
+    "id": "m_shujiao",
+    "label": "《本草綱目·蜀椒》醫案（平胃散加椒紅、茴香）",
+    "text": "一婦年七十餘，病瀉五年，百藥不效……每因怒食舉發，服之即止。此除濕消食，溫脾補腎之驗也",
+    "f": [
+     "xie",
+     "xie_jiu",
+     "jiubing",
+     "qingzhi",
+     "shangshi"
+    ],
+    "expect": [
+     "pingwei",
+     "sishen"
+    ]
+   },
+   {
+    "id": "m_qiandan",
+    "label": "《本草綱目·鉛丹》醫案（理中湯加附子）",
+    "text": "一婦因多子，月內服鉛丹二兩，四肢冰冷，食不入口。時正仲冬，急服理中湯加附子數十帖乃安",
+    "f": [
+     "weihan",
+     "nashao"
+    ],
+    "expect": [
+     "lizhong"
+    ]
+   }
+  ],
+  "result": "v0.2 基準 8／15；v0.3 凍結後只算一次，仍為 8／15，逐題首選與 v0.2 完全相同（連續第二輪修改對新題無影響）。前三名命中 12／15（輔助指標）。失誤共通原因：沒有任何證型同時命中主症與鑑別要點時，程式退回比原始分數，常見症狀（腹瀉、腹痛、畏寒）多的方勝出。例：除溼湯「腹痛、身重、溏瀉」判為痛瀉要方（身重是平胃散的鑑別要點，但平胃散主症痞、脹、苔膩都沒寫）；《本草綱目·鉛丹》醫案「四肢冰冷，食不入口」判為丁香柿蒂湯；連理湯、三黃枳朮丸的「傷生冷」「傷辛熱」只編成「傷食」，寒熱方向失落。"
+ },
+ "jingMult": 1.0,
+ "jingCap": 10
+}
