@@ -334,7 +334,8 @@ DEFAULT_RUBRICS = ("氣味", "主治", "發明")
 
 # variant characters / alternate names seen in these editions
 VARIANTS = [("耆", "芪"), ("參", "蔘"), ("朮", "術"), ("濕", "溼"), ("黃", "黄"),
-            ("鞕", "硬"), ("栝樓", "瓜蔞"), ("栝蔞", "瓜蔞"), ("薑", "姜"), ("麪", "麵")]
+            ("鞕", "硬"), ("栝樓", "瓜蔞"), ("栝蔞", "瓜蔞"), ("薑", "姜"), ("麪", "麵"),
+            ("癢", "痒"), ("搔", "瘙")]
 ALIASES = {"山藥": ["署豫", "薯蕷"], "菊花": ["鞠華", "甘菊花"], "白朮": ["術"], "蒼朮": ["術"],
            "乾地黃": ["地黃"], "生地黃": ["地黃"], "熟地黃": ["地黃"], "玄參": ["元參"],
            "茺蔚子": ["充蔚子"], "旋覆花": ["旋復花"], "枸杞子": ["枸杞"], "地骨皮": ["枸杞"],
@@ -463,6 +464,97 @@ def wenbing(text, qs):
     return hits
 
 
+# ── 全文搜尋：症狀詞、詞句（癮疹、搔癢、下利清穀…）──────────────────────────────
+FULLTEXT_ORDER = ["醫方集解", "傷寒論", "溫病條辨", "本草備要", "神農本草經", "本草綱目"]
+_NUM = "一二三四五六七八九十百"
+_FORMULA_TITLE = re.compile(r"[^，。；：（）\s]{2,10}(湯|散|丸|飲|丹|膏|方|煎)(（[^）]*）)?")
+
+
+def segments(book, text):
+    """把一部書切成 (所屬條目, 內文) 的清單，供全文搜尋標示出處。
+
+    條目＝標題層級（卷、部、藥名、綱目的段落名），再加各書自己的條目起點：
+    《傷寒論》【第N條】與方（:;），《溫病條辨》「一、」條文與【…方】，《醫方集解》方名行。
+    內文去掉換行與空白，跨行斷開的詞（如「丹斑／癮疹」）也搜得到。
+    """
+    segs, stack, entry, buf = [], ["", "", "", ""], "", []
+
+    def flush():
+        body = re.sub(r"[ 　]+", "", "".join(x.strip() for x in buf))
+        if body:
+            label = " › ".join([x for x in stack if x][-3:] + ([entry] if entry else []))
+            segs.append((label, body))
+        buf.clear()
+
+    for l in text.split("\n"):
+        m = re.match(r"^(#{1,4}) (.*)$", l)
+        start = None
+        if m:
+            flush()
+            lv = len(m.group(1))
+            # 《醫方集解》只有開頭一個「# 序」，各劑是 ##；不讓「序」掛在每條前面
+            name = "" if (book == "醫方集解" and lv == 1) else m.group(2).strip()[:30]
+            stack[lv - 1:] = [name] + [""] * (4 - lv)
+            entry = ""
+            continue
+        if book == "傷寒論":
+            if (n := re.match(r"^【第(\d+)條】", l)):
+                start = f"第{n.group(1)}條"
+            elif l.startswith(":;"):
+                start = l[2:].strip()[:20]
+            elif entry.endswith("方") and buf and not l.startswith("::") and l.strip():
+                start = ""  # 方後回到正文
+        elif book == "溫病條辨":
+            if (n := re.match(rf"^([{_NUM}]+)、", l)):
+                start = f"第{n.group(1)}條"
+            elif l.startswith("【") and l.rstrip().endswith("方】"):
+                start = l.strip()[1:-1]
+        elif book == "醫方集解" and _FORMULA_TITLE.fullmatch(l.strip()):
+            start = l.strip()
+        if start is not None:
+            flush()
+            entry = start
+        buf.append(l)
+    flush()
+    return segs
+
+
+def fulltext(query, book=None, get_segments=None, context=60, per_entry=3):
+    """全文搜尋。回傳 (qs, [(書, [(條目, 次數, [片段…]), …]), …])，依 FULLTEXT_ORDER 排列。
+
+    qs 是實際搜尋的字形（含異體），供呼叫端標示關鍵字。`get_segments(book)` 可傳入快取版本。
+    """
+    get_segments = get_segments or (lambda b: segments(b, (TEXTS / f"{b}.md").read_text(encoding="utf-8")))
+    q = re.sub(r"[\s　]+", "", query)
+    if not q:
+        return [], []
+    qs = forms(q)
+    pat = re.compile("|".join(re.escape(x) for x in qs))
+    results = []
+    for b in ([book] if book else FULLTEXT_ORDER):
+        hits = []
+        for label, body in get_segments(b):
+            ms = list(pat.finditer(body))
+            if not ms:
+                continue
+            wins = []
+            for m in ms:
+                s, e = max(0, m.start() - context), min(len(body), m.end() + context)
+                if wins and s <= wins[-1][1]:
+                    wins[-1][1] = e
+                else:
+                    wins.append([s, e])
+            snips = [("…" if s else "") + body[s:e] + ("…" if e < len(body) else "") for s, e in wins]
+            if hits and hits[-1][0] == label:  # 同一條目被小標題切開時合併
+                hits[-1] = (label, hits[-1][1] + len(ms), hits[-1][2] + snips)
+            else:
+                hits.append((label, len(ms), snips))
+        hits = [(lab, n, list(dict.fromkeys(sn))[:per_entry]) for lab, n, sn in hits]
+        if hits:
+            results.append((b, hits))
+    return qs, results
+
+
 ROLES_FILE = find_data("醫方集解_君臣.json")
 
 
@@ -507,7 +599,7 @@ def search(query, book=None, rubrics=DEFAULT_RUBRICS, read=None):
     return roles, results
 
 
-lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS']})
+lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'segments', 'fulltext', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS', 'FULLTEXT_ORDER']})
 
 
 # ══ 頁面（來自 app_pages.py）═══════════════════════════════════════════════════
@@ -530,6 +622,11 @@ def load_kb(name):
 @st.cache_resource
 def texts():
     return {b: find_data(f"{b}.md").read_text(encoding="utf-8") for b in lookup.BOOKS}
+
+
+@st.cache_resource
+def book_segments(b):
+    return lookup.segments(b, texts()[b])
 
 
 @st.cache_data
@@ -718,18 +815,48 @@ def render_passage(p, maxlen):
     st.markdown("  \n".join(x for x in lines if x.strip()))
 
 
+FT_SHOW = 30  # 每部書最多列出的條目數
+
+
+def render_fulltext(q, book):
+    qs, results = lookup.fulltext(q, None if book == "全部" else book, get_segments=book_segments)
+    if not results:
+        hint = "「養」應為「癢」？" if "養" in q else "可以換同義詞、異體字，或縮短關鍵字。"
+        st.warning(f"六部書的全文都找不到「{q}」。{hint}")
+        return
+    pat = re.compile("|".join(re.escape(html.escape(x)) for x in qs))
+    total = sum(len(h) for _, h in results)
+    st.caption(f"共 {total} 個條目提到「{'／'.join(qs)}」。依《醫方集解》《傷寒論》《溫病條辨》（方書）在前、本草在後排列；"
+               "每個條目最多列 3 段上下文。點開條目可看所屬的方或藥。")
+    for b, hits in results:
+        st.subheader(f"《{b}》 {len(hits)} 個條目、{sum(n for _, n, _ in hits)} 處")
+        for label, n, snips in hits[:FT_SHOW]:
+            with st.expander(f"{label}（{n} 處）", expanded=(b != "本草綱目" and len(hits) <= 5)):
+                for s in snips:
+                    st.markdown("> " + pat.sub(lambda m: f"**{m.group(0)}**", html.escape(s)))
+        if len(hits) > FT_SHOW:
+            st.caption(f"另有 {len(hits) - FT_SHOW} 個條目未列出，可改選單一本書，或加長關鍵字。")
+
+
 def page_lookup():
     st.title("典籍原文查詢")
-    st.write("查《本草備要》《神農本草經》《本草綱目》《傷寒論》《醫方集解》《溫病條辨》原文。可查藥名、方名，或《傷寒論》條號（如 96）。"
-             "異體字與別名會自動對應（耆／芪、參／蔘、山藥／署豫、金銀花→忍冬等）。")
+    st.write("查《本草備要》《神農本草經》《本草綱目》《傷寒論》《醫方集解》《溫病條辨》原文。"
+             "異體字與別名會自動對應（耆／芪、參／蔘、癢／痒、搔／瘙、山藥／署豫、金銀花→忍冬等）。")
+    mode = st.radio("查詢方式", ["條目（藥名、方名、條號）", "全文（症狀、詞句）"], horizontal=True, key="lk_mode")
+    full = mode.startswith("全文")
     c1, c2 = st.columns([3, 2])
-    q = c1.text_input("藥名、方名或條號", placeholder="例：黃耆、小柴胡湯、96")
-    book = c2.selectbox("書", ["全部"] + lookup.BOOKS)
-    c3, c4 = st.columns([3, 2])
-    rubrics = c3.multiselect("《本草綱目》要看的段落", list(lookup.RUBRICS), default=list(lookup.DEFAULT_RUBRICS))
-    maxlen = c4.slider("每段最多字數", 500, 20000, 2500, step=500)
+    q = c1.text_input("症狀或詞句" if full else "藥名、方名或條號",
+                      placeholder="例：癮疹、搔癢、下利清穀" if full else "例：黃耆、小柴胡湯、96")
+    book = c2.selectbox("書", ["全部"] + (lookup.FULLTEXT_ORDER if full else lookup.BOOKS))
+    if not full:
+        c3, c4 = st.columns([3, 2])
+        rubrics = c3.multiselect("《本草綱目》要看的段落", list(lookup.RUBRICS), default=list(lookup.DEFAULT_RUBRICS))
+        maxlen = c4.slider("每段最多字數", 500, 20000, 2500, step=500)
     if not q.strip():
-        st.info("輸入後按 Enter 查詢。")
+        st.info("輸入後按 Enter 查詢。" + ("" if full else "查症狀（如「癮疹」）請改選「全文」。"))
+        return
+    if full:
+        render_fulltext(q.strip(), book)
         return
     T = texts()
     roles, results = lookup.search(q, None if book == "全部" else book, tuple(rubrics) or None, read=T.__getitem__)
@@ -744,8 +871,9 @@ def page_lookup():
             if roles.get(k):
                 msg += f"\n\n{label}：{roles[k]}"
         st.success(msg + "\n\n（未列出的藥味，原文沒有明說角色。）")
-    if not results:
-        st.warning("查不到。可以換別名、只輸入關鍵字，或改選「全部」。")
+    if not results and not roles:
+        st.info(f"條目裡沒有「{q.strip()}」（條目只收藥名、方名、條號），以下改用全文搜尋。")
+        render_fulltext(q.strip(), "全部")
         return
     for b, hits in results:
         st.subheader(f"《{b}》 {len(hits)} 處")
