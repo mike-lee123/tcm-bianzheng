@@ -213,7 +213,8 @@ def diagnose(kb, selected, temp=None):
         return not key or any(has(x) for x in key)
 
     def backed(r):
-        return bool(not r["gated"] and ((len(r["mainHit"]) > 0 and keyed(r)) or r["ruled"]))
+        # 被原文禁忌降分的證型，不再因「有依據」排到前面（與 JS 版相同）
+        return bool(not r["gated"] and not r.get("cautions") and ((len(r["mainHit"]) > 0 and keyed(r)) or r["ruled"]))
 
     for r in allp:  # 原文規則加分可越過閘門
         if r["gated"] and r["ruleBoost"]:
