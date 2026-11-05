@@ -406,7 +406,29 @@ def _parse_free_text_v1(kb, text):
     return list(dict.fromkeys(ids)), temp, unknown
 
 
-engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1']})
+def unclear(d):
+    """第一層（病性或經）線索不足：沒有任何一項達 3 分，或前兩名差距不到 25%。"""
+    j, top = d["jing"], d["topJing"]
+    return (not top) or (len(j) > 1 and j[1]["score"] > 0 and j[1]["score"] >= 0.75 * top["score"])
+
+
+def pending_probes(kb, d, answered=(), limit=5):
+    """線索不足時要追問的題目：條件（when）已滿足、選項症狀都還沒選、也還沒回答過的，取前 limit 題。
+    規則與 bianzheng_engine.js 的 pendingProbes 相同。回傳 [(題號, 題目)]。"""
+    if not unclear(d):
+        return []
+    sel = set(d["selected"])
+    out = []
+    for i, p in enumerate(kb.get("probes", [])):
+        if i in answered or not all(w in sel for w in p.get("when", [])):
+            continue
+        if any(x in sel for _, xs in p["opts"] for x in xs):
+            continue
+        out.append((i, p))
+    return out[:limit]
+
+
+engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1', 'unclear', 'pending_probes']})
 engine.MAIN, engine.MINOR = MAIN, MINOR
 
 
@@ -749,6 +771,33 @@ def clear_all(kbname, kb):
     st.session_state[f"free_{kbname}"] = ""
     st.session_state[f"parsed_{kbname}"] = None
     st.session_state[f"unknown_{kbname}"] = []
+    st.session_state[f"probe_{kbname}"] = []
+
+
+def answer_probe(kbname, kb, i, ids):
+    """追問的回答：把選項對應的症狀加進點選區，並記下這題已答。"""
+    where = {it[0]: gi for gi, g in enumerate(kb["groups"]) for it in g["items"]}
+    L = engine.labels(kb)
+    for sid in ids:
+        k = group_key(kbname, where[sid])
+        cur = list(st.session_state.get(k) or [])
+        if L[sid] not in cur:
+            st.session_state[k] = cur + [L[sid]]
+    st.session_state[f"probe_{kbname}"] = list(st.session_state.get(f"probe_{kbname}") or []) + [i]
+
+
+def render_probes(kbname, kb, d):
+    pq = engine.pending_probes(kb, d, st.session_state.get(f"probe_{kbname}") or [])
+    if not pq:
+        return
+    with st.container(border=True):
+        st.markdown("**線索還不夠，先回答幾個問題（點一下就會重算）：**")
+        for i, p in pq:
+            st.markdown(p["q"])
+            cols = st.columns(len(p["opts"]))
+            for j, (text, ids) in enumerate(p["opts"]):
+                cols[j].button(text, key=f"pb_{kbname}_{i}_{j}", on_click=answer_probe,
+                               args=(kbname, kb, i, ids), width="stretch")
 
 
 def add_free_text(kbname, kb):
@@ -885,6 +934,7 @@ def page_bianzheng():
         else:
             d = engine.diagnose(kb, selected, temp)
             st.caption("已選：" + "、".join(L[x] for x in d["selected"]) + (f"（體溫 {temp}）" if temp else ""))
+            render_probes(kbname, kb, d)
             render_result(kb, d, L)
         st.caption(DISCLAIMER)
 
