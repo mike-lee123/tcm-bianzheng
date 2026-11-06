@@ -142,3 +142,16 @@ for name in at6.radio[0].options:
     w = [x.value for x in at6.warning if x.value.startswith("這個知識庫還在試做")]
     assert w and "預先登錄的醫案驗證" in w[0], (name, w)
 print("banner ok")
+
+# 「正常」選項：不計分，只略過追問
+at7 = AppTest.from_file("streamlit_app.py", default_timeout=90).run()
+at7.radio[0].set_value("失眠").run()
+at7.text_input[0].input("睡不著 心煩 口乾").run(); assert not at7.exception, at7.exception
+before = [m.value for m in at7.markdown if m.value.startswith("### 首選")]
+asked = any("舌頭" in m.value for m in at7.markdown)
+at7.text_input[0].input("舌淡紅").run(); assert not at7.exception, at7.exception
+after = [m.value for m in at7.markdown if m.value.startswith("### 首選")]
+assert before == after, (before, after)
+assert not any(m.value.startswith("**舌頭") or "舌頭？" in m.value for m in at7.markdown), "tongue probe should be skipped"
+assert any("不計分" in c.value for c in at7.caption)
+print("normal ok", asked)

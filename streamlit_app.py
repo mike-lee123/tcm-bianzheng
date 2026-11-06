@@ -273,9 +273,10 @@ def diagnose(kb, selected, temp=None):
         if spread > 0:
             sep.append({"id": sid, "spread": spread, "for": top3[w.index(max(w))]["formula"]})
     sep.sort(key=lambda x: -x["spread"])
+    cov = covered_by(kb, set(sel))  # 已勾「正常」所涵蓋的症狀，不再追問
     seen, questions = set(), []
     for q in [q for q in asks if not has(q["id"])] + sep:
-        if q["id"] not in seen:
+        if q["id"] not in seen and q["id"] not in cov:
             seen.add(q["id"]); questions.append(q)
     questions = questions[:6]
 
@@ -362,9 +363,10 @@ def parse_text(kb, text):
             continue
         if re.fullmatch(r"\d{2}(?:\.\d)?", chunk):
             temp = float(chunk); continue
-        if any(w in chunk for w in NORMAL):
+        if any(w in chunk and w not in tab for w in NORMAL):
             for w in NORMAL:
-                chunk = chunk.replace(w, "")
+                if w not in tab:
+                    chunk = chunk.replace(w, "")
             if NORMAL_MSG not in hints:
                 hints.append(NORMAL_MSG)
             chunk = chunk.strip()
@@ -457,23 +459,33 @@ def unclear(d):
     return (not top) or (len(j) > 1 and j[1]["score"] > 0 and j[1]["score"] >= 0.75 * top["score"])
 
 
+def covered_by(kb, sel):
+    """「正常」選項（kb.normals）涵蓋的症狀：不計分，只用來略過追問。規則與 JS 的 coveredBy 相同。"""
+    out = set()
+    for n, ids in kb.get("normals", {}).items():
+        if n in sel:
+            out.update(ids)
+    return out
+
+
 def pending_probes(kb, d, answered=(), limit=5):
     """線索不足時要追問的題目：條件（when）已滿足、選項症狀都還沒選、也還沒回答過的，取前 limit 題。
     規則與 bianzheng_engine.js 的 pendingProbes 相同。回傳 [(題號, 題目)]。"""
     if not unclear(d):
         return []
     sel = set(d["selected"])
+    cov = covered_by(kb, sel)
     out = []
     for i, p in enumerate(kb.get("probes", [])):
         if i in answered or not all(w in sel for w in p.get("when", [])):
             continue
-        if any(x in sel for _, xs in p["opts"] for x in xs):
+        if any(x in sel or x in cov for _, xs in p["opts"] for x in xs):
             continue
         out.append((i, p))
     return out[:limit]
 
 
-engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'specificity', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1', 'unclear', 'pending_probes']})
+engine = SimpleNamespace(**{n: globals()[n] for n in ['labels', 'aliases', 'with_temp', 'cond', 'specificity', 'score_pattern', 'weight_of', 'diagnose', 'check', 'case_sets', 'phrase_table', 'parse_text', 'parse_free_text', '_parse_free_text_v1', 'unclear', 'covered_by', 'pending_probes']})
 engine.MAIN, engine.MINOR = MAIN, MINOR
 
 
@@ -1031,7 +1043,14 @@ def render_result(kb, d, L):
             st.markdown(f"- {L[q['id']]}（關係到{q['for']}）")
 
 
+PILLS_CSS = """<style>
+[data-testid="stButtonGroup"] button { max-width: 100%; height: auto; min-height: 2rem; white-space: normal; text-align: left; }
+[data-testid="stButtonGroup"] button p, [data-testid="stButtonGroup"] button div { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; overflow-wrap: anywhere; }
+</style>"""
+
+
 def page_bianzheng():
+    st.markdown(PILLS_CSS, unsafe_allow_html=True)
     names = kb_names()
     kbname = st.radio("知識庫", names, horizontal=True, key="kbname")
     kb = load_kb(kbname)
@@ -1098,6 +1117,8 @@ def page_bianzheng():
         else:
             d = engine.diagnose(kb, selected, temp)
             st.caption("已選：" + "、".join(L[x] for x in d["selected"]) + (f"（體溫 {temp}）" if temp else ""))
+            if any(x in kb.get("normals", {}) for x in d["selected"]):
+                st.caption("「正常」選項不計分，只用來略過相關的追問。")
             render_probes(kbname, kb, d)
             render_result(kb, d, L)
         st.caption(DISCLAIMER)

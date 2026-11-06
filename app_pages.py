@@ -219,7 +219,14 @@ def render_result(kb, d, L):
             st.markdown(f"- {L[q['id']]}（關係到{q['for']}）")
 
 
+PILLS_CSS = """<style>
+[data-testid="stButtonGroup"] button { max-width: 100%; height: auto; min-height: 2rem; white-space: normal; text-align: left; }
+[data-testid="stButtonGroup"] button p, [data-testid="stButtonGroup"] button div { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; overflow-wrap: anywhere; }
+</style>"""
+
+
 def page_bianzheng():
+    st.markdown(PILLS_CSS, unsafe_allow_html=True)
     names = kb_names()
     kbname = st.radio("知識庫", names, horizontal=True, key="kbname")
     kb = load_kb(kbname)
@@ -286,6 +293,8 @@ def page_bianzheng():
         else:
             d = engine.diagnose(kb, selected, temp)
             st.caption("已選：" + "、".join(L[x] for x in d["selected"]) + (f"（體溫 {temp}）" if temp else ""))
+            if any(x in kb.get("normals", {}) for x in d["selected"]):
+                st.caption("「正常」選項不計分，只用來略過相關的追問。")
             render_probes(kbname, kb, d)
             render_result(kb, d, L)
         st.caption(DISCLAIMER)
