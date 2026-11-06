@@ -125,9 +125,10 @@ lookup = SimpleNamespace(**{{n: globals()[n] for n in {lk_names!r}}})
 {nav.strip()}
 '''
 
-if OUT.exists():
-    shutil.rmtree(OUT)
-OUT.mkdir()
+# 只清空內容、不刪資料夾本身（資料夾可能是某個終端機的工作目錄而被鎖住）
+OUT.mkdir(exist_ok=True)
+for old in OUT.iterdir():
+    shutil.rmtree(old) if old.is_dir() else old.unlink()
 (OUT / "streamlit_app.py").write_text(single, encoding="utf-8")
 shutil.copy(SRC / "requirements.txt", OUT / "requirements.txt")
 for p in (SRC / "data").rglob("*"):

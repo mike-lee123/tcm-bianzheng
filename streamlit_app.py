@@ -924,10 +924,11 @@ def render_probes(kbname, kb, d):
         st.markdown("**線索還不夠，先回答幾個問題（點一下就會重算）：**")
         for i, p in pq:
             st.markdown(p["q"])
-            cols = st.columns(len(p["opts"]))
-            for j, (text, ids) in enumerate(p["opts"]):
-                cols[j].button(text, key=f"pb_{kbname}_{i}_{j}", on_click=answer_probe,
-                               args=(kbname, kb, i, ids), width="stretch")
+            # 依文字長度排成一列、放不下就換行（不再平均切欄，以免長選項被擠成一字一行）
+            with st.container(horizontal=True, gap="small"):
+                for j, (text, ids) in enumerate(p["opts"]):
+                    st.button(text, key=f"pb_{kbname}_{i}_{j}", on_click=answer_probe,
+                              args=(kbname, kb, i, ids), width="content")
 
 
 def add_free_text(kbname, kb):
