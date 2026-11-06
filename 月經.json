@@ -1,0 +1,1964 @@
+{
+ "title": "月經病辨證選方",
+ "version": "0.1",
+ "note": "月經病（週期、經量、崩漏、閉經、痛經）規則式辨證試做；不含妊娠與產後病。",
+ "plannedFamilies": {
+  "siwu": "四物湯",
+  "lianfu": "連附四物湯",
+  "siwuqin": "四物加芩連湯、四物加芩朮湯",
+  "gujing": "固經丸",
+  "guipi": "歸脾湯",
+  "buzhong": "補中益氣湯",
+  "xiaoyao": "逍遙散族",
+  "bazhen": "八珍湯",
+  "aifu": "艾附暖宮丸",
+  "wenjing": "溫經湯",
+  "jiaoai": "膠艾湯",
+  "guizhifuling": "桂枝茯苓丸",
+  "didang": "抵當湯族（下瘀血湯）",
+  "tuguagen": "土瓜根散",
+  "dangguishaoyao": "當歸芍藥散"
+ },
+ "groups": [
+  {
+   "name": "週期",
+   "items": [
+    [
+     "xianqi",
+     "月經先期（提前）",
+     [
+      "提前",
+      "月經提早",
+      "經期提前",
+      "先期",
+      "一個月來兩次"
+     ]
+    ],
+    [
+     "houqi",
+     "月經後期（延後）",
+     [
+      "延後",
+      "月經延遲",
+      "經期延後",
+      "後期",
+      "過期"
+     ]
+    ],
+    [
+     "buding",
+     "先後不定",
+     [
+      "不規則",
+      "忽早忽晚",
+      "先後不定",
+      "月經亂"
+     ]
+    ],
+    [
+     "jingbi",
+     "閉經（數月不來）",
+     [
+      "月經沒來",
+      "好幾個月沒來",
+      "經閉",
+      "閉經",
+      "不來月經"
+     ]
+    ],
+    [
+     "jingchang",
+     "經期延長、淋瀝不淨",
+     [
+      "拖很久",
+      "滴滴答答",
+      "淋瀝不淨",
+      "一直不乾淨",
+      "經期很長"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "經量與崩漏",
+   "items": [
+    [
+     "liangduo",
+     "經量多",
+     [
+      "量多",
+      "量很多",
+      "經量多",
+      "過多"
+     ]
+    ],
+    [
+     "liangshao",
+     "經量少",
+     [
+      "量少",
+      "量很少",
+      "經量少"
+     ]
+    ],
+    [
+     "beng",
+     "突然大量出血（崩）",
+     [
+      "崩",
+      "大出血",
+      "血崩",
+      "突然很多"
+     ]
+    ],
+    [
+     "lou",
+     "漏下不止（量少不斷）",
+     [
+      "漏",
+      "漏下",
+      "一直滴"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "經色經質",
+   "items": [
+    [
+     "sezi",
+     "色紫黑",
+     [
+      "紫黑",
+      "暗紅",
+      "黑色",
+      "色紫"
+     ]
+    ],
+    [
+     "sehong",
+     "色深紅或鮮紅",
+     [
+      "鮮紅",
+      "深紅",
+      "大紅"
+     ]
+    ],
+    [
+     "sedan",
+     "色淡紅、質稀",
+     [
+      "淡紅",
+      "顏色淡",
+      "稀稀的",
+      "質稀"
+     ]
+    ],
+    [
+     "kuai",
+     "夾血塊",
+     [
+      "血塊",
+      "有塊",
+      "塊狀"
+     ]
+    ],
+    [
+     "douzhi",
+     "黏稠如豆汁或穢臭",
+     [
+      "黏稠",
+      "很黏",
+      "有臭味"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "痛與脹",
+   "items": [
+    [
+     "tongjing",
+     "經期腹痛（痛經）",
+     [
+      "痛經",
+      "經痛",
+      "月經痛",
+      "肚子痛",
+      "小腹痛"
+     ]
+    ],
+    [
+     "jingqian",
+     "經前或經期初痛",
+     [
+      "經前痛",
+      "來之前痛",
+      "第一天痛"
+     ]
+    ],
+    [
+     "jinghou",
+     "經後隱痛",
+     [
+      "經後痛",
+      "結束後痛",
+      "隱隱痛"
+     ]
+    ],
+    [
+     "xian",
+     "痛處喜溫喜按",
+     [
+      "熱敷舒服",
+      "按著舒服",
+      "喜歡熱敷"
+     ]
+    ],
+    [
+     "juan",
+     "痛處拒按",
+     [
+      "不能按",
+      "按了更痛"
+     ]
+    ],
+    [
+     "shaofuleng",
+     "小腹冷",
+     [
+      "小腹冷",
+      "肚子冷",
+      "下腹冰冷"
+     ]
+    ],
+    [
+     "shaofuman",
+     "少腹脹滿或裏急",
+     [
+      "小腹脹",
+      "下腹脹",
+      "少腹脹"
+     ]
+    ],
+    [
+     "ruzhang",
+     "經前乳房或兩脅脹痛",
+     [
+      "乳房脹",
+      "胸脹",
+      "脅脹",
+      "乳房痛"
+     ]
+    ],
+    [
+     "zheng",
+     "腹中有塊（癥積）",
+     [
+      "肌瘤",
+      "腹中有塊",
+      "硬塊",
+      "子宮肌瘤"
+     ]
+    ],
+    [
+     "yaosuan",
+     "腰痠",
+     [
+      "腰痠",
+      "腰痛"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "全身",
+   "items": [
+    [
+     "pifa",
+     "疲倦乏力",
+     [
+      "累",
+      "疲倦",
+      "沒力氣",
+      "乏力"
+     ]
+    ],
+    [
+     "mianwuhua",
+     "面色萎黃或蒼白",
+     [
+      "臉色差",
+      "面黃",
+      "臉色蒼白"
+     ]
+    ],
+    [
+     "touyun",
+     "頭暈目眩",
+     [
+      "頭暈",
+      "眩暈"
+     ]
+    ],
+    [
+     "xinji",
+     "心悸",
+     [
+      "心悸",
+      "心慌"
+     ]
+    ],
+    [
+     "shimian",
+     "失眠",
+     [
+      "睡不著",
+      "失眠"
+     ]
+    ],
+    [
+     "weihan",
+     "畏寒肢冷",
+     [
+      "怕冷",
+      "手腳冰冷",
+      "手腳冷"
+     ]
+    ],
+    [
+     "wuxin",
+     "五心煩熱",
+     [
+      "手心熱",
+      "五心煩熱",
+      "手腳心熱"
+     ]
+    ],
+    [
+     "shouzhang",
+     "手掌煩熱、唇口乾燥",
+     [
+      "手掌發熱",
+      "嘴唇乾",
+      "口唇乾燥"
+     ]
+    ],
+    [
+     "chaore",
+     "午後潮熱",
+     [
+      "下午發熱",
+      "潮熱"
+     ]
+    ],
+    [
+     "fuzhong",
+     "浮腫",
+     [
+      "水腫",
+      "浮腫"
+     ]
+    ],
+    [
+     "daixia",
+     "帶下量多",
+     [
+      "白帶多",
+      "分泌物多",
+      "帶下"
+     ]
+    ],
+    [
+     "xiazhui",
+     "小腹墜脹、氣短",
+     [
+      "下墜",
+      "墜脹",
+      "氣短"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "情志與口",
+   "items": [
+    [
+     "yinu",
+     "急躁易怒",
+     [
+      "易怒",
+      "脾氣大",
+      "急躁",
+      "生氣"
+     ]
+    ],
+    [
+     "yumen",
+     "情志抑鬱、善太息",
+     [
+      "鬱悶",
+      "心情不好",
+      "嘆氣",
+      "壓力大"
+     ]
+    ],
+    [
+     "kouku",
+     "口苦",
+     [
+      "嘴巴苦",
+      "口苦"
+     ]
+    ],
+    [
+     "kougan",
+     "口乾",
+     [
+      "口乾",
+      "嘴巴乾"
+     ]
+    ],
+    [
+     "nashao",
+     "食少",
+     [
+      "胃口差",
+      "吃不下",
+      "食慾差"
+     ]
+    ],
+    [
+     "xie",
+     "大便溏",
+     [
+      "拉肚子",
+      "大便稀",
+      "軟便"
+     ]
+    ],
+    [
+     "bianbi",
+     "大便秘結",
+     [
+      "便秘",
+      "大便乾"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "舌",
+   "items": [
+    [
+     "shehong",
+     "舌紅",
+     [
+      "舌紅"
+     ]
+    ],
+    [
+     "shedan",
+     "舌淡",
+     [
+      "舌淡"
+     ]
+    ],
+    [
+     "sheyu",
+     "舌暗或有瘀點",
+     [
+      "舌暗",
+      "瘀點",
+      "舌紫"
+     ]
+    ],
+    [
+     "taihuang",
+     "苔黃",
+     [
+      "黃苔",
+      "苔黃"
+     ]
+    ],
+    [
+     "taibai",
+     "苔白",
+     [
+      "白苔",
+      "苔白"
+     ]
+    ],
+    [
+     "shaotai",
+     "少苔",
+     [
+      "少苔",
+      "無苔"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "脈（知道才選）",
+   "items": [
+    [
+     "maixiruo",
+     "脈細弱",
+     [
+      "脈弱",
+      "脈細弱",
+      "脈無力"
+     ]
+    ],
+    [
+     "maishu",
+     "脈數",
+     [
+      "脈快",
+      "數脈"
+     ]
+    ],
+    [
+     "maixian",
+     "脈弦",
+     [
+      "弦脈"
+     ]
+    ],
+    [
+     "maise",
+     "脈澀",
+     [
+      "澀脈"
+     ]
+    ],
+    [
+     "maichen",
+     "脈沉遲",
+     [
+      "脈沉",
+      "脈遲"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "病程與誘因",
+   "items": [
+    [
+     "chanhou",
+     "產後或流產後",
+     [
+      "產後",
+      "生完",
+      "流產後",
+      "小產後"
+     ]
+    ],
+    [
+     "nian50",
+     "年近五十（更年期前後）",
+     [
+      "更年期",
+      "快停經",
+      "五十歲"
+     ]
+    ],
+    [
+     "laolei",
+     "勞累後加重",
+     [
+      "累了就",
+      "勞累後",
+      "工作累"
+     ]
+    ],
+    [
+     "shiliang",
+     "受寒或食生冷後起",
+     [
+      "吃冰",
+      "受寒",
+      "淋雨",
+      "吃生冷"
+     ]
+    ],
+    [
+     "liangyao",
+     "服寒涼藥後經閉",
+     [
+      "吃涼藥",
+      "寒涼藥"
+     ]
+    ],
+    [
+     "jiubing",
+     "反覆多年",
+     [
+      "好幾年",
+      "多年",
+      "長期",
+      "反覆"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "警示",
+   "items": [
+    [
+     "xuetuo",
+     "大量出血合併頭暈心悸、臉色蒼白",
+     [
+      "頭暈快昏倒",
+      "血崩頭暈",
+      "出血頭暈"
+     ]
+    ],
+    [
+     "juejing",
+     "停經一年以上又出血",
+     [
+      "停經後出血",
+      "更年期後出血"
+     ]
+    ],
+    [
+     "huaiyun",
+     "可能懷孕（月經過期而有性生活）",
+     [
+      "可能懷孕",
+      "懷孕"
+     ]
+    ],
+    [
+     "jutong",
+     "劇烈腹痛或發燒",
+     [
+      "劇痛",
+      "痛到冒冷汗",
+      "發高燒"
+     ]
+    ]
+   ]
+  }
+ ],
+ "redflags": {
+  "xuetuo": "大量出血合併頭暈心悸、臉色蒼白，可能是失血過多，請立即就醫。",
+  "juejing": "停經一年以上又出血，須就醫排除子宮內膜病變。",
+  "huaiyun": "月經過期而可能懷孕，請先驗孕；懷孕期間出血或腹痛請就醫，不宜自行服活血藥。",
+  "jutong": "劇烈腹痛或合併發燒，須排除子宮外孕、卵巢扭轉、骨盆腔感染，請立即就醫。"
+ },
+ "jing": [
+  {
+   "id": "xuexu",
+   "name": "血虛",
+   "w": {
+    "mianwuhua": 3,
+    "touyun": 2,
+    "xinji": 1.5,
+    "sedan": 2,
+    "liangshao": 2,
+    "houqi": 1.5,
+    "shedan": 1.5,
+    "maixiruo": 1.5,
+    "shimian": 1
+   },
+   "against": {
+    "sehong": 1.5,
+    "taihuang": 1.5,
+    "kuai": 1
+   },
+   "source": "《醫方集解·理血之劑·四物湯》：「治一切血虛，及婦人經病」"
+  },
+  {
+   "id": "qixu",
+   "name": "氣虛不攝",
+   "w": {
+    "pifa": 3,
+    "nashao": 2,
+    "xie": 1.5,
+    "xiazhui": 3,
+    "beng": 1.5,
+    "lou": 1.5,
+    "liangduo": 1,
+    "sedan": 1,
+    "laolei": 2,
+    "maixiruo": 1.5
+   },
+   "against": {
+    "sehong": 1.5,
+    "shehong": 1.5,
+    "maishu": 1
+   },
+   "source": "《醫方集解·理血之劑·歸脾湯》：「或脾虛不能攝血」"
+  },
+  {
+   "id": "xuere",
+   "name": "血熱",
+   "w": {
+    "xianqi": 2.5,
+    "liangduo": 1.5,
+    "sehong": 2.5,
+    "sezi": 1.5,
+    "douzhi": 2,
+    "shehong": 2,
+    "taihuang": 1.5,
+    "maishu": 2,
+    "kougan": 1,
+    "wuxin": 2
+   },
+   "against": {
+    "weihan": 2,
+    "sedan": 2,
+    "shaofuleng": 2
+   },
+   "source": "《醫方集解·經產之劑·連附四物湯》注：「紫，血熱也；黑，熱甚也」"
+  },
+  {
+   "id": "ganyu",
+   "name": "肝鬱",
+   "w": {
+    "yinu": 3,
+    "yumen": 3,
+    "ruzhang": 3,
+    "buding": 2,
+    "kouku": 1.5,
+    "maixian": 2,
+    "chaore": 1
+   },
+   "against": {
+    "pifa": 0.5
+   },
+   "source": "《醫方集解·和解之劑·逍遙散》：「治血虛肝燥，骨蒸勞熱，咳嗽潮熱，往來寒熱，口乾便澀，月經不調」"
+  },
+  {
+   "id": "xuhan",
+   "name": "虛寒",
+   "w": {
+    "shaofuleng": 3,
+    "weihan": 2.5,
+    "xian": 2,
+    "houqi": 1.5,
+    "sedan": 1,
+    "maichen": 2,
+    "shiliang": 2,
+    "liangyao": 2
+   },
+   "against": {
+    "sehong": 2,
+    "shehong": 2,
+    "maishu": 2
+   },
+   "source": "《醫方集解·理血之劑·四物湯附方》：艾附曖宮丸「治子宮虛冷」；婦寶丹「治虛寒經水不調」"
+  },
+  {
+   "id": "xueyu",
+   "name": "血瘀",
+   "w": {
+    "kuai": 3,
+    "sezi": 1.5,
+    "juan": 2.5,
+    "zheng": 3,
+    "sheyu": 3,
+    "maise": 2,
+    "jingbi": 1.5,
+    "tongjing": 1,
+    "shaofuman": 2
+   },
+   "against": {
+    "pifa": 1,
+    "maixiruo": 1
+   },
+   "source": "《金匱要略·婦人雜病》：「婦人經水不利下，抵當湯主之」"
+  }
+ ],
+ "jingRules": [],
+ "patterns": [
+  {
+   "id": "siwu",
+   "name": "血虛（經病通治）",
+   "formula": "四物湯",
+   "main": [
+    "mianwuhua",
+    "touyun"
+   ],
+   "minor": [
+    "houqi",
+    "liangshao",
+    "sedan",
+    "xinji",
+    "jingbi",
+    "shedan",
+    "maixiruo",
+    "tongjing"
+   ],
+   "against": [
+    [
+     "liangduo",
+     1
+    ],
+    [
+     "beng",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·四物湯》：「治一切血虛，及婦人經病」",
+   "jing": [
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "mianwuhua",
+    "touyun",
+    "liangshao"
+   ]
+  },
+  {
+   "id": "lianfu",
+   "name": "血熱氣滯、經水過期紫黑成塊",
+   "formula": "連附四物湯",
+   "main": [
+    "houqi",
+    "sezi",
+    "kuai"
+   ],
+   "minor": [
+    "tongjing",
+    "shehong",
+    "ruzhang",
+    "yumen"
+   ],
+   "against": [
+    [
+     "sedan",
+     2
+    ],
+    [
+     "weihan",
+     1.5
+    ],
+    [
+     "beng",
+     1.5
+    ],
+    [
+     "lou",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·經產之劑·連附四物湯》：「治經水過期，紫黑成塊（紫，血熱也；黑，熱甚也；過期而成塊，氣滯也）」",
+   "jing": [
+    "xuere",
+    "xueyu"
+   ],
+   "mods": [],
+   "key": [
+    "sezi",
+    "kuai"
+   ]
+  },
+  {
+   "id": "siwuqin",
+   "name": "血熱經多",
+   "formula": "四物加芩連湯、四物加芩朮湯",
+   "main": [
+    "liangduo"
+   ],
+   "minor": [
+    "wuxin",
+    "sezi",
+    "douzhi",
+    "sehong",
+    "shehong",
+    "maishu",
+    "xianqi"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "sedan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·經產之劑·連附四物湯附方》：「四物加芩朮湯：治經水過多（黃芩抑陽，白朮補脾）。四物加芩連湯：治經水適斷，五心煩熱，經來色黑，或如豆汁」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "wuxin",
+    "douzhi",
+    "sehong"
+   ]
+  },
+  {
+   "id": "gujing",
+   "name": "陰虛血熱、崩中漏下",
+   "formula": "固經丸",
+   "main": [
+    "lou",
+    "sezi"
+   ],
+   "minor": [
+    "beng",
+    "kuai",
+    "jingchang",
+    "shehong",
+    "maishu",
+    "wuxin"
+   ],
+   "against": [
+    [
+     "sedan",
+     2
+    ],
+    [
+     "weihan",
+     2
+    ]
+   ],
+   "source": "《醫方集解·經產之劑·固經丸》：「治經行不止，及崩中漏下，紫黑成塊」",
+   "jing": [
+    "xuere"
+   ],
+   "mods": [],
+   "key": [
+    "sezi"
+   ]
+  },
+  {
+   "id": "guipi",
+   "name": "心脾兩虛、脾不攝血",
+   "formula": "歸脾湯",
+   "main": [
+    "pifa",
+    "nashao",
+    "xinji"
+   ],
+   "minor": [
+    "beng",
+    "lou",
+    "shimian",
+    "liangduo",
+    "sedan",
+    "mianwuhua",
+    "yumen",
+    "chaore"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "taihuang",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·歸脾湯》：「治思慮過度，勞傷心脾，怔忡健忘，驚悸盜汗，發熱體倦，食少不眠；或脾虛不能攝血」",
+   "jing": [
+    "qixu",
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "shimian",
+    "xinji"
+   ]
+  },
+  {
+   "id": "buzhong",
+   "name": "中氣下陷",
+   "formula": "補中益氣湯",
+   "main": [
+    "pifa",
+    "nashao",
+    "xiazhui"
+   ],
+   "minor": [
+    "beng",
+    "lou",
+    "liangduo",
+    "laolei",
+    "chaore",
+    "sedan",
+    "maixiruo"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·補中益氣湯》：「治煩勞內傷，身熱心煩，頭痛惡寒，懶言惡食，脈洪大而虛，或喘或渴，或陽虛自汗」",
+   "jing": [
+    "qixu"
+   ],
+   "mods": [],
+   "key": [
+    "xiazhui",
+    "laolei"
+   ]
+  },
+  {
+   "id": "xiaoyao",
+   "name": "血虛肝燥、月經不調",
+   "formula": "逍遙散",
+   "main": [
+    "chaore",
+    "buding"
+   ],
+   "minor": [
+    "yinu",
+    "yumen",
+    "ruzhang",
+    "kougan",
+    "kouku",
+    "maixian",
+    "bianbi",
+    "nashao"
+   ],
+   "against": [
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·和解之劑·逍遙散》：「治血虛肝燥，骨蒸勞熱，咳嗽潮熱，往來寒熱，口乾便澀，月經不調」",
+   "jing": [
+    "ganyu",
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "yinu",
+    "yumen",
+    "ruzhang",
+    "chaore"
+   ]
+  },
+  {
+   "id": "bazhen",
+   "name": "氣血兩虛",
+   "formula": "八珍湯（十全大補湯）",
+   "main": [
+    "pifa",
+    "mianwuhua"
+   ],
+   "minor": [
+    "touyun",
+    "xinji",
+    "nashao",
+    "liangshao",
+    "sedan",
+    "beng",
+    "jiubing",
+    "shedan",
+    "maixiruo",
+    "jingbi"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "taihuang",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·四物湯附方》：「合四君子，名八珍湯：治心肺虛損，氣血兩虛（四君補氣，四物補血）。再加黃耆、肉桂，名十全大補湯」",
+   "jing": [
+    "qixu",
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "pifa",
+    "mianwuhua"
+   ]
+  },
+  {
+   "id": "aifu",
+   "name": "子宮虛冷",
+   "formula": "艾附暖宮丸（婦寶丹）",
+   "main": [
+    "shaofuleng"
+   ],
+   "minor": [
+    "weihan",
+    "houqi",
+    "tongjing",
+    "xian",
+    "sedan",
+    "daixia",
+    "maichen"
+   ],
+   "against": [
+    [
+     "shehong",
+     2
+    ],
+    [
+     "sehong",
+     2
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·四物湯附方》：艾附曖宮丸「治子宮虛冷」；「再加阿膠，名婦寶丹：治虛寒經水不調」",
+   "jing": [
+    "xuhan"
+   ],
+   "mods": [],
+   "key": [
+    "shaofuleng"
+   ]
+  },
+  {
+   "id": "wenjing",
+   "name": "衝任虛寒、瘀血在少腹",
+   "formula": "溫經湯",
+   "main": [
+    "shouzhang",
+    "shaofuman"
+   ],
+   "minor": [
+    "nian50",
+    "chaore",
+    "xie",
+    "chanhou",
+    "beng",
+    "lou",
+    "shaofuleng",
+    "kuai"
+   ],
+   "against": [],
+   "source": "《金匱要略·婦人雜病》：「婦人年五十所，病下利數十日不止，暮即發熱，少腹裏急，腹滿，手掌煩熱，唇口乾燥……曾經半產，瘀血在少腹不去……當以溫經湯主之」",
+   "jing": [
+    "xuhan",
+    "xueyu"
+   ],
+   "mods": [],
+   "key": [
+    "shouzhang"
+   ]
+  },
+  {
+   "id": "jiaoai",
+   "name": "衝任虛損、經水淋瀝",
+   "formula": "膠艾湯",
+   "main": [
+    "lou",
+    "jingchang"
+   ],
+   "minor": [
+    "beng",
+    "chanhou",
+    "tongjing",
+    "sedan",
+    "yaosuan",
+    "mianwuhua"
+   ],
+   "against": [
+    [
+     "sezi",
+     1
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·四物湯附方》：「本方加阿膠、艾葉、甘草，名膠艾湯：治衝任虛損，經水淋瀝」；《金匱要略·婦人妊娠病》：「婦人有漏下者，有半產後因續下血都不絕者……膠艾湯主之」",
+   "jing": [
+    "xuexu",
+    "xuhan"
+   ],
+   "mods": [],
+   "key": [
+    "lou",
+    "jingchang"
+   ]
+  },
+  {
+   "id": "guizhifuling",
+   "name": "癥病漏下",
+   "formula": "桂枝茯苓丸",
+   "main": [
+    "zheng",
+    "lou"
+   ],
+   "minor": [
+    "kuai",
+    "sezi",
+    "juan",
+    "sheyu",
+    "tongjing",
+    "maise"
+   ],
+   "against": [
+    [
+     "sedan",
+     1
+    ]
+   ],
+   "source": "《金匱要略·婦人妊娠病》：「婦人宿有癥病，經斷未及三月，而得漏下不止……當下其癥，桂枝茯苓丸主之」",
+   "jing": [
+    "xueyu"
+   ],
+   "mods": [],
+   "key": [
+    "zheng"
+   ]
+  },
+  {
+   "id": "didang",
+   "name": "瘀血經閉",
+   "formula": "抵當湯（下瘀血湯）",
+   "main": [
+    "jingbi",
+    "shaofuman"
+   ],
+   "minor": [
+    "juan",
+    "kuai",
+    "sezi",
+    "sheyu",
+    "maise",
+    "bianbi",
+    "zheng"
+   ],
+   "against": [
+    [
+     "sedan",
+     2
+    ],
+    [
+     "pifa",
+     1.5
+    ],
+    [
+     "maixiruo",
+     2
+    ]
+   ],
+   "source": "《金匱要略·婦人雜病》：「婦人經水不利下，抵當湯主之」",
+   "jing": [
+    "xueyu"
+   ],
+   "mods": [],
+   "key": [
+    "juan",
+    "shaofuman",
+    "sheyu"
+   ]
+  },
+  {
+   "id": "tuguagen",
+   "name": "瘀血帶下、經一月再見",
+   "formula": "土瓜根散",
+   "main": [
+    "shaofuman",
+    "xianqi"
+   ],
+   "minor": [
+    "daixia",
+    "tongjing",
+    "juan",
+    "kuai"
+   ],
+   "against": [],
+   "source": "《金匱要略·婦人雜病》：「帶下經水不利，少腹滿痛，經一月再見者，土瓜根散主之」",
+   "jing": [
+    "xueyu"
+   ],
+   "mods": [],
+   "key": [
+    "daixia"
+   ]
+  },
+  {
+   "id": "dangguishaoyao",
+   "name": "肝脾不和、腹中諸痛",
+   "formula": "當歸芍藥散",
+   "main": [
+    "tongjing"
+   ],
+   "minor": [
+    "xian",
+    "fuzhong",
+    "xie",
+    "daixia",
+    "mianwuhua",
+    "touyun"
+   ],
+   "against": [
+    [
+     "juan",
+     1
+    ]
+   ],
+   "source": "《金匱要略·婦人雜病》：「婦人腹中諸疾痛，當歸芍藥散主之」",
+   "jing": [
+    "xuexu"
+   ],
+   "mods": [],
+   "key": [
+    "fuzhong",
+    "xie"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "r_shexue",
+   "kind": "boost",
+   "name": "脾虛不能攝血",
+   "when": {
+    "any": [
+     "beng",
+     "lou",
+     "liangduo",
+     "jingchang"
+    ],
+    "any2": [
+     "pifa",
+     "nashao",
+     "xiazhui",
+     "mianwuhua"
+    ],
+    "none": [
+     "shehong",
+     "sehong",
+     "taihuang"
+    ]
+   },
+   "boost": {
+    "guipi": 2,
+    "buzhong": 2,
+    "bazhen": 2
+   },
+   "source": "《醫方集解·理血之劑·歸脾湯》：「或脾虛不能攝血」",
+   "note": "出血多或淋瀝不止而兼疲倦、食少、面黃，屬氣虛不攝，宜補脾益氣，不宜一味涼血止血。"
+  },
+  {
+   "id": "r_ziheixre",
+   "kind": "branch",
+   "name": "經色辨寒熱",
+   "when": {
+    "any": [
+     "houqi",
+     "xianqi",
+     "liangduo",
+     "beng",
+     "lou"
+    ]
+   },
+   "branch": [
+    {
+     "if": "sezi",
+     "boost": {
+      "lianfu": 2,
+      "gujing": 2,
+      "siwuqin": 1
+     },
+     "text": "紫黑屬熱"
+    },
+    {
+     "if": "sedan",
+     "boost": {
+      "bazhen": 1,
+      "aifu": 1,
+      "siwu": 1
+     },
+     "text": "淡紅質稀屬虛寒"
+    }
+   ],
+   "ask": [
+    "sezi",
+    "sedan"
+   ],
+   "source": "《醫方集解·經產之劑·連附四物湯》注：「紫，血熱也；黑，熱甚也」；四物湯注：「色淡亦虛也」",
+   "note": "經色紫黑多屬熱，淡紅質稀多屬虛；先問經色。"
+  }
+ ],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "四物湯（一切血虛）",
+   "f": [
+    "mianwuhua",
+    "touyun",
+    "liangshao",
+    "sedan"
+   ],
+   "expect": "siwu"
+  },
+  {
+   "id": "k2",
+   "label": "連附四物湯（過期紫黑成塊）",
+   "f": [
+    "houqi",
+    "sezi",
+    "kuai"
+   ],
+   "expect": "lianfu"
+  },
+  {
+   "id": "k3",
+   "label": "四物加芩連湯（五心煩熱、色黑如豆汁）",
+   "f": [
+    "liangduo",
+    "wuxin",
+    "sezi",
+    "douzhi"
+   ],
+   "expect": "siwuqin"
+  },
+  {
+   "id": "k4",
+   "label": "固經丸（經行不止、崩中漏下）",
+   "f": [
+    "lou",
+    "beng",
+    "sezi",
+    "kuai"
+   ],
+   "expect": "gujing"
+  },
+  {
+   "id": "k5",
+   "label": "歸脾湯（脾不攝血）",
+   "f": [
+    "pifa",
+    "nashao",
+    "xinji",
+    "shimian",
+    "lou"
+   ],
+   "expect": "guipi"
+  },
+  {
+   "id": "k6",
+   "label": "補中益氣湯（煩勞內傷）",
+   "f": [
+    "pifa",
+    "nashao",
+    "xiazhui",
+    "laolei",
+    "beng"
+   ],
+   "expect": "buzhong"
+  },
+  {
+   "id": "k7",
+   "label": "逍遙散（血虛肝燥、月經不調）",
+   "f": [
+    "chaore",
+    "buding",
+    "kougan",
+    "bianbi",
+    "yinu"
+   ],
+   "expect": "xiaoyao"
+  },
+  {
+   "id": "k8",
+   "label": "八珍湯（氣血兩虛）",
+   "f": [
+    "pifa",
+    "mianwuhua",
+    "touyun",
+    "xinji"
+   ],
+   "expect": "bazhen"
+  },
+  {
+   "id": "k9",
+   "label": "艾附暖宮丸（子宮虛冷）",
+   "f": [
+    "shaofuleng",
+    "weihan",
+    "houqi"
+   ],
+   "expect": "aifu"
+  },
+  {
+   "id": "k10",
+   "label": "溫經湯（年五十、手掌煩熱）",
+   "f": [
+    "nian50",
+    "xie",
+    "chaore",
+    "shaofuman",
+    "shouzhang"
+   ],
+   "expect": "wenjing"
+  },
+  {
+   "id": "k11",
+   "label": "膠艾湯（衝任虛損、經水淋瀝）",
+   "f": [
+    "lou",
+    "jingchang"
+   ],
+   "expect": "jiaoai"
+  },
+  {
+   "id": "k12",
+   "label": "桂枝茯苓丸（癥病漏下）",
+   "f": [
+    "zheng",
+    "lou"
+   ],
+   "expect": "guizhifuling"
+  },
+  {
+   "id": "k13",
+   "label": "抵當湯（經水不利下）",
+   "f": [
+    "jingbi",
+    "shaofuman",
+    "juan"
+   ],
+   "expect": "didang"
+  },
+  {
+   "id": "k14",
+   "label": "土瓜根散（經一月再見）",
+   "f": [
+    "daixia",
+    "shaofuman",
+    "tongjing",
+    "xianqi"
+   ],
+   "expect": "tuguagen"
+  },
+  {
+   "id": "k15",
+   "label": "當歸芍藥散（腹中諸疾痛）",
+   "f": [
+    "tongjing",
+    "fuzhong",
+    "xie"
+   ],
+   "expect": "dangguishaoyao"
+  }
+ ],
+ "cases_v1": {
+  "title": "月經病 v0.1 驗證題（建庫前登錄）",
+  "families": {
+   "aifu": "艾附暖宮丸",
+   "bazhen": "八珍湯",
+   "buzhong": "補中益氣湯",
+   "dangguishaoyao": "當歸芍藥散",
+   "didang": "抵當湯族（下瘀血湯）",
+   "guipi": "歸脾湯",
+   "guizhifuling": "桂枝茯苓丸",
+   "gujing": "固經丸",
+   "jiaoai": "膠艾湯",
+   "lianfu": "連附四物湯",
+   "siwu": "四物湯",
+   "siwuqin": "四物加芩連湯、四物加芩朮湯",
+   "tuguagen": "土瓜根散",
+   "wenjing": "溫經湯",
+   "xiaoyao": "逍遙散族"
+  },
+  "note": "來源經使用者確認：《古今醫案按》卷九經水、崩漏門，《續名醫類案》經水、崩漏、血崩篇。判分以撰案醫家實際所用之方為準；「膠艾四物湯」歸膠艾湯族。題目偏向補益（薛立齋等），15 個方族只有 6 個有題。",
+  "sha256": "32f60d4b314bd0e7da3a2a9a469b23563e04ef62ed4cd691179d8063cdefa637",
+  "cases": [
+   {
+    "expect": [
+     "buzhong",
+     "guipi"
+    ],
+    "f": [
+     "beng",
+     "shimian"
+    ],
+    "id": "m04",
+    "label": "《古今醫案按》崩漏（薛立齋，補中益氣加炮姜，後歸脾湯）",
+    "text": "患崩血，昏憒，發熱不寐，投寒劑益甚"
+   },
+   {
+    "expect": [
+     "siwu"
+    ],
+    "f": [
+     "jingbi",
+     "mianwuhua",
+     "zheng",
+     "nashao",
+     "maise"
+    ],
+    "id": "m07",
+    "label": "《續名醫類案》經水（四物湯加香附、丹皮）",
+    "text": "經閉，人疑有孕，七八月漸覺黃瘦，腹中左右塊如鼓，發熱面赤，不思飲食，六脈微澀"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "jingbi",
+     "tongjing",
+     "nashao",
+     "pifa"
+    ],
+    "id": "m09",
+    "label": "《續名醫類案》經水（呂東莊，八珍湯）",
+    "text": "月水不至四月，腹痛不止，飲食少進，氣稟怯弱"
+   },
+   {
+    "expect": [
+     "xiaoyao"
+    ],
+    "f": [
+     "nian50",
+     "chaore",
+     "houqi"
+    ],
+    "id": "m12",
+    "label": "《續名醫類案》經水（逍遙散加山茱萸）",
+    "text": "年五十，內熱晡熱，經水兩三月一至"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "jingqian",
+     "tongjing",
+     "daixia"
+    ],
+    "id": "m13",
+    "label": "《續名醫類案》經水（十全大補湯加元胡、益母）",
+    "text": "經前作痛，且有白帶"
+   },
+   {
+    "expect": [
+     "buzhong"
+    ],
+    "f": [
+     "chaore",
+     "pifa",
+     "nashao",
+     "jingbi",
+     "beng",
+     "jiubing"
+    ],
+    "id": "m14",
+    "label": "《續名醫類案》經水（薛立齋，補中益氣湯朝服）",
+    "text": "晡熱，肢體瘦倦，食少無味，月經不行，或鼻衄，或血崩，半載；順氣清熱止血不應"
+   },
+   {
+    "expect": [
+     "guipi",
+     "xiaoyao"
+    ],
+    "f": [
+     "chaore",
+     "buding",
+     "yumen"
+    ],
+    "id": "m15",
+    "label": "《續名醫類案》經水（加味歸脾湯，後加味逍遙散）",
+    "text": "素沉靜，晡熱內熱，月經不調，每一二月出血碗許，服清熱涼血益甚"
+   },
+   {
+    "expect": [
+     "siwu"
+    ],
+    "f": [
+     "jingbi",
+     "jiubing"
+    ],
+    "id": "m16",
+    "label": "《續名醫類案》經水（四物湯加蒼朮、牛膝）",
+    "text": "陰虛，經脈久不通，小便短澀，身體疼痛"
+   },
+   {
+    "expect": [
+     "siwu"
+    ],
+    "f": [
+     "jingbi",
+     "tongjing",
+     "chaore"
+    ],
+    "id": "m17",
+    "label": "《續名醫類案》經水（四物湯加芩、紅花、桃仁）",
+    "text": "兩月經不行，腹痛發熱"
+   },
+   {
+    "expect": [
+     "xiaoyao",
+     "bazhen"
+    ],
+    "f": [
+     "yinu",
+     "nashao",
+     "pifa",
+     "mianwuhua",
+     "jingbi",
+     "chaore"
+    ],
+    "id": "m18",
+    "label": "《續名醫類案》經水（逍遙散、八珍湯）",
+    "text": "因怒傷，不思飲食，發熱倦怠，骨肉痠疼，羸瘦而黃，經水積漸不行"
+   },
+   {
+    "expect": [
+     "xiaoyao"
+    ],
+    "f": [
+     "yinu",
+     "jingchang",
+     "nashao",
+     "xie",
+     "ruzhang"
+    ],
+    "id": "m19",
+    "label": "《續名醫類案》經水（薛立齋，終以逍遙散）",
+    "text": "性急，每怒則胸乳作痛，胸滿吞酸，吐瀉少食，經行不止"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "beng",
+     "mianwuhua",
+     "jiubing",
+     "pifa"
+    ],
+    "id": "m20",
+    "label": "《續名醫類案》崩漏（薛立齋，十全大補湯）",
+    "text": "血崩兼心痛三年，諸藥不應，虛症悉具，面色萎黃"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "beng",
+     "nashao",
+     "liangyao"
+    ],
+    "id": "m21",
+    "label": "《續名醫類案》崩漏（薛立齋，八珍湯加炮姜）",
+    "text": "血崩，過服寒涼，肚腹悶痞，飲食不入，發熱煩躁，脈洪大而虛"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "nian50",
+     "beng",
+     "xuetuo",
+     "weihan",
+     "maichen"
+    ],
+    "id": "m22",
+    "label": "《續名醫類案》血崩（陸養愚，八珍湯加附子）",
+    "text": "年四十九，經事已止半年，忽暴崩不止，昏暈厥逆，脈沉微如絲"
+   },
+   {
+    "expect": [
+     "guipi",
+     "xiaoyao"
+    ],
+    "f": [
+     "jingchang",
+     "lou",
+     "yinu",
+     "yumen"
+    ],
+    "id": "m24",
+    "label": "《續名醫類案》崩漏（歸脾湯、逍遙散）",
+    "text": "月經淋漓無期，鬱怒傷肝，脾虛火動"
+   },
+   {
+    "expect": [
+     "jiaoai"
+    ],
+    "f": [
+     "nian50",
+     "beng"
+    ],
+    "id": "m25",
+    "label": "《續名醫類案》血崩（膠艾四物湯）",
+    "text": "年逾五十，因傷寒而血崩"
+   },
+   {
+    "expect": [
+     "bazhen"
+    ],
+    "f": [
+     "chanhou",
+     "beng",
+     "xuetuo"
+    ],
+    "id": "m26",
+    "label": "《續名醫類案》血崩（十全大補湯）",
+    "text": "產後調養未善，次年經兩月不行，忽暴至不止，昏暈不省人事"
+   },
+   {
+    "expect": [
+     "buzhong"
+    ],
+    "f": [
+     "chanhou",
+     "beng",
+     "kuai",
+     "weihan",
+     "xuetuo"
+    ],
+    "id": "m27",
+    "label": "《續名醫類案》血崩（呂東莊，大劑補中益氣湯加人參）",
+    "text": "半產惡露稀少，胸腹脹，果崩潰不止，下血塊如掌，神昏，四肢厥冷，頭汗如油，脈不得見"
+   }
+  ],
+  "pageTitle": "驗證題 v0.1（建庫前登錄）",
+  "result": "凍結後只算一次：首選 6／18、前三 12／18。歸脾湯、補中益氣湯、八珍湯三方互搶的有 7 題，都在前三；經閉而脈微澀、腹中有塊者，醫家判血枯氣鬱用四物湯，程式判瘀血（抵當湯）；停經後暴崩厥逆用八珍加附子，程式判艾附暖宮丸；產後崩潰下血塊、四肢厥冷用大劑補中益氣，程式判溫經湯。"
+ },
+ "jingMult": 1.0,
+ "jingCap": 10,
+ "hints": {
+  "多囊": "「多囊性卵巢」請先由婦產科診斷；可描述週期、經量、體型、痤瘡、怕冷怕熱等症狀。",
+  "子宮內膜異位": "子宮內膜異位請由婦產科追蹤；可描述痛經的時間、喜按或拒按、經色血塊。",
+  "肌瘤": "子宮肌瘤請由婦產科追蹤大小；這裡以「腹中有塊」處理。",
+  "更年期": "更年期月經紊亂請描述：週期、經量、潮熱、盜汗、心煩、怕冷。停經一年以上又出血請就醫。",
+  "懷孕": "可能懷孕時請先驗孕；懷孕期間出血或腹痛請就醫，不宜自行服活血藥。"
+ },
+ "page": {
+  "title": "月經病辨證選方",
+  "eyebrow": "中藥典籍原文庫．規則式辨證．月經病 v0.1（兩層：先辨病性，再選方）",
+  "lede": "勾選週期（先期、後期、不定、閉經）、經量、崩漏、經色經質、痛經與全身症狀，程式先辨病性（血虛、氣虛不攝、血熱、肝鬱、虛寒、血瘀），再依《醫方集解》經產、理血之劑與《金匱要略》婦人篇選方。這是學習用的規則系統，不能取代面診；不含妊娠與產後病。",
+  "checkIntro": "自檢題取自各方原文主治，只檢查程式是否照原文運作；預先登錄的驗證題取自醫案集，登錄時知識庫只有症狀清單。",
+  "limits": "<li>目前收 15 個證型、6 種病性、2 條原文規則；清經散、少腹逐瘀湯等原文庫沒有的方未收。溫經湯只依《金匱》條文本身（此版本無方後「月水來過多，及至期不來」一句）。</li><li><b>驗證：</b>18 則醫案首選 6、前三名 12。歸脾湯、補中益氣湯、八珍湯三方常互相搶首選，請一併參考；虛而經閉（血枯）容易被判成瘀血。15 個方族只有 6 個驗得到，溫經湯、桂枝茯苓丸、抵當湯等經方未經醫案驗證。</li><li>大量出血合併頭暈心悸、停經一年以上又出血、可能懷孕、劇烈腹痛或發燒，請先就醫。實際用藥請由中醫師面診後處方。</li>",
+  "intro": "從左側勾選症狀後，這裡會列出最可能的證型、主方與加減。",
+  "nomatch": "目前的症狀對不上任何月經病證型。請補充週期、經量、經色、有無血塊、痛經的情形與全身症狀。",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷虛實寒熱。",
+  "sample": "k7",
+  "casesTitle": "建庫自檢（取自各方原文主治，不算證據）",
+  "freeExample": "例：月經量多拖很久，容易累，胃口差，臉色差"
+ },
+ "probes": [
+  {
+   "q": "經色如何？",
+   "opts": [
+    [
+     "紫黑或暗紅",
+     [
+      "sezi"
+     ]
+    ],
+    [
+     "鮮紅或深紅",
+     [
+      "sehong"
+     ]
+    ],
+    [
+     "淡紅、質稀",
+     [
+      "sedan"
+     ]
+    ],
+    [
+     "不清楚",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "有沒有血塊？",
+   "opts": [
+    [
+     "有",
+     [
+      "kuai"
+     ]
+    ],
+    [
+     "沒有",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "痛經時？",
+   "opts": [
+    [
+     "喜歡熱敷、按著舒服",
+     [
+      "xian"
+     ]
+    ],
+    [
+     "不能按、按了更痛",
+     [
+      "juan"
+     ]
+    ],
+    [
+     "不痛",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "全身狀況？",
+   "opts": [
+    [
+     "容易累、胃口差",
+     [
+      "pifa",
+      "nashao"
+     ]
+    ],
+    [
+     "怕冷、小腹冷",
+     [
+      "weihan",
+      "shaofuleng"
+     ]
+    ],
+    [
+     "手心熱、口乾",
+     [
+      "wuxin",
+      "kougan"
+     ]
+    ],
+    [
+     "都不明顯",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "情緒與經前？",
+   "opts": [
+    [
+     "經前乳房脹、易怒",
+     [
+      "ruzhang",
+      "yinu"
+     ]
+    ],
+    [
+     "沒有",
+     []
+    ]
+   ]
+  }
+ ]
+}
