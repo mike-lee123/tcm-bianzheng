@@ -221,6 +221,8 @@ def render_result(kb, d, L):
 
 
 PILLS_CSS = """<style>
+/* Streamlit 新版把選項放在不換行、可橫向捲動、右側淡出的容器裡，選項會被切掉；改回換行 */
+[data-testid="stButtonGroup"] > div { flex-wrap: wrap !important; overflow-x: visible !important; mask-image: none !important; -webkit-mask-image: none !important; row-gap: 0.4rem; }
 [data-testid="stButtonGroup"] button { max-width: 100%; height: auto; min-height: 2rem; white-space: normal; text-align: left; }
 [data-testid="stButtonGroup"] button p, [data-testid="stButtonGroup"] button div { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; overflow-wrap: anywhere; }
 </style>"""
