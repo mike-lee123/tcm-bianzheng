@@ -1,7 +1,7 @@
 {
- "title": "免疫風濕科就醫轉介",
- "version": "0.1.1",
- "referralOnly": true,
+ "title": "免疫風濕：就醫轉介＋痹證辨證",
+ "version": "0.2",
+ "referralOnly": false,
  "note": "只做就醫轉介篩檢，不做中醫辨證、不計分：沒有證型、病性與規則。自體免疫疾病須由過敏免疫風濕科確診與治療；中醫調理只能在確診、規則回診的前提下作輔助，並先告知免疫科醫師。",
  "groups": [
   {
@@ -179,8 +179,7 @@
      [
       "關節腫痛",
       "關節腫",
-      "手指關節腫",
-      "關節痛"
+      "手指關節腫"
      ]
     ],
     [
@@ -273,6 +272,443 @@
    ]
   },
   {
+   "name": "痹痛：疼痛與腫",
+   "items": [
+    [
+     "zhitong",
+     "肢節、關節疼痛",
+     [
+      "關節痛",
+      "關節疼痛",
+      "肢節疼痛",
+      "骨節疼痛",
+      "骨節痛",
+      "痹痛",
+      "骨頭關節痛"
+     ]
+    ],
+    [
+     "shentong",
+     "一身盡痛、全身痠痛",
+     [
+      "全身痛",
+      "全身痠痛",
+      "一身盡疼",
+      "一身盡痛",
+      "周身痛",
+      "渾身痛"
+     ]
+    ],
+    [
+     "youzou",
+     "痛處遊走不定",
+     [
+      "遊走痛",
+      "痛會跑",
+      "到處痛",
+      "走來走去的痛"
+     ]
+    ],
+    [
+     "guding",
+     "痛處固定不移",
+     [
+      "固定一處痛",
+      "痛的地方固定"
+     ]
+    ],
+    [
+     "jutong",
+     "痛劇，手一碰更痛或拒按",
+     [
+      "痛不可忍",
+      "碰到更痛",
+      "不能碰",
+      "痛得很厲害"
+     ]
+    ],
+    [
+     "qushen",
+     "屈伸不利、行走困難",
+     [
+      "不能屈伸",
+      "彎不下去",
+      "走路困難",
+      "不能走",
+      "臥床不起"
+     ]
+    ],
+    [
+     "zhongre",
+     "關節紅腫灼熱",
+     [
+      "紅腫熱痛",
+      "關節紅腫",
+      "關節發熱",
+      "摸起來熱"
+     ]
+    ],
+    [
+     "jiaozhong",
+     "腳腫、膝腫（腳腫如脫）",
+     [
+      "腳腫",
+      "膝蓋腫",
+      "腳膝腫",
+      "腳踝腫"
+     ]
+    ],
+    [
+     "fuzhong",
+     "肌膚浮腫、身微腫",
+     [
+      "身體浮腫",
+      "肌肉浮腫",
+      "身微腫"
+     ]
+    ],
+    [
+     "yaoxi",
+     "腰膝腿腳痛",
+     [
+      "腰痛",
+      "膝蓋痛",
+      "腿痛",
+      "腳痛",
+      "腰膝痛"
+     ]
+    ],
+    [
+     "mamu",
+     "肌膚麻木不仁",
+     [
+      "麻木",
+      "發麻",
+      "沒感覺"
+     ]
+    ],
+    [
+     "shenzhong",
+     "身體沉重",
+     [
+      "身體很重",
+      "身重",
+      "沉重"
+     ]
+    ],
+    [
+     "jirouxiao",
+     "肌肉消瘦萎縮（身體魁羸）",
+     [
+      "肌肉萎縮",
+      "肉變少",
+      "腿變細",
+      "很瘦"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "痹痛：寒熱汗",
+   "items": [
+    [
+     "fare",
+     "發熱",
+     [
+      "發燒",
+      "發熱",
+      "身熱"
+     ]
+    ],
+    [
+     "ribu",
+     "午後發熱或加重（日晡所劇）",
+     [
+      "下午發燒",
+      "傍晚更痛",
+      "午後加重",
+      "日晡"
+     ]
+    ],
+    [
+     "danre",
+     "只熱不冷（身無寒但熱）",
+     [
+      "不怕冷只覺熱",
+      "只熱不冷"
+     ]
+    ],
+    [
+     "wuhan",
+     "怕冷",
+     [
+      "怕冷",
+      "畏寒"
+     ]
+    ],
+    [
+     "wufeng",
+     "惡風",
+     [
+      "怕風",
+      "惡風"
+     ]
+    ],
+    [
+     "zuleng",
+     "手腳冷、足脛冷",
+     [
+      "手腳冰冷",
+      "腳冷",
+      "足冷",
+      "手足冷"
+     ]
+    ],
+    [
+     "deleng",
+     "遇冷加重、得溫減輕",
+     [
+      "遇冷更痛",
+      "天冷更痛",
+      "熱敷比較好",
+      "下雨天更痛"
+     ]
+    ],
+    [
+     "dere",
+     "遇熱加重、喜涼",
+     [
+      "遇熱更痛",
+      "冰敷比較好",
+      "喜歡涼"
+     ]
+    ],
+    [
+     "mianchi",
+     "面赤",
+     [
+      "臉紅",
+      "面赤"
+     ]
+    ],
+    [
+     "hanchu",
+     "汗出",
+     [
+      "流汗",
+      "出汗",
+      "汗多"
+     ]
+    ],
+    [
+     "wuhan_s",
+     "無汗",
+     [
+      "沒流汗",
+      "無汗",
+      "不出汗"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "痹痛：全身與病程",
+   "items": [
+    [
+     "kouke",
+     "口渴、想喝冷的",
+     [
+      "口渴",
+      "想喝冰的",
+      "喜冷飲"
+     ]
+    ],
+    [
+     "kougan",
+     "口乾舌燥",
+     [
+      "口乾",
+      "舌乾",
+      "咽燥"
+     ]
+    ],
+    [
+     "ou",
+     "噁心想吐",
+     [
+      "噁心",
+      "想吐",
+      "溫溫欲吐"
+     ]
+    ],
+    [
+     "duanqi",
+     "短氣",
+     [
+      "氣短",
+      "短氣"
+     ]
+    ],
+    [
+     "touxuan",
+     "頭暈",
+     [
+      "頭暈",
+      "頭眩"
+     ]
+    ],
+    [
+     "xbbuli",
+     "小便不利",
+     [
+      "小便少",
+      "尿不出來",
+      "小便不利"
+     ]
+    ],
+    [
+     "xiongxie",
+     "胸脅脹痛",
+     [
+      "胸悶",
+      "脅脹",
+      "胸脅痛"
+     ]
+    ],
+    [
+     "feipang",
+     "身體肥胖",
+     [
+      "很胖",
+      "肥胖",
+      "體重過重"
+     ]
+    ],
+    [
+     "shijiu",
+     "嗜酒、愛吃肥甘厚味",
+     [
+      "喝酒",
+      "愛喝酒",
+      "大魚大肉"
+     ]
+    ],
+    [
+     "jiubing",
+     "病程久（一年以上）",
+     [
+      "好幾年",
+      "一年多",
+      "很多年"
+     ]
+    ],
+    [
+     "wuzhi",
+     "發汗或瀉下後不解",
+     [
+      "吃了發汗藥",
+      "發汗後",
+      "瀉下後",
+      "汗後不解"
+     ]
+    ],
+    [
+     "mianhuang",
+     "面目萎黃",
+     [
+      "臉色黃",
+      "面黃",
+      "面色萎黃"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "痹痛：舌脈（知道才選）",
+   "items": [
+    [
+     "shehong",
+     "舌紅或絳",
+     [
+      "舌紅",
+      "舌頭紅",
+      "舌絳"
+     ]
+    ],
+    [
+     "taihuangni",
+     "苔黃膩",
+     [
+      "苔黃膩",
+      "黃膩苔",
+      "苔黃"
+     ]
+    ],
+    [
+     "taibaini",
+     "苔白膩或白滑",
+     [
+      "苔白膩",
+      "白膩苔",
+      "苔白滑"
+     ]
+    ],
+    [
+     "shedan",
+     "舌淡",
+     [
+      "舌淡",
+      "舌白"
+     ]
+    ],
+    [
+     "maifu",
+     "脈浮",
+     [
+      "脈浮"
+     ]
+    ],
+    [
+     "maichen",
+     "脈沉",
+     [
+      "脈沉"
+     ]
+    ],
+    [
+     "maishu",
+     "脈數",
+     [
+      "脈數",
+      "脈快"
+     ]
+    ],
+    [
+     "maihua",
+     "脈滑",
+     [
+      "脈滑"
+     ]
+    ],
+    [
+     "maixiwei",
+     "脈微細",
+     [
+      "脈微",
+      "脈細",
+      "脈很弱"
+     ]
+    ],
+    [
+     "maijin",
+     "脈緊",
+     [
+      "脈緊"
+     ]
+    ]
+   ]
+  },
+  {
    "name": "警示",
    "items": [
     [
@@ -326,19 +762,1149 @@
  },
  "referralTitle": "就醫建議",
  "hints": {},
- "jing": [],
+ "jing": [
+  {
+   "id": "fengshi",
+   "name": "風濕在表",
+   "w": {
+    "maifu": 2,
+    "wufeng": 1.5,
+    "hanchu": 1,
+    "wuhan_s": 1,
+    "shenzhong": 1.5,
+    "shentong": 1.5,
+    "fare": 1
+   },
+   "against": {
+    "maichen": 1,
+    "maixiwei": 1
+   },
+   "source": "《金匱要略·痙濕暍病》：「濕家身煩疼，可與麻黃加朮湯發其汗為宜」；「風濕，脈浮身重，汗出惡風者，防己黃耆湯主之」"
+  },
+  {
+   "id": "hanbi",
+   "name": "寒濕痛痹",
+   "w": {
+    "deleng": 3,
+    "wuhan": 2,
+    "zuleng": 1.5,
+    "jutong": 1,
+    "qushen": 1,
+    "maijin": 1.5,
+    "maichen": 1,
+    "taibaini": 1
+   },
+   "against": {
+    "dere": 2,
+    "shehong": 1.5,
+    "kouke": 1,
+    "zhongre": 1.5
+   },
+   "source": "《醫方集解·三痹湯》注：「風寒溼三者雜合而爲痹也，其風氣勝者爲行痹，寒氣勝者爲痛痹，溼氣勝者爲著痹也」；《金匱要略》：「病歷節不可屈伸，疼痛，烏頭湯主之」"
+  },
+  {
+   "id": "yangxu",
+   "name": "陽虛寒濕",
+   "w": {
+    "maixiwei": 2.5,
+    "zuleng": 2,
+    "wuhan": 1.5,
+    "maichen": 1.5,
+    "hanchu": 1,
+    "duanqi": 1,
+    "xbbuli": 1,
+    "shedan": 1
+   },
+   "against": {
+    "shehong": 1.5,
+    "kouke": 1.5,
+    "fare": 1
+   },
+   "source": "《傷寒論》第305條：「少陰病，身體痛，手足寒，骨節痛，脈沉者，附子湯主之」；第175條甘草附子湯「汗出短氣，小便不利，惡風不欲去衣」"
+  },
+  {
+   "id": "shire",
+   "name": "濕熱痹",
+   "w": {
+    "zhongre": 3,
+    "dere": 2,
+    "taihuangni": 2,
+    "shehong": 1.5,
+    "kouke": 1,
+    "maishu": 1.5,
+    "jiaozhong": 1,
+    "shenzhong": 1,
+    "mianhuang": 1
+   },
+   "against": {
+    "deleng": 2,
+    "wuhan": 1.5,
+    "zuleng": 1
+   },
+   "source": "《醫方集解·當歸拈痛湯》：「治溼熱相搏，肢節煩痛，肩背沉重……或腳氣腫痛」；《溫病條辨·中焦篇》第六五條：「濕聚熱蒸，蘊於經絡，寒戰熱熾，骨骱煩疼，舌色灰滯，面目萎黃，病名濕痹」"
+  },
+  {
+   "id": "fengre",
+   "name": "風濕化熱",
+   "w": {
+    "danre": 2.5,
+    "youzou": 1.5,
+    "fare": 1.5,
+    "kouke": 2,
+    "kougan": 1.5,
+    "maishu": 2,
+    "shehong": 1,
+    "mianchi": 1,
+    "fuzhong": 1
+   },
+   "against": {
+    "deleng": 1.5,
+    "wuhan": 1.5,
+    "zuleng": 1.5
+   },
+   "source": "《金匱要略·瘧病》：「溫瘧者，其脈如平，身無寒但熱，骨節疼煩，時嘔，白虎加桂枝湯主之」；《溫病條辨·中焦篇》第六八條加減木防己湯注：「風勝則引……四肢遊走作痛……濕勝則腫」（方中石膏清熱，按）"
+  },
+  {
+   "id": "xuxu",
+   "name": "肝腎氣血虛",
+   "w": {
+    "jiubing": 2,
+    "yaoxi": 2,
+    "jirouxiao": 2,
+    "qushen": 1.5,
+    "mamu": 1,
+    "shedan": 1,
+    "maixiwei": 1
+   },
+   "against": {
+    "zhongre": 1.5,
+    "fare": 1
+   },
+   "source": "《醫方集解·獨活寄生湯》：「治肝腎虛熱，風溼內攻，腰膝作痛，冷痹無力，屈伸不便」"
+  },
+  {
+   "id": "xuebi",
+   "name": "血痹",
+   "w": {
+    "mamu": 3,
+    "maixiwei": 1.5
+   },
+   "against": {
+    "zhongre": 1
+   },
+   "source": "《金匱要略·血痹虛勞病》：「血痹陰陽俱微……外證身體不仁，如風痹狀，黃耆桂枝五物湯主之」"
+  }
+ ],
  "jingRules": [],
- "patterns": [],
+ "patterns": [
+  {
+   "id": "guizhishaoyaozhimu",
+   "name": "歷節：肢節疼痛、腳腫如脫",
+   "formula": "桂枝芍藥知母湯",
+   "main": [
+    "zhitong",
+    "jiaozhong"
+   ],
+   "minor": [
+    "jirouxiao",
+    "touxuan",
+    "duanqi",
+    "ou",
+    "shentong",
+    "yaoxi",
+    "zuleng",
+    "fare",
+    "ribu",
+    "qushen"
+   ],
+   "against": [],
+   "source": "《金匱要略·中風歷節病》：「諸肢節疼痛，身體魁羸，腳腫如脫，頭眩短氣，溫溫欲吐，桂枝芍藥知母湯主之」",
+   "jing": [
+    "hanbi",
+    "shire",
+    "xuxu"
+   ],
+   "mods": [],
+   "key": [
+    "jiaozhong",
+    "jirouxiao"
+   ]
+  },
+  {
+   "id": "wutou",
+   "name": "歷節：寒痛劇、不可屈伸",
+   "formula": "烏頭湯",
+   "main": [
+    "zhitong",
+    "qushen"
+   ],
+   "minor": [
+    "jutong",
+    "deleng",
+    "wuhan",
+    "zuleng",
+    "maijin",
+    "maichen",
+    "guding",
+    "yaoxi"
+   ],
+   "against": [
+    [
+     "dere",
+     2
+    ],
+    [
+     "zhongre",
+     2
+    ],
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "kouke",
+     1
+    ]
+   ],
+   "source": "《金匱要略·中風歷節病》：「病歷節不可屈伸，疼痛，烏頭湯主之」",
+   "jing": [
+    "hanbi"
+   ],
+   "mods": [],
+   "key": [
+    "qushen",
+    "deleng"
+   ]
+  },
+  {
+   "id": "mahuangjiazhu",
+   "name": "濕家身煩疼、無汗",
+   "formula": "麻黃加朮湯",
+   "main": [
+    "shentong",
+    "wuhan_s"
+   ],
+   "minor": [
+    "shenzhong",
+    "wuhan",
+    "fare",
+    "maifu",
+    "maijin"
+   ],
+   "against": [
+    [
+     "hanchu",
+     2
+    ],
+    [
+     "shehong",
+     1
+    ]
+   ],
+   "source": "《金匱要略·痙濕暍病》：「濕家身煩疼，可與麻黃加朮湯發其汗為宜，慎不可以火攻之」",
+   "jing": [
+    "fengshi",
+    "hanbi"
+   ],
+   "mods": [],
+   "key": [
+    "wuhan_s"
+   ]
+  },
+  {
+   "id": "maxingyigan",
+   "name": "風濕一身盡疼、日晡所劇",
+   "formula": "麻黃杏仁薏苡甘草湯",
+   "main": [
+    "shentong",
+    "ribu"
+   ],
+   "minor": [
+    "fare",
+    "shenzhong",
+    "maifu",
+    "youzou"
+   ],
+   "against": [
+    [
+     "zuleng",
+     1
+    ],
+    [
+     "maixiwei",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·痙濕暍病》：「病者一身盡疼，發熱，日晡所劇者，名風濕。此病傷於汗出當風，或久傷取冷所致也。可與麻黃杏仁薏苡甘草湯」",
+   "jing": [
+    "fengshi",
+    "fengre"
+   ],
+   "mods": [],
+   "key": [
+    "ribu"
+   ]
+  },
+  {
+   "id": "fangjihuangqi",
+   "name": "風濕表虛：身重、汗出惡風",
+   "formula": "防己黃耆湯",
+   "main": [
+    "shenzhong",
+    "hanchu"
+   ],
+   "minor": [
+    "wufeng",
+    "maifu",
+    "shentong",
+    "jiaozhong",
+    "fuzhong",
+    "zhitong"
+   ],
+   "against": [
+    [
+     "wuhan_s",
+     2
+    ]
+   ],
+   "source": "《金匱要略·痙濕暍病》：「風濕，脈浮身重，汗出惡風者，防己黃耆湯主之」",
+   "jing": [
+    "fengshi"
+   ],
+   "mods": [],
+   "key": [
+    "hanchu",
+    "wufeng"
+   ]
+  },
+  {
+   "id": "guizhifuzi",
+   "name": "風濕相搏：身體疼煩、不能自轉側",
+   "formula": "桂枝附子湯（白朮附子湯）",
+   "main": [
+    "shentong",
+    "qushen"
+   ],
+   "minor": [
+    "maifu",
+    "wuhan",
+    "zuleng",
+    "deleng",
+    "shenzhong"
+   ],
+   "against": [
+    [
+     "ou",
+     1
+    ],
+    [
+     "kouke",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第174條：「傷寒八九日，風濕相搏，身體疼煩，不能自轉側，不嘔不渴，脈浮虛而澀者，桂枝附子湯主之」",
+   "jing": [
+    "yangxu",
+    "fengshi"
+   ],
+   "mods": [],
+   "key": [
+    "qushen"
+   ]
+  },
+  {
+   "id": "gancaofuzi",
+   "name": "風濕相搏：骨節疼煩掣痛、近之痛劇",
+   "formula": "甘草附子湯",
+   "main": [
+    "zhitong",
+    "jutong"
+   ],
+   "minor": [
+    "qushen",
+    "hanchu",
+    "duanqi",
+    "xbbuli",
+    "wufeng",
+    "fuzhong",
+    "wuhan"
+   ],
+   "against": [
+    [
+     "kouke",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第175條：「風濕相搏，骨節疼煩，掣痛不得屈伸，近之則痛劇，汗出短氣，小便不利，惡風不欲去衣，或身微腫者，甘草附子湯主之」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "jutong",
+    "duanqi",
+    "xbbuli"
+   ]
+  },
+  {
+   "id": "fuzitang",
+   "name": "少陰寒濕：身體痛、手足寒、脈沉",
+   "formula": "附子湯",
+   "main": [
+    "shentong",
+    "zuleng"
+   ],
+   "minor": [
+    "zhitong",
+    "maichen",
+    "maixiwei",
+    "wuhan",
+    "shedan"
+   ],
+   "against": [
+    [
+     "fare",
+     1.5
+    ],
+    [
+     "kouke",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第305條：「少陰病，身體痛，手足寒，骨節痛，脈沉者，附子湯主之」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "maichen",
+    "zuleng"
+   ]
+  },
+  {
+   "id": "huangqiguizhi",
+   "name": "血痹：身體不仁",
+   "formula": "黃耆桂枝五物湯",
+   "main": [
+    "mamu"
+   ],
+   "minor": [
+    "maixiwei",
+    "shentong",
+    "wufeng",
+    "jiubing"
+   ],
+   "against": [
+    [
+     "zhongre",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·血痹虛勞病》：「血痹陰陽俱微，寸口關上微，尺中小緊，外證身體不仁，如風痹狀，黃耆桂枝五物湯主之」",
+   "jing": [
+    "xuebi"
+   ],
+   "mods": [],
+   "key": [
+    "mamu"
+   ]
+  },
+  {
+   "id": "baihuguizhi",
+   "name": "溫瘧：身無寒但熱、骨節疼煩",
+   "formula": "白虎加桂枝湯",
+   "main": [
+    "zhitong",
+    "danre"
+   ],
+   "minor": [
+    "ou",
+    "fare",
+    "kouke",
+    "maishu",
+    "shehong",
+    "mianchi",
+    "hanchu"
+   ],
+   "against": [
+    [
+     "wuhan",
+     2
+    ],
+    [
+     "zuleng",
+     1.5
+    ],
+    [
+     "deleng",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·瘧病》：「溫瘧者，其脈如平，身無寒但熱，骨節疼煩，時嘔，白虎加桂枝湯主之」",
+   "jing": [
+    "fengre"
+   ],
+   "mods": [],
+   "key": [
+    "danre"
+   ]
+  },
+  {
+   "id": "xuanbi",
+   "name": "濕痹：濕聚熱蒸、骨骱煩疼",
+   "formula": "宣痹湯（《溫病條辨》中焦）",
+   "main": [
+    "zhitong",
+    "fare"
+   ],
+   "minor": [
+    "wuhan",
+    "shenzhong",
+    "taihuangni",
+    "mianhuang",
+    "maishu"
+   ],
+   "against": [
+    [
+     "zuleng",
+     1
+    ],
+    [
+     "maixiwei",
+     1
+    ]
+   ],
+   "source": "《溫病條辨·中焦篇》第六五條：「濕聚熱蒸，蘊於經絡，寒戰熱熾，骨骱煩疼，舌色灰滯，面目萎黃，病名濕痹，宣痹湯主之」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "mianhuang"
+   ]
+  },
+  {
+   "id": "mufangji",
+   "name": "暑濕痹：遊走作痛、濕勝則腫",
+   "formula": "加減木防己湯",
+   "main": [
+    "zhitong"
+   ],
+   "minor": [
+    "youzou",
+    "fuzhong",
+    "jiaozhong",
+    "fare",
+    "kouke",
+    "shenzhong",
+    "maishu",
+    "shehong",
+    "taihuangni"
+   ],
+   "against": [
+    [
+     "wuhan",
+     1.5
+    ],
+    [
+     "zuleng",
+     1.5
+    ],
+    [
+     "deleng",
+     1.5
+    ]
+   ],
+   "source": "《溫病條辨·中焦篇》第六八條：「暑濕痹者，加減木防己湯主之。此治痹之祖方也。風勝則引……四肢遊走作痛……濕勝則腫……寒勝則痛」",
+   "jing": [
+    "fengre",
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "youzou",
+    "fuzhong"
+   ]
+  },
+  {
+   "id": "duhuojisheng",
+   "name": "肝腎虛痹：腰膝作痛、屈伸不便",
+   "formula": "獨活寄生湯（三痹湯）",
+   "main": [
+    "yaoxi",
+    "qushen"
+   ],
+   "minor": [
+    "jiubing",
+    "mamu",
+    "deleng",
+    "zuleng",
+    "jirouxiao",
+    "shedan",
+    "maixiwei",
+    "wuhan"
+   ],
+   "against": [
+    [
+     "zhongre",
+     1.5
+    ],
+    [
+     "fare",
+     1
+    ]
+   ],
+   "source": "《醫方集解·祛風之劑·獨活寄生湯》：「治肝腎虛熱，風溼內攻，腰膝作痛，冷痹無力，屈伸不便」；三痹湯：「治氣血凝滯，手足拘攣，風寒溼三痹」",
+   "jing": [
+    "xuxu",
+    "hanbi"
+   ],
+   "mods": [],
+   "key": [
+    "yaoxi"
+   ]
+  },
+  {
+   "id": "juanbi",
+   "name": "身體煩痛、手足冷痹",
+   "formula": "蠲痹湯",
+   "main": [
+    "shentong",
+    "zuleng"
+   ],
+   "minor": [
+    "shenzhong",
+    "qushen",
+    "yaoxi",
+    "mamu",
+    "wufeng"
+   ],
+   "against": [
+    [
+     "zhongre",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·祛風之劑·蠲痹湯》：「（嚴氏）治中風身體煩痛，項背拘急，手足冷痹，腰膝沉重，舉動艱難」",
+   "jing": [
+    "fengshi",
+    "hanbi"
+   ],
+   "mods": []
+  },
+  {
+   "id": "dangguiniantong",
+   "name": "濕熱相搏：肢節煩痛、腳氣腫痛",
+   "formula": "當歸拈痛湯",
+   "main": [
+    "zhitong",
+    "shenzhong"
+   ],
+   "minor": [
+    "shentong",
+    "jiaozhong",
+    "zhongre",
+    "maishu",
+    "maihua",
+    "maichen",
+    "taihuangni"
+   ],
+   "against": [
+    [
+     "deleng",
+     1.5
+    ],
+    [
+     "wuhan",
+     1
+    ]
+   ],
+   "source": "《醫方集解·利溼之劑·當歸拈痛湯》：「（東垣）治溼熱相搏，肢節煩痛，肩背沉重；或偏身疼痛；或腳氣腫痛，腳膝生瘡，膿水不絕；及溼熱發黃，脈沉實緊數動滑者」",
+   "jing": [
+    "shire"
+   ],
+   "mods": [],
+   "key": [
+    "jiaozhong",
+    "zhongre"
+   ]
+  }
+ ],
  "rules": [],
- "cases": [],
- "probes": [],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "桂枝芍藥知母湯（肢節疼痛、腳腫如脫）",
+   "f": [
+    "zhitong",
+    "jiaozhong",
+    "jirouxiao",
+    "touxuan",
+    "duanqi",
+    "ou"
+   ],
+   "expect": "guizhishaoyaozhimu"
+  },
+  {
+   "id": "k2",
+   "label": "烏頭湯（歷節不可屈伸）",
+   "f": [
+    "zhitong",
+    "qushen",
+    "deleng",
+    "jutong"
+   ],
+   "expect": "wutou"
+  },
+  {
+   "id": "k3",
+   "label": "麻黃加朮湯（濕家身煩疼、無汗）",
+   "f": [
+    "shentong",
+    "wuhan_s",
+    "shenzhong",
+    "wuhan"
+   ],
+   "expect": "mahuangjiazhu"
+  },
+  {
+   "id": "k4",
+   "label": "麻杏薏甘湯（一身盡疼、日晡所劇）",
+   "f": [
+    "shentong",
+    "fare",
+    "ribu"
+   ],
+   "expect": "maxingyigan"
+  },
+  {
+   "id": "k5",
+   "label": "防己黃耆湯（脈浮身重、汗出惡風）",
+   "f": [
+    "maifu",
+    "shenzhong",
+    "hanchu",
+    "wufeng"
+   ],
+   "expect": "fangjihuangqi"
+  },
+  {
+   "id": "k6",
+   "label": "桂枝附子湯（身體疼煩、不能自轉側）",
+   "f": [
+    "shentong",
+    "qushen",
+    "maifu",
+    "zuleng"
+   ],
+   "expect": "guizhifuzi"
+  },
+  {
+   "id": "k7",
+   "label": "甘草附子湯（骨節疼煩、近之痛劇）",
+   "f": [
+    "zhitong",
+    "jutong",
+    "qushen",
+    "hanchu",
+    "duanqi",
+    "xbbuli",
+    "wufeng"
+   ],
+   "expect": "gancaofuzi"
+  },
+  {
+   "id": "k8",
+   "label": "附子湯（身體痛、手足寒、脈沉）",
+   "f": [
+    "shentong",
+    "zuleng",
+    "zhitong",
+    "maichen"
+   ],
+   "expect": "fuzitang"
+  },
+  {
+   "id": "k9",
+   "label": "黃耆桂枝五物湯（身體不仁）",
+   "f": [
+    "mamu",
+    "maixiwei"
+   ],
+   "expect": "huangqiguizhi"
+  },
+  {
+   "id": "k10",
+   "label": "白虎加桂枝湯（身無寒但熱、骨節疼煩、時嘔）",
+   "f": [
+    "danre",
+    "zhitong",
+    "ou"
+   ],
+   "expect": "baihuguizhi"
+  },
+  {
+   "id": "k11",
+   "label": "宣痹湯（濕聚熱蒸、骨骱煩疼、面目萎黃）",
+   "f": [
+    "zhitong",
+    "fare",
+    "wuhan",
+    "mianhuang"
+   ],
+   "expect": "xuanbi"
+  },
+  {
+   "id": "k12",
+   "label": "加減木防己湯（暑濕痹、遊走、腫）",
+   "f": [
+    "zhitong",
+    "youzou",
+    "fuzhong",
+    "fare"
+   ],
+   "expect": "mufangji"
+  },
+  {
+   "id": "k13",
+   "label": "獨活寄生湯（腰膝作痛、屈伸不便）",
+   "f": [
+    "yaoxi",
+    "qushen",
+    "deleng",
+    "jiubing"
+   ],
+   "expect": "duhuojisheng"
+  },
+  {
+   "id": "k14",
+   "label": "蠲痹湯（身體煩痛、手足冷痹）",
+   "f": [
+    "shentong",
+    "zuleng",
+    "shenzhong",
+    "mamu"
+   ],
+   "expect": "juanbi"
+  },
+  {
+   "id": "k15",
+   "label": "當歸拈痛湯（濕熱相搏、肢節煩痛、腳氣腫痛）",
+   "f": [
+    "zhitong",
+    "shenzhong",
+    "jiaozhong",
+    "zhongre"
+   ],
+   "expect": "dangguiniantong"
+  }
+ ],
+ "probes": [
+  {
+   "q": "痛處遇冷還是遇熱會加重？",
+   "opts": [
+    [
+     "遇冷加重、熱敷舒服",
+     [
+      "deleng"
+     ]
+    ],
+    [
+     "遇熱加重、喜涼",
+     [
+      "dere"
+     ]
+    ],
+    [
+     "沒差別",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "關節紅腫發熱嗎？",
+   "opts": [
+    [
+     "紅腫、摸起來熱",
+     [
+      "zhongre"
+     ]
+    ],
+    [
+     "腫但不紅不熱",
+     [
+      "jiaozhong"
+     ]
+    ],
+    [
+     "不腫",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "痛的地方固定還是會跑？",
+   "opts": [
+    [
+     "會跑、遊走",
+     [
+      "youzou"
+     ]
+    ],
+    [
+     "固定一處",
+     [
+      "guding"
+     ]
+    ],
+    [
+     "不確定",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "出汗情形？",
+   "opts": [
+    [
+     "容易出汗、怕風",
+     [
+      "hanchu",
+      "wufeng"
+     ]
+    ],
+    [
+     "不太出汗",
+     [
+      "wuhan_s"
+     ]
+    ],
+    [
+     "不確定",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "舌苔？",
+   "opts": [
+    [
+     "黃膩",
+     [
+      "taihuangni"
+     ]
+    ],
+    [
+     "白膩",
+     [
+      "taibaini"
+     ]
+    ],
+    [
+     "舌淡",
+     [
+      "shedan"
+     ]
+    ],
+    [
+     "不清楚",
+     []
+    ]
+   ]
+  }
+ ],
  "page": {
-  "title": "免疫風濕科就醫轉介",
-  "eyebrow": "中藥典籍原文庫．就醫轉介篩檢（不做辨證）",
-  "lede": "點選已確診或懷疑的疾病，或勾選、輸入症狀，程式會列出是否建議到過敏免疫風濕科檢查。這一欄只做轉介，不做中醫辨證、不選方；確診與治療請交給免疫科。皮膚、失眠等症狀的中醫辨證，請回到各自的知識庫。",
-  "intro": "從左側勾選或輸入症狀後，這裡會列出就醫建議。沒有出現建議，不代表沒有免疫疾病；有疑慮仍請就醫。",
-  "nomatch": "目前勾選的項目沒有需要轉介免疫科的徵兆；有疑慮仍請就醫。",
-  "freeExample": "例：臉頰紅斑，曬太陽就起疹，關節腫痛，早上手指僵硬",
-  "limits": "<li>只做轉介篩檢，不做辨證、不選方，也沒有驗證題。</li><li>列出的徵兆只是常見警訊，不是診斷標準；沒有出現建議不代表沒有免疫疾病。</li><li>已確診或正在服類固醇、免疫抑制劑、生物製劑者，請勿自行停藥；服中藥前先告知免疫科醫師。</li><li>帶狀疱疹（皮蛇）不是免疫疾病，列在這裡是為了導向正確科別（皮膚科、眼科）。</li>"
+  "title": "免疫風濕：就醫轉介與痹證辨證",
+  "eyebrow": "中藥典籍原文庫．就醫轉介＋規則式辨證．免疫 v0.2（痹證、歷節；兩層：先辨病性，再選方）",
+  "lede": "上方「就醫建議」判斷是否該到過敏免疫風濕科（或其他科）就醫；下方依《金匱要略》《傷寒論》《溫病條辨》《醫方集解》辨痹證、歷節（關節疼痛）的證型與方劑，兩者分開顯示。這是學習用的規則系統，自體免疫疾病須由免疫科確診治療，中藥只能在醫師知情下作輔助。",
+  "intro": "從左側點選疾病或勾選症狀後，這裡會列出就醫建議；若勾選了痹痛症狀，也會列出證型與方劑。",
+  "nomatch": "目前的症狀對不上任何痹證證型。請補充：痛在哪裡、腫不腫、紅不紅熱、遇冷或遇熱加重、出汗與怕冷怕風、舌苔。",
+  "freeExample": "例：關節紅腫熱痛，腳腫，遇熱更痛，苔黃膩",
+  "limits": "<li>就醫轉介只是常見警訊，不是診斷；沒有出現建議不代表沒有免疫疾病。</li><li>辨證只收痹證、歷節（關節疼痛）的 15 個證型、7 種病性；上中下通用痛風丸原文為「通治」、無具體主治，未收。紅斑性狼瘡、乾燥症、硬皮症等其他免疫疾病尚無辨證。</li><li><b>驗證：</b>8 則預先登錄的醫案（全是熱痹、濕熱痹）首選 2、前三 4。桂枝芍藥知母湯常搶首位，當歸拈痛湯常被判錯；寒痹（烏頭湯、附子類）找不到用原文方的醫案，驗證不到。</li><li>已確診或正在服類固醇、免疫抑制劑、生物製劑者，請勿自行停藥；服中藥前先告知免疫科醫師。烏頭、附子有毒，須由醫師處方炮製與煎法。</li>",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷寒熱虛實。",
+  "sample": "k15",
+  "casesTitle": "建庫自檢（取自各方原文主治，不算證據）",
+  "checkIntro": "自檢題取自各方原文主治，只檢查程式是否照原文運作；預先登錄的驗證題取自醫案集，登錄時知識庫只有症狀清單與方族代號。"
+ },
+ "plannedFamilies": {
+  "guizhishaoyaozhimu": "桂枝芍藥知母湯",
+  "wutou": "烏頭湯",
+  "mahuangjiazhu": "麻黃加朮湯",
+  "maxingyigan": "麻杏薏甘湯",
+  "fangjihuangqi": "防己黃耆湯",
+  "guizhifuzi": "桂枝附子湯（白朮附子湯）",
+  "gancaofuzi": "甘草附子湯",
+  "fuzitang": "附子湯",
+  "huangqiguizhi": "黃耆桂枝五物湯",
+  "baihuguizhi": "白虎加桂枝湯",
+  "xuanbi": "宣痹湯",
+  "mufangji": "加減木防己湯",
+  "duhuojisheng": "獨活寄生湯（三痹湯）",
+  "juanbi": "蠲痹湯",
+  "dangguiniantong": "當歸拈痛湯"
+ },
+ "jingMult": 1.0,
+ "jingCap": 10,
+ "implies": {
+  "guanjie": [
+   "zhitong"
+  ],
+  "chenjiang": [
+   "zhitong"
+  ]
+ },
+ "cases_v1": {
+  "title": "免疫（痹證）v0.2 驗證題（建證型前登錄）",
+  "families": {
+   "baihuguizhi": "白虎加桂枝湯",
+   "dangguiniantong": "當歸拈痛湯",
+   "duhuojisheng": "獨活寄生湯（三痹湯）",
+   "fangjihuangqi": "防己黃耆湯",
+   "fuzitang": "附子湯",
+   "gancaofuzi": "甘草附子湯",
+   "guizhifuzi": "桂枝附子湯（白朮附子湯）",
+   "guizhishaoyaozhimu": "桂枝芍藥知母湯",
+   "huangqiguizhi": "黃耆桂枝五物湯",
+   "juanbi": "蠲痹湯",
+   "mahuangjiazhu": "麻黃加朮湯",
+   "maxingyigan": "麻杏薏甘湯",
+   "mufangji": "加減木防己湯",
+   "tongfeng": "上中下通用痛風方",
+   "wutou": "烏頭湯",
+   "xuanbi": "宣痹湯"
+  },
+  "note": "來源經使用者確認（2026-11-06，8 則全部登錄）：搜尋《名醫類案》全 12 卷、《古今醫案按》、《續名醫類案》1、16、《臨證指南醫案》、《吳鞠通醫案》、《經方實驗錄》、《傷寒九十論》中用 16 個方族的痹證、歷節醫案。全是熱痹或濕熱痹（拈痛 3、木防己 4、桂芍知母 1）；寒痹（烏頭湯、附子類）找不到用原文方的醫案，驗證不到。p06–p08 為葉天士案，未寫方名，藥味與《溫病條辨》加減木防己湯（防己、桂枝、石膏、杏仁、滑石、通草、薏仁）相合，判 mufangji。p03 先用拈痛湯後轉補，以首方判分。症狀照原文取。",
+  "sha256": "ddac5b121c1940b04952ed906377af2b4b3541bc95fa359961a41e53f04976ad",
+  "cases": [
+   {
+    "expect": [
+     "dangguiniantong"
+    ],
+    "f": [
+     "feipang",
+     "shijiu",
+     "zhongre",
+     "jiaozhong",
+     "jutong"
+    ],
+    "id": "p01",
+    "label": "《名醫類案》卷六（東垣治一朝貴，當歸拈痛湯）",
+    "text": "身體充肥，腳氣始發，頭面渾身支節微腫，皆赤色，足脛赤腫，痛不可忍，手近皮膚其痛轉甚……多飲酒"
+   },
+   {
+    "expect": [
+     "dangguiniantong"
+    ],
+    "f": [
+     "shentong",
+     "jiaozhong",
+     "fare",
+     "mianchi"
+    ],
+    "id": "p02",
+    "label": "《名醫類案》卷七（江應宿治程君膏長子，當歸拈痛湯）",
+    "text": "十八歲，遍身疼痛，腳膝腫大，體熱面赤，此風濕相搏也"
+   },
+   {
+    "expect": [
+     "dangguiniantong"
+    ],
+    "f": [
+     "yaoxi",
+     "qushen",
+     "jirouxiao",
+     "jiubing"
+    ],
+    "id": "p03",
+    "label": "《古今醫案按》腳氣（江應宿友人佘近峰，初用當歸拈痛湯，後轉十全大補）",
+    "text": "年五十餘，患腳痛，臥不能起，年餘，脛與腿肉俱消"
+   },
+   {
+    "expect": [
+     "guizhishaoyaozhimu"
+    ],
+    "f": [
+     "zhitong",
+     "yaoxi",
+     "zuleng",
+     "ribu",
+     "maichen",
+     "maihua"
+    ],
+    "id": "p04",
+    "label": "《經方實驗錄》（曹穎甫，桂枝芍藥知母湯）",
+    "text": "一身肢節疼痛，腳痛，足脛冷，日晡所發熱，脈沉而滑，此為歷節"
+   },
+   {
+    "expect": [
+     "mufangji"
+    ],
+    "f": [
+     "shentong",
+     "wuzhi",
+     "kouke",
+     "mianchi",
+     "shehong",
+     "xiongxie"
+    ],
+    "id": "p05",
+    "label": "《吳鞠通醫案》卷四痹（昆氏，木防己湯）",
+    "text": "風濕相搏，一身盡痛，既以誤汗傷表，又以誤下傷里，渴思涼飲，面赤舌絳，得飲反停，脅脹胸痛"
+   },
+   {
+    "expect": [
+     "mufangji"
+    ],
+    "f": [
+     "youzou",
+     "zhitong",
+     "wuzhi"
+    ],
+    "id": "p06",
+    "label": "《臨證指南醫案》卷七痹（杜，桂枝杏仁滑石石膏萆薢防己苡仁通草）",
+    "text": "溫暖開泄，驟冷外加，風寒濕三氣交傷為痹，遊走上下為楚，邪入經隧，雖汗不解"
+   },
+   {
+    "expect": [
+     "mufangji"
+    ],
+    "f": [
+     "shentong",
+     "kougan"
+    ],
+    "id": "p07",
+    "label": "《臨證指南醫案》卷七痹（吳氏，石膏杏仁桂枝苡仁木防己）",
+    "text": "風濕化熱，蒸於經絡，周身痹痛，舌乾咽燥"
+   },
+   {
+    "expect": [
+     "mufangji"
+    ],
+    "f": [
+     "maishu",
+     "zhitong",
+     "youzou",
+     "fuzhong"
+    ],
+    "id": "p08",
+    "label": "《臨證指南醫案》卷七痹（石，桂枝木防己杏仁石膏等）",
+    "text": "脈數右大，溫漸化熱，灼及經絡，氣血交阻，而為痹痛，陽邪主動，自為遊走，陽動化風，肉腠浮腫，俗諺稱為白虎歷節"
+   }
+  ],
+  "pageTitle": "預先登錄驗證題（痹證）",
+  "result": "凍結後只算一次：首選 2／8、前三 4／8。對：葉天士兩案（遊走痹痛、肉腠浮腫）判為加減木防己湯。錯：東垣、江應宿的當歸拈痛湯兩案都被判為桂枝芍藥知母湯（腳腫＋疼痛就搶到首位；拈痛湯原文主症「肢節煩痛、肩背沉重」，醫案未記沉重）；曹穎甫的桂枝芍藥知母湯案（足脛冷、脈沉）被判為附子湯；昆氏木防己湯案判為白虎加桂枝湯（第 3）；只記「周身痹痛、舌乾咽燥」的葉案判為蠲痹湯；先拈痛後轉補的久病案判為獨活寄生湯。首選不可靠，前三名勉強可當候選。"
  }
 }

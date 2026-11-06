@@ -120,11 +120,15 @@ print("referral box ok")
 at5 = AppTest.from_file("streamlit_app.py", default_timeout=90).run()
 assert "免疫" in at5.radio[0].options, at5.radio[0].options
 at5.radio[0].set_value("免疫").run(); assert not at5.exception, at5.exception
-assert any("免疫風濕科就醫轉介" in t.value for t in at5.title)
+assert any("免疫風濕" in t.value for t in at5.title), [t.value for t in at5.title]
 at5.text_input[0].input("臉頰紅斑 關節腫痛 吃類固醇 胸痛").run(); assert not at5.exception, at5.exception
 assert len([w for w in at5.warning if "🏥" in str(w.icon) or "免疫" in w.value]) >= 3, [w.value[:20] for w in at5.warning]
 assert any("急診" in e.value for e in at5.error)
-assert not any(m.value.startswith("### 首選") for m in at5.markdown), "referral-only tab must not diagnose"
+assert any("就醫建議" in m.value for m in at5.markdown), "referral box missing"
+at5.text_input[0].input("遇熱更痛 紅腫熱痛 腳腫 苔黃膩").run(); assert not at5.exception, at5.exception
+first = [m.value for m in at5.markdown if m.value.startswith("### 首選")]
+assert first, "痹證 diagnosis missing"
+print("免疫 痹證:", first)
 print("免疫 tab ok")
 
 at5.text_input[0].input("皮蛇").run(); assert not at5.exception, at5.exception

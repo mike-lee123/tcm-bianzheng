@@ -407,6 +407,9 @@ def parse_text(kb, text):
         hit = plain or hit
         starts = [h for h in hit if h[1].startswith(a)]
         ids.append(sorted(starts or hit, key=lambda h: len(h[1]))[0][0])
+    # kb.implies：某些項目（如免疫轉介的「關節腫痛」）同時帶入辨證症狀
+    imp = kb.get("implies", {})
+    ids = [y for x in ids for y in [x] + imp.get(x, [])]
     ids = list(dict.fromkeys(ids))
     negated = [x for x in dict.fromkeys(negated) if x not in ids]
     return {"ids": ids, "temp": temp, "unknown": unknown, "negated": negated, "hints": hints, "referrals": refer}
