@@ -21,7 +21,7 @@ DISCLAIMER = "以上僅供學習參考，實際用藥請由中醫師面診後處
 # ── data ──────────────────────────────────────────────────────────────────────
 @st.cache_data
 def kb_names():
-    order = {"外感": 0, "脾胃": 1, "皮膚": 2, "咳嗽": 3, "失眠": 4, "月經": 5}
+    order = {"外感": 0, "脾胃": 1, "皮膚": 2, "咳嗽": 3, "失眠": 4, "月經": 5, "免疫": 6}
     return sorted([p.stem for p in KB_DIR.glob("*.json")], key=lambda n: order.get(n, 9))
 
 
@@ -139,12 +139,14 @@ def render_referrals(kbname, kb, selected):
     msgs = [kb["referrals"][x] for x in selected if x in kb.get("referrals", {})]
     msgs += [m for m in parsed.get("referrals", []) if m not in msgs]
     if not msgs:
-        return
+        return False
     with st.container(border=True):
         st.markdown(f"#### 🏥 {kb.get('referralTitle', '轉介建議')}")
-        st.caption("這一欄與下方的中醫辨證分開，不計分；請先就醫確認，中藥只作輔助。")
+        st.caption("只做就醫轉介，不做中醫辨證。" if kb.get("referralOnly")
+                   else "這一欄與下方的中醫辨證分開，不計分；請先就醫確認，中藥只作輔助。")
         for m in msgs:
             st.warning(m, icon="🏥")
+    return True
 
 
 def render_result(kb, d, L):
@@ -227,7 +229,9 @@ def page_bianzheng():
     st.caption(page.get("eyebrow", ""))
     st.title(page.get("title", "辨證選方"))
     st.write(page.get("lede", ""))
-    if kbname != "外感":
+    if kb.get("referralOnly"):
+        st.info("這一欄只做就醫轉介篩檢，不做中醫辨證、不選方。", icon="🏥")
+    elif kbname != "外感":
         st.warning("這個知識庫還在試做，首選命中率低。請把前三名當候選、把「還需要確認」當追問清單。", icon="⚠️")
 
     left, right = st.columns([5, 6], gap="large")
@@ -263,8 +267,19 @@ def page_bianzheng():
     selected = [by_label[x] for i, _ in enumerate(kb["groups"]) for x in st.session_state.get(group_key(kbname, i)) or []]
     temp = st.session_state.get(f"temp_{kbname}")
     with right:
-        render_referrals(kbname, kb, selected)
-        if not selected and temp is None:
+        if kb.get("referralOnly"):
+            for x in selected:
+                if x in kb.get("redflags", {}):
+                    st.error("⚠ " + kb["redflags"][x])
+            shown = render_referrals(kbname, kb, selected)
+            if not shown:
+                st.info(strip_tags(page.get("nomatch" if selected else "intro", "")))
+            st.caption(DISCLAIMER)
+        else:
+            render_referrals(kbname, kb, selected)
+        if kb.get("referralOnly"):
+            pass
+        elif not selected and temp is None:
             st.info(strip_tags(page.get("intro", "從左側選擇症狀後，這裡會列出最可能的證型、主方與加減。")))
         else:
             d = engine.diagnose(kb, selected, temp)
@@ -274,6 +289,11 @@ def page_bianzheng():
         st.caption(DISCLAIMER)
 
     st.divider()
+    if kb.get("referralOnly"):
+        with st.expander("限度"):
+            for item in limit_items(kb):
+                st.markdown("- " + item)
+        return
     with st.expander("自我檢查：預先登錄的驗證題"):
         st.write(page.get("checkIntro", ""))
         for title, ok, n, note, rows in run_checks(kbname):
