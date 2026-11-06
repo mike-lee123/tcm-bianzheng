@@ -1,0 +1,2412 @@
+{
+ "title": "咳嗽辨證選方",
+ "version": "0.1",
+ "note": "咳嗽與喘（外感、內傷）規則式辨證試做。",
+ "plannedFamilies": {
+  "xingsu": "杏蘇散",
+  "sangju": "桑菊飲",
+  "sangxing": "桑杏湯",
+  "qingzao": "清燥救肺湯",
+  "xiaoqinglong": "小青龍湯族",
+  "maxingshigan": "麻杏甘石湯",
+  "shegan": "射干麻黃湯",
+  "yuebi": "越婢加半夏湯",
+  "dingchuan": "定喘湯",
+  "xiebai": "瀉白散",
+  "erchen": "二陳湯族",
+  "sanzi": "三子養親湯",
+  "qingqi": "清氣化痰丸",
+  "suzi": "蘇子降氣湯",
+  "tingli": "葶藶大棗瀉肺湯",
+  "linggui": "苓桂朮甘湯",
+  "maimendong": "麥門冬湯",
+  "baihe": "百合固金湯",
+  "bufei": "補肺湯",
+  "liujunzi": "六君子湯族",
+  "shenqi": "腎氣丸",
+  "weijing": "葦莖湯（肺癰）"
+ },
+ "groups": [
+  {
+   "name": "咳的樣子",
+   "items": [
+    [
+     "ke",
+     "咳嗽",
+     [
+      "咳",
+      "咳不停",
+      "一直咳",
+      "咳嗽"
+     ]
+    ],
+    [
+     "ke_gan",
+     "乾咳、無痰或痰極少",
+     [
+      "乾咳",
+      "沒有痰",
+      "無痰"
+     ]
+    ],
+    [
+     "ke_lian",
+     "咳嗽連聲、陣陣嗆咳",
+     [
+      "連聲咳",
+      "陣咳",
+      "嗆咳",
+      "咳個不停"
+     ]
+    ],
+    [
+     "ke_ye",
+     "夜間或清晨咳甚",
+     [
+      "晚上咳",
+      "夜咳",
+      "早上咳",
+      "半夜咳"
+     ]
+    ],
+    [
+     "ke_xiong",
+     "咳引胸痛或脅痛",
+     [
+      "咳的時候胸痛",
+      "咳到胸痛",
+      "咳引胸痛",
+      "咳到肋骨痛"
+     ]
+    ],
+    [
+     "yanyang",
+     "喉癢即咳、咽乾",
+     [
+      "喉嚨癢",
+      "喉癢",
+      "咽癢",
+      "喉嚨乾",
+      "咽乾"
+     ]
+    ],
+    [
+     "yantong",
+     "咽喉腫痛",
+     [
+      "喉嚨痛",
+      "咽痛"
+     ]
+    ],
+    [
+     "shiyin",
+     "聲音嘶啞",
+     [
+      "沙啞",
+      "聲音啞",
+      "失音"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "痰",
+   "items": [
+    [
+     "tan_xi",
+     "痰清稀、白沫多",
+     [
+      "清痰",
+      "白泡痰",
+      "稀痰",
+      "泡沫痰",
+      "白沫"
+     ]
+    ],
+    [
+     "tan_bai",
+     "痰白黏、量多易咯",
+     [
+      "白痰多",
+      "痰多",
+      "白痰"
+     ]
+    ],
+    [
+     "tan_huang",
+     "痰黃稠",
+     [
+      "黃痰",
+      "痰黃",
+      "濃痰"
+     ]
+    ],
+    [
+     "tan_nian",
+     "痰少而黏、難咯出",
+     [
+      "痰黏",
+      "咳不出來",
+      "痰卡著",
+      "痰很黏"
+     ]
+    ],
+    [
+     "tan_xue",
+     "痰中帶血",
+     [
+      "痰有血絲",
+      "痰中帶血",
+      "血絲"
+     ]
+    ],
+    [
+     "tan_nong",
+     "吐膿痰、腥臭",
+     [
+      "膿痰",
+      "腥臭痰",
+      "痰很臭"
+     ]
+    ],
+    [
+     "tuxian",
+     "多吐涎沫",
+     [
+      "口水多",
+      "吐涎沫",
+      "涎沫"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "喘與胸",
+   "items": [
+    [
+     "chuan",
+     "氣喘、氣急",
+     [
+      "喘",
+      "氣喘",
+      "呼吸急",
+      "喘不過氣"
+     ]
+    ],
+    [
+     "chuan_ming",
+     "喉中痰鳴如水雞聲",
+     [
+      "痰鳴",
+      "喉嚨有痰聲",
+      "咻咻聲",
+      "哮"
+     ]
+    ],
+    [
+     "chuan_wo",
+     "喘不得平臥",
+     [
+      "不能躺",
+      "躺下就喘",
+      "坐著才能睡",
+      "倚息"
+     ]
+    ],
+    [
+     "chuan_dong",
+     "動則喘甚、呼多吸少",
+     [
+      "一動就喘",
+      "走路就喘",
+      "上樓梯喘",
+      "吸不到底"
+     ]
+    ],
+    [
+     "duanqi",
+     "短氣、少氣",
+     [
+      "氣短",
+      "短氣",
+      "氣不夠"
+     ]
+    ],
+    [
+     "xiongmen",
+     "胸悶、胸脅脹滿",
+     [
+      "胸悶",
+      "胸口悶",
+      "胸脹"
+     ]
+    ],
+    [
+     "muru",
+     "咳喘時目如脫狀（目脹突）",
+     [
+      "眼睛脹",
+      "眼睛快凸出來"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "寒熱與表",
+   "items": [
+    [
+     "wuhan",
+     "惡寒、怕冷",
+     [
+      "怕冷",
+      "發冷",
+      "惡寒"
+     ]
+    ],
+    [
+     "fare",
+     "發熱",
+     [
+      "發燒",
+      "發熱",
+      "身熱"
+     ]
+    ],
+    [
+     "wuhan_s",
+     "無汗",
+     [
+      "不出汗",
+      "無汗",
+      "沒流汗"
+     ]
+    ],
+    [
+     "youhan",
+     "有汗、自汗",
+     [
+      "流汗",
+      "自汗",
+      "很會流汗"
+     ]
+    ],
+    [
+     "bisai",
+     "鼻塞流涕",
+     [
+      "鼻塞",
+      "流鼻水",
+      "鼻涕"
+     ]
+    ],
+    [
+     "toutong",
+     "頭痛",
+     [
+      "頭痛"
+     ]
+    ],
+    [
+     "shentong",
+     "身痛",
+     [
+      "身體痠痛",
+      "全身痛"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "口與燥",
+   "items": [
+    [
+     "kouke",
+     "口渴",
+     [
+      "口渴",
+      "想喝水"
+     ]
+    ],
+    [
+     "bizao",
+     "口鼻乾燥、皮膚乾",
+     [
+      "鼻子乾",
+      "口鼻乾",
+      "乾燥",
+      "嘴巴乾"
+     ]
+    ],
+    [
+     "kouku",
+     "口苦",
+     [
+      "嘴巴苦",
+      "口苦"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "全身",
+   "items": [
+    [
+     "pifa",
+     "神疲乏力",
+     [
+      "累",
+      "疲倦",
+      "沒力氣",
+      "乏力"
+     ]
+    ],
+    [
+     "shaoqi",
+     "少氣懶言、聲低",
+     [
+      "懶得講話",
+      "講話沒力",
+      "聲音小"
+     ]
+    ],
+    [
+     "yigan",
+     "容易感冒",
+     [
+      "容易感冒",
+      "常感冒",
+      "一吹風就感冒"
+     ]
+    ],
+    [
+     "daohan",
+     "盜汗",
+     [
+      "盜汗",
+      "睡覺流汗",
+      "半夜流汗"
+     ]
+    ],
+    [
+     "chaore",
+     "午後潮熱、手足心熱",
+     [
+      "下午發熱",
+      "手腳心熱",
+      "潮熱",
+      "五心煩熱"
+     ]
+    ],
+    [
+     "weihan",
+     "畏寒肢冷",
+     [
+      "手腳冰冷",
+      "手腳冷",
+      "肢冷"
+     ]
+    ],
+    [
+     "yaosuan",
+     "腰膝痠軟",
+     [
+      "腰痠",
+      "腿軟",
+      "腰膝痠軟"
+     ]
+    ],
+    [
+     "fuzhong",
+     "浮腫",
+     [
+      "水腫",
+      "浮腫",
+      "腳腫",
+      "臉腫"
+     ]
+    ],
+    [
+     "xinfan",
+     "心煩",
+     [
+      "煩躁",
+      "心煩"
+     ]
+    ],
+    [
+     "touxuan",
+     "頭暈目眩",
+     [
+      "頭暈",
+      "眩暈"
+     ]
+    ],
+    [
+     "xinji",
+     "心悸",
+     [
+      "心悸",
+      "心慌"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "飲食二便",
+   "items": [
+    [
+     "nashao",
+     "食少、胃口差",
+     [
+      "胃口差",
+      "吃不下",
+      "食慾差"
+     ]
+    ],
+    [
+     "pizhang",
+     "脘腹脹滿",
+     [
+      "肚子脹",
+      "胃脹"
+     ]
+    ],
+    [
+     "xie",
+     "大便溏",
+     [
+      "大便稀",
+      "拉肚子",
+      "軟便"
+     ]
+    ],
+    [
+     "bianbi",
+     "大便乾結",
+     [
+      "便秘",
+      "大便乾"
+     ]
+    ],
+    [
+     "xbbuli",
+     "小便不利或量少",
+     [
+      "小便少",
+      "尿少"
+     ]
+    ],
+    [
+     "ke_niao",
+     "咳而遺尿",
+     [
+      "咳到漏尿",
+      "咳嗽漏尿"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "舌",
+   "items": [
+    [
+     "shehong",
+     "舌紅",
+     [
+      "舌紅",
+      "舌頭紅"
+     ]
+    ],
+    [
+     "shedan",
+     "舌淡",
+     [
+      "舌淡"
+     ]
+    ],
+    [
+     "shepang",
+     "舌胖有齒痕",
+     [
+      "齒痕",
+      "舌胖"
+     ]
+    ],
+    [
+     "taibai",
+     "苔薄白",
+     [
+      "苔白",
+      "薄白苔"
+     ]
+    ],
+    [
+     "tainai",
+     "苔白膩或滑",
+     [
+      "膩苔",
+      "苔膩",
+      "苔滑",
+      "苔厚"
+     ]
+    ],
+    [
+     "taihuang",
+     "苔黃或黃膩",
+     [
+      "黃苔",
+      "苔黃"
+     ]
+    ],
+    [
+     "shaotai",
+     "少苔或剝苔",
+     [
+      "少苔",
+      "無苔",
+      "剝苔"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "脈（知道才選）",
+   "items": [
+    [
+     "maifu",
+     "脈浮",
+     [
+      "浮脈"
+     ]
+    ],
+    [
+     "maishu",
+     "脈數",
+     [
+      "數脈",
+      "脈快"
+     ]
+    ],
+    [
+     "maihua",
+     "脈滑",
+     [
+      "滑脈"
+     ]
+    ],
+    [
+     "maixi",
+     "脈細",
+     [
+      "細脈"
+     ]
+    ],
+    [
+     "mairuo",
+     "脈弱無力",
+     [
+      "脈弱",
+      "脈無力"
+     ]
+    ],
+    [
+     "maichen",
+     "脈沉",
+     [
+      "沉脈"
+     ]
+    ],
+    [
+     "maixian",
+     "脈弦",
+     [
+      "弦脈"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "病程與誘因",
+   "items": [
+    [
+     "xinbing",
+     "新起（數日內）",
+     [
+      "剛開始",
+      "這幾天",
+      "最近才"
+     ]
+    ],
+    [
+     "jiubing",
+     "久咳、反覆發作（數週以上）",
+     [
+      "好幾個月",
+      "好幾週",
+      "很久",
+      "反覆",
+      "慢性",
+      "長期",
+      "久咳",
+      "多年"
+     ]
+    ],
+    [
+     "qiuzao",
+     "秋季或乾燥環境發作",
+     [
+      "秋天",
+      "冷氣房",
+      "天氣乾"
+     ]
+    ],
+    [
+     "shouhan",
+     "受寒、淋雨或吹風後起",
+     [
+      "著涼",
+      "淋雨",
+      "吹冷風",
+      "受寒"
+     ]
+    ],
+    [
+     "laonian",
+     "年老",
+     [
+      "老人",
+      "年紀大"
+     ]
+    ],
+    [
+     "xiaoer",
+     "小兒",
+     [
+      "小孩",
+      "小朋友",
+      "兒童"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "警示",
+   "items": [
+    [
+     "kexue_duo",
+     "大量咳血",
+     [
+      "咳很多血",
+      "吐血",
+      "大口咳血"
+     ]
+    ],
+    [
+     "xiongtong_ju",
+     "劇烈胸痛",
+     [
+      "胸口劇痛",
+      "胸痛劇烈"
+     ]
+    ],
+    [
+     "chunzi",
+     "呼吸困難、唇甲發紫",
+     [
+      "嘴唇發紫",
+      "呼吸困難",
+      "指甲發紫"
+     ]
+    ],
+    [
+     "gaore",
+     "高燒不退",
+     [
+      "高燒不退",
+      "一直高燒"
+     ]
+    ],
+    [
+     "xiaoshou",
+     "消瘦、長期低熱伴咳",
+     [
+      "一直變瘦",
+      "體重下降",
+      "莫名消瘦"
+     ]
+    ]
+   ]
+  }
+ ],
+ "redflags": {
+  "kexue_duo": "大量咳血請立即就醫。",
+  "xiongtong_ju": "劇烈胸痛可能是氣胸、肺栓塞或心臟問題，請立即就醫。",
+  "chunzi": "呼吸困難、唇甲發紫表示缺氧，請立即就醫。",
+  "gaore": "高燒不退合併咳嗽，須排除肺炎，請就醫。",
+  "xiaoshou": "久咳合併消瘦、低熱或咳血，須排除肺結核、肺癌等，請就醫檢查。",
+  "tan_nong": "吐膿臭痰可能是肺膿瘍，請就醫。"
+ },
+ "jing": [
+  {
+   "id": "fenghan",
+   "name": "風寒束肺",
+   "w": {
+    "wuhan": 3,
+    "wuhan_s": 2,
+    "bisai": 1.5,
+    "toutong": 1,
+    "shentong": 1,
+    "tan_xi": 1.5,
+    "taibai": 1,
+    "maifu": 1.5,
+    "shouhan": 2,
+    "xinbing": 1
+   },
+   "against": {
+    "fare": 1,
+    "kouke": 1.5,
+    "tan_huang": 2,
+    "shehong": 1.5
+   },
+   "source": "《金匱要略·痰飲咳嗽病》：「病溢飲者，當發其汗……小青龍湯亦主之」"
+  },
+  {
+   "id": "fengre",
+   "name": "風熱犯肺",
+   "w": {
+    "fare": 2.5,
+    "yantong": 2,
+    "kouke": 2,
+    "tan_huang": 1,
+    "maishu": 1.5,
+    "maifu": 1,
+    "shehong": 1,
+    "xinbing": 1
+   },
+   "against": {
+    "wuhan": 1.5,
+    "tan_xi": 1.5,
+    "weihan": 2
+   },
+   "source": "《溫病條辨·上焦篇》第六條：「太陰風溫，但咳，身不甚熱，微渴者，辛涼輕劑桑菊飲主之」"
+  },
+  {
+   "id": "zao",
+   "name": "燥邪傷肺",
+   "w": {
+    "ke_gan": 3,
+    "bizao": 3,
+    "yanyang": 1.5,
+    "tan_nian": 2,
+    "qiuzao": 2.5,
+    "shaotai": 1
+   },
+   "against": {
+    "tainai": 2,
+    "tan_bai": 2,
+    "tan_xi": 1
+   },
+   "source": "《溫病條辨·上焦篇》第五八條：「諸氣膹鬱，諸痿、喘、嘔之因於燥者，喻氏清燥救肺湯主之」"
+  },
+  {
+   "id": "tanshi",
+   "name": "痰濕蘊肺",
+   "w": {
+    "tan_bai": 3,
+    "tainai": 2.5,
+    "xiongmen": 1.5,
+    "pizhang": 1.5,
+    "nashao": 1,
+    "maihua": 1.5,
+    "chuan_ming": 1
+   },
+   "against": {
+    "ke_gan": 2,
+    "shaotai": 2,
+    "bizao": 2
+   },
+   "source": "《醫方集解·除痰之劑·二陳湯》：「治一切痰飲爲病，咳嗽脹滿，嘔吐噁心，頭眩心悸」"
+  },
+  {
+   "id": "tanre",
+   "name": "痰熱壅肺",
+   "w": {
+    "tan_huang": 3,
+    "taihuang": 2.5,
+    "maihua": 1,
+    "maishu": 1.5,
+    "kouke": 1,
+    "xinfan": 1,
+    "bianbi": 1,
+    "tan_nong": 2
+   },
+   "against": {
+    "tan_xi": 2,
+    "weihan": 2,
+    "shedan": 1.5
+   },
+   "source": "《醫方集解·除痰之劑·清氣化痰丸》：「治痰熱」"
+  },
+  {
+   "id": "hanyin",
+   "name": "寒飲停肺",
+   "w": {
+    "tan_xi": 3,
+    "tuxian": 2,
+    "chuan_wo": 1.5,
+    "weihan": 1.5,
+    "touxuan": 1,
+    "xinji": 1,
+    "tainai": 1
+   },
+   "against": {
+    "tan_huang": 2.5,
+    "kouke": 2,
+    "shehong": 2
+   },
+   "source": "《金匱要略·痰飲咳嗽病》：「病痰飲者，當以溫藥和之」"
+  },
+  {
+   "id": "qixu",
+   "name": "肺脾氣虛",
+   "w": {
+    "pifa": 2,
+    "shaoqi": 2.5,
+    "yigan": 2,
+    "youhan": 1,
+    "nashao": 1.5,
+    "xie": 1.5,
+    "shedan": 1,
+    "shepang": 1.5,
+    "mairuo": 2
+   },
+   "against": {
+    "fare": 1,
+    "maishu": 1,
+    "tan_huang": 1.5
+   },
+   "source": "《醫方集解·補養之劑·四君子湯附方》：六君子湯「治氣虛有痰」"
+  },
+  {
+   "id": "yinxu",
+   "name": "肺腎陰虛",
+   "w": {
+    "ke_gan": 2,
+    "chaore": 3,
+    "daohan": 3,
+    "tan_xue": 2,
+    "shehong": 1.5,
+    "shaotai": 2.5,
+    "maixi": 1.5,
+    "maishu": 1,
+    "yanyang": 1
+   },
+   "against": {
+    "tainai": 2,
+    "tan_xi": 2,
+    "weihan": 2
+   },
+   "source": "《醫方集解·補養之劑·百合固金湯》：「治肺傷咽痛，喘嗽痰血」"
+  },
+  {
+   "id": "shenxu",
+   "name": "腎不納氣",
+   "w": {
+    "chuan_dong": 3,
+    "yaosuan": 2.5,
+    "weihan": 1.5,
+    "fuzhong": 1,
+    "ke_niao": 2,
+    "jiubing": 1,
+    "laonian": 1,
+    "xbbuli": 1,
+    "duanqi": 1.5
+   },
+   "against": {
+    "fare": 1.5,
+    "maishu": 1.5,
+    "tan_huang": 1.5
+   },
+   "source": "《金匱要略·痰飲咳嗽病》：「夫短氣有微飲，當從小便去之，苓桂朮甘湯主之；腎氣丸亦主之」"
+  }
+ ],
+ "jingRules": [],
+ "patterns": [
+  {
+   "id": "xingsu",
+   "name": "涼燥（燥傷本臟）",
+   "formula": "杏蘇散",
+   "main": [
+    "ke",
+    "tan_xi",
+    "wuhan"
+   ],
+   "minor": [
+    "toutong",
+    "bisai",
+    "wuhan_s",
+    "qiuzao",
+    "yanyang",
+    "taibai",
+    "maixian"
+   ],
+   "against": [
+    [
+     "fare",
+     1.5
+    ],
+    [
+     "tan_huang",
+     2
+    ],
+    [
+     "kouke",
+     1.5
+    ]
+   ],
+   "source": "《溫病條辨·上焦篇·補秋燥勝氣論》第二條：「燥傷本臟，頭微痛，惡寒，咳嗽稀痰，鼻塞，嗌塞，脈弦，無汗，杏蘇散主之」",
+   "jing": [
+    "fenghan",
+    "zao"
+   ],
+   "mods": [],
+   "key": [
+    "qiuzao",
+    "tan_xi"
+   ]
+  },
+  {
+   "id": "sangju",
+   "name": "風溫但咳",
+   "formula": "桑菊飲",
+   "main": [
+    "ke",
+    "kouke"
+   ],
+   "minor": [
+    "fare",
+    "yantong",
+    "maifu",
+    "maishu",
+    "xinbing",
+    "shehong"
+   ],
+   "against": [
+    [
+     "wuhan",
+     1.5
+    ],
+    [
+     "tan_xi",
+     1.5
+    ]
+   ],
+   "source": "《溫病條辨·上焦篇》第六條：「太陰風溫，但咳，身不甚熱，微渴者，辛涼輕劑桑菊飲主之」；第五五條：「感燥而咳者，桑菊飲主之」",
+   "jing": [
+    "fengre"
+   ],
+   "mods": [],
+   "key": [
+    "kouke"
+   ]
+  },
+  {
+   "id": "sangxing",
+   "name": "溫燥傷肺衛",
+   "formula": "桑杏湯",
+   "main": [
+    "ke_gan",
+    "qiuzao"
+   ],
+   "minor": [
+    "bizao",
+    "kouke",
+    "maishu",
+    "yanyang",
+    "tan_nian"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     2
+    ],
+    [
+     "tainai",
+     2
+    ]
+   ],
+   "source": "《溫病條辨·上焦篇》第五四條：「秋感燥氣，右脈數大，傷手太陰氣分者，桑杏湯主之」",
+   "jing": [
+    "zao"
+   ],
+   "mods": [],
+   "key": [
+    "qiuzao",
+    "bizao"
+   ]
+  },
+  {
+   "id": "qingzao",
+   "name": "燥熱傷肺、氣逆而喘",
+   "formula": "清燥救肺湯",
+   "main": [
+    "chuan",
+    "ke_gan",
+    "bizao"
+   ],
+   "minor": [
+    "kouke",
+    "xinfan",
+    "shehong",
+    "shaotai",
+    "maishu",
+    "xiongmen"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     2
+    ],
+    [
+     "tainai",
+     2
+    ]
+   ],
+   "source": "《溫病條辨·上焦篇》第五八條：「諸氣膹鬱，諸痿、喘、嘔之因於燥者，喻氏清燥救肺湯主之」",
+   "jing": [
+    "zao",
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "bizao",
+    "ke_gan"
+   ]
+  },
+  {
+   "id": "xiaoqinglong",
+   "name": "外寒內飲",
+   "formula": "小青龍湯",
+   "main": [
+    "ke",
+    "tan_xi",
+    "chuan"
+   ],
+   "minor": [
+    "wuhan",
+    "wuhan_s",
+    "chuan_wo",
+    "tuxian",
+    "fuzhong",
+    "taibai",
+    "tainai",
+    "maifu"
+   ],
+   "against": [
+    [
+     "tan_huang",
+     2
+    ],
+    [
+     "kouke",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·痰飲咳嗽病》：「咳逆倚息不得臥，小青龍湯主之」；《傷寒論》第40條：「傷寒表不解，心下有水氣，乾嘔發熱而咳……小青龍湯主之」",
+   "jing": [
+    "fenghan",
+    "hanyin"
+   ],
+   "mods": [],
+   "key": [
+    "tan_xi",
+    "chuan_wo"
+   ]
+  },
+  {
+   "id": "maxingshigan",
+   "name": "肺熱壅盛、汗出而喘",
+   "formula": "麻黃杏仁甘草石膏湯",
+   "main": [
+    "chuan",
+    "youhan"
+   ],
+   "minor": [
+    "ke",
+    "fare",
+    "kouke",
+    "tan_huang"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第63條：「發汗後，不可更行桂枝湯，汗出而喘，無大熱者，可與麻黃杏仁甘草石膏湯」",
+   "jing": [
+    "fengre"
+   ],
+   "mods": [],
+   "key": [
+    "chuan"
+   ]
+  },
+  {
+   "id": "shegan",
+   "name": "寒飲鬱肺、喉中水雞聲",
+   "formula": "射干麻黃湯",
+   "main": [
+    "ke",
+    "chuan_ming"
+   ],
+   "minor": [
+    "chuan",
+    "tan_xi",
+    "xiongmen"
+   ],
+   "against": [
+    [
+     "tan_huang",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「咳而上氣，喉中水雞聲，射干麻黃湯主之」",
+   "jing": [
+    "hanyin"
+   ],
+   "mods": [],
+   "key": [
+    "chuan_ming"
+   ]
+  },
+  {
+   "id": "yuebi",
+   "name": "肺脹（飲熱鬱肺）",
+   "formula": "越婢加半夏湯",
+   "main": [
+    "chuan",
+    "muru"
+   ],
+   "minor": [
+    "ke",
+    "maifu",
+    "xinfan",
+    "fare",
+    "kouke"
+   ],
+   "against": [
+    [
+     "mairuo",
+     2
+    ]
+   ],
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「咳而上氣，此為肺脹，其人喘，目如脫狀，脈浮大者，越婢加半夏湯主之」",
+   "jing": [
+    "fengre"
+   ],
+   "mods": [],
+   "key": [
+    "muru"
+   ]
+  },
+  {
+   "id": "dingchuan",
+   "name": "寒束痰熱、哮喘",
+   "formula": "定喘湯",
+   "main": [
+    "chuan",
+    "chuan_ming"
+   ],
+   "minor": [
+    "tan_huang",
+    "wuhan",
+    "ke",
+    "xiongmen",
+    "taihuang"
+   ],
+   "against": [
+    [
+     "mairuo",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·定喘湯》：「治肺虛感寒，氣逆膈熱而作哮喘（膈有膠固之痰，外有非時之感……聲粗爲哮）」",
+   "jing": [
+    "tanre",
+    "fenghan"
+   ],
+   "mods": [],
+   "key": [
+    "chuan_ming",
+    "tan_huang"
+   ]
+  },
+  {
+   "id": "xiebai",
+   "name": "肺熱咳喘",
+   "formula": "瀉白散",
+   "main": [
+    "ke",
+    "chuan",
+    "fare"
+   ],
+   "minor": [
+    "chaore",
+    "wuhan",
+    "kouke",
+    "shehong",
+    "maishu"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     1.5
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·瀉火之劑·瀉白散》：「治肺火皮膚蒸熱，灑淅寒熱，日晡尤甚，喘嗽氣急」",
+   "jing": [
+    "fengre",
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "chaore"
+   ]
+  },
+  {
+   "id": "erchen",
+   "name": "痰濕咳嗽",
+   "formula": "二陳湯",
+   "main": [
+    "ke",
+    "tan_bai"
+   ],
+   "minor": [
+    "pizhang",
+    "touxuan",
+    "xinji",
+    "tainai",
+    "maihua",
+    "xiongmen"
+   ],
+   "against": [
+    [
+     "ke_gan",
+     2
+    ],
+    [
+     "shaotai",
+     2
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·二陳湯》：「治一切痰飲爲病，咳嗽脹滿，嘔吐噁心，頭眩心悸」",
+   "jing": [
+    "tanshi"
+   ],
+   "mods": [],
+   "key": [
+    "tan_bai",
+    "tainai"
+   ]
+  },
+  {
+   "id": "sanzi",
+   "name": "老人痰盛氣實、喘滿懶食",
+   "formula": "三子養親湯",
+   "main": [
+    "chuan",
+    "tan_bai",
+    "nashao"
+   ],
+   "minor": [
+    "laonian",
+    "xiongmen",
+    "pizhang",
+    "tainai"
+   ],
+   "against": [
+    [
+     "mairuo",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·三子養親湯》：「治老人氣實痰盛，喘滿懶食」",
+   "jing": [
+    "tanshi"
+   ],
+   "mods": [],
+   "key": [
+    "laonian",
+    "nashao"
+   ]
+  },
+  {
+   "id": "qingqi",
+   "name": "痰熱咳嗽",
+   "formula": "清氣化痰丸",
+   "main": [
+    "ke",
+    "tan_huang"
+   ],
+   "minor": [
+    "taihuang",
+    "maihua",
+    "maishu",
+    "xiongmen",
+    "xinfan",
+    "kouke"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     2
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·清氣化痰丸》：「治痰熱」",
+   "jing": [
+    "tanre"
+   ],
+   "mods": [],
+   "key": [
+    "tan_huang"
+   ]
+  },
+  {
+   "id": "suzi",
+   "name": "上盛下虛、痰涎壅盛",
+   "formula": "蘇子降氣湯",
+   "main": [
+    "chuan",
+    "tan_bai"
+   ],
+   "minor": [
+    "ke",
+    "xiongmen",
+    "chuan_dong",
+    "yaosuan",
+    "weihan",
+    "fuzhong",
+    "laonian",
+    "jiubing",
+    "tan_xue",
+    "bianbi"
+   ],
+   "against": [
+    [
+     "fare",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·除痰之劑·蘇子降氣湯》：「治虛陽上攻，氣不升降，上盛下虛，痰涎壅盛，喘嗽嘔血，或大便不利」",
+   "jing": [
+    "tanshi",
+    "shenxu"
+   ],
+   "mods": [],
+   "key": [
+    "chuan_dong",
+    "yaosuan",
+    "weihan"
+   ]
+  },
+  {
+   "id": "tingli",
+   "name": "痰壅喘不得臥",
+   "formula": "葶藶大棗瀉肺湯",
+   "main": [
+    "chuan_wo",
+    "chuan"
+   ],
+   "minor": [
+    "xiongmen",
+    "fuzhong",
+    "bisai",
+    "chuan_ming",
+    "tan_bai"
+   ],
+   "against": [
+    [
+     "mairuo",
+     2
+    ]
+   ],
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「肺癰，喘不得臥，葶藶大棗瀉肺湯主之」；「肺癰胸滿脹，一身面目浮腫，鼻塞清涕出……欬逆上氣，喘鳴迫塞」；《痰飲篇》：「支飲不得息，葶藶大棗瀉肺湯主之」",
+   "jing": [
+    "tanshi"
+   ],
+   "mods": [],
+   "key": [
+    "chuan_wo",
+    "fuzhong"
+   ]
+  },
+  {
+   "id": "linggui",
+   "name": "痰飲（胸脅支滿、目眩）",
+   "formula": "苓桂朮甘湯",
+   "main": [
+    "xiongmen",
+    "touxuan"
+   ],
+   "minor": [
+    "duanqi",
+    "xinji",
+    "tan_xi",
+    "tainai",
+    "xbbuli"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "taihuang",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·痰飲咳嗽病》：「心下有痰飲，胸脅支滿，目眩。苓桂朮甘湯主之」；「夫短氣有微飲，當從小便去之，苓桂朮甘湯主之」",
+   "jing": [
+    "hanyin"
+   ],
+   "mods": [],
+   "key": [
+    "touxuan",
+    "duanqi"
+   ]
+  },
+  {
+   "id": "maimendong",
+   "name": "虛火上逆、咽喉不利",
+   "formula": "麥門冬湯",
+   "main": [
+    "chuan",
+    "yanyang"
+   ],
+   "minor": [
+    "ke_gan",
+    "tan_nian",
+    "kouke",
+    "shehong",
+    "shaotai",
+    "maixi"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     2
+    ],
+    [
+     "tainai",
+     2
+    ]
+   ],
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「大逆上氣，咽喉不利，止逆下氣者，麥門冬湯主之」",
+   "jing": [
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "yanyang"
+   ]
+  },
+  {
+   "id": "baihe",
+   "name": "肺腎陰虛、咳嗽痰血",
+   "formula": "百合固金湯",
+   "main": [
+    "ke",
+    "tan_xue",
+    "yantong"
+   ],
+   "minor": [
+    "chaore",
+    "daohan",
+    "shehong",
+    "shaotai",
+    "maixi",
+    "maishu",
+    "ke_gan",
+    "chuan"
+   ],
+   "against": [
+    [
+     "tan_xi",
+     2
+    ],
+    [
+     "tainai",
+     2
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·百合固金湯》：「治肺傷咽痛，喘嗽痰血」",
+   "jing": [
+    "yinxu"
+   ],
+   "mods": [],
+   "key": [
+    "tan_xue",
+    "daohan",
+    "chaore"
+   ]
+  },
+  {
+   "id": "bufei",
+   "name": "肺氣虛咳",
+   "formula": "補肺湯",
+   "main": [
+    "ke",
+    "pifa",
+    "shaoqi"
+   ],
+   "minor": [
+    "duanqi",
+    "youhan",
+    "yigan",
+    "mairuo",
+    "shedan",
+    "jiubing"
+   ],
+   "against": [
+    [
+     "fare",
+     1
+    ],
+    [
+     "tan_huang",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·補肺湯》：「治肺虛咳嗽」",
+   "jing": [
+    "qixu"
+   ],
+   "mods": [],
+   "key": [
+    "shaoqi",
+    "yigan"
+   ]
+  },
+  {
+   "id": "liujunzi",
+   "name": "脾虛有痰",
+   "formula": "六君子湯",
+   "main": [
+    "tan_bai",
+    "nashao",
+    "pifa"
+   ],
+   "minor": [
+    "ke",
+    "chuan",
+    "pizhang",
+    "xie",
+    "mairuo",
+    "shedan",
+    "shepang",
+    "tainai",
+    "jiubing"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ],
+    [
+     "taihuang",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·四君子湯附方》：「再加半夏，名六君子湯：治氣虛有痰」",
+   "jing": [
+    "qixu",
+    "tanshi"
+   ],
+   "mods": [],
+   "key": [
+    "nashao",
+    "xie",
+    "pizhang"
+   ]
+  },
+  {
+   "id": "shenqi",
+   "name": "腎不納氣",
+   "formula": "腎氣丸",
+   "main": [
+    "chuan_dong",
+    "duanqi"
+   ],
+   "minor": [
+    "yaosuan",
+    "weihan",
+    "xbbuli",
+    "fuzhong",
+    "ke_niao",
+    "laonian",
+    "jiubing",
+    "maichen"
+   ],
+   "against": [
+    [
+     "fare",
+     1.5
+    ],
+    [
+     "tan_huang",
+     1.5
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·痰飲咳嗽病》：「夫短氣有微飲，當從小便去之，苓桂朮甘湯主之；腎氣丸亦主之」；《血痹虛勞病》：「虛勞腰痛，少腹拘急，小便不利者，八味腎氣丸主之」",
+   "jing": [
+    "shenxu"
+   ],
+   "mods": [],
+   "key": [
+    "chuan_dong",
+    "yaosuan",
+    "ke_niao"
+   ]
+  },
+  {
+   "id": "weijing",
+   "name": "肺癰",
+   "formula": "葦莖湯",
+   "main": [
+    "tan_nong",
+    "ke"
+   ],
+   "minor": [
+    "fare",
+    "xinfan",
+    "xiongmen",
+    "ke_xiong"
+   ],
+   "against": [],
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「《千金》葦莖湯：治欬有微熱煩滿，胸中甲錯，是為肺癰」",
+   "jing": [
+    "tanre"
+   ],
+   "mods": [],
+   "key": [
+    "tan_nong"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "r_zao",
+   "kind": "branch",
+   "name": "秋燥分涼溫",
+   "when": {
+    "any": [
+     "qiuzao",
+     "bizao"
+    ],
+    "all": [
+     "ke"
+    ]
+   },
+   "branch": [
+    {
+     "if": "tan_xi",
+     "boost": {
+      "xingsu": 3
+     },
+     "text": "惡寒、稀痰屬涼燥"
+    },
+    {
+     "if": "kouke",
+     "boost": {
+      "sangxing": 3
+     },
+     "text": "口渴、乾咳屬溫燥"
+    }
+   ],
+   "ask": [
+    "tan_xi",
+    "kouke"
+   ],
+   "source": "《溫病條辨·上焦篇·補秋燥勝氣論》第二條：「燥傷本臟，頭微痛，惡寒，咳嗽稀痰……杏蘇散主之」；上焦篇第五四條：「秋感燥氣，右脈數大，傷手太陰氣分者，桑杏湯主之」",
+   "note": "秋燥咳嗽先分涼溫：惡寒、痰稀屬涼燥（杏蘇散）；口渴、乾咳、脈數屬溫燥（桑杏湯）。"
+  },
+  {
+   "id": "r_yin",
+   "kind": "boost",
+   "name": "痰飲以溫藥和之",
+   "when": {
+    "all": [
+     "tan_xi"
+    ],
+    "any": [
+     "weihan",
+     "tainai",
+     "tuxian"
+    ],
+    "none": [
+     "tan_huang",
+     "taihuang",
+     "kouke"
+    ]
+   },
+   "boost": {
+    "xiaoqinglong": 2,
+    "linggui": 2
+   },
+   "source": "《金匱要略·痰飲咳嗽病》：「病痰飲者，當以溫藥和之」",
+   "note": "痰清稀而畏寒、苔滑，屬寒飲，宜溫化，不宜清熱化痰。"
+  },
+  {
+   "id": "r_feiyong",
+   "kind": "boost",
+   "name": "吐膿腥臭屬肺癰",
+   "when": {
+    "all": [
+     "tan_nong"
+    ]
+   },
+   "boost": {
+    "weijing": 4
+   },
+   "source": "《金匱要略·肺痿肺癰咳嗽上氣病》：「《千金》葦莖湯：治欬有微熱煩滿，胸中甲錯，是為肺癰」",
+   "note": "咳吐膿痰腥臭是肺癰，須就醫；中醫以清熱排膿為法。"
+  }
+ ],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "杏蘇散（燥傷本臟）",
+   "f": [
+    "toutong",
+    "wuhan",
+    "ke",
+    "tan_xi",
+    "bisai",
+    "wuhan_s",
+    "maixian"
+   ],
+   "expect": "xingsu"
+  },
+  {
+   "id": "k2",
+   "label": "桑菊飲（風溫但咳）",
+   "f": [
+    "ke",
+    "fare",
+    "kouke"
+   ],
+   "expect": "sangju"
+  },
+  {
+   "id": "k3",
+   "label": "桑杏湯（秋感燥氣）",
+   "f": [
+    "qiuzao",
+    "ke_gan",
+    "maishu",
+    "kouke"
+   ],
+   "expect": "sangxing"
+  },
+  {
+   "id": "k4",
+   "label": "清燥救肺湯（燥而喘）",
+   "f": [
+    "chuan",
+    "ke_gan",
+    "bizao",
+    "xiongmen"
+   ],
+   "expect": "qingzao"
+  },
+  {
+   "id": "k5",
+   "label": "小青龍湯（咳逆倚息）",
+   "f": [
+    "ke",
+    "tan_xi",
+    "chuan",
+    "chuan_wo",
+    "wuhan"
+   ],
+   "expect": "xiaoqinglong"
+  },
+  {
+   "id": "k6",
+   "label": "麻杏甘石湯（汗出而喘）",
+   "f": [
+    "chuan",
+    "youhan",
+    "fare"
+   ],
+   "expect": "maxingshigan"
+  },
+  {
+   "id": "k7",
+   "label": "射干麻黃湯（喉中水雞聲）",
+   "f": [
+    "ke",
+    "chuan_ming",
+    "chuan"
+   ],
+   "expect": "shegan"
+  },
+  {
+   "id": "k8",
+   "label": "越婢加半夏湯（肺脹）",
+   "f": [
+    "ke",
+    "chuan",
+    "muru",
+    "maifu"
+   ],
+   "expect": "yuebi"
+  },
+  {
+   "id": "k9",
+   "label": "定喘湯（哮喘）",
+   "f": [
+    "chuan",
+    "chuan_ming",
+    "tan_huang",
+    "wuhan"
+   ],
+   "expect": "dingchuan"
+  },
+  {
+   "id": "k10",
+   "label": "瀉白散（肺火）",
+   "f": [
+    "chaore",
+    "wuhan",
+    "ke",
+    "chuan",
+    "fare"
+   ],
+   "expect": "xiebai"
+  },
+  {
+   "id": "k11",
+   "label": "二陳湯（痰飲咳嗽）",
+   "f": [
+    "ke",
+    "tan_bai",
+    "pizhang",
+    "touxuan",
+    "xinji"
+   ],
+   "expect": "erchen"
+  },
+  {
+   "id": "k12",
+   "label": "三子養親湯（老人痰盛）",
+   "f": [
+    "laonian",
+    "chuan",
+    "tan_bai",
+    "nashao"
+   ],
+   "expect": "sanzi"
+  },
+  {
+   "id": "k13",
+   "label": "清氣化痰丸（痰熱）",
+   "f": [
+    "ke",
+    "tan_huang",
+    "taihuang",
+    "maihua"
+   ],
+   "expect": "qingqi"
+  },
+  {
+   "id": "k14",
+   "label": "蘇子降氣湯（上盛下虛）",
+   "f": [
+    "chuan",
+    "tan_bai",
+    "ke",
+    "chuan_dong",
+    "yaosuan"
+   ],
+   "expect": "suzi"
+  },
+  {
+   "id": "k15",
+   "label": "葶藶大棗瀉肺湯（喘不得臥）",
+   "f": [
+    "chuan_wo",
+    "chuan",
+    "xiongmen",
+    "fuzhong",
+    "bisai"
+   ],
+   "expect": "tingli"
+  },
+  {
+   "id": "k16",
+   "label": "苓桂朮甘湯（胸脅支滿目眩）",
+   "f": [
+    "xiongmen",
+    "touxuan",
+    "duanqi"
+   ],
+   "expect": "linggui"
+  },
+  {
+   "id": "k17",
+   "label": "麥門冬湯（咽喉不利）",
+   "f": [
+    "chuan",
+    "yanyang"
+   ],
+   "expect": "maimendong"
+  },
+  {
+   "id": "k18",
+   "label": "百合固金湯（咽痛痰血）",
+   "f": [
+    "ke",
+    "tan_xue",
+    "yantong",
+    "chaore",
+    "daohan"
+   ],
+   "expect": "baihe"
+  },
+  {
+   "id": "k19",
+   "label": "補肺湯（肺虛咳嗽）",
+   "f": [
+    "ke",
+    "pifa",
+    "shaoqi",
+    "duanqi"
+   ],
+   "expect": "bufei"
+  },
+  {
+   "id": "k20",
+   "label": "六君子湯（氣虛有痰）",
+   "f": [
+    "tan_bai",
+    "nashao",
+    "pifa",
+    "ke",
+    "xie"
+   ],
+   "expect": "liujunzi"
+  },
+  {
+   "id": "k21",
+   "label": "腎氣丸（短氣微飲）",
+   "f": [
+    "chuan_dong",
+    "duanqi",
+    "yaosuan",
+    "xbbuli"
+   ],
+   "expect": "shenqi"
+  },
+  {
+   "id": "k22",
+   "label": "葦莖湯（肺癰）",
+   "f": [
+    "tan_nong",
+    "ke",
+    "fare",
+    "xinfan"
+   ],
+   "expect": "weijing"
+  }
+ ],
+ "cases_v1": {
+  "title": "咳嗽 v0.1 驗證題（建庫前登錄）",
+  "families": {
+   "baihe": "百合固金湯",
+   "bufei": "補肺湯",
+   "dingchuan": "定喘湯",
+   "erchen": "二陳湯族",
+   "linggui": "苓桂朮甘湯",
+   "liujunzi": "六君子湯族",
+   "maimendong": "麥門冬湯",
+   "maxingshigan": "麻杏甘石湯",
+   "qingqi": "清氣化痰丸",
+   "qingzao": "清燥救肺湯",
+   "sangju": "桑菊飲",
+   "sangxing": "桑杏湯",
+   "sanzi": "三子養親湯",
+   "shegan": "射干麻黃湯",
+   "shenqi": "腎氣丸",
+   "suzi": "蘇子降氣湯",
+   "tingli": "葶藶大棗瀉肺湯",
+   "weijing": "葦莖湯（肺癰）",
+   "xiaoqinglong": "小青龍湯族",
+   "xiebai": "瀉白散",
+   "xingsu": "杏蘇散",
+   "yuebi": "越婢加半夏湯"
+  },
+  "note": "來源經使用者確認：《古今醫案按》咳嗽、喘門，《續名醫類案》咳嗽、喘各篇（存於 references/cases/），《經方實驗錄》未用過的咳喘醫案。判分以撰案醫家實際所用之方為準；他醫誤用之方不算。題目偏向虛證，22 個方族只有 6 個有題。",
+  "sha256": "f8075696e37345a7a0a310947c5836e67a82ea94173ddfbe0762fc39f614bba8",
+  "cases": [
+   {
+    "expect": [
+     "liujunzi",
+     "shenqi"
+    ],
+    "f": [
+     "ke",
+     "chuan",
+     "xiongmen",
+     "tuxian",
+     "kouke",
+     "ke_ye"
+    ],
+    "id": "q02",
+    "label": "《古今醫案按》咳喘（八味丸）",
+    "text": "咳嗽，胸滿氣喘，清晨吐痰，口出痰涎，口乾作渴（薛立齋用六君加炮姜肉果，並八味丸）"
+   },
+   {
+    "expect": [
+     "yuebi"
+    ],
+    "f": [
+     "ke",
+     "jiubing",
+     "chuan",
+     "xinfan",
+     "muru",
+     "maifu"
+    ],
+    "id": "q04",
+    "label": "《古今醫案按》咳喘（越婢加半夏湯）",
+    "text": "久嗽而喘，喘甚煩躁，目脹出，鼻鼓扇，脈浮而大"
+   },
+   {
+    "expect": [
+     "xiebai"
+    ],
+    "f": [
+     "xiongmen",
+     "xinfan",
+     "kouke",
+     "ke"
+    ],
+    "id": "q05",
+    "label": "《古今醫案按》咳喘（瀉白散）",
+    "text": "喘愈後胸膈不利，煩熱口乾，時時咳嗽"
+   },
+   {
+    "expect": [
+     "liujunzi"
+    ],
+    "f": [
+     "chuan",
+     "nashao",
+     "xiongmen",
+     "pizhang",
+     "jiubing"
+    ],
+    "id": "q06",
+    "label": "《續名醫類案》咳喘（六君子湯）",
+    "text": "傷風寒作喘，表散愈而復患，飲食少思，胸腹不利"
+   },
+   {
+    "expect": [
+     "shenqi"
+    ],
+    "f": [
+     "chuan",
+     "daohan",
+     "fare",
+     "nashao",
+     "mairuo"
+    ],
+    "id": "q10",
+    "label": "《續名醫類案》咳喘（八味地黃丸）",
+    "text": "痰喘屢經清化，盜汗氣促，不時發熱，飲食漸減，脈大而無力"
+   },
+   {
+    "expect": [
+     "suzi"
+    ],
+    "f": [
+     "chuan",
+     "ke",
+     "jiubing",
+     "chuan_wo",
+     "bizao",
+     "mairuo"
+    ],
+    "id": "q12",
+    "label": "《續名醫類案》咳喘（蘇子降氣湯）",
+    "text": "喘嗽半載，臥不著枕，舌燥無津，右關尺虛澀"
+   },
+   {
+    "expect": [
+     "xiebai"
+    ],
+    "f": [
+     "chaore",
+     "ke",
+     "xiongmen",
+     "youhan",
+     "xie",
+     "nashao",
+     "maishu",
+     "xiaoshou"
+    ],
+    "id": "q15",
+    "label": "《續名醫類案》咳喘（瀉白散）",
+    "text": "吐血後下午潮熱咳嗽，胸膈脹疼，晨冷汗，便溏，食少，肌肉消，脈數"
+   },
+   {
+    "expect": [
+     "liujunzi"
+    ],
+    "f": [
+     "ke",
+     "tan_bai",
+     "ke_ye",
+     "pifa",
+     "mairuo",
+     "weihan"
+    ],
+    "id": "q16",
+    "label": "《續名醫類案》咳喘（六君子湯）",
+    "text": "痰嗽夜難就寢，身不勝衣，六脈微弱"
+   },
+   {
+    "expect": [
+     "liujunzi"
+    ],
+    "f": [
+     "ke",
+     "pizhang",
+     "nashao",
+     "fuzhong",
+     "chuan"
+    ],
+    "id": "q17",
+    "label": "《續名醫類案》咳喘（異功散）",
+    "text": "產婦咳而腹滿，不食，面腫氣逆"
+   },
+   {
+    "expect": [
+     "erchen"
+    ],
+    "f": [
+     "xiaoer",
+     "ke",
+     "chuan_ming",
+     "maishu",
+     "maihua"
+    ],
+    "id": "q19",
+    "label": "《續名醫類案》咳喘（加減二陳湯）",
+    "text": "小兒咳嗽，動便作痰聲，喉如曳鋸，脈數洪滑"
+   },
+   {
+    "expect": [
+     "liujunzi"
+    ],
+    "f": [
+     "xiaoer",
+     "youhan",
+     "chuan"
+    ],
+    "id": "q20",
+    "label": "《續名醫類案》咳喘（異功散）",
+    "text": "小兒外感服表散後，汗出作喘"
+   }
+  ],
+  "pageTitle": "驗證題 v0.1（建庫前登錄）",
+  "result": "凍結後只算一次：首選 3／11、前三 5／11。對：越婢加半夏（肺脹）、瀉白散（勞嗽）、六君子（痰嗽脈微弱）。錯的多是誤治後的虛證：醫家依「屢經清化、表散之後」判為脾虛或腎虛（六君子、異功散、八味丸），程式依字面症狀判為桑菊飲、瀉白散、麻杏甘石、三子養親。例：小兒「服表散後汗出作喘」醫家用異功散，程式照「汗出而喘」判麻杏甘石湯。缺少治療經過（誤汗、誤清）的輸入是主因。"
+ },
+ "jingMult": 1.0,
+ "jingCap": 10,
+ "hints": {
+  "氣喘病": "「氣喘」可能是哮喘、慢阻肺等：請描述痰的顏色與稀稠、怕冷或怕熱、是否動則喘、晚上能否平躺。急性發作呼吸困難請就醫。",
+  "支氣管炎": "「支氣管炎」是病名：請描述咳的時間長短、痰的顏色稀稠、怕冷或發熱、口渴與否。",
+  "肺炎": "「肺炎」請先就醫；程式只能就咳嗽、痰、寒熱等症狀列出候選證型供學習。",
+  "過敏": "過敏性咳嗽請描述：喉癢即咳、遇冷或遇風發作、痰少或清稀、是否容易感冒。",
+  "感冒": "感冒初起以發燒、怕冷為主時，請改選「外感」知識庫；這裡適合咳嗽、氣喘為主的情形。"
+ },
+ "page": {
+  "title": "咳嗽辨證選方",
+  "eyebrow": "中藥典籍原文庫．規則式辨證．咳嗽 v0.1（兩層：先辨病性，再選方）",
+  "lede": "勾選咳的樣子、痰的顏色與稀稠、喘、寒熱與全身症狀，程式先辨病性（風寒、風熱、燥、痰濕、痰熱、寒飲、氣虛、陰虛、腎不納氣），再依《醫方集解》《金匱要略》《溫病條辨》《傷寒論》的方證選方。這是學習用的規則系統，不能取代面診。",
+  "checkIntro": "自檢題取自各方原文主治，只檢查程式是否照原文運作；預先登錄的驗證題取自醫案集（古今醫案按、續名醫類案、經方實驗錄），登錄時知識庫只有症狀清單。",
+  "limits": "<li>目前收 22 個證型、9 種病性、3 條原文規則。止嗽散、人參蛤蚧散、金水六君煎等原文庫沒有的方未收。</li><li><b>驗證：</b>11 則醫案首選只中 3 則、前三名 5 則。誤治後的虛證（屢用清熱化痰或發汗後，看似熱、似痰實，實為脾虛、腎虛）程式判不出；外感咳嗽的方未經醫案驗證。請把前三名當候選。</li><li>咳嗽兼明顯發燒、怕冷等表證時，也請參考「外感」知識庫。</li><li>大量咳血、劇烈胸痛、呼吸困難唇紫、高燒不退、久咳消瘦，請先就醫。實際用藥請由中醫師面診後處方。</li>",
+  "intro": "從左側勾選症狀後，這裡會列出最可能的證型、主方與加減。",
+  "nomatch": "目前的症狀對不上任何咳嗽證型。請補充痰的顏色與稀稠、怕冷或怕熱、口渴與否、病程長短。",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷寒熱燥濕虛實。",
+  "sample": "k18",
+  "casesTitle": "建庫自檢（取自各方原文主治，不算證據）",
+  "freeExample": "例：咳嗽兩個月，痰白很多，胃口差，容易累"
+ },
+ "probes": [
+  {
+   "q": "痰是什麼樣子？",
+   "opts": [
+    [
+     "清稀、白泡",
+     [
+      "tan_xi"
+     ]
+    ],
+    [
+     "白黏、量多",
+     [
+      "tan_bai"
+     ]
+    ],
+    [
+     "黃稠",
+     [
+      "tan_huang"
+     ]
+    ],
+    [
+     "少而黏、難咯或乾咳",
+     [
+      "tan_nian",
+      "ke_gan"
+     ]
+    ]
+   ]
+  },
+  {
+   "q": "怕冷還是怕熱？",
+   "opts": [
+    [
+     "怕冷",
+     [
+      "wuhan"
+     ]
+    ],
+    [
+     "發熱、口渴",
+     [
+      "fare",
+      "kouke"
+     ]
+    ],
+    [
+     "都不明顯",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "病多久了？",
+   "opts": [
+    [
+     "這幾天才開始",
+     [
+      "xinbing"
+     ]
+    ],
+    [
+     "已經好幾週以上",
+     [
+      "jiubing"
+     ]
+    ]
+   ]
+  },
+  {
+   "q": "喘的情形？",
+   "opts": [
+    [
+     "一動就喘",
+     [
+      "chuan_dong"
+     ]
+    ],
+    [
+     "躺下就喘",
+     [
+      "chuan_wo"
+     ]
+    ],
+    [
+     "喉中有痰鳴聲",
+     [
+      "chuan_ming"
+     ]
+    ],
+    [
+     "不喘",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "精神體力？",
+   "opts": [
+    [
+     "容易累、講話沒力、容易感冒",
+     [
+      "pifa",
+      "shaoqi",
+      "yigan"
+     ]
+    ],
+    [
+     "還好",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "舌苔？",
+   "opts": [
+    [
+     "白膩或滑",
+     [
+      "tainai"
+     ]
+    ],
+    [
+     "黃",
+     [
+      "taihuang"
+     ]
+    ],
+    [
+     "少苔或剝落",
+     [
+      "shaotai"
+     ]
+    ],
+    [
+     "不清楚",
+     []
+    ]
+   ]
+  }
+ ]
+}
