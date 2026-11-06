@@ -1,6 +1,6 @@
 """中藥典籍辨證（單一檔案版）：規則式辨證選方（外感、脾胃）與九部典籍原文查詢。
 
-部署：把這個檔案、requirements.txt 和 16 個資料檔（9 個 .md、7 個 .json）上傳到 GitHub repo，
+部署：把這個檔案、requirements.txt 和 18 個資料檔（9 個 .md、9 個 .json）上傳到 GitHub repo，
 放在根目錄或任何子資料夾都可以；再到 https://share.streamlit.io 部署，主檔填 streamlit_app.py。
 本檔由 build_single.py 從 tcm_streamlit/ 的原始碼自動產生，請勿手動修改。
 """
@@ -17,7 +17,7 @@ import streamlit as st
 st.set_page_config(page_title="中藥典籍辨證", page_icon="🌿", layout="wide")
 
 ROOT = Path(__file__).resolve().parent
-DATA_FILES = (["外感.json", "脾胃.json", "皮膚.json", "咳嗽.json", "失眠.json", "月經.json", "醫方集解_君臣.json"]
+DATA_FILES = (["外感.json", "脾胃.json", "皮膚.json", "咳嗽.json", "失眠.json", "月經.json", "醫方集解_君臣.json", "藥材資料合集.json", "醫方資料合集.json"]
               + [f"{b}.md" for b in ("本草備要", "神農本草經", "本草綱目", "傷寒論", "金匱要略", "醫方集解", "溫病條辨", "濟生方", "外科正宗")])
 
 
@@ -704,6 +704,56 @@ def jingui(text, qs):
     return hits
 
 
+# ── 使用者資料合集（非典籍原文）────────────────────────────────────────────
+USER_FILES = (("藥材資料合集.json", "herbs"), ("醫方資料合集.json", "formulas"))
+
+
+def _user_path(fn):
+    return find_data(fn)
+
+
+def user_records(query):
+    """查使用者自行整理的藥材、醫方資料。比對名稱、別名、古名（含異體字）。回傳 [(類別, 紀錄)]。"""
+    qs = set(forms(query.strip()))
+    out = []
+    for fn, key in USER_FILES:
+        p = _user_path(fn)
+        if not p or not p.exists():
+            continue
+        for r in json.loads(p.read_text(encoding="utf-8"))[key]:
+            names = {r.get("name") or r.get("formula_name")} | set(r.get("aliases", [])) | set(r.get("_classicName", []))
+            if names & qs:
+                out.append((key, r))
+    return out
+
+
+def format_user(key, r):
+    """把一筆使用者資料排成文字（命令列與網頁共用）。"""
+    L = []
+    if key == "herbs":
+        L.append(f"【藥材】{r['name']}｜性味 {r.get('nature_flavor', '')}｜歸經 {'、'.join(c.strip() for c in r.get('channels', []))}"
+                 + (f"｜別名 {'、'.join(a.strip() for a in r['aliases'])}" if r.get("aliases") else ""))
+        L.append("功效：" + "、".join(r.get("functions", [])))
+        if r.get("preparations"):
+            L.append("應用：" + "；".join(r["preparations"]))
+        if r.get("processing"):
+            L.append("炮製：" + r["processing"])
+    else:
+        L.append(f"【醫方】{r['formula_name']}｜出處 {r.get('source', '')}")
+        L.append("組成：" + "、".join(f"{c['herb']}{c.get('amount', '')}" + (f"（{c['note']}）" if c.get("note") else "") for c in r.get("composition", [])))
+        L.append("功效：" + "、".join(r.get("functions", [])) + "；主治：" + "、".join(r.get("indications", [])))
+        if r.get("method"):
+            L.append("製法：" + r["method"])
+        for e in r.get("explanation", []):
+            L.append(f"〈{e['category']}〉" + "；".join(f"{d['herb']}（{d.get('nature_flavor', '')}）{d.get('function', '')}" for d in e.get("details", [])))
+        if r.get("formula_explanation"):
+            L.append("方解：" + r["formula_explanation"])
+    L.append("原文庫對應：" + ("、".join(r.get("_classics", [])) or "（無）"))
+    for c in r.get("_check", []):
+        L.append("待確認：" + c)
+    return "\n".join(L)
+
+
 ROLES_FILE = find_data("醫方集解_君臣.json")
 
 
@@ -752,7 +802,7 @@ def search(query, book=None, rubrics=DEFAULT_RUBRICS, read=None):
     return roles, results
 
 
-lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'segments', 'fulltext', 'jingui', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS', 'FULLTEXT_ORDER']})
+lookup = SimpleNamespace(**{n: globals()[n] for n in ['forms', 'blocks_by_heading', 'herb_book', 'gangmu', 'shanghan', 'yifang', 'wenbing', 'segments', 'fulltext', 'jingui', '_user_path', 'user_records', 'format_user', 'original_roles', 'search', 'BOOKS', 'RUBRICS', 'DEFAULT_RUBRICS', 'FULLTEXT_ORDER']})
 
 
 # ══ 頁面（來自 app_pages.py）═══════════════════════════════════════════════════
@@ -1078,7 +1128,8 @@ def page_lookup():
             if roles.get(k):
                 msg += f"\n\n{label}：{roles[k]}"
         st.success(msg + "\n\n（未列出的藥味，原文沒有明說角色。）")
-    if not results and not roles:
+    user = lookup.user_records(q)
+    if not results and not roles and not user:
         st.info(f"條目裡沒有「{q.strip()}」（條目只收藥名、方名、條號），以下改用全文搜尋。")
         render_fulltext(q.strip(), "全部")
         return
@@ -1090,6 +1141,13 @@ def page_lookup():
                 render_passage(h, maxlen)
         if len(hits) > 12:
             st.caption(f"另有 {len(hits) - 12} 處未列出，請把關鍵字打得更完整。")
+    if user:
+        st.subheader("使用者資料合集（非典籍原文）")
+        st.caption("以下為使用者自行整理的藥材、醫方資料，已與原文庫核對；「待確認」為疑點，請以典籍原文為準。")
+        for k, r in user:
+            with st.expander(("藥材：" if k == "herbs" else "醫方：") + (r.get("name") or r.get("formula_name")), expanded=True):
+                for line in lookup.format_user(k, r).splitlines():
+                    (st.warning if line.startswith("待確認") else st.markdown)(line)
 
 
 # ── navigation ────────────────────────────────────────────────────────────────

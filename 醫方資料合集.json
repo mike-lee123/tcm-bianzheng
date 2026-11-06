@@ -1,0 +1,738 @@
+{
+ "_說明": "使用者自行整理的資料（非典籍原文）。內容照原檔，只修正 PDF 轉出的格式；_classics 為原文庫查得到的書，_check 為待使用者確認的疑點。",
+ "formulas": [
+  {
+   "formula_name": "羊肝丸",
+   "source": "類苑",
+   "functions": [
+    "補肝明目"
+   ],
+   "indications": [
+    "目疾內障",
+    "視物昏花",
+    "夜盲",
+    "肝虛血少"
+   ],
+   "symptoms": [
+    "目暗不明",
+    "迎風流淚",
+    "視物模糊"
+   ],
+   "composition": [
+    {
+     "herb": "夜明砂",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "蟬蛻",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "去節木賊",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "當歸",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "羊肝",
+     "amount": "四兩",
+     "note": "水煮或生用"
+    }
+   ],
+   "method": "羊肝去筋膜，水煮搗爛和丸。",
+   "explanation": [
+    {
+     "category": "明目散風",
+     "details": [
+      {
+       "herb": "夜明砂",
+       "nature_flavor": "辛寒",
+       "channels": [
+        "肝"
+       ],
+       "function": "散目中惡血而明目"
+      },
+      {
+       "herb": "木賊",
+       "nature_flavor": "甘苦平",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "疏散風熱、明目退翳"
+      },
+      {
+       "herb": "蟬蛻",
+       "nature_flavor": "甘寒",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "疏散風熱、明目退翳"
+      }
+     ]
+    },
+    {
+     "category": "補血養肝",
+     "details": [
+      {
+       "herb": "當歸",
+       "nature_flavor": "甘辛溫",
+       "channels": [
+        "肝",
+        "心",
+        "脾"
+       ],
+       "function": "養血而和肝"
+      },
+      {
+       "herb": "羊肝",
+       "nature_flavor": "甘溫",
+       "channels": [
+        "脾",
+        "腎"
+       ],
+       "function": "補氣血，引諸藥入肝以成功"
+      }
+     ]
+    }
+   ],
+   "formula_explanation": "本方以羊肝補肝為主，配合當歸、熟地等養血藥滋補肝血；夜明砂、木賊、蟬蛻等散風明目，引藥入肝。肝開竅於目，肝血足則目能視，配伍以補為主，佐以祛風明目，標本兼治。",
+   "modifications": [],
+   "notes": "",
+   "_classics": [
+    "醫方集解·明目之劑"
+   ],
+   "_check": [
+    "組成與《醫方集解》一致（夜明砂、蟬蛻、木賊、當歸各一兩，羊肝四兩）",
+    "方解提到「熟地」，但原方與本資料組成都沒有熟地，請確認"
+   ],
+   "_sources": [
+    "各類醫方json.pdf"
+   ]
+  },
+  {
+   "formula_name": "撥雲退翳丸",
+   "source": "皇統間醫官劉昌世傳",
+   "functions": [
+    "祛風散熱",
+    "退翳明目"
+   ],
+   "indications": [
+    "翳膜內障",
+    "風熱侵目",
+    "視物昏花",
+    "目痛羞明"
+   ],
+   "symptoms": [
+    "目赤翳障",
+    "視物昏花",
+    "澀淚難開",
+    "暴作赤腫"
+   ],
+   "composition": [
+    {
+     "herb": "當歸",
+     "amount": "兩半",
+     "note": ""
+    },
+    {
+     "herb": "川芎",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "地骨皮",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "白蒺藜",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "密蒙花",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "甘菊花",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "羌活",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "荊芥",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "木賊",
+     "amount": "一兩",
+     "note": ""
+    },
+    {
+     "herb": "粉天花",
+     "amount": "五錢",
+     "note": ""
+    },
+    {
+     "herb": "蔓荊子",
+     "amount": "五錢",
+     "note": ""
+    },
+    {
+     "herb": "薄荷",
+     "amount": "五錢",
+     "note": ""
+    },
+    {
+     "herb": "枳實",
+     "amount": "五錢",
+     "note": ""
+    },
+    {
+     "herb": "炙甘草",
+     "amount": "五錢",
+     "note": ""
+    },
+    {
+     "herb": "川椒",
+     "amount": "七錢五分",
+     "note": ""
+    },
+    {
+     "herb": "黃連",
+     "amount": "三錢",
+     "note": ""
+    },
+    {
+     "herb": "蛇蛻",
+     "amount": "三錢",
+     "note": ""
+    },
+    {
+     "herb": "蟬蛻",
+     "amount": "三錢",
+     "note": ""
+    }
+   ],
+   "method": "蜜丸，每兩作十丸。翳者米泔下，睛暗者當歸湯下，內障者木香湯下，每服一丸，日三次。",
+   "explanation": [
+    {
+     "category": "升陽散風",
+     "details": [
+      {
+       "herb": "羌活",
+       "nature_flavor": "辛苦溫",
+       "channels": [
+        "膀胱",
+        "腎"
+       ],
+       "function": "祛風解表，祛風濕"
+      },
+      {
+       "herb": "荊芥",
+       "nature_flavor": "辛微溫",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "發表散風"
+      },
+      {
+       "herb": "蔓荊子",
+       "nature_flavor": "辛苦微寒",
+       "channels": [
+        "膀胱",
+        "肝",
+        "胃"
+       ],
+       "function": "疏散風熱，清利頭目"
+      },
+      {
+       "herb": "薄荷",
+       "nature_flavor": "辛涼",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "疏散風熱，疏肝解鬱"
+      }
+     ]
+    },
+    {
+     "category": "和肝養血",
+     "details": [
+      {
+       "herb": "當歸",
+       "nature_flavor": "甘辛溫",
+       "channels": [
+        "肝",
+        "心",
+        "脾"
+       ],
+       "function": "補血活血"
+      },
+      {
+       "herb": "川芎",
+       "nature_flavor": "辛溫",
+       "channels": [
+        "肝",
+        "膽",
+        "心包"
+       ],
+       "function": "活血行氣"
+      }
+     ]
+    },
+    {
+     "category": "清熱涼血",
+     "details": [
+      {
+       "herb": "黃連",
+       "nature_flavor": "苦寒",
+       "channels": [
+        "心",
+        "肝",
+        "胃",
+        "大腸"
+       ],
+       "function": "清熱燥濕"
+      },
+      {
+       "herb": "地骨皮",
+       "nature_flavor": "甘淡寒",
+       "channels": [
+        "肺",
+        "肝",
+        "腎"
+       ],
+       "function": "涼血退蒸"
+      },
+      {
+       "herb": "粉天花",
+       "nature_flavor": "甘苦微寒",
+       "channels": [
+        "肺",
+        "胃"
+       ],
+       "function": "清肺胃熱生津"
+      }
+     ]
+    },
+    {
+     "category": "理氣溫中",
+     "details": [
+      {
+       "herb": "枳實",
+       "nature_flavor": "苦辛微寒",
+       "channels": [
+        "脾",
+        "胃",
+        "大腸"
+       ],
+       "function": "破氣除痞"
+      },
+      {
+       "herb": "川椒",
+       "nature_flavor": "辛熱",
+       "channels": [
+        "脾",
+        "胃",
+        "腎"
+       ],
+       "function": "溫中散寒"
+      }
+     ]
+    },
+    {
+     "category": "退翳明目",
+     "details": [
+      {
+       "herb": "木賊",
+       "nature_flavor": "甘苦平",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "疏風退翳"
+      },
+      {
+       "herb": "蟬蛻",
+       "nature_flavor": "甘寒",
+       "channels": [
+        "肺",
+        "肝"
+       ],
+       "function": "明目退翳"
+      },
+      {
+       "herb": "蛇蛻",
+       "nature_flavor": "甘鹹",
+       "channels": [
+        "肝"
+       ],
+       "function": "祛風定驚，明目退翳"
+      }
+     ]
+    }
+   ],
+   "formula_explanation": "本方針對風熱上攻所致眼目翳障，立方以升陽祛風為主，佐以清熱養血與退翳之品。諸藥合用共奏疏風清熱、退翳明目之效。丸劑利於久服，並可根據證型使用不同湯劑送服，以增強效力。",
+   "modifications": [],
+   "notes": "翳膜病多因風熱、氣血虛實、痰濕等夾雜，治宜辨證施治，勿拘泥一法。",
+   "_classics": [
+    "醫方集解·明目之劑"
+   ],
+   "_check": [
+    "組成與劑量與《醫方集解》一致",
+    "「粉天花」原文作「天花粉」"
+   ],
+   "_sources": [
+    "各類醫方json.pdf"
+   ]
+  },
+  {
+   "formula_name": "養肝丸",
+   "source": "濟生方",
+   "functions": [
+    "養血明目"
+   ],
+   "indications": [
+    "肝血不足所致眼目昏花",
+    "目生眵淚",
+    "久視模糊"
+   ],
+   "symptoms": [
+    "眼目昏花",
+    "目生眼屎",
+    "視物模糊"
+   ],
+   "composition": [
+    {
+     "herb": "川芎",
+     "amount": "二錢",
+     "note": ""
+    },
+    {
+     "herb": "當歸",
+     "amount": "三錢",
+     "note": ""
+    },
+    {
+     "herb": "白芍",
+     "amount": "三錢",
+     "note": ""
+    },
+    {
+     "herb": "熟地",
+     "amount": "三錢",
+     "note": ""
+    },
+    {
+     "herb": "車前子",
+     "amount": "三錢",
+     "note": "滲濕清熱，利水明目"
+    },
+    {
+     "herb": "酒製楮實子",
+     "amount": "三錢",
+     "note": "補虛助陽，明目利竅"
+    },
+    {
+     "herb": "防風",
+     "amount": "三錢",
+     "note": "祛風散邪"
+    },
+    {
+     "herb": "蕤仁",
+     "amount": "三錢",
+     "note": "養肝明目退翳"
+    }
+   ],
+   "method": "上藥為末，煉蜜為丸。",
+   "explanation": [
+    {
+     "category": "補血調經",
+     "details": [
+      {
+       "herb": "當歸",
+       "nature_flavor": "甘辛溫",
+       "channels": [
+        "肝",
+        "心",
+        "脾"
+       ],
+       "function": "養血和血"
+      },
+      {
+       "herb": "白芍",
+       "nature_flavor": "苦酸微寒",
+       "channels": [
+        "肝",
+        "脾"
+       ],
+       "function": "養血斂陰"
+      },
+      {
+       "herb": "熟地",
+       "nature_flavor": "甘微溫",
+       "channels": [
+        "肝",
+        "腎"
+       ],
+       "function": "補血滋陰"
+      },
+      {
+       "herb": "川芎",
+       "nature_flavor": "辛溫",
+       "channels": [
+        "肝",
+        "膽",
+        "心包"
+       ],
+       "function": "活血行氣"
+      }
+     ]
+    },
+    {
+     "category": "利水清目",
+     "details": [
+      {
+       "herb": "車前子",
+       "nature_flavor": "甘微寒",
+       "channels": [
+        "肝",
+        "腎"
+       ],
+       "function": "清熱利水，明目"
+      },
+      {
+       "herb": "楮實子",
+       "nature_flavor": "甘寒",
+       "channels": [
+        "肝",
+        "腎"
+       ],
+       "function": "補虛壯筋，利竅明目"
+      }
+     ]
+    },
+    {
+     "category": "祛風散熱",
+     "details": [
+      {
+       "herb": "防風",
+       "nature_flavor": "辛甘微溫",
+       "channels": [
+        "膀胱",
+        "肝",
+        "脾"
+       ],
+       "function": "祛風止痛"
+      },
+      {
+       "herb": "蕤仁",
+       "nature_flavor": "甘微寒",
+       "channels": [
+        "肝"
+       ],
+       "function": "祛風散熱，養肝明目退翳"
+      }
+     ]
+    }
+   ],
+   "formula_explanation": "本方以四物湯補血養肝為基礎，配合車前子與楮實子清熱利水、助腎明目，佐以防風、蕤仁以祛風退翳，合為養肝明目、補虛清熱之劑。適用於肝血虧虛所致眼目模糊、淚多、久視不清等證。",
+   "modifications": [],
+   "notes": "",
+   "_classics": [
+    "濟生方·眼門"
+   ],
+   "_check": [
+    "《濟生方》原文劑量為「各等分」，本資料為二錢、三錢等具體劑量",
+    "原文庫此行有缺字，防風、蕤仁、白芍是否在原方無法核對"
+   ],
+   "_sources": [
+    "各類醫方json.pdf"
+   ]
+  },
+  {
+   "formula_name": "補肝湯",
+   "source": "醫宗金鑑",
+   "functions": [
+    "養血滋陰",
+    "柔肝舒筋"
+   ],
+   "indications": [
+    "肝血虛損",
+    "筋緩不能行",
+    "眼目昏暗",
+    "頭痛眩暈",
+    "耳鳴",
+    "目乾畏光",
+    "視物昏花",
+    "急躁易怒",
+    "肢體麻木",
+    "筋惕肉瞤"
+   ],
+   "symptoms": [
+    "視物昏花",
+    "眼目昏暗",
+    "頭暈目眩",
+    "耳鳴",
+    "肢體麻木",
+    "抽搐",
+    "情緒急躁"
+   ],
+   "composition": [
+    {
+     "herb": "熟地黃",
+     "amount": "適量",
+     "note": "四物湯基礎成分"
+    },
+    {
+     "herb": "白芍",
+     "amount": "適量",
+     "note": "四物湯基礎成分"
+    },
+    {
+     "herb": "當歸",
+     "amount": "適量",
+     "note": "四物湯基礎成分"
+    },
+    {
+     "herb": "川芎",
+     "amount": "適量",
+     "note": "四物湯基礎成分"
+    },
+    {
+     "herb": "酸棗仁",
+     "amount": "適量",
+     "note": "養心安神"
+    },
+    {
+     "herb": "木瓜",
+     "amount": "適量",
+     "note": "舒筋活絡"
+    },
+    {
+     "herb": "炙甘草",
+     "amount": "適量",
+     "note": "補中緩急"
+    }
+   ],
+   "method": "上藥煎湯或為丸劑，遵醫囑服用。",
+   "explanation": [
+    {
+     "category": "滋陰補血",
+     "details": [
+      {
+       "herb": "熟地黃",
+       "nature_flavor": "甘微溫",
+       "channels": [
+        "肝",
+        "腎"
+       ],
+       "function": "補血滋陰"
+      },
+      {
+       "herb": "白芍",
+       "nature_flavor": "苦酸微寒",
+       "channels": [
+        "肝",
+        "脾"
+       ],
+       "function": "養血斂陰"
+      },
+      {
+       "herb": "當歸",
+       "nature_flavor": "甘辛溫",
+       "channels": [
+        "肝",
+        "心",
+        "脾"
+       ],
+       "function": "補血活血"
+      },
+      {
+       "herb": "川芎",
+       "nature_flavor": "辛溫",
+       "channels": [
+        "肝",
+        "膽",
+        "心包"
+       ],
+       "function": "活血行氣"
+      }
+     ]
+    },
+    {
+     "category": "安神養心",
+     "details": [
+      {
+       "herb": "酸棗仁",
+       "nature_flavor": "甘酸平",
+       "channels": [
+        "心",
+        "肝",
+        "膽"
+       ],
+       "function": "養心益肝，安神斂汗"
+      }
+     ]
+    },
+    {
+     "category": "舒筋和絡",
+     "details": [
+      {
+       "herb": "木瓜",
+       "nature_flavor": "酸溫",
+       "channels": [
+        "肝",
+        "脾"
+       ],
+       "function": "舒筋活絡，除濕和胃"
+      }
+     ]
+    },
+    {
+     "category": "補中調和",
+     "details": [
+      {
+       "herb": "炙甘草",
+       "nature_flavor": "甘平",
+       "channels": [
+        "心",
+        "脾",
+        "肺",
+        "胃"
+       ],
+       "function": "補中益氣，緩急止痛"
+      }
+     ]
+    }
+   ],
+   "formula_explanation": "本方以四物湯滋養陰血為基礎，佐以酸棗仁安神養肝，木瓜舒筋活絡，炙甘草益氣調中。配伍調和，既補肝血，又理筋脈，適用於肝血不足所致的筋脈不利、眼目不明等多種虛證。",
+   "modifications": [],
+   "notes": "",
+   "_classics": [],
+   "_check": [
+    "出處《醫宗金鑑》不在原文庫，未經原文核對；歷代同名「補肝湯」有多首，組成不同"
+   ],
+   "_sources": [
+    "各類醫方json.pdf"
+   ]
+  }
+ ]
+}

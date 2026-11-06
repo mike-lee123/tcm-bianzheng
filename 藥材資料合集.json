@@ -1,0 +1,2519 @@
+{
+ "_說明": "使用者自行整理的資料（非典籍原文）。內容照原檔，只修正 PDF 轉出的格式；_classics 為原文庫查得到的書，_check 為待使用者確認的疑點。",
+ "herbs": [
+  {
+   "name": "甘草",
+   "nature_flavor": "甘平",
+   "channels": [
+    "心",
+    "肺",
+    "脾",
+    "胃"
+   ],
+   "aliases": [
+    "國老"
+   ],
+   "functions": [
+    "益氣補中",
+    "清熱解毒",
+    "祛痰",
+    "緩及止痛",
+    "調和諸藥"
+   ],
+   "preparations": [
+    "生用：瀉火，氣平，補脾胃不足，瀉心火",
+    "炙用：補中，氣溫，補三焦而散表寒",
+    "入和劑則補益，入汗劑則解肌，入涼劑則瀉邪熱，入峻劑則緩正氣，入潤劑則養陰血",
+    "達莖中用梢；梢止莖中痛，淋濁證用之"
+   ],
+   "processing": "曬乾切片，生用或蜜炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "功效「緩及止痛」，通常作「緩急止痛」"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "黃耆",
+   "nature_flavor": "甘微溫",
+   "channels": [
+    "脾",
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "補氣升陽",
+    "益衛固表",
+    "利水消腫",
+    "托瘡生肌"
+   ],
+   "preparations": [
+    "用於脾胃氣虛及中氣下陷諸證",
+    "用於氣虛水濕失運的浮腫，小便不利",
+    "生黃耆：補諸虛不足、益元氣、壯脾胃、去肌熱、排膿止痛",
+    "炙黃耆：補中、益元氣、溫三焦、壯脾胃、生血生肌"
+   ],
+   "processing": "生用或蜜炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "沙蔘",
+   "nature_flavor": "甘微苦寒",
+   "channels": [
+    "肺",
+    "胃"
+   ],
+   "aliases": [
+    "北沙蔘",
+    "南沙蔘"
+   ],
+   "functions": [
+    "養陰清肺",
+    "益胃生津"
+   ],
+   "preparations": [
+    "專補肺氣，兼益脾腎",
+    "肺陰虛、肺熱咳嗽、陰虛勞嗽、胃陰虛或熱傷胃陰",
+    "皮膚乾燥，季節性皮膚炎"
+   ],
+   "processing": "為桔梗科植物輪葉沙蔘或沙蔘的根，燙去外皮或直接乾燥",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "炮製寫「桔梗科植物輪葉沙蔘」為南沙參；別名同列北沙參（傘形科），兩者不同"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "丹參",
+   "nature_flavor": "苦微寒",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "活血生新血",
+    "散瘀調經",
+    "涼血消癰",
+    "安神"
+   ],
+   "preparations": [
+    "婦科病、心胸痛、風濕痹痛、瘡癰腫毒、熱病煩躁"
+   ],
+   "processing": "生用或酒炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "玄參",
+   "nature_flavor": "苦甘鹹寒",
+   "channels": [
+    "肺",
+    "胃",
+    "腎"
+   ],
+   "aliases": [
+    "元參"
+   ],
+   "functions": [
+    "清熱涼血",
+    "滋陰解毒"
+   ],
+   "preparations": [
+    "溫邪入營、咽喉腫痛、瘰癧痰核、癰腫瘡毒"
+   ],
+   "processing": "立冬前後採挖，反覆堆曬到內部色黑，切片曬乾，生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "白朮",
+   "nature_flavor": "苦甘溫",
+   "channels": [
+    "脾",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "補氣健脾",
+    "燥濕利水",
+    "止汗",
+    "安胎"
+   ],
+   "preparations": [
+    "脾胃氣虛、水停痰飲、氣弱汗多、胎動不安"
+   ],
+   "processing": "切厚片，燥濕利水用生用，補氣健脾用陳壁土炒",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "蒼朮",
+   "nature_flavor": "辛苦溫",
+   "channels": [
+    "脾",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "燥濕健脾",
+    "祛風濕",
+    "治痿"
+   ],
+   "preparations": [
+    "濕滯中焦、風濕痹證、濕痰瘻辟、外感風寒挾濕"
+   ],
+   "processing": "春秋採挖曬乾切片，同米糠炒微黃用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "萎蕤",
+   "nature_flavor": "甘微寒",
+   "channels": [
+    "肺",
+    "胃"
+   ],
+   "aliases": [
+    "葳蕤",
+    "玉竹"
+   ],
+   "functions": [
+    "養陰潤燥",
+    "生津止渴",
+    "補中益氣"
+   ],
+   "preparations": [
+    "陰虛肺燥、熱病傷津、陰虛外感、風淫濕毒"
+   ],
+   "processing": "切厚片或蜜水炙或酒浸蒸用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "與「玉竹」為同一藥，資料中分列兩條，內容略異"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "黃精",
+   "nature_flavor": "甘平",
+   "channels": [
+    "脾",
+    "肺",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "滋腎陰",
+    "潤肺燥"
+   ],
+   "preparations": [
+    "肺燥咳嗽、脾胃虛弱、腎虛精虧、消渴"
+   ],
+   "processing": "未標明，應為乾燥或蜜炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "狗脊",
+   "nature_flavor": "苦甘溫",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "補肝腎",
+    "祛風濕",
+    "強筋骨"
+   ],
+   "preparations": [
+    "風濕痹痛、腰痛、腎氣不固、衝任虛寒帶下"
+   ],
+   "processing": "未標明，常與其他藥配伍為丸劑",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "石斛",
+   "nature_flavor": "甘鹹寒",
+   "channels": [
+    "胃",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "益精強陰",
+    "暖腎水",
+    "平胃氣"
+   ],
+   "preparations": [
+    "用於熱病傷津，胃熱陰虛，腎陰虧虛，腎虛火旺，胃陰不足，腎虛目暗，腎虛痿痹"
+   ],
+   "processing": "為蘭科植物，鮮用或乾燥，常與諸藥為丸或湯劑",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "遠志",
+   "nature_flavor": "苦辛微溫",
+   "channels": [
+    "心",
+    "腎",
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "寧心安神",
+    "祛痰開竅",
+    "消散癰腫"
+   ],
+   "preparations": [
+    "心腎不交、痰阻心竅、癲癇、咳嗽痰多、癰疽瘡毒"
+   ],
+   "processing": "去心，甘草水浸一宿或炙用；去心，甘草水浸或炙用",
+   "_sources": [
+    "name.pdf",
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "石菖蒲",
+   "nature_flavor": "辛苦溫",
+   "channels": [
+    "心",
+    "胃"
+   ],
+   "aliases": [
+    "九節菖蒲"
+   ],
+   "functions": [
+    "開竅寧神",
+    "化濕和胃"
+   ],
+   "preparations": [
+    "痰濕穢濁之邪、癲癇抽搐、濕濁蒙蔽、濕阻中焦、濕熱熾盛、風濕痹痛、癰疽疥癬"
+   ],
+   "processing": "去皮微炒或鮮用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "薤白",
+   "nature_flavor": "辛苦溫",
+   "channels": [
+    "胃",
+    "肺",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "通陽散結",
+    "行氣導滯"
+   ],
+   "preparations": [
+    "胸痹證、痰瘀胸痹、胃腸氣滯、胃寒氣滯"
+   ],
+   "processing": "生用，地下鱗莖洗淨蒸燙曬乾",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：薤（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "薤"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "川牛膝",
+   "nature_flavor": "苦甘酸平",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "活血祛瘀",
+    "利水通淋",
+    "引血下行"
+   ],
+   "preparations": [
+    "婦科經產、跌打損傷、腎虛腰痛、濕熱下注、淋證、水腫、肝陽上亢、胃火上炎、氣火上逆"
+   ],
+   "processing": "生用或酒炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：牛膝（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "牛膝"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "懷牛膝",
+   "nature_flavor": "苦甘酸平",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "補肝腎",
+    "強筋骨"
+   ],
+   "preparations": [
+    "肝腎虧虛、痹痛日久"
+   ],
+   "processing": "生用或酒炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：牛膝（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "牛膝"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "土牛膝",
+   "nature_flavor": "苦甘酸平",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [
+    "杜牛膝"
+   ],
+   "functions": [
+    "清熱利咽",
+    "活血通淋"
+   ],
+   "preparations": [
+    "咽喉腫痛、白喉、口舌生瘡、癰腫丹毒、淋病"
+   ],
+   "processing": "酒蒸滋補用，生用散惡血",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "菊花",
+   "nature_flavor": "辛甘苦微寒",
+   "channels": [
+    "肺",
+    "肝"
+   ],
+   "aliases": [
+    "杭菊",
+    "甘菊",
+    "白菊"
+   ],
+   "functions": [
+    "疏散風熱",
+    "平肝明目",
+    "疏風清熱",
+    "清熱解毒"
+   ],
+   "preparations": [
+    "風熱感冒、肝風肝火、肝腎不足目暗、眩暈驚風、疔瘡腫毒、眼病障翳",
+    "風熱感冒、頭痛眩暈、目赤昏花、癰腫瘡毒"
+   ],
+   "processing": "陰乾生用",
+   "_sources": [
+    "name.pdf",
+    "name.pdf"
+   ],
+   "_check": [
+    "重複條目性味不同：「辛甘苦微寒」與「甘苦微寒」"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經"
+   ]
+  },
+  {
+   "name": "五味子",
+   "nature_flavor": "酸甘溫",
+   "channels": [
+    "肺",
+    "心",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "歛肺滋腎",
+    "生津斂汗",
+    "澀精止瀉",
+    "寧心安神"
+   ],
+   "preparations": [
+    "肺虛咳喘、肺腎虛喘、氣陰虛、陰虛內熱、自汗盜汗、遺精滑精"
+   ],
+   "processing": "北產紫黑者良，蜜浸蒸或生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "天門冬",
+   "nature_flavor": "甘苦寒",
+   "channels": [
+    "肺",
+    "腎"
+   ],
+   "aliases": [
+    "天文冬",
+    "天冬"
+   ],
+   "functions": [
+    "養陰潤燥",
+    "清火生津"
+   ],
+   "preparations": [
+    "陰虛肺熱、乾咳喀血、腎陰虛火旺、內熱津虧、腸燥便秘"
+   ],
+   "processing": "秋冬採挖，沸水燙後去皮，生用或酒蒸",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "麥門冬",
+   "nature_flavor": "甘微苦寒",
+   "channels": [
+    "心",
+    "肺",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "養陰潤肺",
+    "益胃生津",
+    "清心除煩"
+   ],
+   "preparations": [
+    "肺陰虛乾咳、胃陰虛口燥咽乾、內熱津傷、心煩失眠"
+   ],
+   "processing": "秋末採挖，曬乾後去心，蜜炙或生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "百合",
+   "nature_flavor": "甘微寒",
+   "channels": [
+    "肺",
+    "心"
+   ],
+   "aliases": [],
+   "functions": [
+    "養陰潤肺",
+    "清心安神"
+   ],
+   "preparations": [
+    "陰虛久咳、勞嗽咳血、虛煩驚悸、失眠多夢"
+   ],
+   "processing": "秋季挖掘，蒸熟或曬乾",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "玉竹",
+   "nature_flavor": "甘微寒",
+   "channels": [
+    "肺",
+    "胃"
+   ],
+   "aliases": [
+    "萎蕤"
+   ],
+   "functions": [
+    "養陰潤燥",
+    "生津止渴"
+   ],
+   "preparations": [
+    "肺燥乾咳、陰虛內熱、津虧口渴"
+   ],
+   "processing": "去皮切片，陰乾或蜜炙",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "與「萎蕤」為同一藥，資料中分列兩條，內容略異"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "桑葉",
+   "nature_flavor": "甘苦寒",
+   "channels": [
+    "肺",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "疏散風熱",
+    "清肺潤燥",
+    "平肝明目",
+    "疏風清熱",
+    "清肝明目"
+   ],
+   "preparations": [
+    "風熱感冒、肺熱咳嗽、目赤昏花、頭暈目眩",
+    "風熱感冒、咳嗽咽乾、頭痛目赤"
+   ],
+   "processing": "初霜後採摘曬乾，生用",
+   "_sources": [
+    "name.pdf",
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：桑、桑根白皮（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "桑",
+    "桑根白皮"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "桑白皮",
+   "nature_flavor": "甘寒",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "瀉肺平喘",
+    "利水消腫"
+   ],
+   "preparations": [
+    "肺熱咳嗽氣喘、水腫尿少"
+   ],
+   "processing": "春秋採皮，刮去粗皮，曬乾用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "白果",
+   "nature_flavor": "甘苦澀平",
+   "channels": [
+    "肺",
+    "腎"
+   ],
+   "aliases": [
+    "銀杏"
+   ],
+   "functions": [
+    "斂肺定喘",
+    "止帶縮尿"
+   ],
+   "preparations": [
+    "肺虛久咳、氣喘痰多、小便頻數、白帶過多"
+   ],
+   "processing": "去殼去心，炒用或煮熟食",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "款冬花",
+   "nature_flavor": "辛甘微溫",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "潤肺下氣",
+    "止咳化痰"
+   ],
+   "preparations": [
+    "久咳虛喘、肺寒咳嗽、痰多"
+   ],
+   "processing": "去雜質曬乾，蜜炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "紫菀",
+   "nature_flavor": "辛苦甘溫",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "潤肺下氣",
+    "化痰止咳"
+   ],
+   "preparations": [
+    "久咳虛喘、咳嗽痰多、咽乾音啞"
+   ],
+   "processing": "去雜質，切段曬乾，蜜炙用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "百部",
+   "nature_flavor": "苦甘微溫",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "潤肺止咳",
+    "殺蟲滅虱"
+   ],
+   "preparations": [
+    "久咳肺虛、肺熱咳嗽、頭癬、陰癬、蟯蟲病",
+    "久咳肺虛",
+    "肺熱咳嗽",
+    "頭癬",
+    "陰癬",
+    "蟯蟲病"
+   ],
+   "processing": "洗淨曬乾，蜜炙或生用；泡製 洗淨曬乾，蜜炙或生用",
+   "_sources": [
+    "name.pdf",
+    "中藥材資料合集.json"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "阿膠",
+   "nature_flavor": "甘平",
+   "channels": [
+    "肺",
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "補血止血",
+    "滋陰潤燥"
+   ],
+   "preparations": [
+    "血虛萎黃、崩漏、咯血、腸燥便秘、陰虛心煩"
+   ],
+   "processing": "駱駝膠熬製成塊，打碎沖服或烊化入藥",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "炮製寫「駱駝膠熬製」；《本草備要》阿膠為「用黑驢皮」熬膠，請確認"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "艾葉",
+   "nature_flavor": "苦辛溫",
+   "channels": [
+    "肝",
+    "脾",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "溫經止血",
+    "散寒止痛",
+    "安胎"
+   ],
+   "preparations": [
+    "虛寒出血、崩漏帶下、腹冷痛、宮寒不孕、妊娠胎動不安"
+   ],
+   "processing": "陰乾後切段，炒炭用或艾絨用於灸法",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "蒲黃",
+   "nature_flavor": "甘平",
+   "channels": [
+    "肝",
+    "心包"
+   ],
+   "aliases": [],
+   "functions": [
+    "止血化瘀",
+    "利尿通淋"
+   ],
+   "preparations": [
+    "各種出血證、瘀滯疼痛、血淋澀痛"
+   ],
+   "processing": "鮮採花粉，炒炭止血，生用化瘀",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "茜草",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "活血通經"
+   ],
+   "preparations": [
+    "血熱出血、月經不調、跌打損傷"
+   ],
+   "processing": "秋挖根曬乾，生用或酒炙",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "三七",
+   "nature_flavor": "甘微苦溫",
+   "channels": [
+    "肝",
+    "胃"
+   ],
+   "aliases": [
+    "田七"
+   ],
+   "functions": [
+    "化瘀止血",
+    "消腫止痛"
+   ],
+   "preparations": [
+    "跌打損傷、瘀血腫痛、吐血、咳血、內外出血"
+   ],
+   "processing": "研末沖服，或蒸熟切片",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "花蕊石",
+   "nature_flavor": "甘溫",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "止血化瘀"
+   ],
+   "preparations": [
+    "吐血、咯血、便血、外傷出血"
+   ],
+   "processing": "生用，研末或煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "血餘炭",
+   "nature_flavor": "苦澀平",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "止血化瘀",
+    "利尿"
+   ],
+   "preparations": [
+    "咯血、便血、尿血、血淋"
+   ],
+   "processing": "燒炭存性，研末服用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：亂髮、髮髲、血餘（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "亂髮",
+    "髮髲",
+    "血餘"
+   ],
+   "_classics": [
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "紫珠草",
+   "nature_flavor": "苦澀平",
+   "channels": [
+    "肺",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "收斂止血",
+    "清熱解毒"
+   ],
+   "preparations": [
+    "便血、崩漏、吐血、咳血、癰腫瘡毒"
+   ],
+   "processing": "鮮用或曬乾，生用或炒炭",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫（本草備要、神農本草經、本草綱目）查不到此名或其古名"
+   ],
+   "_classicName": [
+    "紫珠"
+   ],
+   "_classics": []
+  },
+  {
+   "name": "仙鶴草",
+   "nature_flavor": "苦澀平",
+   "channels": [
+    "肝",
+    "脾"
+   ],
+   "aliases": [
+    "龍芽草"
+   ],
+   "functions": [
+    "收斂止血",
+    "補虛",
+    "截瘧",
+    "止痢"
+   ],
+   "preparations": [
+    "各種出血證、脾虛久瀉、痢疾、瘧疾"
+   ],
+   "processing": "全草採集曬乾，生用或炒炭",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫（本草備要、神農本草經、本草綱目）查不到此名或其古名"
+   ],
+   "_classicName": [
+    "龍牙草",
+    "龍芽草"
+   ],
+   "_classics": []
+  },
+  {
+   "name": "白茅根",
+   "nature_flavor": "甘寒",
+   "channels": [
+    "肺",
+    "胃",
+    "膀胱"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "清熱利尿"
+   ],
+   "preparations": [
+    "血熱出血、熱淋、小便不利、水腫"
+   ],
+   "processing": "洗淨曬乾，生用煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "地楡",
+   "nature_flavor": "苦酸微寒",
+   "channels": [
+    "肝",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "解毒斂瘡"
+   ],
+   "preparations": [
+    "便血、崩漏、痔血、癰腫瘡毒、濕疹"
+   ],
+   "processing": "根部曬乾，炒炭或生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：地榆（查詢時請用此名）",
+    "常寫作「地榆」"
+   ],
+   "_classicName": [
+    "地榆"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "槐花",
+   "nature_flavor": "苦微寒",
+   "channels": [
+    "肝",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱涼血",
+    "止血"
+   ],
+   "preparations": [
+    "腸風下血、痔瘡便血、血熱崩漏"
+   ],
+   "processing": "曬乾，生用清熱，炒炭止血",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：槐、槐實（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "槐",
+    "槐實"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "側柏葉",
+   "nature_flavor": "苦澀微寒",
+   "channels": [
+    "肺",
+    "肝",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "生髮",
+    "化痰止咳"
+   ],
+   "preparations": [
+    "吐血、咯血、鼻衄、便血、脫髮、久咳"
+   ],
+   "processing": "曬乾，生用涼血，炒炭止血",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "白芨",
+   "nature_flavor": "苦澀寒",
+   "channels": [
+    "肺",
+    "胃",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "收斂止血",
+    "消腫生肌"
+   ],
+   "preparations": [
+    "肺胃出血、外傷出血、瘡癰潰瘍"
+   ],
+   "processing": "生用，研末或煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "常寫作「白及」"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "棕櫚炭",
+   "nature_flavor": "苦澀平",
+   "channels": [
+    "肝",
+    "肺",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "收斂止血"
+   ],
+   "preparations": [
+    "吐血、便血、崩漏、外傷出血"
+   ],
+   "processing": "炒炭存性，研末服用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：棕櫚、椶櫚（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "棕櫚",
+    "椶櫚"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "藕節",
+   "nature_flavor": "甘澀平",
+   "channels": [
+    "肝",
+    "肺",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "收斂止血",
+    "化瘀止痛"
+   ],
+   "preparations": [
+    "吐血、咯血、尿血、崩漏、瘀血阻滯"
+   ],
+   "processing": "洗淨曬乾，炒炭或生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：蓮藕、藕（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "蓮藕",
+    "藕"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "大薊",
+   "nature_flavor": "甘苦涼",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "消癰散結"
+   ],
+   "preparations": [
+    "咯血、吐血、鼻衄、癰腫瘡毒"
+   ],
+   "processing": "根部曬乾，生用或炒炭",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "小薊",
+   "nature_flavor": "甘苦涼",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "解毒消癰"
+   ],
+   "preparations": [
+    "咯血、吐血、便血、癰腫瘡毒"
+   ],
+   "processing": "全草曬乾，生用或炒炭",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：大薊、小薊、小薊、大小薊（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "大薊、小薊",
+    "小薊",
+    "大小薊"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "苧麻根",
+   "nature_flavor": "甘寒",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱涼血",
+    "安胎",
+    "利尿"
+   ],
+   "preparations": [
+    "尿血、崩漏、胎動不安、水腫"
+   ],
+   "processing": "洗淨曬乾，煎湯用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：苧麻、苎麻（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "苧麻",
+    "苎麻"
+   ],
+   "_classics": [
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "羊蹄根",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肝",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "涼血止血",
+    "解毒止痢"
+   ],
+   "preparations": [
+    "便血、痢疾、癰腫瘡毒"
+   ],
+   "processing": "洗淨曬乾，煎湯或研末",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：羊蹄（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "羊蹄"
+   ],
+   "_classics": [
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "荊芥炭",
+   "nature_flavor": "辛溫",
+   "channels": [
+    "肺",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "止血"
+   ],
+   "preparations": [
+    "吐血、衄血、崩漏"
+   ],
+   "processing": "炒炭存性，止血用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：荊芥、假蘇（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "荊芥",
+    "假蘇"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "地骨皮",
+   "nature_flavor": "甘寒",
+   "channels": [
+    "肺",
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "清虛熱",
+    "退骨蒸",
+    "清肺降火",
+    "涼血止血"
+   ],
+   "preparations": [
+    "陰虛發熱、骨蒸潮熱、肺熱咳嗽、內熱消渴、血熱出血"
+   ],
+   "processing": "根皮洗淨曬乾，生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "知母",
+   "nature_flavor": "苦甘寒",
+   "channels": [
+    "肺",
+    "胃",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱瀉火",
+    "滋陰潤燥"
+   ],
+   "preparations": [
+    "肺熱咳嗽、陰虛發熱、骨蒸勞熱、內熱消渴、腸燥便秘"
+   ],
+   "processing": "洗淨切片曬乾，生用或鹽水炒",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "黃柏",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "腎",
+    "膀胱",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "瀉火解毒"
+   ],
+   "preparations": [
+    "濕熱瀉痢、黃疸、腳氣、熱淋、癰腫、陰虛火旺"
+   ],
+   "processing": "去粗皮切片，鹽水炒或酒炒",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "黃連",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "心",
+    "肝",
+    "胃",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "瀉火解毒"
+   ],
+   "preparations": [
+    "濕熱痞滿、嘔吐泄瀉、目赤口瘡、心火亢盛、癰腫疔毒"
+   ],
+   "processing": "去鬚根曬乾，生用或酒炒、薑汁炒",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "黃芩",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肺",
+    "膽",
+    "脾",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "瀉火解毒",
+    "止血",
+    "安胎"
+   ],
+   "preparations": [
+    "濕溫暑熱、胸悶嘔惡、肺熱咳嗽、血熱妄行、胎動不安"
+   ],
+   "processing": "去毛切片，酒炒、炒炭、蜜炙等",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "龍膽草",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肝",
+    "膽"
+   ],
+   "aliases": [],
+   "functions": [
+    "清肝火",
+    "瀉下焦濕熱"
+   ],
+   "preparations": [
+    "肝火頭痛目赤、耳腫耳聾、黃疸、帶下、濕疹瘡瘍"
+   ],
+   "processing": "根洗淨曬乾，生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "苦參",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "心",
+    "肝",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "殺蟲止癢",
+    "利尿"
+   ],
+   "preparations": [
+    "濕熱黃疸、膀胱熱淋、風濕痹痛、濕疹癢瘡、陰癢帶下"
+   ],
+   "processing": "洗淨曬乾，酒炒或鹽水炒",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "白鮮皮",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "脾",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "祛風解毒"
+   ],
+   "preparations": [
+    "濕疹瘙癢、風濕痹痛、黃疸、小便不利"
+   ],
+   "processing": "洗淨切片，曬乾",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：白鮮、白蘚皮、白蘚（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "白鮮",
+    "白蘚皮",
+    "白蘚"
+   ],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "秦皮",
+   "nature_flavor": "苦澀寒",
+   "channels": [
+    "肝",
+    "膽",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱燥濕",
+    "收澀止痢",
+    "明目"
+   ],
+   "preparations": [
+    "痢疾下痢、赤白帶下、目赤腫痛"
+   ],
+   "processing": "去粗皮曬乾，生用或炒炭",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "馬齒莧",
+   "nature_flavor": "酸寒",
+   "channels": [
+    "大腸",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "涼血止痢",
+    "通淋止帶"
+   ],
+   "preparations": [
+    "腸癰痢疾、痔瘡出血、熱淋、帶下"
+   ],
+   "processing": "鮮用或曬乾備用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "白頭翁",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "胃",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "涼血止痢"
+   ],
+   "preparations": [
+    "熱毒血痢、陰虛發熱、癰腫瘡毒"
+   ],
+   "processing": "根曬乾切片，生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "射干",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "化痰利咽"
+   ],
+   "preparations": [
+    "咽喉腫痛、痰熱咳喘"
+   ],
+   "processing": "洗淨曬乾，切片煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "青黛",
+   "nature_flavor": "咸寒",
+   "channels": [
+    "肝",
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "涼血消斑",
+    "平肝息風"
+   ],
+   "preparations": [
+    "溫病發斑、咽喉腫痛、小兒驚風、癲癇抽搐"
+   ],
+   "processing": "青草類藥加工而成細末，外用或內服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "大青葉",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "心",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "涼血消斑"
+   ],
+   "preparations": [
+    "溫病高熱、發斑發疹、喉痹口瘡、癰腫丹毒"
+   ],
+   "processing": "葉曬乾，煎湯用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：大青（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "大青"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "板藍根",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "心",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "涼血利咽"
+   ],
+   "preparations": [
+    "溫疫時毒、咽喉腫痛、發熱頭痛、癰腫丹毒"
+   ],
+   "processing": "根部洗淨曬乾，煎湯或入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：藍、藍實（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "藍",
+    "藍實"
+   ],
+   "_classics": [
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "山豆根",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肺",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "利咽消腫"
+   ],
+   "preparations": [
+    "咽喉腫痛、肺熱咳嗽、牙痛口瘡"
+   ],
+   "processing": "根部曬乾切片，煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "馬勃",
+   "nature_flavor": "辛平",
+   "channels": [
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "清肺利咽",
+    "止血"
+   ],
+   "preparations": [
+    "咽喉腫痛、音啞失音、咳血、吐血"
+   ],
+   "processing": "乾燥子實體搗碎，外用或煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "牛黃",
+   "nature_flavor": "苦涼",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "清心開竅",
+    "化痰息風",
+    "解毒"
+   ],
+   "preparations": [
+    "高熱驚厥、癲狂癲癇、中風昏迷、咽喉腫痛、癰腫瘡毒"
+   ],
+   "processing": "牛膽結石，研末入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "熊膽",
+   "nature_flavor": "苦寒",
+   "channels": [
+    "肝",
+    "心"
+   ],
+   "aliases": [],
+   "functions": [
+    "清熱解毒",
+    "平肝息風",
+    "明目"
+   ],
+   "preparations": [
+    "肝火頭痛目赤、驚風癲癇、癰腫瘡毒"
+   ],
+   "processing": "胆汁乾燥為粉，沖服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "保育類動物藥，臨床多以替代品"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "珍珠",
+   "nature_flavor": "甘咸寒",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "安神定驚",
+    "明目",
+    "解毒生肌"
+   ],
+   "preparations": [
+    "驚悸癲狂、目赤翳障、潰瘍久不收口"
+   ],
+   "processing": "磨粉入丸散，或外敷",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：真珠、珍珠（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "真珠",
+    "珍珠"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "磁石",
+   "nature_flavor": "咸寒",
+   "channels": [
+    "腎",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "平肝潛陽",
+    "重鎮安神",
+    "聰耳明目",
+    "納氣平喘"
+   ],
+   "preparations": [
+    "肝陽上亢、眩暈耳鳴、心神不安、驚悸失眠、腎虛氣逆喘息"
+   ],
+   "processing": "醋淬研末入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "龍骨",
+   "nature_flavor": "甘澀平",
+   "channels": [
+    "心",
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "鎮驚安神",
+    "斂汗止血",
+    "收斂固精止帶"
+   ],
+   "preparations": [
+    "驚悸失眠、心神不寧、自汗盜汗、遺精滑精、崩漏帶下"
+   ],
+   "processing": "醋煅研末入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "牡蠣",
+   "nature_flavor": "咸澀微寒",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "重鎮安神",
+    "平肝潛陽",
+    "軟堅散結",
+    "收斂固澀"
+   ],
+   "preparations": [
+    "驚悸失眠、肝陽眩暈、癭瘤癥瘕、自汗盜汗、遺精滑精"
+   ],
+   "processing": "醋煅研末",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "琥珀",
+   "nature_flavor": "甘平",
+   "channels": [
+    "心",
+    "肝",
+    "膀胱"
+   ],
+   "aliases": [],
+   "functions": [
+    "鎮驚安神",
+    "活血通經",
+    "利水通淋"
+   ],
+   "preparations": [
+    "驚風癲癇、經閉癥瘕、血淋澀痛、血瘀經閉"
+   ],
+   "processing": "研末沖服或入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "硃砂",
+   "nature_flavor": "甘微寒有毒",
+   "channels": [
+    "心"
+   ],
+   "aliases": [],
+   "functions": [
+    "鎮心安神",
+    "清熱解毒"
+   ],
+   "preparations": [
+    "心神不寧、驚悸失眠、癲癇發狂、口瘡喉痹"
+   ],
+   "processing": "不可煎，研末入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "性味寫「甘微寒有毒」，現行多作「甘微寒，有毒」；內服須嚴控劑量"
+   ],
+   "_classicName": [],
+   "_classics": [
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "柏子仁",
+   "nature_flavor": "甘平",
+   "channels": [
+    "心",
+    "腎",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "養心安神",
+    "潤腸通便"
+   ],
+   "preparations": [
+    "心血不足、驚悸失眠、腸燥便秘"
+   ],
+   "processing": "生用或炒用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  },
+  {
+   "name": "酸棗仁",
+   "nature_flavor": "甘酸平",
+   "channels": [
+    "心",
+    "肝",
+    "膽"
+   ],
+   "aliases": [],
+   "functions": [
+    "養心補肝",
+    "寧心安神",
+    "斂汗"
+   ],
+   "preparations": [
+    "心悸失眠、多夢盜汗"
+   ],
+   "processing": "微炒後打碎煎服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "合歡皮",
+   "nature_flavor": "甘平",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "安神解鬱",
+    "活血消腫"
+   ],
+   "preparations": [
+    "心神不寧、憂鬱失眠、瘀血腫痛、癰腫不散"
+   ],
+   "processing": "曬乾切片煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：合歡（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "合歡"
+   ],
+   "_classics": [
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "夜交藤",
+   "nature_flavor": "甘平",
+   "channels": [
+    "心",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "養心安神",
+    "通絡祛風"
+   ],
+   "preparations": [
+    "虛煩失眠、多夢體倦、風濕痹痛、癮疹瘙癢"
+   ],
+   "processing": "藤莖曬乾切段，煎湯",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：何首烏（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "何首烏"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "石決明",
+   "nature_flavor": "咸寒",
+   "channels": [
+    "肝",
+    "腎"
+   ],
+   "aliases": [],
+   "functions": [
+    "平肝潛陽",
+    "清肝明目"
+   ],
+   "preparations": [
+    "肝陽上亢、頭痛眩暈、目赤翳障、視物昏花"
+   ],
+   "processing": "醋煅研末或入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "珍珠母",
+   "nature_flavor": "咸寒",
+   "channels": [
+    "肝",
+    "心"
+   ],
+   "aliases": [],
+   "functions": [
+    "平肝潛陽",
+    "清肝明目",
+    "安神定驚"
+   ],
+   "preparations": [
+    "肝陽頭痛眩暈、目赤翳障、心神不寧、驚悸失眠"
+   ],
+   "processing": "醋煅研末",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [
+    "原文庫以古名或總名收錄：真珠、石決明（查詢時請用此名）"
+   ],
+   "_classicName": [
+    "真珠",
+    "石決明"
+   ],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "決明子",
+   "nature_flavor": "甘苦微寒",
+   "channels": [
+    "肝",
+    "腎",
+    "大腸"
+   ],
+   "aliases": [],
+   "functions": [
+    "清肝明目",
+    "潤腸通便"
+   ],
+   "preparations": [
+    "肝熱目赤、視物不清、頭痛眩暈、大便秘結"
+   ],
+   "processing": "微炒用或生用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經"
+   ]
+  },
+  {
+   "name": "青葙子",
+   "nature_flavor": "苦微寒",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "清肝明目"
+   ],
+   "preparations": [
+    "肝熱目赤腫痛、迎風流淚、視物昏花、目暗不明"
+   ],
+   "processing": "曬乾後打碎煎服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "神農本草經",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "密蒙花",
+   "nature_flavor": "甘微寒",
+   "channels": [
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "養肝明目",
+    "退翳"
+   ],
+   "preparations": [
+    "目赤翳障、迎風流淚、視物不清"
+   ],
+   "processing": "曬乾後煎湯或入丸散",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "蟬蛻",
+   "nature_flavor": "甘寒",
+   "channels": [
+    "肺",
+    "肝"
+   ],
+   "aliases": [],
+   "functions": [
+    "疏風熱",
+    "透疹",
+    "明目退翳",
+    "息風止痙"
+   ],
+   "preparations": [
+    "風熱感冒、咽喉腫痛、麻疹不透、風疹瘙癢、目赤翳障、小兒夜啼、驚癇抽搐"
+   ],
+   "processing": "去泥雜，生用或炒用",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "木賊",
+   "nature_flavor": "甘苦平",
+   "channels": [
+    "肝",
+    "肺"
+   ],
+   "aliases": [],
+   "functions": [
+    "疏散風熱",
+    "明目退翳",
+    "止血"
+   ],
+   "preparations": [
+    "目赤腫痛、視物昏花、翳膜障眼、吐血、便血"
+   ],
+   "processing": "洗淨曬乾，煎服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要",
+    "本草綱目"
+   ]
+  },
+  {
+   "name": "蔓荊子",
+   "nature_flavor": "辛苦微寒",
+   "channels": [
+    "膀胱",
+    "肝",
+    "胃"
+   ],
+   "aliases": [],
+   "functions": [
+    "疏散風熱",
+    "清利頭目"
+   ],
+   "preparations": [
+    "風熱感冒、頭痛目赤、齒痛口苦、咽喉腫痛"
+   ],
+   "processing": "去雜質曬乾，煎服",
+   "_sources": [
+    "name.pdf"
+   ],
+   "_check": [],
+   "_classicName": [],
+   "_classics": [
+    "本草備要"
+   ]
+  }
+ ]
+}
