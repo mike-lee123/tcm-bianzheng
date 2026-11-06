@@ -1,0 +1,1729 @@
+{
+ "title": "失眠辨證選方",
+ "version": "0.1",
+ "note": "失眠（不寐）規則式辨證試做。定志丸在《醫方集解》治目不能遠視，不收。",
+ "plannedFamilies": {
+  "suanzaoren": "酸棗仁湯",
+  "huanglianejiao": "黃連阿膠湯",
+  "zhizichi": "梔子豉湯族（梔子厚朴湯）",
+  "wendan": "溫膽湯",
+  "guipi": "歸脾湯",
+  "tianwang": "天王補心丹",
+  "yangxin": "養心湯",
+  "dingzhi": "定志丸",
+  "chaihulonggu": "柴胡加龍骨牡蠣湯",
+  "guiganlonggu": "桂枝甘草龍骨牡蠣湯",
+  "zhuling": "豬苓湯",
+  "ganjiangfuzi": "乾薑附子湯",
+  "ganmai": "甘麥大棗湯",
+  "baihe": "百合地黃湯（百合病）"
+ },
+ "groups": [
+  {
+   "name": "睡眠情形",
+   "items": [
+    [
+     "nanru",
+     "難以入睡",
+     [
+      "睡不著",
+      "入睡困難",
+      "躺很久才睡著",
+      "失眠",
+      "不寐",
+      "不眠"
+     ]
+    ],
+    [
+     "yixing",
+     "易醒、醒後難再睡",
+     [
+      "半夜醒",
+      "容易醒",
+      "早醒",
+      "睡睡醒醒",
+      "醒了就睡不著"
+     ]
+    ],
+    [
+     "duomeng",
+     "多夢",
+     [
+      "夢多",
+      "一直做夢",
+      "惡夢"
+     ]
+    ],
+    [
+     "cheye",
+     "徹夜不眠",
+     [
+      "整晚沒睡",
+      "通宵睡不著",
+      "整夜不睡",
+      "徹夜不眠"
+     ]
+    ],
+    [
+     "jingxing",
+     "易驚醒、膽怯易驚",
+     [
+      "容易被嚇醒",
+      "驚醒",
+      "膽小",
+      "容易受驚",
+      "易驚"
+     ]
+    ],
+    [
+     "zuowo",
+     "欲臥不能臥、坐臥不安",
+     [
+      "坐立難安",
+      "躺也不是坐也不是",
+      "坐臥不安"
+     ]
+    ],
+    [
+     "zhoufan",
+     "白天煩躁、夜裡反而安靜",
+     [
+      "白天煩晚上安靜",
+      "白天躁"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "心神情志",
+   "items": [
+    [
+     "xinfan",
+     "心煩",
+     [
+      "煩躁",
+      "心煩",
+      "煩"
+     ]
+    ],
+    [
+     "aonao",
+     "心中懊憹、胸中窒悶",
+     [
+      "胸口悶悶的說不出",
+      "懊憹",
+      "胸中窒"
+     ]
+    ],
+    [
+     "xinji",
+     "心悸、怔忡",
+     [
+      "心悸",
+      "心慌",
+      "心跳很快",
+      "怔忡"
+     ]
+    ],
+    [
+     "jianwang",
+     "健忘",
+     [
+      "健忘",
+      "記性差",
+      "很會忘記"
+     ]
+    ],
+    [
+     "silv",
+     "思慮過多、勞心",
+     [
+      "想太多",
+      "思慮過多",
+      "壓力大",
+      "用腦過度",
+      "操心"
+     ]
+    ],
+    [
+     "beishang",
+     "悲傷欲哭、情緒失控",
+     [
+      "想哭",
+      "愛哭",
+      "情緒失控",
+      "悲傷"
+     ]
+    ],
+    [
+     "moran",
+     "神情恍惚、默默不語",
+     [
+      "恍惚",
+      "發呆",
+      "不想說話",
+      "精神恍惚"
+     ]
+    ],
+    [
+     "yinu",
+     "易怒、急躁",
+     [
+      "易怒",
+      "脾氣大",
+      "急躁",
+      "生氣"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "全身",
+   "items": [
+    [
+     "pifa",
+     "疲倦乏力",
+     [
+      "累",
+      "疲倦",
+      "沒力氣",
+      "乏力"
+     ]
+    ],
+    [
+     "mianwuhua",
+     "面色萎黃或無華",
+     [
+      "臉色差",
+      "面黃",
+      "臉色蒼白"
+     ]
+    ],
+    [
+     "touyun",
+     "頭暈目眩",
+     [
+      "頭暈",
+      "眩暈"
+     ]
+    ],
+    [
+     "daohan",
+     "盜汗",
+     [
+      "盜汗",
+      "睡覺流汗",
+      "半夜流汗"
+     ]
+    ],
+    [
+     "zihan",
+     "自汗、心口多汗",
+     [
+      "自汗",
+      "很會流汗",
+      "胸口出汗"
+     ]
+    ],
+    [
+     "wuxin",
+     "五心煩熱、手足心熱",
+     [
+      "手腳心熱",
+      "手心熱",
+      "五心煩熱"
+     ]
+    ],
+    [
+     "yaosuan",
+     "腰膝痠軟",
+     [
+      "腰痠",
+      "腿軟"
+     ]
+    ],
+    [
+     "erming",
+     "耳鳴",
+     [
+      "耳鳴"
+     ]
+    ],
+    [
+     "weihan",
+     "畏寒肢冷",
+     [
+      "怕冷",
+      "手腳冰冷",
+      "手腳冷"
+     ]
+    ],
+    [
+     "shenzhong",
+     "一身沉重",
+     [
+      "身體很重",
+      "身重"
+     ]
+    ],
+    [
+     "fare",
+     "身熱",
+     [
+      "發燒",
+      "身熱",
+      "發熱"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "口與飲食",
+   "items": [
+    [
+     "kouku",
+     "口苦",
+     [
+      "嘴巴苦",
+      "口苦"
+     ]
+    ],
+    [
+     "kougan",
+     "口乾咽燥",
+     [
+      "口乾",
+      "嘴巴乾",
+      "咽乾"
+     ]
+    ],
+    [
+     "kouke",
+     "口渴",
+     [
+      "口渴",
+      "想喝水"
+     ]
+    ],
+    [
+     "kouchuang",
+     "口舌生瘡",
+     [
+      "嘴破",
+      "口破",
+      "舌頭破"
+     ]
+    ],
+    [
+     "ou",
+     "噁心嘔吐或嘔涎",
+     [
+      "想吐",
+      "噁心",
+      "嘔吐"
+     ]
+    ],
+    [
+     "tanduo",
+     "痰多",
+     [
+      "痰多",
+      "有痰"
+     ]
+    ],
+    [
+     "nashao",
+     "食少",
+     [
+      "胃口差",
+      "吃不下",
+      "食慾差"
+     ]
+    ],
+    [
+     "xiongman",
+     "胸滿或胸脅苦滿",
+     [
+      "胸悶",
+      "胸口脹",
+      "胸脅脹"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "二便",
+   "items": [
+    [
+     "xie",
+     "腹瀉、便溏",
+     [
+      "拉肚子",
+      "大便稀",
+      "軟便"
+     ]
+    ],
+    [
+     "bianbi",
+     "大便秘結",
+     [
+      "便秘",
+      "大便乾"
+     ]
+    ],
+    [
+     "xbbuli",
+     "小便不利",
+     [
+      "小便不順",
+      "尿少"
+     ]
+    ],
+    [
+     "xbchi",
+     "小便黃赤",
+     [
+      "尿黃",
+      "小便黃"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "舌",
+   "items": [
+    [
+     "shehong",
+     "舌紅",
+     [
+      "舌紅",
+      "舌頭紅"
+     ]
+    ],
+    [
+     "shejian",
+     "舌尖紅",
+     [
+      "舌尖紅"
+     ]
+    ],
+    [
+     "shedan",
+     "舌淡",
+     [
+      "舌淡"
+     ]
+    ],
+    [
+     "taihuangni",
+     "苔黃膩",
+     [
+      "黃膩苔",
+      "苔黃膩"
+     ]
+    ],
+    [
+     "taibaini",
+     "苔白膩",
+     [
+      "白膩苔",
+      "苔白膩",
+      "苔膩"
+     ]
+    ],
+    [
+     "shaotai",
+     "少苔",
+     [
+      "少苔",
+      "無苔"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "脈（知道才選）",
+   "items": [
+    [
+     "maixishu",
+     "脈細數",
+     [
+      "細數"
+     ]
+    ],
+    [
+     "maixiruo",
+     "脈細弱",
+     [
+      "脈弱",
+      "脈細弱",
+      "脈無力"
+     ]
+    ],
+    [
+     "maihua",
+     "脈滑",
+     [
+      "滑脈"
+     ]
+    ],
+    [
+     "maixian",
+     "脈弦",
+     [
+      "弦脈"
+     ]
+    ],
+    [
+     "maichenwei",
+     "脈沉微",
+     [
+      "脈微"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "病程與誘因",
+   "items": [
+    [
+     "binghou",
+     "大病或熱病之後",
+     [
+      "病後",
+      "感冒後",
+      "發燒後"
+     ]
+    ],
+    [
+     "hanxiahou",
+     "發汗或瀉下之後",
+     [
+      "吃了瀉藥之後",
+      "發汗後",
+      "下後"
+     ]
+    ],
+    [
+     "jiubing",
+     "長期失眠（數月以上）",
+     [
+      "好幾個月",
+      "好幾年",
+      "長期",
+      "慢性",
+      "多年"
+     ]
+    ],
+    [
+     "qingzhi",
+     "情志不遂、受驚或生氣後起",
+     [
+      "受驚嚇",
+      "生氣後",
+      "吵架後",
+      "被嚇到"
+     ]
+    ],
+    [
+     "laonian",
+     "年老",
+     [
+      "老人",
+      "年紀大"
+     ]
+    ],
+    [
+     "chanhou",
+     "產後或失血後",
+     [
+      "產後",
+      "生完小孩",
+      "失血"
+     ]
+    ],
+    [
+     "huoni",
+     "艾灸、燒針、薰蒸等火療之後",
+     [
+      "艾灸後",
+      "灸了之後",
+      "燒針",
+      "薰蒸後",
+      "拔罐後",
+      "火療"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "警示",
+   "items": [
+    [
+     "qingsheng",
+     "有輕生念頭",
+     [
+      "想死",
+      "不想活",
+      "輕生"
+     ]
+    ],
+    [
+     "huanjue",
+     "幻覺、言行錯亂",
+     [
+      "幻覺",
+      "幻聽",
+      "胡言亂語",
+      "語無倫次"
+     ]
+    ],
+    [
+     "xiongtong",
+     "心悸合併胸痛或昏厥",
+     [
+      "胸痛",
+      "昏倒",
+      "暈倒"
+     ]
+    ]
+   ]
+  }
+ ],
+ "redflags": {
+  "qingsheng": "有輕生念頭，請立即尋求協助：撥打 1925（安心專線，24 小時）或就醫。",
+  "huanjue": "出現幻覺或言行錯亂，請盡快就醫（精神科）。",
+  "xiongtong": "心悸合併胸痛或昏厥，可能是心臟問題，請立即就醫。"
+ },
+ "jing": [
+  {
+   "id": "xinpixu",
+   "name": "心脾兩虛",
+   "w": {
+    "pifa": 2.5,
+    "mianwuhua": 2,
+    "nashao": 2,
+    "xinji": 1.5,
+    "jianwang": 2,
+    "silv": 2,
+    "maixiruo": 1.5,
+    "shedan": 1.5,
+    "chanhou": 1.5,
+    "zihan": 1
+   },
+   "against": {
+    "shehong": 1.5,
+    "taihuangni": 2,
+    "maihua": 1
+   },
+   "source": "《醫方集解·理血之劑·歸脾湯》：「治思慮過度，勞傷心脾，怔忡健忘，驚悸盜汗，發熱體倦，食少不眠」"
+  },
+  {
+   "id": "yinxuhuowang",
+   "name": "陰虛火旺",
+   "w": {
+    "wuxin": 3,
+    "daohan": 2.5,
+    "shehong": 2,
+    "shejian": 2,
+    "shaotai": 2.5,
+    "maixishu": 2.5,
+    "kougan": 1.5,
+    "kouchuang": 1.5,
+    "yaosuan": 1.5,
+    "erming": 1
+   },
+   "against": {
+    "taibaini": 2,
+    "weihan": 2,
+    "shedan": 1.5
+   },
+   "source": "《傷寒論》第303條：「少陰病，得之二三日以上，心中煩，不得臥，黃連阿膠湯主之」"
+  },
+  {
+   "id": "ganxue",
+   "name": "肝血不足、虛煩",
+   "w": {
+    "xinfan": 1.5,
+    "touyun": 1.5,
+    "jiubing": 1,
+    "maixian": 1.5,
+    "maixishu": 1,
+    "yixing": 1.5,
+    "duomeng": 1
+   },
+   "against": {
+    "taihuangni": 1.5,
+    "maihua": 1
+   },
+   "source": "《金匱要略·血痹虛勞病》：「虛勞虛煩不得眠，酸棗仁湯主之」"
+  },
+  {
+   "id": "tanre",
+   "name": "膽虛痰熱",
+   "w": {
+    "jingxing": 2.5,
+    "kouku": 2,
+    "ou": 2,
+    "tanduo": 2.5,
+    "taihuangni": 3,
+    "maihua": 2,
+    "xiongman": 1,
+    "qingzhi": 1
+   },
+   "against": {
+    "shaotai": 2,
+    "shedan": 1,
+    "maixiruo": 1
+   },
+   "source": "《醫方集解·和解之劑·溫膽湯》：「治膽虛痰熱不眠，虛煩驚悸，口苦嘔涎」"
+  },
+  {
+   "id": "yure",
+   "name": "鬱熱擾胸（汗吐下後）",
+   "w": {
+    "aonao": 3,
+    "xinfan": 2,
+    "hanxiahou": 2.5,
+    "binghou": 1,
+    "xiongman": 1
+   },
+   "against": {
+    "weihan": 1.5
+   },
+   "source": "《傷寒論》第76條：「發汗吐下後，虛煩不得眠，若劇者，必反復顛倒，心中懊憹，梔子豉湯主之」"
+  },
+  {
+   "id": "shuire",
+   "name": "水熱互結傷陰",
+   "w": {
+    "xbbuli": 3,
+    "kouke": 2.5,
+    "xie": 1.5,
+    "ou": 1,
+    "xinfan": 1
+   },
+   "against": {
+    "weihan": 1.5
+   },
+   "source": "《傷寒論》第319條：「少陰病，下利，六七日，咳而嘔渴，心煩不得眠者，豬苓湯主之」"
+  },
+  {
+   "id": "yangxu",
+   "name": "陽虛煩躁",
+   "w": {
+    "zhoufan": 3,
+    "maichenwei": 3,
+    "weihan": 2,
+    "hanxiahou": 1.5
+   },
+   "against": {
+    "kouke": 2,
+    "shehong": 2
+   },
+   "source": "《傷寒論》第61條：「下之後，復發汗，晝日煩躁不得眠，夜而安靜……脈沉微……乾薑附子湯主之」"
+  },
+  {
+   "id": "jingji",
+   "name": "驚悸、神不寧",
+   "w": {
+    "jingxing": 2.5,
+    "xinji": 2,
+    "qingzhi": 2,
+    "moran": 1.5,
+    "beishang": 1.5,
+    "zuowo": 1.5,
+    "yinu": 1,
+    "huoni": 2
+   },
+   "against": {},
+   "source": "《傷寒論》第107條：「傷寒八九日，下之，胸滿煩驚，小便不利，譫語，一身盡重，不可轉側者，柴胡加龍骨牡蠣湯主之」"
+  }
+ ],
+ "jingRules": [],
+ "patterns": [
+  {
+   "id": "suanzaoren",
+   "name": "肝血不足、虛勞虛煩",
+   "formula": "酸棗仁湯",
+   "main": [
+    "nanru",
+    "xinfan"
+   ],
+   "minor": [
+    "yixing",
+    "duomeng",
+    "touyun",
+    "jiubing",
+    "maixian",
+    "maixishu",
+    "kougan",
+    "pifa"
+   ],
+   "against": [
+    [
+     "taihuangni",
+     2
+    ],
+    [
+     "tanduo",
+     1.5
+    ]
+   ],
+   "source": "《金匱要略·血痹虛勞病》：「虛勞虛煩不得眠，酸棗仁湯主之」",
+   "jing": [
+    "ganxue"
+   ],
+   "mods": [],
+   "key": [
+    "xinfan",
+    "jiubing",
+    "touyun"
+   ]
+  },
+  {
+   "id": "huanglianejiao",
+   "name": "少陰陰虛火旺",
+   "formula": "黃連阿膠湯",
+   "main": [
+    "nanru",
+    "xinfan"
+   ],
+   "minor": [
+    "wuxin",
+    "kougan",
+    "shehong",
+    "shejian",
+    "shaotai",
+    "maixishu",
+    "kouchuang",
+    "daohan"
+   ],
+   "against": [
+    [
+     "weihan",
+     2
+    ],
+    [
+     "taibaini",
+     2
+    ],
+    [
+     "shedan",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第303條：「少陰病，得之二三日以上，心中煩，不得臥，黃連阿膠湯主之」",
+   "jing": [
+    "yinxuhuowang"
+   ],
+   "mods": [],
+   "key": [
+    "shehong",
+    "shaotai",
+    "wuxin",
+    "shejian"
+   ]
+  },
+  {
+   "id": "zhizichi",
+   "name": "汗吐下後虛煩懊憹",
+   "formula": "梔子豉湯（梔子厚朴湯）",
+   "main": [
+    "nanru",
+    "aonao"
+   ],
+   "minor": [
+    "xinfan",
+    "hanxiahou",
+    "binghou",
+    "xiongman",
+    "zuowo"
+   ],
+   "against": [
+    [
+     "weihan",
+     1.5
+    ],
+    [
+     "xie",
+     1
+    ]
+   ],
+   "source": "《傷寒論》第76條：「發汗吐下後，虛煩不得眠，若劇者，必反復顛倒，心中懊憹，梔子豉湯主之」；第79條：「傷寒下後，心煩腹滿，臥起不安者，梔子厚朴湯主之」",
+   "jing": [
+    "yure"
+   ],
+   "mods": [],
+   "key": [
+    "aonao",
+    "hanxiahou"
+   ]
+  },
+  {
+   "id": "wendan",
+   "name": "膽虛痰熱",
+   "formula": "溫膽湯",
+   "main": [
+    "nanru",
+    "jingxing"
+   ],
+   "minor": [
+    "kouku",
+    "ou",
+    "tanduo",
+    "xinfan",
+    "taihuangni",
+    "maihua",
+    "xiongman",
+    "qingzhi"
+   ],
+   "against": [
+    [
+     "shaotai",
+     2
+    ],
+    [
+     "maixiruo",
+     1
+    ]
+   ],
+   "source": "《醫方集解·和解之劑·溫膽湯》：「治膽虛痰熱不眠，虛煩驚悸，口苦嘔涎」",
+   "jing": [
+    "tanre"
+   ],
+   "mods": [],
+   "key": [
+    "kouku",
+    "ou",
+    "tanduo",
+    "taihuangni"
+   ]
+  },
+  {
+   "id": "guipi",
+   "name": "心脾兩虛",
+   "formula": "歸脾湯",
+   "main": [
+    "xinji",
+    "pifa",
+    "nashao"
+   ],
+   "minor": [
+    "nanru",
+    "jianwang",
+    "silv",
+    "daohan",
+    "jingxing",
+    "mianwuhua",
+    "maixiruo",
+    "shedan",
+    "chanhou",
+    "zihan"
+   ],
+   "against": [
+    [
+     "taihuangni",
+     2
+    ],
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·歸脾湯》：「治思慮過度，勞傷心脾，怔忡健忘，驚悸盜汗，發熱體倦，食少不眠；或脾虛不能攝血」",
+   "jing": [
+    "xinpixu"
+   ],
+   "mods": [],
+   "key": [
+    "pifa",
+    "nashao",
+    "silv",
+    "jianwang"
+   ]
+  },
+  {
+   "id": "tianwang",
+   "name": "心陰血不足",
+   "formula": "天王補心丹",
+   "main": [
+    "xinji",
+    "jianwang",
+    "silv"
+   ],
+   "minor": [
+    "nanru",
+    "zihan",
+    "kouchuang",
+    "bianbi",
+    "xie",
+    "shehong",
+    "maixishu",
+    "duomeng"
+   ],
+   "against": [
+    [
+     "taibaini",
+     1.5
+    ],
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·補養之劑·天王補心丹》：「治思慮過度，心血不足，怔忡健忘，心口多汗，大便或祕或溏，口舌生瘡等證」",
+   "jing": [
+    "yinxuhuowang",
+    "xinpixu"
+   ],
+   "mods": [],
+   "key": [
+    "kouchuang",
+    "jianwang",
+    "shehong"
+   ]
+  },
+  {
+   "id": "yangxin",
+   "name": "心虛血少、神氣不寧",
+   "formula": "養心湯",
+   "main": [
+    "xinji",
+    "jingxing"
+   ],
+   "minor": [
+    "nanru",
+    "pifa",
+    "mianwuhua",
+    "maixiruo",
+    "shedan"
+   ],
+   "against": [
+    [
+     "taihuangni",
+     1.5
+    ]
+   ],
+   "source": "《醫方集解·理血之劑·養心湯》：「治心虛血少，神氣不寧，怔忡驚悸」",
+   "jing": [
+    "xinpixu",
+    "jingji"
+   ],
+   "mods": [],
+   "key": [
+    "jingxing",
+    "mianwuhua"
+   ]
+  },
+  {
+   "id": "chaihulonggu",
+   "name": "胸滿煩驚",
+   "formula": "柴胡加龍骨牡蠣湯",
+   "main": [
+    "xiongman",
+    "jingxing"
+   ],
+   "minor": [
+    "xinfan",
+    "xbbuli",
+    "shenzhong",
+    "hanxiahou",
+    "kouku",
+    "yinu",
+    "maixian"
+   ],
+   "against": [
+    [
+     "maixiruo",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第107條：「傷寒八九日，下之，胸滿煩驚，小便不利，譫語，一身盡重，不可轉側者，柴胡加龍骨牡蠣湯主之」",
+   "jing": [
+    "jingji"
+   ],
+   "mods": [],
+   "key": [
+    "xiongman",
+    "shenzhong"
+   ]
+  },
+  {
+   "id": "guiganlonggu",
+   "name": "火逆誤治後煩躁",
+   "formula": "桂枝甘草龍骨牡蠣湯",
+   "main": [
+    "xinfan",
+    "huoni"
+   ],
+   "minor": [
+    "hanxiahou",
+    "xinji",
+    "jingxing",
+    "zuowo"
+   ],
+   "against": [
+    [
+     "shehong",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第118條：「火逆下之，因燒針煩躁者，桂枝甘草龍骨牡蠣湯主之」",
+   "jing": [
+    "jingji"
+   ],
+   "mods": [],
+   "key": [
+    "huoni"
+   ]
+  },
+  {
+   "id": "zhuling",
+   "name": "水熱互結、陰傷心煩",
+   "formula": "豬苓湯",
+   "main": [
+    "xinfan",
+    "xbbuli",
+    "kouke"
+   ],
+   "minor": [
+    "nanru",
+    "xie",
+    "ou",
+    "fare"
+   ],
+   "against": [
+    [
+     "weihan",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第319條：「少陰病，下利，六七日，咳而嘔渴，心煩不得眠者，豬苓湯主之」；《醫方集解·利溼之劑·豬苓湯》：「治陽明病脈浮發熱，渴欲飲水，小便不通」",
+   "jing": [
+    "shuire"
+   ],
+   "mods": [],
+   "key": [
+    "xbbuli",
+    "kouke"
+   ]
+  },
+  {
+   "id": "ganjiangfuzi",
+   "name": "陽虛煩躁（晝煩夜安）",
+   "formula": "乾薑附子湯",
+   "main": [
+    "zhoufan",
+    "maichenwei"
+   ],
+   "minor": [
+    "hanxiahou",
+    "weihan",
+    "nanru"
+   ],
+   "against": [
+    [
+     "kouke",
+     2
+    ],
+    [
+     "ou",
+     1.5
+    ],
+    [
+     "fare",
+     1.5
+    ]
+   ],
+   "source": "《傷寒論》第61條：「下之後，復發汗，晝日煩躁不得眠，夜而安靜，不嘔不渴，無表證，脈沉微，身無大熱者，乾薑附子湯主之」",
+   "jing": [
+    "yangxu"
+   ],
+   "mods": [],
+   "key": [
+    "zhoufan",
+    "maichenwei"
+   ]
+  },
+  {
+   "id": "ganmai",
+   "name": "臟躁",
+   "formula": "甘麥大棗湯",
+   "main": [
+    "beishang"
+   ],
+   "minor": [
+    "nanru",
+    "moran",
+    "xinfan",
+    "yinu",
+    "zuowo"
+   ],
+   "against": [],
+   "source": "《金匱要略·婦人雜病》：「婦人臟躁，喜悲傷欲哭，象如神靈所作，數欠伸，甘麥大棗湯主之」",
+   "jing": [
+    "jingji"
+   ],
+   "mods": [],
+   "key": [
+    "beishang"
+   ]
+  },
+  {
+   "id": "baihe",
+   "name": "百合病",
+   "formula": "百合地黃湯",
+   "main": [
+    "zuowo",
+    "moran"
+   ],
+   "minor": [
+    "kouku",
+    "xbchi",
+    "nashao",
+    "binghou",
+    "maixishu"
+   ],
+   "against": [],
+   "source": "《金匱要略·百合狐惑陰陽毒病》：「百合病者……意欲食復不能食，常默默，欲臥不能臥，欲行不能行……口苦，小便赤……脈微數」；「百合病，不經吐、下、發汗，病形如初者，百合地黃湯主之」",
+   "jing": [
+    "jingji"
+   ],
+   "mods": [],
+   "key": [
+    "zuowo",
+    "moran"
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "id": "c_61",
+   "kind": "caution",
+   "name": "晝煩夜安、脈沉微，不可清熱",
+   "when": {
+    "all": [
+     "zhoufan"
+    ],
+    "any": [
+     "maichenwei",
+     "weihan"
+    ]
+   },
+   "penalty": {
+    "huanglianejiao": 4,
+    "zhizichi": 3,
+    "zhuling": 3
+   },
+   "source": "《傷寒論》第61條：「晝日煩躁不得眠，夜而安靜，不嘔不渴，無表證，脈沉微，身無大熱者，乾薑附子湯主之」",
+   "note": "白天煩躁、晚上反而安靜、脈沉微，是陽虛煩躁，不是熱，清熱的藥要避免。"
+  },
+  {
+   "id": "r_hxh",
+   "kind": "boost",
+   "name": "汗吐下後虛煩懊憹",
+   "when": {
+    "all": [
+     "hanxiahou"
+    ],
+    "any": [
+     "aonao",
+     "xinfan"
+    ],
+    "none": [
+     "maichenwei",
+     "zhoufan",
+     "huoni"
+    ]
+   },
+   "boost": {
+    "zhizichi": 3
+   },
+   "source": "《傷寒論》第76條：「發汗吐下後，虛煩不得眠，若劇者，必反復顛倒，心中懊憹，梔子豉湯主之」",
+   "note": "誤用汗、吐、下之後的虛煩失眠，屬餘熱擾胸，用梔子豉湯清宣。"
+  }
+ ],
+ "cases": [
+  {
+   "id": "k1",
+   "label": "酸棗仁湯（虛勞虛煩不得眠）",
+   "f": [
+    "nanru",
+    "xinfan",
+    "pifa"
+   ],
+   "expect": "suanzaoren"
+  },
+  {
+   "id": "k2",
+   "label": "黃連阿膠湯（心中煩不得臥）",
+   "f": [
+    "xinfan",
+    "nanru",
+    "shehong",
+    "shaotai"
+   ],
+   "expect": "huanglianejiao"
+  },
+  {
+   "id": "k3",
+   "label": "梔子豉湯（汗吐下後虛煩懊憹）",
+   "f": [
+    "hanxiahou",
+    "xinfan",
+    "nanru",
+    "aonao",
+    "zuowo"
+   ],
+   "expect": "zhizichi"
+  },
+  {
+   "id": "k4",
+   "label": "溫膽湯（膽虛痰熱不眠）",
+   "f": [
+    "nanru",
+    "xinfan",
+    "jingxing",
+    "kouku",
+    "ou"
+   ],
+   "expect": "wendan"
+  },
+  {
+   "id": "k5",
+   "label": "歸脾湯（思慮勞傷心脾）",
+   "f": [
+    "silv",
+    "xinji",
+    "jianwang",
+    "jingxing",
+    "daohan",
+    "pifa",
+    "nashao",
+    "nanru"
+   ],
+   "expect": "guipi"
+  },
+  {
+   "id": "k6",
+   "label": "天王補心丹（心血不足）",
+   "f": [
+    "silv",
+    "xinji",
+    "jianwang",
+    "zihan",
+    "kouchuang"
+   ],
+   "expect": "tianwang"
+  },
+  {
+   "id": "k7",
+   "label": "養心湯（神氣不寧）",
+   "f": [
+    "xinji",
+    "jingxing"
+   ],
+   "expect": "yangxin"
+  },
+  {
+   "id": "k8",
+   "label": "柴胡加龍骨牡蠣湯（胸滿煩驚）",
+   "f": [
+    "hanxiahou",
+    "xiongman",
+    "xinfan",
+    "jingxing",
+    "xbbuli",
+    "shenzhong"
+   ],
+   "expect": "chaihulonggu"
+  },
+  {
+   "id": "k9",
+   "label": "桂枝甘草龍骨牡蠣湯（火逆煩躁）",
+   "f": [
+    "huoni",
+    "hanxiahou",
+    "xinfan"
+   ],
+   "expect": "guiganlonggu"
+  },
+  {
+   "id": "k10",
+   "label": "豬苓湯（下利咳嘔渴、心煩不得眠）",
+   "f": [
+    "xie",
+    "ou",
+    "kouke",
+    "xinfan",
+    "nanru"
+   ],
+   "expect": "zhuling"
+  },
+  {
+   "id": "k11",
+   "label": "乾薑附子湯（晝煩夜安）",
+   "f": [
+    "hanxiahou",
+    "zhoufan",
+    "nanru",
+    "maichenwei"
+   ],
+   "expect": "ganjiangfuzi"
+  },
+  {
+   "id": "k12",
+   "label": "甘麥大棗湯（臟躁）",
+   "f": [
+    "beishang"
+   ],
+   "expect": "ganmai"
+  },
+  {
+   "id": "k13",
+   "label": "百合地黃湯（欲臥不能臥）",
+   "f": [
+    "nashao",
+    "moran",
+    "zuowo",
+    "kouku",
+    "xbchi",
+    "maixishu"
+   ],
+   "expect": "baihe"
+  }
+ ],
+ "cases_v1": {
+  "title": "失眠 v0.1 驗證題（建庫前登錄）",
+  "families": {
+   "baihe": "百合地黃湯（百合病）",
+   "chaihulonggu": "柴胡加龍骨牡蠣湯",
+   "dingzhi": "定志丸",
+   "ganjiangfuzi": "乾薑附子湯",
+   "ganmai": "甘麥大棗湯",
+   "guiganlonggu": "桂枝甘草龍骨牡蠣湯",
+   "guipi": "歸脾湯",
+   "huanglianejiao": "黃連阿膠湯",
+   "suanzaoren": "酸棗仁湯",
+   "tianwang": "天王補心丹",
+   "wendan": "溫膽湯",
+   "yangxin": "養心湯",
+   "zhizichi": "梔子豉湯族（梔子厚朴湯）",
+   "zhuling": "豬苓湯"
+  },
+  "note": "來源經使用者確認：《古今醫案按》不寐、怔忡門，《續名醫類案》不眠、驚悸篇，《傷寒九十論》，《臨證指南醫案》卷六不寐。判分以撰案醫家實際所用之方為準；自擬方、原文庫外之方（安神丸、補中益氣、八珍、逍遙、半夏秫米湯）及只有一項症狀者不收。14 個方族只有 5 個有題（歸脾、酸棗仁、溫膽、天王補心、豬苓）。",
+  "sha256": "1fa10acaf16a1a91a45d4f9bf71ace9904bfef0006b1cf6a4151b7c8350ef613",
+  "cases": [
+   {
+    "expect": [
+     "tianwang"
+    ],
+    "f": [
+     "xinji",
+     "nanru",
+     "qingzhi",
+     "jingxing"
+    ],
+    "id": "s01",
+    "label": "《古今醫案按》不寐（高果哉，終以天王補心丹）",
+    "text": "怔忡不寐，心脈獨虛，肝脈獨旺，因寇盜充斥，日夜驚懼而致"
+   },
+   {
+    "expect": [
+     "guipi"
+    ],
+    "f": [
+     "xinji",
+     "pifa"
+    ],
+    "id": "s02",
+    "label": "《續名醫類案》驚悸（薛立齋，歸脾湯）",
+    "text": "勞則心跳怔忡，寒熱往來"
+   },
+   {
+    "expect": [
+     "guipi"
+    ],
+    "f": [
+     "xinji",
+     "jingxing",
+     "zihan",
+     "daohan",
+     "nashao",
+     "pifa"
+    ],
+    "id": "s03",
+    "label": "《續名醫類案》驚悸（歸脾湯）",
+    "text": "驚悸怔忡，自汗盜汗，飲食不甘，怠惰嗜臥"
+   },
+   {
+    "expect": [
+     "guipi"
+    ],
+    "f": [
+     "xinji",
+     "pifa",
+     "silv",
+     "maixiruo"
+    ],
+    "id": "s04",
+    "label": "《續名醫類案》驚悸（馬元儀，歸脾湯）",
+    "text": "心悸，肢體倦怠，脈浮虛無力，得之焦勞思慮"
+   },
+   {
+    "expect": [
+     "guipi"
+    ],
+    "f": [
+     "yinu",
+     "qingzhi",
+     "silv",
+     "nanru",
+     "xiongman"
+    ],
+    "id": "s05",
+    "label": "《續名醫類案》不眠（李士材，歸脾湯）",
+    "text": "善怒善鬱，應酬繁劇，膈中痛甚，夜不成寐"
+   },
+   {
+    "expect": [
+     "wendan"
+    ],
+    "f": [
+     "qingzhi",
+     "nanru",
+     "jiubing",
+     "jingxing"
+    ],
+    "id": "s06",
+    "label": "《續名醫類案》不眠（張路玉，溫膽湯）",
+    "text": "少年因恐慮，兩月不臥，服安神補心藥無算"
+   },
+   {
+    "expect": [
+     "guipi"
+    ],
+    "f": [
+     "chanhou",
+     "pifa",
+     "mianwuhua",
+     "nashao",
+     "weihan",
+     "cheye",
+     "xinji",
+     "zihan"
+    ],
+    "id": "s07",
+    "label": "《續名醫類案》驚悸（薛立齋，加味歸脾湯）",
+    "text": "產婦惡露淋瀝，體倦面黃，食少惡寒，朝夜不寐，驚悸汗出"
+   },
+   {
+    "expect": [
+     "zhuling"
+    ],
+    "f": [
+     "fare",
+     "zihan",
+     "hanxiahou",
+     "nanru",
+     "xinfan",
+     "xinji"
+    ],
+    "id": "s08",
+    "label": "《傷寒九十論》夜間不眠證（先與豬苓湯）",
+    "text": "身熱自汗，醫以麻黃湯汗之，發熱愈甚，夜間不得眠，頭重，煩悶，悸悸然"
+   },
+   {
+    "expect": [
+     "wendan"
+    ],
+    "f": [
+     "nanru",
+     "xiongman"
+    ],
+    "id": "s09",
+    "label": "《臨證指南醫案》不寐（程氏，溫膽湯）",
+    "text": "上晝氣逆填脘，子夜寤不肯寐"
+   },
+   {
+    "expect": [
+     "suanzaoren"
+    ],
+    "f": [
+     "nanru",
+     "jiubing",
+     "ou",
+     "tanduo"
+    ],
+    "id": "s10",
+    "label": "《臨證指南醫案》不寐（酸棗仁湯）",
+    "text": "不寐六十日，溫膽諸藥不效，嘔痰不適"
+   },
+   {
+    "expect": [
+     "suanzaoren"
+    ],
+    "f": [
+     "nanru",
+     "xie",
+     "ou",
+     "xinfan"
+    ],
+    "id": "s11",
+    "label": "《臨證指南醫案》不寐（陳，酸棗仁湯）",
+    "text": "陰精走泄，復因洞瀉，重亡津液，食入欲嘔，神識不靜無寐"
+   },
+   {
+    "expect": [
+     "suanzaoren"
+    ],
+    "f": [
+     "nanru",
+     "nashao",
+     "maixishu"
+    ],
+    "id": "s12",
+    "label": "《臨證指南醫案》不寐（酸棗仁湯）",
+    "text": "寤不成寐，食不甘味，羸瘦，脈細數澀"
+   }
+  ],
+  "pageTitle": "驗證題 v0.1（建庫前登錄）",
+  "result": "（尚未執行）"
+ },
+ "jingMult": 1.0,
+ "jingCap": 10,
+ "hints": {
+  "憂鬱症": "「憂鬱症」請由精神科或身心科評估；這裡只能就失眠、心煩、心悸等症狀列出中醫證型供學習。",
+  "焦慮症": "「焦慮症」請由身心科評估；可描述入睡難或易醒、心悸、口苦、痰多、怕冷怕熱等症狀。",
+  "更年期": "更年期失眠請描述：潮熱盜汗、手足心熱、心煩易怒、心悸、怕冷等。",
+  "安眠藥": "長期服用安眠藥請勿自行停藥，調整須與醫師討論。"
+ },
+ "page": {
+  "title": "失眠辨證選方",
+  "eyebrow": "中藥典籍原文庫．規則式辨證．失眠 v0.1（兩層：先辨病性，再選方）",
+  "lede": "勾選睡眠情形（難入睡、易醒、多夢、驚醒）、心神、全身與口舌症狀，程式先辨病性（心脾兩虛、陰虛火旺、肝血不足、膽虛痰熱、鬱熱、水熱、陽虛煩躁、驚悸），再依《傷寒論》《金匱要略》《醫方集解》選方。這是學習用的規則系統，不能取代面診。",
+  "checkIntro": "自檢題取自各方原文主治，只檢查程式是否照原文運作；預先登錄的驗證題取自醫案集，登錄時知識庫只有症狀清單。",
+  "limits": "<li>目前收 13 個證型、8 種病性、2 條原文規則。朱砂安神丸、交泰丸、半夏秫米湯不在原文庫，未收。</li><li>驗證題只有 12 則，13 個方族只有 5 個驗得到。</li><li>有輕生念頭、幻覺、言行錯亂，或心悸合併胸痛昏厥，請立即就醫。長期服用安眠藥者請勿自行停藥。實際用藥請由中醫師面診後處方。</li>",
+  "intro": "從左側勾選症狀後，這裡會列出最可能的證型、主方與加減。",
+  "nomatch": "目前的症狀對不上任何失眠證型。請補充是難入睡還是易醒、有無心悸健忘、口苦痰多、手足心熱或怕冷、舌苔。",
+  "layer1": "第一層．辨病性",
+  "layer1none": "病性線索不足，尚難判斷虛實寒熱。",
+  "sample": "k5",
+  "casesTitle": "建庫自檢（取自各方原文主治，不算證據）",
+  "freeExample": "例：想太多睡不著，心悸，容易累，胃口差"
+ },
+ "probes": [
+  {
+   "q": "主要是哪一種失眠？",
+   "opts": [
+    [
+     "難入睡",
+     [
+      "nanru"
+     ]
+    ],
+    [
+     "容易醒、醒了睡不著",
+     [
+      "yixing"
+     ]
+    ],
+    [
+     "容易驚醒",
+     [
+      "jingxing"
+     ]
+    ],
+    [
+     "整晚睡不著",
+     [
+      "cheye"
+     ]
+    ]
+   ]
+  },
+  {
+   "q": "精神體力與胃口？",
+   "opts": [
+    [
+     "容易累、胃口差",
+     [
+      "pifa",
+      "nashao"
+     ]
+    ],
+    [
+     "還好",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "口苦、痰多或噁心嗎？",
+   "opts": [
+    [
+     "有",
+     [
+      "kouku",
+      "tanduo"
+     ]
+    ],
+    [
+     "沒有",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "手腳心熱、盜汗或口乾嗎？",
+   "opts": [
+    [
+     "有",
+     [
+      "wuxin",
+      "daohan"
+     ]
+    ],
+    [
+     "反而怕冷",
+     [
+      "weihan"
+     ]
+    ],
+    [
+     "都沒有",
+     []
+    ]
+   ]
+  },
+  {
+   "q": "舌頭？",
+   "opts": [
+    [
+     "舌紅、少苔",
+     [
+      "shehong",
+      "shaotai"
+     ]
+    ],
+    [
+     "苔黃膩",
+     [
+      "taihuangni"
+     ]
+    ],
+    [
+     "舌淡",
+     [
+      "shedan"
+     ]
+    ],
+    [
+     "不清楚",
+     []
+    ]
+   ]
+  }
+ ]
+}
