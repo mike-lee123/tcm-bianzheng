@@ -317,6 +317,9 @@ def case_sets(kb):
 
 FILLER = ("比較", "非常", "特別", "有點", "有些", "很", "更", "蠻", "挺", "超")
 NEG = ("沒有", "不會", "沒", "不", "無", "未")
+# 正常舌色：「舌淡紅」不是「舌淡」，先剔除再比對
+NORMAL = ("舌色淡紅", "淡紅舌", "舌淡紅", "舌頭顏色正常", "舌色正常", "舌頭正常")
+NORMAL_MSG = "「舌淡紅」或舌色正常是正常舌象，不列為症狀。"
 
 
 def phrase_table(kb):
@@ -356,6 +359,14 @@ def parse_text(kb, text):
             continue
         if re.fullmatch(r"\d{2}(?:\.\d)?", chunk):
             temp = float(chunk); continue
+        if any(w in chunk for w in NORMAL):
+            for w in NORMAL:
+                chunk = chunk.replace(w, "")
+            if NORMAL_MSG not in hints:
+                hints.append(NORMAL_MSG)
+            chunk = chunk.strip()
+            if not chunk:
+                continue
         if chunk in L:
             ids.append(chunk); continue
         for name, msg in hints_kb.items():
