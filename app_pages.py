@@ -231,8 +231,10 @@ def page_bianzheng():
     st.write(page.get("lede", ""))
     if kb.get("referralOnly"):
         st.info("這一欄只做就醫轉介篩檢，不做中醫辨證、不選方。", icon="🏥")
-    elif kbname != "外感":
-        st.warning("這個知識庫還在試做，首選命中率低。請把前三名當候選、把「還需要確認」當追問清單。", icon="⚠️")
+    else:
+        score = page.get("scoreLine")
+        st.warning("這個知識庫還在試做。" + (f"預先登錄的醫案驗證：{score}。" if score else "")
+                   + "首選不一定對，請把前三名當候選、把「還需要確認」當追問清單。", icon="⚠️")
 
     left, right = st.columns([5, 6], gap="large")
     with left:

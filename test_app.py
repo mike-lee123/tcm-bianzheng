@@ -134,3 +134,11 @@ print("免疫 tab ok")
 at5.text_input[0].input("皮蛇").run(); assert not at5.exception, at5.exception
 assert any("皮膚科" in w.value and "帶狀疱疹" in w.value for w in at5.warning), [w.value[:20] for w in at5.warning]
 print("免疫 diseases ok")
+
+# 試做提示：每個知識庫都顯示，並帶自己的驗證成績
+at6 = AppTest.from_file("streamlit_app.py", default_timeout=90).run()
+for name in at6.radio[0].options:
+    at6.radio[0].set_value(name).run(); assert not at6.exception, at6.exception
+    w = [x.value for x in at6.warning if x.value.startswith("這個知識庫還在試做")]
+    assert w and "預先登錄的醫案驗證" in w[0], (name, w)
+print("banner ok")
