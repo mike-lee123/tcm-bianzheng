@@ -358,18 +358,21 @@ def parse_text(kb, text):
         for name, msg in hints_kb.items():
             if name in chunk and msg not in hints:
                 hints.append(msg)
-        s = chunk
+        stripped = chunk
         for w in FILLER:
-            s = s.replace(w, "")
-        found, i = False, 0
-        while i < len(s):
-            hit = next((s[i:i + n] for n in range(min(maxlen, len(s) - i), 0, -1) if s[i:i + n] in tab), None)
-            if not hit:
-                i += 1; continue
-            neg = any(s[max(0, i - len(w)):i] == w for w in NEG)
-            (negated if neg else ids).append(tab[hit])
-            found = True
-            i += len(hit)
+            stripped = stripped.replace(w, "")
+        # 先掃原句，再掃去掉程度副詞的句子（與 JS 版相同）
+        found = False
+        for s in ([chunk] if stripped == chunk else [chunk, stripped]):
+            i = 0
+            while i < len(s):
+                hit = next((s[i:i + n] for n in range(min(maxlen, len(s) - i), 0, -1) if s[i:i + n] in tab), None)
+                if not hit:
+                    i += 1; continue
+                neg = any(s[max(0, i - len(w)):i] == w for w in NEG)
+                (negated if neg else ids).append(tab[hit])
+                found = True
+                i += len(hit)
         if found or any(n in chunk for n in hints_kb):
             continue
         # 句中找不到時，退回舊規則：單一關鍵字對到症狀名稱（如「苔」「渴」）
