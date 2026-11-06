@@ -263,7 +263,7 @@ def diagnose(kb, selected, temp=None):
         for sid in p["main"] + p["minor"] + [a[0] for a in p["against"]]:
             if sid not in cand:
                 cand.append(sid)
-    redflags = kb.get("redflags", {})
+    redflags = {**kb.get("redflags", {}), **kb.get("referrals", {})}
     sep = []
     for sid in cand:
         if has(sid) or sid in redflags:
@@ -279,10 +279,12 @@ def diagnose(kb, selected, temp=None):
             seen.add(q["id"]); questions.append(q)
     questions = questions[:6]
 
-    red = [msg for sid, msg in redflags.items() if has(sid)]
+    red = [msg for sid, msg in kb.get("redflags", {}).items() if has(sid)]
+    # 轉介（如免疫風濕科）：獨立欄位，不計分，不和本科警示混在一起
+    referrals = [msg for sid, msg in kb.get("referrals", {}).items() if has(sid)]
     if has("fare") and has("xie") and has("ou"):
         red.append("發熱又吐瀉，津液耗損快，請少量多次補充水分；若尿少、口乾、頭暈，應就醫。")
-    return {"ranked": ranked, "later": later, "rules": fired, "plan": plan, "first": first, "redflags": red,
+    return {"ranked": ranked, "later": later, "rules": fired, "plan": plan, "first": first, "redflags": red, "referrals": referrals,
             "questions": questions, "selected": sel, "jing": jing, "topJing": top_jing, "hebing": hebing}
 
 
@@ -345,10 +347,11 @@ def parse_text(kb, text):
     import re
     L, tab = labels(kb), phrase_table(kb)
     hints_kb = kb.get("hints", {})
-    redflags = kb.get("redflags", {})
+    refer_kb = kb.get("referralHints", {})
+    redflags = {**kb.get("redflags", {}), **kb.get("referrals", {})}
     keys = sorted(tab, key=len, reverse=True)
     maxlen = max((len(k) for k in keys), default=1)
-    ids, temp, unknown, negated, hints = [], None, [], [], []
+    ids, temp, unknown, negated, hints, refer = [], None, [], [], [], []
     for chunk in re.split(r"[\s,，、;；。！？!?]+", text.strip()):
         if not chunk:
             continue
@@ -372,6 +375,9 @@ def parse_text(kb, text):
         for name, msg in hints_kb.items():
             if name in chunk and msg not in hints:
                 hints.append(msg)
+        for name, msg in refer_kb.items():
+            if name in chunk and msg not in refer:
+                refer.append(msg)
         stripped = chunk
         for w in FILLER:
             stripped = stripped.replace(w, "")
@@ -387,7 +393,7 @@ def parse_text(kb, text):
                 (negated if neg else ids).append(tab[hit])
                 found = True
                 i += len(hit)
-        if found or any(n in chunk for n in hints_kb):
+        if found or any(n in chunk for n in list(hints_kb) + list(refer_kb)):
             continue
         # 句中找不到時，退回舊規則：單一關鍵字對到症狀名稱（如「苔」「渴」）
         a = chunk
@@ -403,7 +409,7 @@ def parse_text(kb, text):
         ids.append(sorted(starts or hit, key=lambda h: len(h[1]))[0][0])
     ids = list(dict.fromkeys(ids))
     negated = [x for x in dict.fromkeys(negated) if x not in ids]
-    return {"ids": ids, "temp": temp, "unknown": unknown, "negated": negated, "hints": hints}
+    return {"ids": ids, "temp": temp, "unknown": unknown, "negated": negated, "hints": hints, "referrals": refer}
 
 
 def parse_free_text(kb, text):
@@ -914,7 +920,8 @@ def add_free_text(kbname, kb):
     ids, temp, unknown = r["ids"], r["temp"], r["unknown"]
     where = {it[0]: i for i, g in enumerate(kb["groups"]) for it in g["items"]}
     L = engine.labels(kb)
-    st.session_state[f"parsed_{kbname}"] = {"ok": [L[x] for x in ids], "neg": [L[x] for x in r["negated"]], "hints": r["hints"]}
+    st.session_state[f"parsed_{kbname}"] = {"ok": [L[x] for x in ids], "neg": [L[x] for x in r["negated"]], "hints": r["hints"],
+                                             "referrals": r.get("referrals", [])}
     for sid in ids:
         k = group_key(kbname, where[sid])
         cur = list(st.session_state.get(k, []))
@@ -933,6 +940,20 @@ def load_sample(kbname, kb, case):
     for sid in case["f"]:
         k = group_key(kbname, where[sid])
         st.session_state[k] = list(st.session_state.get(k, [])) + [L[sid]]
+
+
+def render_referrals(kbname, kb, selected):
+    """轉介建議（如免疫風濕科）：獨立欄位，不計分，和本科辨證結果分開顯示。"""
+    parsed = st.session_state.get(f"parsed_{kbname}") or {}
+    msgs = [kb["referrals"][x] for x in selected if x in kb.get("referrals", {})]
+    msgs += [m for m in parsed.get("referrals", []) if m not in msgs]
+    if not msgs:
+        return
+    with st.container(border=True):
+        st.markdown(f"#### 🏥 {kb.get('referralTitle', '轉介建議')}")
+        st.caption("這一欄與下方的中醫辨證分開，不計分；請先就醫確認，中藥只作輔助。")
+        for m in msgs:
+            st.warning(m, icon="🏥")
 
 
 def render_result(kb, d, L):
@@ -1044,13 +1065,14 @@ def page_bianzheng():
                             value=None, key=f"temp_{kbname}")
         for i, g in enumerate(kb["groups"]):
             # 選項直接用症狀名稱（各知識庫內不重複），再對回代號
-            st.pills(("⚠ " if g["name"] == "警示" else "") + g["name"], [it[1] for it in g["items"]],
+            st.pills({"警示": "⚠ "}.get(g["name"], "🏥 " if g["items"] and g["items"][0][0] in kb.get("referrals", {}) else "") + g["name"], [it[1] for it in g["items"]],
                      selection_mode="multi", key=group_key(kbname, i))
 
     by_label = {v: k for k, v in L.items()}
     selected = [by_label[x] for i, _ in enumerate(kb["groups"]) for x in st.session_state.get(group_key(kbname, i)) or []]
     temp = st.session_state.get(f"temp_{kbname}")
     with right:
+        render_referrals(kbname, kb, selected)
         if not selected and temp is None:
             st.info(strip_tags(page.get("intro", "從左側選擇症狀後，這裡會列出最可能的證型、主方與加減。")))
         else:
