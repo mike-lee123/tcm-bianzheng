@@ -126,3 +126,7 @@ assert len([w for w in at5.warning if "🏥" in str(w.icon) or "免疫" in w.val
 assert any("急診" in e.value for e in at5.error)
 assert not any(m.value.startswith("### 首選") for m in at5.markdown), "referral-only tab must not diagnose"
 print("免疫 tab ok")
+
+at5.text_input[0].input("皮蛇").run(); assert not at5.exception, at5.exception
+assert any("皮膚科" in w.value and "帶狀疱疹" in w.value for w in at5.warning), [w.value[:20] for w in at5.warning]
+print("免疫 diseases ok")
