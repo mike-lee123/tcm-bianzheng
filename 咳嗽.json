@@ -1754,6 +1754,63 @@
    "key": [
     "tan_nong"
    ]
+  },
+  {
+   "id": "L_ye_maimen",
+   "name": "胃陰虛久咳（後世用法）",
+   "formula": "麥門冬湯（甘緩養胃陰）",
+   "main": [
+    "ke",
+    "nashao"
+   ],
+   "minor": [
+    "yanyang",
+    "bizao",
+    "ke_lian",
+    "ke_ye",
+    "jiubing",
+    "pifa",
+    "kouke",
+    "maishu",
+    "maixi",
+    "laonian",
+    "qinghua_hou",
+    "fahan_hou"
+   ],
+   "against": [
+    [
+     "tan_huang",
+     2
+    ],
+    [
+     "tainai",
+     1.5
+    ],
+    [
+     "tan_xi",
+     1.5
+    ],
+    [
+     "wuhan_s",
+     1
+    ]
+   ],
+   "key": [
+    "yanyang",
+    "bizao",
+    "qinghua_hou",
+    "kouke"
+   ],
+   "jing": [
+    "yinxu"
+   ],
+   "mods": [],
+   "source": "葉天士《臨證指南醫案》卷二咳嗽門：「風溫客邪化熱，劫爍胃津，喉間燥癢，嗆咳……金匱麥門冬湯」；「由陰傷及胃，痿黃食少……見咳治肺，生氣日憊矣，金匱麥門冬湯」；「咳兩月，咽中乾，鼻氣熱，早暮甚……金匱麥門冬湯去半夏加北沙參」",
+   "later": {
+    "physician": "葉天士",
+    "book": "《臨證指南醫案》",
+    "note": "《金匱》原文只說「大逆上氣，咽喉不利」；葉天士推廣為胃陰虛的久咳：咽乾燥癢、食少神倦、多不喘，屢經清肺發散者尤宜，以「土旺生金、虛則補母」甘緩養胃。"
+   }
   }
  ],
  "rules": [

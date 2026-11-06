@@ -237,10 +237,13 @@ def diagnose(kb, selected, temp=None):
     for r in allp:  # 原文規則加分可越過閘門
         if r["gated"] and r["ruleBoost"]:
             r["gated"] = False; r["score"] += 100; r["gateBypassed"] = True
-    ranked = [r for r in allp if not r["gated"] and (backed(r) or r["score"] > 0)]
-    ranked.sort(key=lambda r: (-int(backed(r)), -r["score"], -len(r["mainHit"])))
-    for r in ranked:
+    # 後世用法（pattern.later）另列，不進原文證型的排名、首選與追問（與 JS 版相同）
+    key = lambda r: (-int(backed(r)), -r["score"], -len(r["mainHit"]))
+    ranked = sorted([r for r in allp if not r["p"].get("later") and not r["gated"] and (backed(r) or r["score"] > 0)], key=key)
+    later = sorted([r for r in allp if r["p"].get("later") and not r["gated"] and (backed(r) or r["score"] > 0)], key=key)
+    for r in ranked + later:
         r["fit"] = max(0, min(r["score"], r["full"])) / r["full"] if r["full"] else 0
+        r["later"] = r["p"].get("later")
 
     orders = sorted([f for f in fired if f["kind"] == "order"], key=lambda f: -f["priority"])
     plan = None
@@ -279,7 +282,7 @@ def diagnose(kb, selected, temp=None):
     red = [msg for sid, msg in redflags.items() if has(sid)]
     if has("fare") and has("xie") and has("ou"):
         red.append("發熱又吐瀉，津液耗損快，請少量多次補充水分；若尿少、口乾、頭暈，應就醫。")
-    return {"ranked": ranked, "rules": fired, "plan": plan, "first": first, "redflags": red,
+    return {"ranked": ranked, "later": later, "rules": fired, "plan": plan, "first": first, "redflags": red,
             "questions": questions, "selected": sel, "jing": jing, "topJing": top_jing, "hebing": hebing}
 
 
@@ -921,6 +924,19 @@ def render_result(kb, d, L):
             st.caption("出處：" + r["source"])
             for m in r["mods"]:
                 st.markdown(f"- 加減［{m['s']}］：{m['do']}　—— {m['why']}")
+
+    later = [r for r in d.get("later", []) if r["mainHit"]][:2]
+    if later:
+        st.markdown("#### 後世醫家用法（另列，非原文主治）")
+        st.caption("以下不是典籍原文的方證，而是後世醫家在醫案中的推廣用法，與上方原文證型分開排名，僅供參考。")
+        for r in later:
+            lt = r["later"]
+            with st.container(border=True):
+                st.markdown(f"**{r['name']} → {r['formula']}**　｜　{lt['physician']}《{lt['book'].strip('《》')}》")
+                hits = [L[x] + "（主）" for x in r["mainHit"]] + [L[x] for x in r["minorHit"]]
+                st.markdown("命中：" + "、".join(hits))
+                st.caption(lt["note"])
+                st.caption("醫案出處：" + r["source"])
 
     if d["questions"]:
         st.markdown("**還需要確認：**")

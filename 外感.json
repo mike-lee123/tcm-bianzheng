@@ -2869,6 +2869,56 @@
    "key": [
     "huangdan"
    ]
+  },
+  {
+   "id": "L_cao_maxing",
+   "name": "表寒裏熱、咳喘咽痛（後世用法）",
+   "formula": "麻黃杏仁甘草石膏湯（不拘有汗無汗）",
+   "main": [
+    "fare",
+    "kesou"
+   ],
+   "minor": [
+    "wuhan_s",
+    "wuhan",
+    "shentong",
+    "chuan",
+    "fanzao",
+    "tanhuang",
+    "yantong",
+    "wufeng",
+    "shehong",
+    "bing_wuliu"
+   ],
+   "against": [
+    [
+     "tanxi",
+     2
+    ],
+    [
+     "weihan",
+     2
+    ],
+    [
+     "xie",
+     1.5
+    ]
+   ],
+   "key": [
+    "tanhuang",
+    "yantong",
+    "chuan"
+   ],
+   "jing": [
+    "taiyang"
+   ],
+   "mods": [],
+   "source": "曹穎甫《經方實驗錄》麻黃杏仁甘草石膏湯證：「傷寒七日，發熱無汗，微惡寒，一身盡疼，咯痰不暢……痰色黃，中已化熱」；「始而惡寒，發熱，無汗，一身盡痛……加以咳而咽痛，當由肺熱爲表寒所束」",
+   "later": {
+    "physician": "曹穎甫",
+    "book": "《經方實驗錄》",
+    "note": "《傷寒論》第63條原文是「汗出而喘，無大熱」；曹穎甫推廣用於表寒未解而肺已化熱：發熱、無汗或有汗、咳嗽痰黃、咽痛，視為「肺熱爲表寒所束」。"
+   }
   }
  ],
  "cases": [
